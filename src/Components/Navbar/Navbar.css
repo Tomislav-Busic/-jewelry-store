@@ -1,0 +1,64 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0 2rem;
+  background-color: #333;
+  color: #eee;
+}
+header nav .nav-link {
+  margin: 0 2rem;
+  color: #eee;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+header nav .nav-link:hover {
+  color: crimson;
+}
+header .nav-btn {
+  padding: 0.2rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #eee;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.5rem;
+}
+@media (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(-100vh);
+    transition: all 1s ease-in-out;
+  }
+  header nav .nav-link {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  header nav.resposive_nav {
+    transform: none;
+  }
+  header .nav-close-btn {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

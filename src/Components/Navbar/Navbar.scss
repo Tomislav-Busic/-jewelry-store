@@ -1,0 +1,76 @@
+@import "../../Styles/Variables/variables.scss";
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 0 2rem;
+    background-color: $main-color;
+    color: $font-color;
+
+    nav .nav-link {
+        margin: 0 2rem;
+        color: $font-color;
+        font-weight: 400;
+        font-size: 1.1rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+
+    .nav-btn {
+        padding: 0.2rem;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: $font-color;
+        visibility: hidden;
+        opacity: 0;
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 1024px) {
+        .nav-btn {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background-color: $main-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transform: translateY(-100vh);
+            transition: all 1s ease-in-out;
+
+            .nav-link {
+                margin-bottom: 1rem;
+                font-size: 1.5rem;
+            }
+
+            &.resposive_nav {
+                transform: none;
+            }
+        }
+
+
+
+        .nav-close-btn {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+        }
+    }
+}
