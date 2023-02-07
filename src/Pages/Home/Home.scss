@@ -1,0 +1,5 @@
+@import "../../Styles/Mixins/mixins.scss";
+
+.home {
+    @include page-layout;
+}
