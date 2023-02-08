@@ -1,6 +1,7 @@
+@import "../Variables/variables.scss";
 @mixin page-layout {
     padding: 6rem 1rem;
-        display: flex;
+    display: flex;
         align-items: center;
         flex-direction: column;
         min-height: 100vh;
@@ -9,9 +10,49 @@
         background-color: aqua;
     }
     
-    @mixin page-container {
+@mixin page-container {
+    padding: 4rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+}
+@mixin flex-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin form {
+    @include flex-column;
+    margin: 4rem 1rem;
+    background-color: $main-color;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px $shadow-color;
+}
+
+@mixin input-form {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+@mixin label-form {
+    color: $font-color;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+@mixin button-form {
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
 }

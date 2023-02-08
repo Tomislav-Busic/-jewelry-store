@@ -1,0 +1,32 @@
+@import "../../Styles/Mixins/mixins.scss";
+
+.admin {
+    @include page-layout;
+
+    .container {
+        @include page-container;
+
+        form {
+            @include form;
+
+            input {
+                @include input-form;
+            }
+
+            label {
+                @include label-form;
+            }
+
+            button {
+                @include button-form;
+            }
+
+            span {
+                margin-top: 1rem;
+                color: $hover-color;
+                font-size: 1.4rem;
+                text-align: center;
+            }
+        }
+    }
+}
