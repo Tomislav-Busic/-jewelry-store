@@ -5,6 +5,8 @@ import { Navbar } from "./Components/Navbar/Navbar";
 import { Home } from "./Pages/Home/Home";
 import { Work } from "./Pages/Work/Work";
 
+
+
 function App() {
   return (
     <div className="App">
@@ -13,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </Router>
     </div>

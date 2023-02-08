@@ -23,8 +23,12 @@ export const Navbar = () => {
         <Link className="nav-link" to="/" onClick={() => setToggle(!toggle)}>
           Blog
         </Link>
-        <Link className="nav-link" to="/" onClick={() => setToggle(!toggle)}>
-          About Me
+        <Link
+          className="nav-link"
+          to="/admin"
+          onClick={() => setToggle(!toggle)}
+        >
+          Admin
         </Link>
         <button
           className="nav-btn nav-close-btn"
