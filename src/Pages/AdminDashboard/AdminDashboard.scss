@@ -1,0 +1,17 @@
+@import "../../Styles/Mixins/mixins.scss";
+
+.admin-dashboard {
+    @include page-layout;
+
+    .container {
+        @include page-container;
+
+        form {
+            @include form;
+
+            input {
+                @include input-form;
+            }
+        }
+    }
+}
