@@ -5,6 +5,8 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "./Context/AuthContext";
 
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Home } from "./Pages/Home/Home";
@@ -13,11 +15,13 @@ import { Admin } from "./Pages/Admin/Admin";
 import { AdminDashboard } from "./Pages/AdminDashboard/AdminDashboard";
 
 function App() {
-  const currentUser = false;
+  const { currentUser } = useContext(AuthContext);
 
   const RequireAuth = ({ children }) => {
     return currentUser ? children : <Navigate to="/admin" />;
   };
+
+  console.log(currentUser);
 
   return (
     <div className="App">
