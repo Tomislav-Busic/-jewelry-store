@@ -10,16 +10,14 @@ import { Navbar } from "./Components/Navbar/Navbar";
 import { Home } from "./Pages/Home/Home";
 import { Work } from "./Pages/Work/Work";
 import { Admin } from "./Pages/Admin/Admin";
-
-
+import { AdminDashboard } from "./Pages/AdminDashboard/AdminDashboard";
 
 function App() {
   const currentUser = false;
 
   const RequireAuth = ({ children }) => {
-    return currentUser ? children : <Navigate to="/login" />;
+    return currentUser ? children : <Navigate to="/admin" />;
   };
-
 
   return (
     <div className="App">
@@ -29,6 +27,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
           <Route path="/admin" element={<Admin />} />
+          <Route
+            path="/admin-dashboard"
+            element={
+              <RequireAuth>
+                <AdminDashboard />
+              </RequireAuth>
+            }
+          />
         </Routes>
       </Router>
     </div>
