@@ -12,6 +12,21 @@
             input {
                 @include input-form;
             }
+label {
+    @include label-form;
+}
+
+button {
+    @include button-form;
+}
+
+textarea {
+    @include textarea-form;
+}
+
+select {
+    @include input-form;
+}
         }
     }
 }

@@ -7,7 +7,6 @@
         min-height: 100vh;
         width: 90%;
         margin: 0 auto;
-        background-color: aqua;
     }
     
 @mixin page-container {
@@ -27,22 +26,28 @@
 @mixin form {
     @include flex-column;
     margin: 4rem 1rem;
-    background-color: $main-color;
     padding: 2rem 1rem;
     border-radius: 1rem;
-    box-shadow: 10px 10px 5px $shadow-color;
 }
 
 @mixin input-form {
-    margin: 0.5rem 0;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 0.3rem;
-    border: none;
-    font-weight: bolder;
-    font-size: 1.2rem;
+    margin: 15px 0;
+        font-size: 16px;
+        padding: 10px;
+        width: 250px;
+        border: 1px solid rgb(229, 19, 19);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: rgba(20, 20, 20, .2);
+        color: rgb(0, 0, 0);
+        outline: none;
 }
 
+@mixin textarea-form {
+    @include input-form;
+    height: 8rem;
+}
 @mixin label-form {
     color: $font-color;
     font-weight: 600;
@@ -50,9 +55,18 @@
 }
 
 @mixin button-form {
-    padding: 0.3rem 1rem;
-    border-radius: 0.3rem;
-    border: none;
-    cursor: pointer;
-    font-weight: bolder;
+    border: 1px solid rgb(229, 19, 19);
+        background: rgba(20, 20, 20, .2);
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        margin-top: 20px;
+        padding: 10px 50px;
+        cursor: pointer;
+        transition: .4s;
+        
+            &:hover {
+                background: rgba(20, 20, 20, .8);
+                padding: 10px 80px;
+                color: white;
+            }
 }
