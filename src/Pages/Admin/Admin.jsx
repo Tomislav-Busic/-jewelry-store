@@ -12,7 +12,7 @@ export const Admin = () => {
 
   const navigate = useNavigate();
 
-  const { dispatch } = useContext(AuthContext);
+  const { currentUser, dispatch } = useContext(AuthContext);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -30,23 +30,35 @@ export const Admin = () => {
       });
   };
 
+  const goToDashboard = () => {
+    navigate("/admin-dashboard");
+  };
+
   return (
     <div className="admin">
       <h1>Login</h1>
       <div className="container">
         <form onSubmit={handleLogin}>
-          <input
-            type="email"
-            placeholder="email"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button type="submit">Submit</button>
-          {error && <span>Wrong email or password</span>}
+          {currentUser ? (
+            <button onClick={goToDashboard}>Admin dashboard</button>
+          ) : (
+            <>
+              <input
+                type="email"
+                placeholder="email"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <input
+                type="password"
+                placeholder="password"
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <button type="submit">Submit</button>
+              <br />
+
+              {error && <span>Wrong email or password</span>}
+            </>
+          )}
         </form>
       </div>
     </div>
