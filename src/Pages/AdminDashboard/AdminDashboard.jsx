@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./AdminDashboard.scss";
 import { MdFileUpload } from "react-icons/md";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { db } from "../../firebase";
 
 export const AdminDashboard = () => {
   const [data, setData] = useState({});
@@ -13,7 +15,16 @@ export const AdminDashboard = () => {
     setData({ ...data, [id]: value });
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const res = await addDoc(collection(db, "products"), {
+      ...data,
+      timeStamp: serverTimestamp(),
+    });
+
+    console.log(res.id);
+  };
 
   return (
     <div className="admin-dashboard">
