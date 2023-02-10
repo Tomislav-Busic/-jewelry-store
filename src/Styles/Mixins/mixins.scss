@@ -48,10 +48,10 @@
     @include input-form;
     height: 8rem;
 }
+
 @mixin label-form {
-    color: $font-color;
-    font-weight: 600;
-    font-size: 1rem;
+    color: $font-dark;
+        font-size: 16px;
 }
 
 @mixin button-form {

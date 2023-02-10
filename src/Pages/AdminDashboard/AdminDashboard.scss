@@ -30,6 +30,17 @@ textarea {
 select {
     @include input-form;
 }
+.icon {
+    margin: auto 0;
+    cursor: pointer;
+    height: 4rem;
+    width: 5rem;
+}
+
+img {
+    width: 15rem;
+    height: 12rem;
+}
         }
     }
 }

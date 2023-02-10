@@ -40,9 +40,8 @@
   outline: none;
 }
 .admin-dashboard .container form label {
-  color: #eee;
-  font-weight: 600;
-  font-size: 1rem;
+  color: #222;
+  font-size: 16px;
 }
 .admin-dashboard .container form button {
   border: 1px solid crimson;
@@ -85,4 +84,14 @@
   background: rgba(151, 151, 151, 0.2);
   color: #222;
   outline: none;
+}
+.admin-dashboard .container form .icon {
+  margin: auto 0;
+  cursor: pointer;
+  height: 4rem;
+  width: 5rem;
+}
+.admin-dashboard .container form img {
+  width: 15rem;
+  height: 12rem;
 }/*# sourceMappingURL=AdminDashboard.css.map */
