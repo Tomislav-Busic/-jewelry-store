@@ -35,12 +35,12 @@
         font-size: 16px;
         padding: 10px;
         width: 250px;
-        border: 1px solid rgb(229, 19, 19);
+        border: 1px solid $hover-color;
         border-top: none;
         border-left: none;
         border-right: none;
-        background: rgba(20, 20, 20, .2);
-        color: rgb(0, 0, 0);
+        background: rgba(151, 151, 151, 0.2);
+            color: $font-dark;
         outline: none;
 }
 
@@ -55,10 +55,10 @@
 }
 
 @mixin button-form {
-    border: 1px solid rgb(229, 19, 19);
+    border: 1px solid $hover-color;
         background: rgba(20, 20, 20, .2);
         font-size: 18px;
-        color: rgb(0, 0, 0);
+        color: $font-dark;
         margin-top: 20px;
         padding: 10px 50px;
         cursor: pointer;
@@ -67,6 +67,6 @@
             &:hover {
                 background: rgba(20, 20, 20, .8);
                 padding: 10px 80px;
-                color: white;
+                color: $font-color
             }
 }
