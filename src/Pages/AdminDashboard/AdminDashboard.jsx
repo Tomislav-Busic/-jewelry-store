@@ -9,6 +9,7 @@ import { db, storage } from "../../firebase";
 export const AdminDashboard = () => {
   const [data, setData] = useState({});
   const [file, setFile] = useState("");
+  const [perc, setPerc] = useState(null);
 
   useEffect(() => {
     const uploadFile = () => {
@@ -23,6 +24,7 @@ export const AdminDashboard = () => {
           const progress =
             (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
           console.log("Upload is " + progress + "% done");
+          setPerc(progress);
           switch (snapshot.state) {
             case "paused":
               console.log("Upload is paused");
@@ -45,6 +47,8 @@ export const AdminDashboard = () => {
     file && uploadFile();
   }, [file]);
 
+  console.log(data);
+
   const handleData = (e) => {
     const id = e.target.id;
     const value = e.target.value;
@@ -56,7 +60,7 @@ export const AdminDashboard = () => {
     e.preventDefault();
 
     try {
-      const res = await addDoc(collection(db, "products"), {
+      await addDoc(collection(db, "products"), {
         ...data,
         timeStamp: serverTimestamp(),
       });
@@ -111,7 +115,9 @@ export const AdminDashboard = () => {
             }
             alt=""
           />
-          <button type="submit">Potvrdi</button>
+          <button disabled={perc !== null && perc < 100} type="submit">
+            Potvrdi
+          </button>
         </form>
       </div>
     </div>
