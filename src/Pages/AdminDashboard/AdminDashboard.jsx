@@ -3,6 +3,7 @@ import "./AdminDashboard.scss";
 import { MdFileUpload } from "react-icons/md";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import { ListOfProductsAdmin } from "../../Components/ListOfProductsAdmin/ListOfProductsAdmin";
 
 import { db, storage } from "../../firebase";
 
@@ -39,7 +40,11 @@ export const AdminDashboard = () => {
         },
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-            setData((prev) => ({ ...prev, img: downloadURL }));
+            setData((prev) => ({
+              ...prev,
+              img: downloadURL,
+              img_name: file.name,
+            }));
           });
         }
       );
@@ -64,6 +69,8 @@ export const AdminDashboard = () => {
         ...data,
         timeStamp: serverTimestamp(),
       });
+      e.target.reset();
+      setFile("");
     } catch (err) {
       console.log(err);
     }
@@ -120,6 +127,7 @@ export const AdminDashboard = () => {
           </button>
         </form>
       </div>
+      <ListOfProductsAdmin />
     </div>
   );
 };
