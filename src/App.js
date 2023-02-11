@@ -21,7 +21,6 @@ function App() {
     return currentUser ? children : <Navigate to="/admin" />;
   };
 
-  console.log(currentUser);
 
   return (
     <div className="App">
