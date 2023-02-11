@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./AdminDashboard.scss";
 import { MdFileUpload } from "react-icons/md";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import { db } from "../../firebase";
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+
+import { db, storage } from "../../firebase";
 
 export const AdminDashboard = () => {
   const [data, setData] = useState({});
   const [file, setFile] = useState("");
+
+  useEffect(() => {
+    const uploadFile = () => {};
+    file && uploadFile();
+  }, [file]);
 
   const handleData = (e) => {
     const id = e.target.id;
