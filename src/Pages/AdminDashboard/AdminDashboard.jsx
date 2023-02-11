@@ -18,12 +18,15 @@ export const AdminDashboard = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await addDoc(collection(db, "products"), {
-      ...data,
-      timeStamp: serverTimestamp(),
-    });
-
-    console.log(res.id);
+    try {
+      const res = await addDoc(collection(db, "products"), {
+        ...data,
+        timeStamp: serverTimestamp(),
+      });
+      console.log(res.id);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
@@ -61,7 +64,7 @@ export const AdminDashboard = () => {
           <input
             type="file"
             id="file"
-            /* onChange={(e) => setFile(e.target.files[0])} */
+            onChange={(e) => setFile(e.target.files[0])}
             style={{ display: "none" }}
           />
           <img
