@@ -6,10 +6,12 @@ import {
   doc,
   onSnapshot,
 } from "firebase/firestore";
+import { getStorage, ref, deleteObject } from "firebase/storage";
 import { db } from "../../firebase";
 
 export const ListOfProductsAdmin = () => {
   const [data, setData] = useState([]);
+  const storage = getStorage();
 
   useEffect(() => {
     const unsub = onSnapshot(
@@ -30,6 +32,22 @@ export const ListOfProductsAdmin = () => {
       unsub();
     };
   }, []);
+
+  const handleDelete = async (name, id) => {
+    const desertRef = ref(storage, name);
+    try {
+      await deleteDoc(doc(db, "products", id));
+      deleteObject(desertRef)
+        .then(() => {
+          console.log("File deleted successfully!");
+        })
+        .catch((error) => {
+          console.log("Uh-oh, an error occurred!");
+        });
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <div>
@@ -62,7 +80,11 @@ export const ListOfProductsAdmin = () => {
                 <button>+</button>
               </td>
               <td>
-                <button>X</button>
+                <button
+                  onClick={() => handleDelete(product.img_name, product.id)}
+                >
+                  X
+                </button>
               </td>
             </tr>
           ))}
