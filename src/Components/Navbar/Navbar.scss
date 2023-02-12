@@ -12,6 +12,10 @@ header {
     background-color: $main-color;
     color: $font-color;
 
+    h3 {
+            font-weight: 400;
+            letter-spacing: 0.2rem;
+        }
     nav .nav-link {
         margin: 0 2rem;
         color: $font-color;

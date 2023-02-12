@@ -8,20 +8,20 @@ export const Navbar = () => {
 
   return (
     <header>
-      <h3>Logo</h3>
+      <h3>CALVI</h3>
       <nav className={toggle ? "resposive_nav" : ""}>
         <Link className="nav-link" to="/" onClick={() => setToggle(!toggle)}>
-          Home
+          Početna
         </Link>
         <Link
           className="nav-link"
           to="/work"
           onClick={() => setToggle(!toggle)}
         >
-          My Work
+          Umjetnine
         </Link>
         <Link className="nav-link" to="/" onClick={() => setToggle(!toggle)}>
-          Blog
+          Usluge
         </Link>
         <Link
           className="nav-link"
@@ -29,6 +29,13 @@ export const Navbar = () => {
           onClick={() => setToggle(!toggle)}
         >
           Login
+        </Link>
+        <Link
+          className="nav-link"
+          to="/admin"
+          onClick={() => setToggle(!toggle)}
+        >
+          Kontakt
         </Link>
         <button
           className="nav-btn nav-close-btn"
