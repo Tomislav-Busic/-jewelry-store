@@ -28,7 +28,7 @@ export const Navbar = () => {
           to="/admin"
           onClick={() => setToggle(!toggle)}
         >
-          Admin
+          Login
         </Link>
         <button
           className="nav-btn nav-close-btn"

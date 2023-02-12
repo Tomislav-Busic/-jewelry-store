@@ -94,7 +94,8 @@ export const AdminDashboard = () => {
             onChange={handleData}
           />
           <select id="category" onChange={handleData}>
-            <option value="ostalo">Ostalo (kategorija)</option>
+            <option value="ostalo">Odaberite kategoriju </option>
+            <option value="ostalo">Ostalo </option>
             <option value="satovi">Satovi</option>
             <option value="inventar">Inventar</option>
             <option value="slike">Slike</option>

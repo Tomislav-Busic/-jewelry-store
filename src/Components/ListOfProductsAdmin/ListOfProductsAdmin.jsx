@@ -61,7 +61,6 @@ export const ListOfProductsAdmin = () => {
             <th>Name</th>
             <th>Price</th>
             <th>Category</th>
-            <th>Desc</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -75,10 +74,9 @@ export const ListOfProductsAdmin = () => {
                   style={{ height: "2rem", width: "2.5rem" }}
                 />
               </td>
-              <td>{product.name.substring(0, 10)}...</td>
+              <td>{product.name}</td>
               <td>{product.price}</td>
-              <td>{product.category.substring(0, 3)}...</td>
-              <td>{product.description.substring(0, 5)}...</td>
+              <td>{product.category}</td>
               <td className="table-actions">
                 <button onClick={() => handleUpdate(product)}>
                   <FaPencilAlt className="icon" />
