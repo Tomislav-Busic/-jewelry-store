@@ -1,0 +1,55 @@
+@import "../../Styles/Mixins/mixins.scss";
+@import "../../Styles/Variables/variables.scss";
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+    @media (max-width: "700px") {
+        width: 300px;
+    }
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+
+
+    &.table-actions {
+        display: flex;
+        justify-content: space-between;
+
+
+
+        button {
+            border: none;
+            background-color: $hover-color;
+            padding: 4px 2px;
+            border-radius: 3px;
+
+            &:first-child {
+                background-color: $font-gold;
+            }
+
+            .icon {
+                height: 1rem;
+                width: 1rem;
+                cursor: pointer;
+            }
+        }
+
+
+    }
+}
+
+td {
+    word-break: break-all;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

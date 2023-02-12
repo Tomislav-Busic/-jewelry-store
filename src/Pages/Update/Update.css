@@ -1,4 +1,4 @@
-.admin-dashboard {
+.admin-update {
   padding: 6rem 1rem;
   display: flex;
   align-items: center;
@@ -7,17 +7,17 @@
   width: 90%;
   margin: 0 auto;
 }
-.admin-dashboard h1 {
+.admin-update h1 {
   font-weight: 300;
 }
-.admin-dashboard .container {
+.admin-update .container {
   padding: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.admin-dashboard .container form {
+.admin-update .container form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
   padding: 2rem 1rem;
   border-radius: 1rem;
 }
-.admin-dashboard .container form input {
+.admin-update .container form input {
   margin: 15px 0;
   font-size: 16px;
   padding: 10px;
@@ -40,11 +40,11 @@
   color: #222;
   outline: none;
 }
-.admin-dashboard .container form label {
+.admin-update .container form label {
   color: #222;
   font-size: 16px;
 }
-.admin-dashboard .container form button {
+.admin-update .container form button {
   border: 1px solid crimson;
   background: rgba(20, 20, 20, 0.2);
   font-size: 18px;
@@ -54,12 +54,12 @@
   cursor: pointer;
   transition: 0.4s;
 }
-.admin-dashboard .container form button:hover {
+.admin-update .container form button:hover {
   background: rgba(20, 20, 20, 0.8);
   padding: 10px 80px;
   color: #eee;
 }
-.admin-dashboard .container form textarea {
+.admin-update .container form textarea {
   margin: 15px 0;
   font-size: 16px;
   padding: 10px;
@@ -73,7 +73,7 @@
   outline: none;
   height: 8rem;
 }
-.admin-dashboard .container form select {
+.admin-update .container form select {
   margin: 15px 0;
   font-size: 16px;
   padding: 10px;
@@ -86,13 +86,13 @@
   color: #222;
   outline: none;
 }
-.admin-dashboard .container form .icon {
+.admin-update .container form .icon {
   margin: auto 0;
   cursor: pointer;
   height: 4rem;
   width: 5rem;
 }
-.admin-dashboard .container form img {
+.admin-update .container form img {
   width: 15rem;
   height: 12rem;
-}/*# sourceMappingURL=AdminDashboard.css.map */
+}/*# sourceMappingURL=Update.css.map */

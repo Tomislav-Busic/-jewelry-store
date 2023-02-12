@@ -13,20 +13,19 @@ import { useNavigate } from "react-router-dom";
 
 export const Update = () => {
   const [data, setData] = useState({});
-  const [oldData, setOldData] = useState({});
   const [file, setFile] = useState("");
   const [perc, setPerc] = useState(null);
 
   const navigation = useNavigate();
 
   useEffect(() => {
-    setOldData(JSON.parse(localStorage.getItem("data")));
+    setData(JSON.parse(localStorage.getItem("data")));
   }, []);
 
   useEffect(() => {
     const uploadFile = () => {
       const storageRef = ref(storage, file.name);
-      const desertRef = ref(storage, oldData.img_name);
+      const desertRef = ref(storage, data.img_name);
 
       const uploadTask = uploadBytesResumable(storageRef, file);
 
@@ -70,8 +69,6 @@ export const Update = () => {
     file && uploadFile();
   }, [file]);
 
-  console.log(data);
-
   const handleData = (e) => {
     const id = e.target.id;
     const value = e.target.value;
@@ -81,7 +78,7 @@ export const Update = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const productsRef = doc(db, "products", oldData.id);
+    const productsRef = doc(db, "products", data?.id);
 
     try {
       await updateDoc(productsRef, {
@@ -96,35 +93,47 @@ export const Update = () => {
     }
   };
 
+  const handleBack = () => {
+    navigation("/admin-dashboard");
+  };
+
   return (
     <div className="admin-update">
       <h1>Update Product</h1>
       <div className="container">
         <form onSubmit={handleSubmit}>
+          <h3>Ažuriraj {data?.name}</h3>
           <input
+            value={data?.name || ""}
             type="text"
             id="name"
-            placeholder={oldData.name}
+            placeholder="Novo ime proizvoda"
             onChange={handleData}
           />
           <input
-            value={oldData.price}
+            value={data?.price || ""}
             type="number"
             id="price"
-            placeholder={oldData.price}
+            placeholder="Nova cijena proizvoda"
             onChange={handleData}
           />
-          <select id="category" onChange={handleData}>
+          <select
+            value={data?.category || ""}
+            id="category"
+            onChange={handleData}
+          >
             <option value="ostalo">Ostalo (kategorija)</option>
             <option value="satovi">Satovi</option>
             <option value="inventar">Inventar</option>
             <option value="slike">Slike</option>
           </select>
           <textarea
+            value={data?.description || ""}
             id="description"
-            placeholder={oldData.description}
+            placeholder="Novi opis proizvoda"
             onChange={handleData}
           />
+          <img src={file ? URL.createObjectURL(file) : data?.img} alt="" />
           <label htmlFor="file">
             Učitaj sliku: <br />
             <MdFileUpload className="icon" />
@@ -135,10 +144,10 @@ export const Update = () => {
             onChange={(e) => setFile(e.target.files[0])}
             style={{ display: "none" }}
           />
-          <img src={file ? URL.createObjectURL(file) : oldData.img} alt="" />
           <button disabled={perc !== null && perc < 100} type="submit">
             Ažuriraj
           </button>
+          <button onClick={handleBack}>Vrati se</button>
         </form>
       </div>
     </div>

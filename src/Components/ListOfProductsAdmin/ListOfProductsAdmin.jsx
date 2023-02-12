@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from "react";
-import {
-  collection,
-  getDocs,
-  deleteDoc,
-  doc,
-  onSnapshot,
-} from "firebase/firestore";
+import "./ListOfProductsAdmin.scss";
+import { collection, deleteDoc, doc, onSnapshot } from "firebase/firestore";
 import { getStorage, ref, deleteObject } from "firebase/storage";
 import { db } from "../../firebase";
 import { useNavigate } from "react-router-dom";
+import { FaTrashAlt, FaPencilAlt } from "react-icons/fa";
 
 export const ListOfProductsAdmin = () => {
   const [data, setData] = useState([]);
@@ -61,21 +57,17 @@ export const ListOfProductsAdmin = () => {
       <table>
         <thead>
           <tr>
+            <th>Img</th>
             <th>Name</th>
             <th>Price</th>
             <th>Category</th>
             <th>Desc</th>
-            <th>Img</th>
             <th>Actions</th>
           </tr>
         </thead>
         <tbody>
           {data.map((product, index) => (
             <tr key={index}>
-              <td>{product.name}</td>
-              <td>{product.price}</td>
-              <td>{product.category}</td>
-              <td>{product.description}</td>
               <td>
                 <img
                   src={product.img}
@@ -83,14 +75,18 @@ export const ListOfProductsAdmin = () => {
                   style={{ height: "2rem", width: "2.5rem" }}
                 />
               </td>
-              <td>
-                <button onClick={() => handleUpdate(product)}>+</button>
-              </td>
-              <td>
+              <td>{product.name.substring(0, 10)}...</td>
+              <td>{product.price}</td>
+              <td>{product.category.substring(0, 3)}...</td>
+              <td>{product.description.substring(0, 5)}...</td>
+              <td className="table-actions">
+                <button onClick={() => handleUpdate(product)}>
+                  <FaPencilAlt className="icon" />
+                </button>
                 <button
                   onClick={() => handleDelete(product.img_name, product.id)}
                 >
-                  X
+                  <FaTrashAlt className="icon" />
                 </button>
               </td>
             </tr>

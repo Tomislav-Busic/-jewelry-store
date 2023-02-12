@@ -1,0 +1,47 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  table {
+    width: 300px;
+  }
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+td.table-actions,
+th.table-actions {
+  display: flex;
+  justify-content: space-between;
+}
+td.table-actions button,
+th.table-actions button {
+  border: none;
+  background-color: crimson;
+  padding: 4px 2px;
+  border-radius: 3px;
+}
+td.table-actions button:first-child,
+th.table-actions button:first-child {
+  background-color: gold;
+}
+td.table-actions button .icon,
+th.table-actions button .icon {
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+}
+
+td {
+  word-break: break-all;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}/*# sourceMappingURL=ListOfProductsAdmin.css.map */

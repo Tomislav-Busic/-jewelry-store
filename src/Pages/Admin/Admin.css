@@ -22,6 +22,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
   margin: 4rem 1rem;
   padding: 2rem 1rem;
   border-radius: 1rem;
@@ -40,9 +41,8 @@
   outline: none;
 }
 .admin .container form label {
-  color: #eee;
-  font-weight: 600;
-  font-size: 1rem;
+  color: #222;
+  font-size: 16px;
 }
 .admin .container form button {
   border: 1px solid crimson;
