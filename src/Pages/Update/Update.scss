@@ -1,0 +1,49 @@
+@import "../../Styles/Mixins/mixins.scss";
+
+.admin-update {
+    @include page-layout;
+
+    h1 {
+        font-weight: 300;
+    }
+
+    .container {
+        @include page-container;
+
+        form {
+            @include form;
+
+            input {
+                @include input-form;
+            }
+
+            label {
+                @include label-form;
+            }
+
+            button {
+                @include button-form;
+            }
+
+            textarea {
+                @include textarea-form;
+            }
+
+            select {
+                @include input-form;
+            }
+
+            .icon {
+                margin: auto 0;
+                cursor: pointer;
+                height: 4rem;
+                width: 5rem;
+            }
+
+            img {
+                width: 15rem;
+                height: 12rem;
+            }
+        }
+    }
+}

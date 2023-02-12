@@ -13,6 +13,7 @@ import { Home } from "./Pages/Home/Home";
 import { Work } from "./Pages/Work/Work";
 import { Admin } from "./Pages/Admin/Admin";
 import { AdminDashboard } from "./Pages/AdminDashboard/AdminDashboard";
+import { Update } from "./Pages/Update/Update";
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -35,6 +36,14 @@ function App() {
             element={
               <RequireAuth>
                 <AdminDashboard />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/update"
+            element={
+              <RequireAuth>
+                <Update />
               </RequireAuth>
             }
           />

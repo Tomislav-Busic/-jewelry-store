@@ -15,32 +15,34 @@
             input {
                 @include input-form;
             }
-label {
-    @include label-form;
-}
 
-button {
-    @include button-form;
-}
+                label {
+                    @include label-form;
+                }
 
-textarea {
-    @include textarea-form;
-}
+                button {
+                    @include button-form;
+                }
 
-select {
-    @include input-form;
-}
-.icon {
-    margin: auto 0;
-    cursor: pointer;
-    height: 4rem;
-    width: 5rem;
-}
+                textarea {
+                    @include textarea-form;
+                }
 
-img {
-    width: 15rem;
-    height: 12rem;
-}
+                select {
+                    @include input-form;
+                }
+
+                .icon {
+                    margin: auto 0;
+                    cursor: pointer;
+                    height: 4rem;
+                    width: 5rem;
+                }
+
+                img {
+                    width: 15rem;
+                    height: 12rem;
+                }
         }
     }
 }

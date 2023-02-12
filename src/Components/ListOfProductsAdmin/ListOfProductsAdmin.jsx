@@ -8,10 +8,12 @@ import {
 } from "firebase/firestore";
 import { getStorage, ref, deleteObject } from "firebase/storage";
 import { db } from "../../firebase";
+import { useNavigate } from "react-router-dom";
 
 export const ListOfProductsAdmin = () => {
   const [data, setData] = useState([]);
   const storage = getStorage();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const unsub = onSnapshot(
@@ -49,6 +51,11 @@ export const ListOfProductsAdmin = () => {
     }
   };
 
+  const handleUpdate = (product) => {
+    localStorage.setItem("data", JSON.stringify(product));
+    navigate("/update");
+  };
+
   return (
     <div>
       <table>
@@ -77,7 +84,7 @@ export const ListOfProductsAdmin = () => {
                 />
               </td>
               <td>
-                <button>+</button>
+                <button onClick={() => handleUpdate(product)}>+</button>
               </td>
               <td>
                 <button
