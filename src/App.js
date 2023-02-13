@@ -9,6 +9,7 @@ import { useContext } from "react";
 import { AuthContext } from "./Context/AuthContext";
 
 import { Navbar } from "./Components/Navbar/Navbar";
+import { Footer } from "./Components/Footer/Footer";
 import { Home } from "./Pages/Home/Home";
 import { Work } from "./Pages/Work/Work";
 import { Admin } from "./Pages/Admin/Admin";
@@ -22,11 +23,11 @@ function App() {
     return currentUser ? children : <Navigate to="/admin" />;
   };
 
-
   return (
     <div className="App">
       <Router>
         <Navbar />
+        <Footer />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
