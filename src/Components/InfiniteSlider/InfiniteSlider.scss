@@ -1,69 +1,54 @@
 @import "../../Styles/Mixins/mixins.scss";
 @import "../../Styles/Variables/variables.scss";
 
-.slider {
-    display: flex;
-    max-width: 1650px;
-    margin: 0 auto;
-    overflow: hidden;
+.slider-component {
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+    .slider {
+        display: grid;
+            margin: auto;
+            overflow: hidden;
+        height: 250px;
+            position: relative;
+            width: 90%;
+            place-items: center;
+        
+            &::after,
+            &::before {
+                background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+                content: '';
+                height: 100%;
+                position: absolute;
+                width: 15%;
+                z-index: 2;
+            }
 
-    .slide-track {
-        display: flex;
-        animation: carousel 14s linear infinite;
-        margin-bottom: 0.5rem;
-
+                                                &::before {
+                                                    left: 0;
+                                                    top: 0;
+                                                }
+                        
+                                                &::after {
+                                                    right: -2px;
+                                                    top: 0;
+                                                    transform: rotateZ(180deg);
+                                                }
+                                .slide-track {
+                                    display: flex;
+                                    animation: carousel 14s linear infinite;
         img {
-            display: block;
-            width: 10rem;
-            height: 7rem;
-            object-fit: cover;
-            margin-left: 1rem;
-        }
-    }
-
-    .slide-track2 {
-        display: flex;
-        animation: carousel2 24s linear infinite;
-        margin-bottom: 0.3rem;
-
-        img {
-            display: block;
-            width: 8rem;
-            height: 5rem;
-            object-fit: cover;
-            margin-left: 0.5rem;
-        }
-    }
-
-    .slide-track3 {
-        display: flex;
-        animation: carousel3 34s linear infinite;
-
-        img {
-            display: block;
-            width: 5rem;
-            height: 3rem;
-            object-fit: cover;
-            margin-left: 0.3rem;
-        }
-    }
-
-
-    @keyframes carousel {
-        100% {
-            transform: translateX(-560px);
-        }
-    }
-
-    @keyframes carousel2 {
-        100% {
-            transform: translateX(560px);
-        }
-    }
-
-    @keyframes carousel3 {
-        100% {
-            transform: translateX(-560px);
-        }
-    }
+                    width: 10rem;
+                        height: 7rem;
+                        object-fit: cover;
+                        margin-left: 1rem;
+                    }
+                    }
+@keyframes carousel {
+    100% {
+        transform: translateX(-560px);
+    
+}
+}
+}
 }
