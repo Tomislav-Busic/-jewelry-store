@@ -11,6 +11,7 @@
   position: relative;
   width: 90%;
   place-items: center;
+  transform: rotateZ(20deg);
 }
 .slider-component .slider::after, .slider-component .slider::before {
   background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
@@ -39,6 +40,12 @@
   -o-object-fit: cover;
      object-fit: cover;
   margin-left: 1rem;
+}
+@media (max-width: 900px) {
+  .slider-component .slider .slide-track img {
+    width: 5rem;
+    height: 3rem;
+  }
 }
 @keyframes carousel {
   100% {
