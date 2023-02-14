@@ -5,10 +5,10 @@ import "./Home.scss";
 export const Home = () => {
   return (
     <div className="home">
-      <br />
-      <br />
-      <br />
-      <InfiniteSlider />
+      <h1>Početna stranica</h1>
+      <div className="container">
+        <InfiniteSlider />
+      </div>
     </div>
   );
 };

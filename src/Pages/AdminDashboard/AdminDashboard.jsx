@@ -77,7 +77,7 @@ export const AdminDashboard = () => {
 
   return (
     <div className="admin-dashboard">
-      <h1>Admin Dashboard</h1>
+      <h1>Administrator</h1>
       <div className="container">
         <form onSubmit={handleSubmit}>
           <h3>Unesite novi proizvod</h3>

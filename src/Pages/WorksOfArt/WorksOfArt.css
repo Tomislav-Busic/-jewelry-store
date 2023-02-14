@@ -1,4 +1,4 @@
-.home {
+.art-page {
   padding: 6rem 1rem;
   display: flex;
   align-items: center;
@@ -8,13 +8,13 @@
   margin: 0 auto;
   background-color: rgb(242, 217, 186);
 }
-.home h1 {
+.art-page h1 {
   font-weight: 400;
 }
-.home .container {
+.art-page .container {
   padding: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}/*# sourceMappingURL=Home.css.map */
+}/*# sourceMappingURL=WorksOfArt.css.map */

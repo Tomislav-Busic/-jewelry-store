@@ -15,12 +15,16 @@ export const Navbar = () => {
         </Link>
         <Link
           className="nav-link"
-          to="/work"
+          to="/umjetnine"
           onClick={() => setToggle(!toggle)}
         >
           Umjetnine
         </Link>
-        <Link className="nav-link" to="/" onClick={() => setToggle(!toggle)}>
+        <Link
+          className="nav-link"
+          to="/usluge "
+          onClick={() => setToggle(!toggle)}
+        >
           Usluge
         </Link>
         <Link
@@ -32,7 +36,7 @@ export const Navbar = () => {
         </Link>
         <Link
           className="nav-link"
-          to="/admin"
+          to="/kontakt"
           onClick={() => setToggle(!toggle)}
         >
           Kontakt

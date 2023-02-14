@@ -15,6 +15,8 @@ import { Work } from "./Pages/Work/Work";
 import { Admin } from "./Pages/Admin/Admin";
 import { AdminDashboard } from "./Pages/AdminDashboard/AdminDashboard";
 import { Update } from "./Pages/Update/Update";
+import { WorksOfArt } from "./Pages/WorksOfArt/WorksOfArt";
+import { ContactPage } from "./Pages/ContactPage/ContactPage";
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -30,8 +32,10 @@ function App() {
         <Footer />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/work" element={<Work />} />
+          <Route path="/umjetnine" element={<WorksOfArt />} />
+          <Route path="/usluge" element={<Work />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/kontakt" element={<ContactPage />} />
           <Route
             path="/admin-dashboard"
             element={

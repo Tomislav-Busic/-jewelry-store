@@ -8,15 +8,15 @@
     .slider {
         display: grid;
         margin: auto;
-            overflow: hidden;
+        overflow: hidden;
         height: 250px;
         position: relative;
-            width: 90%;
+        width: 90%;
             place-items: center;
         
             &::after,
             &::before {
-                background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+                background: linear-gradient(to right, rgba(242, 217, 186, 1) 0%, rgba(255, 255, 255, 0) 100%);
                 content: '';
                 height: 100%;
                 position: absolute;
@@ -24,21 +24,23 @@
                 z-index: 2;
             }
 
-   &::before {
-       left: 0;
-       top: 0;
-   }
+                                &::before {
+                                    left: 0;
+                                    top: 0;
+                                }
                         
-                                                &::after {
-                                                    right: -2px;
-                                                    top: 0;
-                                                    transform: rotateZ(180deg);
-                                                }
+                                                                &::after {
+                                                                    right: -2px;
+                                                                    top: 0;
+                                                                    transform: rotateZ(180deg);
+                                                                }
                                 .slide-track {
                                     display: flex;
                                     animation: carousel 14s linear infinite;
-        img {
-                    width: 18rem;
+    
+                                    img {
+                    
+                                        width: 18rem;
                         height: 13rem;
                         object-fit: cover;
                         margin-left: 1rem;

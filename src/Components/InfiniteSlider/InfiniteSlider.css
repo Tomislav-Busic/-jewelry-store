@@ -11,10 +11,9 @@
   position: relative;
   width: 90%;
   place-items: center;
-  transform: rotateZ(20deg);
 }
 .slider-component .slider::after, .slider-component .slider::before {
-  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgb(242, 217, 186) 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100%;
   position: absolute;
@@ -35,11 +34,17 @@
   animation: carousel 14s linear infinite;
 }
 .slider-component .slider .slide-track img {
-  width: 10rem;
-  height: 7rem;
+  width: 18rem;
+  height: 13rem;
   -o-object-fit: cover;
      object-fit: cover;
   margin-left: 1rem;
+}
+@media (max-width: 1300px) {
+  .slider-component .slider .slide-track img {
+    width: 10rem;
+    height: 7rem;
+  }
 }
 @media (max-width: 900px) {
   .slider-component .slider .slide-track img {

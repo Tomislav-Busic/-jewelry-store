@@ -1,8 +1,10 @@
+@import "../../Styles/Variables/variables.scss";
 @import "../../Styles/Mixins/mixins.scss";
 
-.home {
+.work-page {
     @include page-layout;
-h1 {
+
+    h1 {
         font-weight: 400;
     }
 
