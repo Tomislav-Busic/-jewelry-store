@@ -9,7 +9,7 @@
   overflow: hidden;
   height: 250px;
   position: relative;
-  width: 90%;
+  width: 100%;
   place-items: center;
 }
 .slider-component .slider::after, .slider-component .slider::before {
