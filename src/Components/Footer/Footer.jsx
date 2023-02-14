@@ -7,9 +7,10 @@ export const Footer = () => {
 
   return (
     <div className="footer">
-      <a href="http://xn--tomislavbui-vlb28i.com/">
-        &copy; Tomislav Bušić 2023-{currnetYear}
-      </a>
+      <h4>
+        &copy; 2023 - {currnetYear} CALVI | Designed By{" "}
+        <a href="http://xn--tomislavbui-vlb28i.com/">Tomislav Bušić</a>
+      </h4>
     </div>
   );
 };

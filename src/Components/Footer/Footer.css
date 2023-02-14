@@ -5,12 +5,14 @@
   justify-content: center;
   bottom: 0;
   width: 100%;
-  height: 3rem;
+  height: 2.5rem;
   background-color: #68060d;
 }
-.footer a {
-  text-decoration: none;
+.footer h4 {
   color: #c29660;
   text-align: center;
   font-weight: 400;
+}
+.footer h4 a {
+  color: #c29660;
 }/*# sourceMappingURL=Footer.css.map */
