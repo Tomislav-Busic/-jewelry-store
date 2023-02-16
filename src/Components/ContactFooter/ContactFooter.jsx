@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactFooter.scss";
-import { RxLink2 } from "react-icons/rx";
 import { IoMail, IoCall } from "react-icons/io5";
+import { FaUser, FaKey, FaLink, FaMapMarkerAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const ContactFooter = () => {
@@ -12,25 +12,25 @@ export const ContactFooter = () => {
           <ul>
             <h2>Stranica</h2>
             <li>
-              <RxLink2 className="icon" />
+              <FaLink className="icon" />
               <Link to="/" className="link">
                 Početna
               </Link>
             </li>
             <li>
-              <RxLink2 className="icon" />
+              <FaLink className="icon" />
               <Link to="/prodaja" className="link">
                 Prodaja
               </Link>
             </li>
             <li>
-              <RxLink2 className="icon" />
+              <FaLink className="icon" />
               <Link to="/usluge" className="link">
                 Usluge
               </Link>
             </li>
             <li>
-              <RxLink2 className="icon" />
+              <FaLink className="icon" />
               <Link to="/kontakt" className="link">
                 Kontakt
               </Link>
@@ -58,24 +58,28 @@ export const ContactFooter = () => {
                 +38598229078(Ivica)
               </a>
             </li>
+            <li>
+              <FaMapMarkerAlt className="icon" />
+              <p className="link">Praška 10, Zagreb</p>
+            </li>
           </ul>
         </div>
         <div className="f-con-item">
           <ul>
+            <h2>Calvi antique</h2>
             <li>
-              <a>Link</a>
+              <FaUser className="icon" />
+              <p className="link">Anita Calvi</p>
             </li>
             <li>
-              <a>Link</a>
+              <FaMapMarkerAlt className="icon" />
+              <p className="link">Praška 10, Zagreb</p>
             </li>
             <li>
-              <a>Link</a>
-            </li>
-            <li>
-              <a>Link</a>
-            </li>
-            <li>
-              <a>Link</a>
+              <FaKey className="icon" />
+              <Link to="/login" className="link">
+                Administrator
+              </Link>
             </li>
           </ul>
         </div>

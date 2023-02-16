@@ -16,8 +16,8 @@
         .f-con-item {
             display: flex;
             justify-content: center;
-            width: 16rem;
-            margin: 1rem 3rem;
+            width: 17rem;
+                margin: 1rem;
             padding: 0.5rem;
 
             ul {
@@ -35,8 +35,8 @@
                     padding-bottom: 0.5rem;
 
                     .icon {
-                        height: 1.5rem;
-                        width: 1.5rem;
+                        height: 1.4rem;
+                            width: 1.4rem;
                         margin-right: 1rem;
                     }
 
@@ -44,7 +44,8 @@
                         cursor: pointer;
                         text-decoration: none;
                         color: $font-color;
-                        font-size: 1.2rem;
+                        font-weight: 400;
+                            font-size: 1.3rem;
                     }
                 }
             }
