@@ -15,7 +15,7 @@ export const Navbar = () => {
         </Link>
         <Link
           className="nav-link"
-          to="/umjetnine"
+          to="/prodaja"
           onClick={() => setToggle(!toggle)}
         >
           Umjetnine

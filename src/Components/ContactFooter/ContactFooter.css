@@ -1,1 +1,44 @@
-/*# sourceMappingURL=ContactFooter.css.map */
+.footer-contact {
+  min-height: 40vh;
+  background-color: #68060d;
+  color: #c29660;
+}
+.footer-contact .footer-contact-container {
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.footer-contact .footer-contact-container .f-con-item {
+  display: flex;
+  justify-content: center;
+  width: 16rem;
+  margin: 1rem 3rem;
+  padding: 0.5rem;
+}
+.footer-contact .footer-contact-container .f-con-item ul {
+  width: 100%;
+}
+.footer-contact .footer-contact-container .f-con-item ul h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.footer-contact .footer-contact-container .f-con-item ul li {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  padding-bottom: 0.5rem;
+}
+.footer-contact .footer-contact-container .f-con-item ul li .icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+.footer-contact .footer-contact-container .f-con-item ul li .link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #c29660;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=ContactFooter.css.map */

@@ -17,6 +17,7 @@ import { AdminDashboard } from "./Pages/AdminDashboard/AdminDashboard";
 import { Update } from "./Pages/Update/Update";
 import { WorksOfArt } from "./Pages/WorksOfArt/WorksOfArt";
 import { ContactPage } from "./Pages/ContactPage/ContactPage";
+import { ContactFooter } from "./Components/ContactFooter/ContactFooter";
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -32,7 +33,7 @@ function App() {
         <Footer />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/umjetnine" element={<WorksOfArt />} />
+          <Route path="/prodaja" element={<WorksOfArt />} />
           <Route path="/usluge" element={<Work />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/kontakt" element={<ContactPage />} />
@@ -53,6 +54,7 @@ function App() {
             }
           />
         </Routes>
+        <ContactFooter />
       </Router>
     </div>
   );
