@@ -29,13 +29,6 @@ export const Navbar = () => {
         </Link>
         <Link
           className="nav-link"
-          to="/admin"
-          onClick={() => setToggle(!toggle)}
-        >
-          Login
-        </Link>
-        <Link
-          className="nav-link"
           to="/kontakt"
           onClick={() => setToggle(!toggle)}
         >
