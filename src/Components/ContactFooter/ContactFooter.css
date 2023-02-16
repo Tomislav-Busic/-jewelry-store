@@ -18,6 +18,10 @@
   margin: 1rem;
   padding: 0.5rem;
 }
+.footer-contact .footer-contact-container .f-con-item .map {
+  height: 16rem;
+  border: 5px solid #c29660;
+}
 .footer-contact .footer-contact-container .f-con-item ul {
   width: 100%;
 }
@@ -42,4 +46,10 @@
   color: #c29660;
   font-weight: 400;
   font-size: 1.3rem;
+}
+.footer-contact .footer-contact-container .f-con-item ul li .time {
+  color: #c29660;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-right: 2rem;
 }/*# sourceMappingURL=ContactFooter.css.map */
