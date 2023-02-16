@@ -24,16 +24,16 @@
                 z-index: 2;
             }
 
-                                &::before {
-                                    left: 0;
-                                    top: 0;
-                                }
+                                                &::before {
+                                                    left: 0;
+                                                    top: 0;
+                                                }
                         
-                                                                &::after {
-                                                                    right: -2px;
-                                                                    top: 0;
-                                                                    transform: rotateZ(180deg);
-                                                                }
+                                &::after {
+                                    right: -2px;
+                                    top: 0;
+                                    transform: rotateZ(180deg);
+                                }
                                 .slide-track {
                                     display: flex;
                                     animation: carousel 14s linear infinite;
