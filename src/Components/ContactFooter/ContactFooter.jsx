@@ -7,8 +7,12 @@ import {
   FaLink,
   FaMapMarkerAlt,
   FaWarehouse,
+  FaFacebookSquare,
+  FaLinkedin,
+  FaInstagramSquare,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { goToTopOfPage } from "../../Tools/Tools";
 
 export const ContactFooter = () => {
   return (
@@ -19,25 +23,25 @@ export const ContactFooter = () => {
             <h2>Stranica</h2>
             <li>
               <FaLink className="icon" />
-              <Link to="/" className="link">
+              <Link to="/" className="link" onClick={goToTopOfPage}>
                 Početna
               </Link>
             </li>
             <li>
               <FaLink className="icon" />
-              <Link to="/prodaja" className="link">
+              <Link to="/prodaja" className="link" onClick={goToTopOfPage}>
                 Prodaja
               </Link>
             </li>
             <li>
               <FaLink className="icon" />
-              <Link to="/usluge" className="link">
+              <Link to="/usluge" className="link" onClick={goToTopOfPage}>
                 Usluge
               </Link>
             </li>
             <li>
               <FaLink className="icon" />
-              <Link to="/kontakt" className="link">
+              <Link to="/kontakt" className="link" onClick={goToTopOfPage}>
                 Kontakt
               </Link>
             </li>
@@ -55,13 +59,13 @@ export const ContactFooter = () => {
             <li>
               <IoCall className="icon" />
               <a href="tel:+385992882894" className="link">
-                +385992882894 (Anita)
+                <span>Anita</span> +385992882894
               </a>
             </li>
             <li>
               <IoCall className="icon" />
               <a href="tel:+38598229078" className="link">
-                +38598229078 (Ivica)
+                <span>Ivica</span> +38598229078
               </a>
             </li>
             <li>
@@ -118,7 +122,20 @@ export const ContactFooter = () => {
           ></iframe>
         </div>
       </div>
-      <div className="social"></div>
+      <div className="social">
+        <a>
+          <FaFacebookSquare className="social-icon" />
+        </a>
+        <a
+          href="https://www.instagram.com/calviantique_finejewellery/"
+          target="_blank"
+        >
+          <FaInstagramSquare className="social-icon" />
+        </a>
+        <a>
+          <FaLinkedin className="social-icon" />
+        </a>
+      </div>
     </div>
   );
 };
