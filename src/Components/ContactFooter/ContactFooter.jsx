@@ -6,11 +6,11 @@ import {
   FaKey,
   FaLink,
   FaMapMarkerAlt,
-  FaWarehouse,
   FaFacebookSquare,
   FaLinkedin,
   FaInstagramSquare,
 } from "react-icons/fa";
+import { BsShop } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { goToTopOfPage } from "../../Tools/Tools";
 
@@ -78,7 +78,7 @@ export const ContactFooter = () => {
           <ul>
             <h2>Calvi antique</h2>
             <li>
-              <FaWarehouse className="icon" />
+              <BsShop className="icon" />
               <p className="link">CALVI ANTIQUE j.d.o.o.</p>
             </li>
             <li>
