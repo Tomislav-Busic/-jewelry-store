@@ -10,7 +10,7 @@ import {
   FaLinkedin,
   FaInstagramSquare,
 } from "react-icons/fa";
-import { BsShop } from "react-icons/bs";
+import { GiShop } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { goToTopOfPage } from "../../Tools/Tools";
 
@@ -78,7 +78,7 @@ export const ContactFooter = () => {
           <ul>
             <h2>Calvi antique</h2>
             <li>
-              <BsShop className="icon" />
+              <GiShop className="icon" />
               <p className="link">CALVI ANTIQUE j.d.o.o.</p>
             </li>
             <li>
