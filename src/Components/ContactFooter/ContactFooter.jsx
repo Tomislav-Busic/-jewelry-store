@@ -55,13 +55,13 @@ export const ContactFooter = () => {
             <li>
               <IoCall className="icon" />
               <a href="tel:+385992882894" className="link">
-                +385992882894(Anita)
+                +385992882894 (Anita)
               </a>
             </li>
             <li>
               <IoCall className="icon" />
               <a href="tel:+38598229078" className="link">
-                +38598229078(Ivica)
+                +38598229078 (Ivica)
               </a>
             </li>
             <li>
