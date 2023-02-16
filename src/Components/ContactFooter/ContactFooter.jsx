@@ -91,7 +91,7 @@ export const ContactFooter = () => {
             </li>
             <li>
               <FaKey className="icon" />
-              <Link to="/admin" className="link">
+              <Link to="/admin" className="link" onClick={goToTopOfPage}>
                 Administrator
               </Link>
             </li>
