@@ -1,18 +1,19 @@
 import React, { useState, useContext } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
-import { AuthContext } from "../../Context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { loginActions } from "../../store/slice/login-slice";
 import "./Admin.scss";
 
 export const Admin = () => {
   const [error, setError] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const isLoggedIn = useSelector((state) => state.login.isLoggedIn);
 
   const navigate = useNavigate();
-
-  const { currentUser, dispatch } = useContext(AuthContext);
+  const dispatch = useDispatch();
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -20,7 +21,7 @@ export const Admin = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        dispatch({ type: "LOGIN", payload: user });
+        dispatch(loginActions.login(user));
         console.log(user);
         navigate("/admin-dashboard");
       })
@@ -39,7 +40,7 @@ export const Admin = () => {
       <h1>Login</h1>
       <div className="container">
         <form onSubmit={handleLogin}>
-          {currentUser ? (
+          {isLoggedIn ? (
             <button onClick={goToDashboard}>Admin dashboard</button>
           ) : (
             <>

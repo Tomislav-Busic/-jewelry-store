@@ -5,8 +5,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "./Context/AuthContext";
+import { useSelector } from "react-redux";
 
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Footer } from "./Components/Footer/Footer";
@@ -20,10 +19,10 @@ import { ContactPage } from "./Pages/ContactPage/ContactPage";
 import { ContactFooter } from "./Components/ContactFooter/ContactFooter";
 
 function App() {
-  const { currentUser } = useContext(AuthContext);
+  const isLoggedIn = useSelector((state) => state.login.isLoggedIn);
 
   const RequireAuth = ({ children }) => {
-    return currentUser ? children : <Navigate to="/admin" />;
+    return isLoggedIn ? children : <Navigate to="/admin" />;
   };
 
   return (
