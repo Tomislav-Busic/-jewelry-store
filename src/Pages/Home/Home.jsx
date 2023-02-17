@@ -5,7 +5,7 @@ import "./Home.scss";
 export const Home = () => {
   return (
     <div className="home">
-      <h1>Početna stranica</h1>
+      <h1>Calvi Antique</h1>
       <div className="container">
         <InfiniteSlider />
       </div>
