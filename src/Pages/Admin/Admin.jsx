@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
@@ -14,6 +14,10 @@ export const Admin = () => {
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    localStorage.setItem("user", JSON.stringify(isLoggedIn));
+  }, [isLoggedIn]);
 
   const handleLogin = (e) => {
     e.preventDefault();

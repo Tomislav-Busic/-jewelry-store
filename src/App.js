@@ -5,7 +5,9 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { loginActions } from "./store/slice/login-slice";
 
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Footer } from "./Components/Footer/Footer";
@@ -20,6 +22,12 @@ import { ContactFooter } from "./Components/ContactFooter/ContactFooter";
 
 function App() {
   const isLoggedIn = useSelector((state) => state.login.isLoggedIn);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const currentUser = JSON.parse(localStorage.getItem("user")) || null;
+    dispatch(loginActions.login(currentUser));
+  }, []);
 
   const RequireAuth = ({ children }) => {
     return isLoggedIn ? children : <Navigate to="/admin" />;
