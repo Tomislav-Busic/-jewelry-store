@@ -39,10 +39,21 @@ export const Admin = () => {
     navigate("/admin-dashboard");
   };
 
+  const handleBack = () => {
+    dispatch(loginActions.logout());
+    navigate("/");
+  };
+
   return (
     <div className="admin">
-      <h1>Login</h1>
+      <h1>Administrator</h1>
+
       <div className="container">
+        <h2>
+          Ukoliko niste vlasnik stranice molimo Vas da se vratite na početnu
+          stranicu! Hvala :)
+        </h2>
+        <button onClick={handleBack}>Povratak na početnu</button>
         <form onSubmit={handleLogin}>
           {isLoggedIn ? (
             <button onClick={goToDashboard}>Admin dashboard</button>

@@ -1,4 +1,5 @@
 @import "../../Styles/Mixins/mixins.scss";
+@import "../../Styles/Variables/variables.scss";
 
 .admin {
     @include page-layout;
@@ -6,9 +7,15 @@
     h1 {
             font-weight: 400;
         }
+        button {
+            @include button-form;
+        }
     .container {
         @include page-container;
 
+        h2 {
+                color: $main-color;
+            }
         form {
             @include form;
 
