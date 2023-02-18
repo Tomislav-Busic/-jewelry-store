@@ -1,12 +1,22 @@
 @import "../../Styles/Mixins/mixins.scss";
+@import "../../Styles/Variables/variables.scss";
 
 .home {
     @include page-layout;
-h1 {
-        font-weight: 400;
-    }
 
     .container {
         @include page-container;
+        .section {
+                @include section;
+            }
+        
+            .s-one {
+                background:
+                    linear-gradient(to right, $background-overlay1 20%,
+                        $background-overlay2),
+                    url("../../images/narukvicabis.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
     }
 }

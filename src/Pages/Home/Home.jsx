@@ -6,6 +6,7 @@ export const Home = () => {
   return (
     <div className="home">
       <div className="container">
+        <div className="section s-one"></div>
         <InfiniteSlider />
       </div>
     </div>
