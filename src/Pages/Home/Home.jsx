@@ -1,13 +1,9 @@
 import React from "react";
 import { InfiniteSlider } from "../../Components/InfiniteSlider/InfiniteSlider";
-import {
-  FaFacebookSquare,
-  FaLinkedin,
-  FaInstagramSquare,
-} from "react-icons/fa";
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import { TextAnimation } from "../../Components/TextAnimation/TextAnimation";
+import { SocialIcons } from "../../Components/SocialIcons/SocialIcons";
 
 export const Home = () => {
   return (
@@ -22,20 +18,7 @@ export const Home = () => {
               <TextAnimation />
             </h2>
           </div>
-          <div className="social">
-            <a>
-              <FaFacebookSquare className="social-icon" />
-            </a>
-            <a
-              href="https://www.instagram.com/calviantique_finejewellery/"
-              target="_blank"
-            >
-              <FaInstagramSquare className="social-icon" />
-            </a>
-            <a>
-              <FaLinkedin className="social-icon" />
-            </a>
-          </div>
+          <SocialIcons />
           <h3>Praška 10, Zagreb</h3>
           <div class="button-anim-container">
             <div class="button-anim">

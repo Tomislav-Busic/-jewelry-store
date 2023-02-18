@@ -1,18 +1,11 @@
 import React from "react";
 import "./ContactFooter.scss";
 import { IoMail, IoCall } from "react-icons/io5";
-import {
-  FaUser,
-  FaKey,
-  FaLink,
-  FaMapMarkerAlt,
-  FaFacebookSquare,
-  FaLinkedin,
-  FaInstagramSquare,
-} from "react-icons/fa";
+import { FaUser, FaKey, FaLink, FaMapMarkerAlt } from "react-icons/fa";
 import { GiShop } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { goToTopOfPage } from "../../Tools/Tools";
+import { SocialIcons } from "../SocialIcons/SocialIcons";
 
 export const ContactFooter = () => {
   return (
@@ -120,20 +113,7 @@ export const ContactFooter = () => {
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5561.997434253886!2d15.974978527278504!3d45.81128408400844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6fc299fd2e1%3A0xe38d6d13b1fff011!2sPra%C5%A1ka%20ul.%2010%2C%2010000%2C%20Zagreb!5e0!3m2!1sbs!2shr!4v1676570422584!5m2!1sbs!2shr"
         loading="lazy"
       ></iframe>
-      <div className="social">
-        <a>
-          <FaFacebookSquare className="social-icon" />
-        </a>
-        <a
-          href="https://www.instagram.com/calviantique_finejewellery/"
-          target="_blank"
-        >
-          <FaInstagramSquare className="social-icon" />
-        </a>
-        <a>
-          <FaLinkedin className="social-icon" />
-        </a>
-      </div>
+      <SocialIcons />
     </div>
   );
 };
