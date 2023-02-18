@@ -1,0 +1,116 @@
+@import "../Variables/variables.scss";
+
+@mixin button-anim {
+    .button-anim .link-anim {
+        position: relative;
+        display: inline-block;
+        padding: 10px 30px;
+        margin: 15px 0;
+        color: $main-color;
+        font-size: 24px;
+        text-decoration: none;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0009);
+
+        &:hover {
+            background: $main-color;
+            color: white;
+            box-shadow: 0 0 5px $main-color,
+                0 0 25px $main-color,
+                0 0 50px $main-color,
+                0 0 200px $main-color;
+        }
+
+        span {
+            position: absolute;
+            display: block;
+        }
+
+        span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, $main-color);
+            animation: animate1 4s linear infinite;
+        }
+
+        @keyframes animate1 {
+            0% {
+                left: -100%;
+            }
+
+            50%,
+            100% {
+                left: 100%;
+            }
+
+        }
+
+        span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, $main-color);
+            animation: animate2 4s linear infinite;
+            animation-delay: 1s;
+        }
+
+        @keyframes animate2 {
+            0% {
+                top: -100%;
+            }
+
+            50%,
+            100% {
+                top: 100%;
+            }
+        }
+
+        span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, $main-color);
+            animation: animate3 4s linear infinite;
+            animation-delay: 2s;
+        }
+
+        @keyframes animate3 {
+            0% {
+                right: -100%;
+            }
+
+            50%,
+            100% {
+                right: 100%;
+            }
+
+        }
+
+        span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, $main-color);
+            animation: animate4 4s linear infinite;
+            animation-delay: 3s;
+        }
+
+        @keyframes animate4 {
+            0% {
+                bottom: -100%;
+            }
+
+            50%,
+            100% {
+                bottom: 100%;
+            }
+
+        }
+    }
+}

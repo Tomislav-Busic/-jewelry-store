@@ -6,6 +6,7 @@ import {
   FaInstagramSquare,
 } from "react-icons/fa";
 import "./Home.scss";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -15,8 +16,6 @@ export const Home = () => {
           <h1>
             <span>CALVI </span>antique fine jewellery
           </h1>
-          <h3>Praška 10 Zagreb</h3>
-          <h4>Anita Calvi</h4>
           <div className="social">
             <a>
               <FaFacebookSquare className="social-icon" />
@@ -31,7 +30,19 @@ export const Home = () => {
               <FaLinkedin className="social-icon" />
             </a>
           </div>
-          <button>Kontakt</button>
+          <h3>Praška 10 Zagreb</h3>
+          <h3>Anita Calvi</h3>
+          <div class="button-anim-container">
+            <div class="button-anim">
+              <Link className="link-anim" to="./kontakt">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Kontakt
+              </Link>
+            </div>
+          </div>
         </div>
         <InfiniteSlider />
       </div>
