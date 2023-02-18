@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import "./Home.scss";
 import { Link } from "react-router-dom";
+import { TextAnimation } from "../../Components/TextAnimation/TextAnimation";
 
 export const Home = () => {
   return (
@@ -16,6 +17,11 @@ export const Home = () => {
           <h1>
             <span>CALVI </span>antique fine jewellery
           </h1>
+          <div className="anim-heading">
+            <h2>
+              <TextAnimation />
+            </h2>
+          </div>
           <div className="social">
             <a>
               <FaFacebookSquare className="social-icon" />
@@ -30,7 +36,7 @@ export const Home = () => {
               <FaLinkedin className="social-icon" />
             </a>
           </div>
-          <h3>Praška 10 Zagreb</h3>
+          <h3>Praška 10, Zagreb</h3>
           <div class="button-anim-container">
             <div class="button-anim">
               <Link className="link-anim" to="./kontakt">
