@@ -1,11 +1,11 @@
 @import "../Variables/variables.scss";
 @mixin page-layout {
-    padding: 6rem 0rem;
+    padding: 3rem 0rem;
     display: flex;
         align-items: center;
         flex-direction: column;
         min-height: 100vh;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         h1 {
                 color: $heading-color;
@@ -19,7 +19,7 @@
         flex-direction: column;
 }
 @mixin section {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
 }
 @mixin center {
