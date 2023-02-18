@@ -31,7 +31,6 @@ export const Home = () => {
             </a>
           </div>
           <h3>Praška 10 Zagreb</h3>
-          <h3>Anita Calvi</h3>
           <div class="button-anim-container">
             <div class="button-anim">
               <Link className="link-anim" to="./kontakt">

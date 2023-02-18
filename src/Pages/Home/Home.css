@@ -21,10 +21,19 @@
   width: 100%;
 }
 .home .container .s-one {
-  background: linear-gradient(to right, rgba(242, 217, 186, 0.9) 20%, rgba(242, 217, 186, 0.2)), url("../../images/narukvicabis.jpg");
+  background: linear-gradient(to right, rgba(242, 217, 186, 0.9) 20%, rgba(242, 217, 186, 0.2)), url("../../images/prstend.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 10%;
+  padding-left: 5rem;
+}
+@media (max-width: 900px) {
+  .home .container .s-one {
+    background: linear-gradient(to right, rgba(242, 217, 186, 0.9) 20%, rgba(242, 217, 186, 0.2)), url("../../images/prstendpoz.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 0;
+  }
 }
 .home .container .s-one h1,
 .home .container .s-one h3 {
@@ -61,7 +70,7 @@
 }
 @media (max-width: 900px) {
   .home .container .s-one .social {
-    margin-left: -1rem;
+    margin-left: -0.7rem;
   }
 }
 .home .container .s-one .social a {
@@ -87,7 +96,7 @@
   padding: 10px 30px;
   margin: 15px 0;
   color: #68060d;
-  font-size: 24px;
+  font-size: 30px;
   text-decoration: none;
   overflow: hidden;
   transition: all 0.5s ease-in-out;

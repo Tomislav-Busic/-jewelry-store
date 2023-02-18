@@ -15,11 +15,21 @@
                 background:
                     linear-gradient(to right, $background-overlay1 20%,
                         $background-overlay2),
-                    url("../../images/narukvicabis.jpg");
+                    url("../../images/prstend.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 padding-top: 10%;
-                
+                padding-left: 5rem;
+
+                            @media (max-width: "900px") {
+                                    background:
+                                        linear-gradient(to right, $background-overlay1 20%,
+                                            $background-overlay2),
+                                        url("../../images/prstendpoz.jpg");
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    padding-left: 0;
+                                }
                     h1,
                     h3 {
                         color: $main-color;
@@ -57,7 +67,7 @@
                         padding: 1rem 0 1rem 0;
                 
                         @media (max-width: "900px") {
-                            margin-left: -1rem;
+                            margin-left: -0.7rem;
                         }
                 
                         a {
