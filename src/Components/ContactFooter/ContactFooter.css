@@ -2,6 +2,10 @@
   min-height: 40vh;
   background-color: #68060d;
   color: #c29660;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .footer-contact .footer-contact-container {
   padding: 4rem 0 0 0;
@@ -17,10 +21,6 @@
   width: 17rem;
   margin: 1rem;
   padding: 0.5rem;
-}
-.footer-contact .footer-contact-container .f-con-item .map {
-  height: 16rem;
-  border: 5px solid #c29660;
 }
 .footer-contact .footer-contact-container .f-con-item ul {
   width: 100%;
@@ -48,13 +48,17 @@
   font-size: 1.3rem;
 }
 .footer-contact .footer-contact-container .f-con-item ul li .link span {
-  font-weight: 700;
+  font-weight: 600;
 }
 .footer-contact .footer-contact-container .f-con-item ul li .time {
   color: #c29660;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.3rem;
   margin-right: 2rem;
+}
+.footer-contact .map {
+  height: 16rem;
+  border: 5px solid #c29660;
 }
 .footer-contact .social {
   padding: 1rem 0 5rem 0;
