@@ -1,7 +1,11 @@
-header {
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
+}
+.navbar header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,13 +13,12 @@ header {
   padding: 0 2rem;
   background-color: #68060d;
   color: #c29660;
-  z-index: 10;
 }
-header h3 {
+.navbar header h3 {
   font-weight: 400;
   letter-spacing: 0.2rem;
 }
-header nav .nav-link {
+.navbar header nav .nav-link {
   margin: 0 2rem;
   color: #c29660;
   font-weight: 400;
@@ -24,13 +27,13 @@ header nav .nav-link {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-header nav .nav-link:nth-child(2) {
+.navbar header nav .nav-link:nth-child(2) {
   margin-right: 10rem;
 }
-header nav .nav-link:hover {
+.navbar header nav .nav-link:hover {
   color: crimson;
 }
-header .nav-btn {
+.navbar header .nav-btn {
   padding: 0.2rem;
   cursor: pointer;
   background: transparent;
@@ -42,11 +45,11 @@ header .nav-btn {
   font-size: 1.5rem;
 }
 @media (max-width: 1024px) {
-  header .nav-btn {
+  .navbar header .nav-btn {
     visibility: visible;
     opacity: 1;
   }
-  header nav {
+  .navbar header nav {
     position: fixed;
     top: 0;
     right: 0;
@@ -60,16 +63,29 @@ header .nav-btn {
     transform: translateY(-100vh);
     transition: all 1s ease-in-out;
   }
-  header nav .nav-link {
+  .navbar header nav .nav-link {
     margin-bottom: 1rem;
     font-size: 1.5rem;
   }
-  header nav.resposive_nav {
+  .navbar header nav .nav-link:nth-child(2) {
+    margin: 0 0 1rem 0;
+  }
+  .navbar header nav.resposive_nav {
     transform: none;
   }
-  header .nav-close-btn {
+  .navbar header .nav-close-btn {
     position: fixed;
     top: 2rem;
     right: 2rem;
   }
+}
+.navbar header .logo {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navbar header .logo img {
+  border-radius: 40%;
+  height: 5rem;
 }/*# sourceMappingURL=Navbar.css.map */
