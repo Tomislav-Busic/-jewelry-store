@@ -24,6 +24,9 @@ header nav .nav-link {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
+header nav .nav-link:nth-child(2) {
+  margin-right: 10rem;
+}
 header nav .nav-link:hover {
   color: crimson;
 }

@@ -26,6 +26,9 @@ header {
         cursor: pointer;
         transition: all 0.5s ease-in-out;
 
+        &:nth-child(2) {
+                margin-right: 10rem;
+            }
         &:hover {
             color: $hover-color;
         }
