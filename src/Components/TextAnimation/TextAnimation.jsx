@@ -29,7 +29,7 @@ export const TextAnimation = () => {
       if (i === texts.length) i = 0;
       else setCurrentWord(i);
       i++;
-    }, 4100 + texts[i].length * 0.25);
+    }, 8100 + texts[i].length * 2);
 
     return () => clearInterval(interval);
   }, []);
@@ -51,8 +51,8 @@ export const TextAnimation = () => {
                   exit="exit"
                   variants={TextVariants}
                   transition={{
-                    duration: 1,
-                    delay: 0.2,
+                    duration: 2,
+                    delay: 1,
                   }}
                   key={index}
                 >
