@@ -1,0 +1,8 @@
+@import "../../Styles/AnimationsMixins/AnimationsMixins.scss";
+
+.button-anim-container {
+    display: flex;
+    margin: 1rem 0;
+
+    @include button-anim;
+}

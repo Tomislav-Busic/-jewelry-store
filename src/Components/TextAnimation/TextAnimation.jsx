@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import "./TextAnimation.scss";
 
 const TextVariants = {
   offscreen: {
@@ -34,31 +35,36 @@ export const TextAnimation = () => {
   }, []);
 
   return (
-    <motion.span
-      className="animated-headline"
-      transition={{ staggerChildren: 2 }}
-    >
-      {texts.map((word, index) =>
-        index === currentWord ? (
-          <motion.span>
-            {word.split("").map((r, id) => (
-              <motion.span
-                initial="offscreen"
-                animate="onscreen"
-                exit="exit"
-                variants={TextVariants}
-                transition={{
-                  duration: 0.4,
-                  delay: id * 0.15,
-                }}
-                key={index}
-              >
-                {r}
+    <div className="anim-heading">
+      <h2>
+        {" "}
+        <motion.span
+          className="animated-headline"
+          transition={{ staggerChildren: 2 }}
+        >
+          {texts.map((word, index) =>
+            index === currentWord ? (
+              <motion.span>
+                {word.split("").map((r, id) => (
+                  <motion.span
+                    initial="offscreen"
+                    animate="onscreen"
+                    exit="exit"
+                    variants={TextVariants}
+                    transition={{
+                      duration: 0.4,
+                      delay: id * 0.15,
+                    }}
+                    key={index}
+                  >
+                    {r}
+                  </motion.span>
+                ))}
               </motion.span>
-            ))}
-          </motion.span>
-        ) : null
-      )}
-    </motion.span>
+            ) : null
+          )}
+        </motion.span>
+      </h2>
+    </div>
   );
 };
