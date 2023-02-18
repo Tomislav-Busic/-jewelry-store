@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import "./TextAnimation.scss";
 
 const TextVariants = {
@@ -29,42 +29,40 @@ export const TextAnimation = () => {
       if (i === texts.length) i = 0;
       else setCurrentWord(i);
       i++;
-    }, 8100);
+    }, 4100 + texts[i].length * 0.25);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="anim-heading">
-      <h2>
-        {" "}
-        <motion.span
-          className="animated-headline"
-          transition={{ staggerChildren: 2 }}
-        >
-          {texts.map((word, index) =>
-            index === currentWord ? (
-              <motion.span>
-                {word.split("").map((r, id) => (
-                  <motion.span
-                    initial="offscreen"
-                    animate="onscreen"
-                    exit="exit"
-                    variants={TextVariants}
-                    transition={{
-                      duration: 0.4,
-                      delay: id * 0.15,
-                    }}
-                    key={index}
-                  >
-                    {r}
-                  </motion.span>
-                ))}
-              </motion.span>
-            ) : null
-          )}
-        </motion.span>
-      </h2>
-    </div>
+    <AnimatePresence>
+      {" "}
+      <motion.span
+        className="animated-headline"
+        transition={{ staggerChildren: 2 }}
+      >
+        <div className="anim-heading">
+          <h2>
+            {texts.map((word, index) =>
+              index === currentWord ? (
+                <motion.span
+                  initial="offscreen"
+                  animate="onscreen"
+                  exit="exit"
+                  variants={TextVariants}
+                  transition={{
+                    duration: 1,
+                    delay: 0.2,
+                  }}
+                  key={index}
+                >
+                  {word}
+                </motion.span>
+              ) : null
+            )}
+          </h2>
+        </div>
+      </motion.span>
+    </AnimatePresence>
   );
 };

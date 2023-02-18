@@ -4,8 +4,8 @@ import "./AnimationBtn.scss";
 
 export const AnimationBtn = ({ name, path }) => {
   return (
-    <div class="button-anim-container">
-      <div class="button-anim">
+    <div className="button-anim-container">
+      <div className="button-anim">
         <Link className="link-anim" to={path}>
           <span></span>
           <span></span>
