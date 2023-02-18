@@ -19,10 +19,14 @@
         justify-content: center;
         flex-direction: column;
 }
-@mixin flex-column {
+@mixin center {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@mixin flex-column {
+    @include center;
     flex-direction: column;
 }
 
@@ -78,4 +82,19 @@
                 padding: 10px 80px;
                 color: $font-color
             }
+}
+@mixin social-icons {
+    padding: 2rem 0 5rem 0;
+    @include center;
+
+    a {
+        color: $font-color;
+
+        .social-icon {
+            margin: 0.5rem;
+            height: 2.5rem;
+            width: 2.5rem;
+            cursor: pointer;
+        }
+    }
 }
