@@ -1,8 +1,9 @@
 @import "../../Styles/AnimationsMixins/AnimationsMixins.scss";
+@import "../../Styles/Variables/variables.scss";
 
 .button-anim-container {
     display: flex;
     margin: 1rem 0;
 
-    @include button-anim;
+    @include button-anim($main-color);
 }
