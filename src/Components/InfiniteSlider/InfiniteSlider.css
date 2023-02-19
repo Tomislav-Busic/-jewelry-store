@@ -7,7 +7,7 @@
   display: grid;
   margin: auto;
   overflow: hidden;
-  height: 250px;
+  height: 320px;
   position: relative;
   width: 100%;
   place-items: center;
@@ -38,7 +38,9 @@
   height: 13rem;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 1px solid #68060d;
   margin-left: 1rem;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.6));
 }
 @media (max-width: 1300px) {
   .slider-component .slider .slide-track img {
