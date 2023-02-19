@@ -7,31 +7,6 @@
 
     .container {
         @include page-container;
-
-        
-        
-
-                
-                                
-                                
-                
-                                
-                }
-        
-                .s-two {
-                    background:
-                        linear-gradient(to right, $background-overlay3 10%,
-                            $background-overlay4),
-                        url("../../images/narukvicabis.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    padding-top: 10%;
-        
-                    h1 {
-                        font-size: 3.5rem;
-                        color: $background;
-                        margin-bottom: 1rem;
-                        text-align: center;
-                    }
-            	}
-    }
+                    
+}
+}

@@ -1,0 +1,14 @@
+.home-section-two {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(104, 6, 13, 0.9) 10%, rgba(104, 6, 13, 0)), url("../../../images/narukvicabis.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10%;
+}
+.home-section-two h1 {
+  font-size: 3.5rem;
+  color: rgb(242, 217, 186);
+  margin-bottom: 1rem;
+  text-align: center;
+}/*# sourceMappingURL=HomeSectionTwo.css.map */

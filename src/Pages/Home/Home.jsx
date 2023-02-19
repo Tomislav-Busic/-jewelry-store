@@ -1,5 +1,6 @@
 import React from "react";
 import { HomeSectionOne } from "../../Components/HOMESectionsComponents/HomeSectionOne/HomeSectionOne";
+import { HomeSectionTwo } from "../../Components/HOMESectionsComponents/HomeSectionTwo/HomeSectionTwo";
 import { InfiniteSlider } from "../../Components/InfiniteSlider/InfiniteSlider";
 import "./Home.scss";
 
@@ -8,9 +9,7 @@ export const Home = () => {
     <div className="home">
       <div className="container">
         <HomeSectionOne />
-        <div className="section s-two">
-          <h1>O nama</h1>
-        </div>
+        <HomeSectionTwo />
         <InfiniteSlider />
       </div>
     </div>
