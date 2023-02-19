@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 @media (max-width: 900px) {
   .home-section-two {
@@ -14,12 +18,12 @@
 }
 .home-section-two h1 {
   font-size: 3.5rem;
-  color: #c29660 !important;
+  color: #dfab6c !important;
   margin-bottom: 1rem;
   text-align: center;
 }
 .home-section-two p {
-  color: #c29660;
+  color: #dfab6c;
   font-size: 1.5rem;
 }
 @media (max-width: 900px) {

@@ -8,7 +8,7 @@
     }
 
     .container {
-        @include page-container;
+        @include flex-column;
 
         form {
             @include form;

@@ -7,7 +7,7 @@
             font-weight: 300;
         }
     .container {
-        @include page-container;
+        @include flex-column;
 
         form {
             @include form;

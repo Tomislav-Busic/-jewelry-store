@@ -26,7 +26,7 @@
 .admin button:hover {
   background: rgba(20, 20, 20, 0.8);
   padding: 10px 80px;
-  color: #c29660;
+  color: #dfab6c;
 }
 .admin .container {
   display: flex;
@@ -84,7 +84,7 @@
 .admin .container form button:hover {
   background: rgba(20, 20, 20, 0.8);
   padding: 10px 80px;
-  color: #c29660;
+  color: #dfab6c;
 }
 .admin .container form span {
   margin-top: 1rem;

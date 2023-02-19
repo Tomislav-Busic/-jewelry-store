@@ -2,12 +2,12 @@
 @import "../../../Styles/Variables/variables.scss";
 
 .home-section-two {
-    
     background:
         linear-gradient(to bottom right, $background-overlay3 60%,
             $background-overlay4),
         url("../../../images/narukvicabis.jpg");
     @include section-background;
+    @include flex-column;
     @media (max-width: "900px") {
             padding: 20% 1rem;
         }

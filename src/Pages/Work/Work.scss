@@ -9,7 +9,7 @@
     }
 
     .container {
-        @include page-container;
+        @include flex-column;
     }
     
 }

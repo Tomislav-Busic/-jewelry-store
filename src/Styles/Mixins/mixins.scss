@@ -12,12 +12,6 @@
             }
     }
     
-@mixin page-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-}
 @mixin background-img {
     background-repeat: no-repeat;
     background-size: cover;

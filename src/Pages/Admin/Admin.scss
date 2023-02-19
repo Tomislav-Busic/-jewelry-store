@@ -11,7 +11,7 @@
             @include button-form;
         }
     .container {
-        @include page-container;
+        @include flex-column;
 
         h2 {
                 color: $main-color;
