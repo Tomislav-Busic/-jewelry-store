@@ -1,18 +1,19 @@
 .home-section-one {
+  background: linear-gradient(to right, rgba(242, 217, 186, 0.9) 20%, rgba(242, 217, 186, 0.2)), url("../../../images/prstend.jpg");
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(242, 217, 186, 0.9) 20%, rgba(242, 217, 186, 0.2)), url("../../../images/prstend.jpg");
+  padding: 20% 5rem;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 20%;
-  padding-left: 5rem;
+  background-attachment: fixed;
 }
 @media (max-width: 900px) {
   .home-section-one {
     background: linear-gradient(to right, rgba(242, 217, 186, 0.9) 20%, rgba(242, 217, 186, 0.2)), url("../../../images/prstendpoz.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-left: 1rem;
+    background-attachment: fixed;
+    padding: 20% 1rem;
   }
 }
 .home-section-one h1 {

@@ -2,24 +2,19 @@
 @import "../../../Styles/Variables/variables.scss";
 
 .home-section-one {
-    @include section;
     background:
         linear-gradient(to right, $background-overlay1 20%,
             $background-overlay2),
         url("../../../images/prstend.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 20%;
-    padding-left: 5rem;
+            @include section-background;
 
     @media (max-width: "900px") {
         background:
             linear-gradient(to right, $background-overlay1 20%,
                 $background-overlay2),
             url("../../../images/prstendpoz.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-left: 1rem;
+        @include background-img;
+            padding: 20% 1rem;
     }
 
     h1 {
