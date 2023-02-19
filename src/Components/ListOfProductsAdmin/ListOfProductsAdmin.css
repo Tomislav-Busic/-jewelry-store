@@ -28,7 +28,7 @@ th.table-actions {
 td.table-actions button,
 th.table-actions button {
   border: none;
-  background-color: crimson;
+  background-color: white;
   padding: 4px 2px;
   border-radius: 3px;
 }

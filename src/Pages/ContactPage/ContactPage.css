@@ -1,18 +1,19 @@
 .contact-page {
-  padding: 6rem 0rem;
+  padding: 3rem 0rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  background-color: rgb(175, 175, 175);
+}
+.contact-page h1 {
+  color: #2d2d2d;
 }
 .contact-page h1 {
   font-weight: 400;
 }
 .contact-page .container {
-  padding: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: center;

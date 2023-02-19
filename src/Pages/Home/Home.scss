@@ -8,85 +8,14 @@
     .container {
         @include page-container;
 
-        .section {
-                @include section;
-            }
         
-                .s-one {
-                    background:
-                        linear-gradient(to right, $background-overlay1 20%,
-                            $background-overlay2),
-                        url("../../images/prstend.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    padding-top: 20%;
-                    padding-left: 5rem;
+        
 
-                @media (max-width: "900px") {
-                    background:
-                            linear-gradient(to right, $background-overlay1 20%,
-                                $background-overlay2),
-                            url("../../images/prstendpoz.jpg");
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        padding-left: 1rem;
-                    }
-
-                                h1,
-                                h3 {
-                                    color: $main-color;
-                                    font-weight: 700;
-                                }
                 
-                                h1 {
-                                    font-size: 3.5rem;
-                                    margin-bottom: 1rem;
+                                
+                                
                 
-                                    span {
-                                        font-size: 4rem;
-                                        letter-spacing: 0.3rem;
-                                    }
-                
-                                    @media (max-width: "900px") {
-                                        font-size: 2.5rem;
-                
-                                        span {
-                                            font-size: 3rem;
-                                        }
-                                    }
-                                }
-                                h3 {
-                                    font-size: 1.8rem;
-                                    color: $font-dark;
-                
-                                    @media (max-width: "900px") {
-                                        font-size: 1.4rem;
-                                    }
-                                }
-                
-                                .social {
-                                    padding: 1rem 0 1rem 0;
-                
-                                    @media (max-width: "900px") {
-                                        margin-left: -0.7rem;
-                                    }
-                
-                                    a {
-                                        color: $main-color;
-                
-                                        .social-icon {
-                                            margin: 0.5rem;
-                                            height: 2.5rem;
-                                            width: 2.5rem;
-                                            cursor: pointer;
-                                            transition: all 0.5s ease-in-out;
-                
-                                            &:hover {
-                                                color: $font-dark;
-                                            }
-                                        }
-                                    }
-                                }
+                                
                 }
         
                 .s-two {
@@ -106,4 +35,3 @@
                     }
             	}
     }
-}

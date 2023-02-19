@@ -1,0 +1,12 @@
+.anim-heading {
+  height: 4rem;
+}
+.anim-heading h2 {
+  font-size: 2.5rem;
+  color: #343434;
+}
+@media (max-width: 900px) {
+  .anim-heading h2 {
+    font-size: 1.7rem;
+  }
+}/*# sourceMappingURL=TextAnimation.css.map */

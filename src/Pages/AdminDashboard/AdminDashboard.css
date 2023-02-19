@@ -1,18 +1,19 @@
 .admin-dashboard {
-  padding: 6rem 0rem;
+  padding: 3rem 0rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  background-color: rgb(175, 175, 175);
+}
+.admin-dashboard h1 {
+  color: #2d2d2d;
 }
 .admin-dashboard h1 {
   font-weight: 300;
 }
 .admin-dashboard .container {
-  padding: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,12 +36,12 @@
   font-size: 16px;
   padding: 10px;
   width: 500px;
-  border: 1px solid crimson;
+  border: 1px solid white;
   border-top: none;
   border-left: none;
   border-right: none;
   background: rgba(151, 151, 151, 0.2);
-  color: #222;
+  color: #343434;
   outline: none;
 }
 @media (max-width: 700px) {
@@ -49,14 +50,14 @@
   }
 }
 .admin-dashboard .container form label {
-  color: #222;
+  color: #343434;
   font-size: 16px;
 }
 .admin-dashboard .container form button {
-  border: 1px solid crimson;
+  border: 1px solid white;
   background: rgba(20, 20, 20, 0.2);
   font-size: 18px;
-  color: #222;
+  color: #343434;
   margin-top: 20px;
   padding: 10px 50px;
   cursor: pointer;
@@ -72,12 +73,12 @@
   font-size: 16px;
   padding: 10px;
   width: 500px;
-  border: 1px solid crimson;
+  border: 1px solid white;
   border-top: none;
   border-left: none;
   border-right: none;
   background: rgba(151, 151, 151, 0.2);
-  color: #222;
+  color: #343434;
   outline: none;
   height: 8rem;
 }
@@ -91,12 +92,12 @@
   font-size: 16px;
   padding: 10px;
   width: 500px;
-  border: 1px solid crimson;
+  border: 1px solid white;
   border-top: none;
   border-left: none;
   border-right: none;
   background: rgba(151, 151, 151, 0.2);
-  color: #222;
+  color: #343434;
   outline: none;
 }
 @media (max-width: 700px) {
