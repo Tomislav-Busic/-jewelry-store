@@ -18,6 +18,9 @@ export const Home = () => {
           <h3>Praška 10, Zagreb</h3>
           <AnimationBtn name={"Kontakt"} path={"./kontakt"} />
         </div>
+        <div className="section s-two">
+          <h1>O nama</h1>
+        </div>
         <InfiniteSlider />
       </div>
     </div>
