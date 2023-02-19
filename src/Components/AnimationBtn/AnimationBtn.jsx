@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./AnimationBtn.scss";
 
-export const AnimationBtn = ({ name, path }) => {
+export const AnimationBtn = ({ name, path, color }) => {
   return (
-    <div className="button-anim-container-red">
+    <div className={color}>
       <div className="button-anim">
         <Link className="link-anim" to={path}>
           <span></span>

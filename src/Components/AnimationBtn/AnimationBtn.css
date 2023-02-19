@@ -1,8 +1,8 @@
-.button-anim-container-red {
+.btn-anim-red {
   display: flex;
   margin: 1rem 0;
 }
-.button-anim-container-red .button-anim .link-anim {
+.btn-anim-red .button-anim .link-anim {
   position: relative;
   display: inline-block;
   padding: 10px 30px;
@@ -14,16 +14,16 @@
   transition: all 0.5s ease-in-out;
   -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.6));
 }
-.button-anim-container-red .button-anim .link-anim:hover {
+.btn-anim-red .button-anim .link-anim:hover {
   background: #68060d;
   color: white;
   box-shadow: 0 0 5px #68060d, 0 0 25px #68060d, 0 0 50px #68060d, 0 0 200px #68060d;
 }
-.button-anim-container-red .button-anim .link-anim span {
+.btn-anim-red .button-anim .link-anim span {
   position: absolute;
   display: block;
 }
-.button-anim-container-red .button-anim .link-anim span:nth-child(1) {
+.btn-anim-red .button-anim .link-anim span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -39,7 +39,7 @@
     left: 100%;
   }
 }
-.button-anim-container-red .button-anim .link-anim span:nth-child(2) {
+.btn-anim-red .button-anim .link-anim span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -56,7 +56,7 @@
     top: 100%;
   }
 }
-.button-anim-container-red .button-anim .link-anim span:nth-child(3) {
+.btn-anim-red .button-anim .link-anim span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -73,7 +73,7 @@
     right: 100%;
   }
 }
-.button-anim-container-red .button-anim .link-anim span:nth-child(4) {
+.btn-anim-red .button-anim .link-anim span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -91,37 +91,37 @@
   }
 }
 
-.button-anim-container-gold {
+.btn-anim-gold {
   display: flex;
   margin: 1rem 0;
 }
-.button-anim-container-gold .button-anim .link-anim {
+.btn-anim-gold .button-anim .link-anim {
   position: relative;
   display: inline-block;
   padding: 10px 30px;
   margin: 15px 0;
-  color: #68060d;
+  color: #dfab6c;
   font-size: 30px;
   text-decoration: none;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.6));
 }
-.button-anim-container-gold .button-anim .link-anim:hover {
-  background: #68060d;
+.btn-anim-gold .button-anim .link-anim:hover {
+  background: #dfab6c;
   color: white;
-  box-shadow: 0 0 5px #68060d, 0 0 25px #68060d, 0 0 50px #68060d, 0 0 200px #68060d;
+  box-shadow: 0 0 5px #dfab6c, 0 0 25px #dfab6c, 0 0 50px #dfab6c, 0 0 200px #dfab6c;
 }
-.button-anim-container-gold .button-anim .link-anim span {
+.btn-anim-gold .button-anim .link-anim span {
   position: absolute;
   display: block;
 }
-.button-anim-container-gold .button-anim .link-anim span:nth-child(1) {
+.btn-anim-gold .button-anim .link-anim span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #68060d);
+  background: linear-gradient(90deg, transparent, #dfab6c);
   animation: animate1 4s linear infinite;
 }
 @keyframes animate1 {
@@ -132,12 +132,12 @@
     left: 100%;
   }
 }
-.button-anim-container-gold .button-anim .link-anim span:nth-child(2) {
+.btn-anim-gold .button-anim .link-anim span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #68060d);
+  background: linear-gradient(180deg, transparent, #dfab6c);
   animation: animate2 4s linear infinite;
   animation-delay: 1s;
 }
@@ -149,12 +149,12 @@
     top: 100%;
   }
 }
-.button-anim-container-gold .button-anim .link-anim span:nth-child(3) {
+.btn-anim-gold .button-anim .link-anim span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #68060d);
+  background: linear-gradient(270deg, transparent, #dfab6c);
   animation: animate3 4s linear infinite;
   animation-delay: 2s;
 }
@@ -166,12 +166,12 @@
     right: 100%;
   }
 }
-.button-anim-container-gold .button-anim .link-anim span:nth-child(4) {
+.btn-anim-gold .button-anim .link-anim span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #68060d);
+  background: linear-gradient(360deg, transparent, #dfab6c);
   animation: animate4 4s linear infinite;
   animation-delay: 3s;
 }

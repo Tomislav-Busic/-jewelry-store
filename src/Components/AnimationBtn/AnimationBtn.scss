@@ -1,16 +1,14 @@
 @import "../../Styles/AnimationsMixins/AnimationsMixins.scss";
 @import "../../Styles/Variables/variables.scss";
 
-.button-anim-container-red {
+.btn-anim-red {
     display: flex;
     margin: 1rem 0;
-
     @include button-anim($main-color);
 }
 
-.button-anim-container-gold {
+.btn-anim-gold {
     display: flex;
     margin: 1rem 0;
-
-    @include button-anim($main-color);
+    @include button-anim($font-color);
 }

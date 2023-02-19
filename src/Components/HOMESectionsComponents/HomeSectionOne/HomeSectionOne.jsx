@@ -13,7 +13,11 @@ export const HomeSectionOne = () => {
       <TextAnimation />
       <SocialIcons />
       <h3>Praška 10, Zagreb</h3>
-      <AnimationBtn name={"Kontakt"} path={"./kontakt"} />
+      <AnimationBtn
+        name={"Kontakt"}
+        path={"./kontakt"}
+        color={"btn-anim-red"}
+      />
     </div>
   );
 };
