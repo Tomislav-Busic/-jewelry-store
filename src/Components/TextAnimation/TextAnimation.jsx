@@ -29,7 +29,7 @@ export const TextAnimation = () => {
       if (i === texts.length) i = 0;
       else setCurrentWord(i);
       i++;
-    }, 8100 + texts[i].length * 2);
+    }, 8100);
 
     return () => clearInterval(interval);
   }, []);
