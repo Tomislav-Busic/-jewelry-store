@@ -1,5 +1,5 @@
 .home-section-two {
-  background: linear-gradient(to bottom right, rgba(104, 6, 13, 0.9) 60%, rgba(104, 6, 13, 0.3)), url("../../../images/narukvicabis.jpg");
+  background: linear-gradient(to bottom right, rgba(104, 6, 13, 0.9) 60%, rgba(104, 6, 13, 0.4)), url("../../../images/narukvicabis.jpg");
   min-height: 50vh;
   width: 100%;
   padding: 20% 5rem;
@@ -14,12 +14,12 @@
 }
 .home-section-two h1 {
   font-size: 3.5rem;
-  color: rgb(242, 217, 186) !important;
+  color: #c29660 !important;
   margin-bottom: 1rem;
   text-align: center;
 }
 .home-section-two p {
-  color: rgb(242, 217, 186);
+  color: #c29660;
   font-size: 1.5rem;
 }
 @media (max-width: 900px) {
