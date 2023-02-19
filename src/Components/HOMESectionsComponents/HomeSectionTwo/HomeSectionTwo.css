@@ -1,15 +1,29 @@
 .home-section-two {
-  background: linear-gradient(to bottom right, rgba(104, 6, 13, 0.9) 60%, rgba(104, 6, 13, 0)), url("../../../images/narukvicabis.jpg");
-  height: 100vh;
+  background: linear-gradient(to bottom right, rgba(104, 6, 13, 0.9) 60%, rgba(104, 6, 13, 0.3)), url("../../../images/narukvicabis.jpg");
+  min-height: 50vh;
   width: 100%;
   padding: 20% 5rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
+@media (max-width: 900px) {
+  .home-section-two {
+    padding: 20% 1rem;
+  }
+}
 .home-section-two h1 {
   font-size: 3.5rem;
   color: rgb(242, 217, 186) !important;
   margin-bottom: 1rem;
   text-align: center;
+}
+.home-section-two p {
+  color: rgb(242, 217, 186);
+  font-size: 1.5rem;
+}
+@media (max-width: 900px) {
+  .home-section-two p {
+    font-size: 1.3rem;
+  }
 }/*# sourceMappingURL=HomeSectionTwo.css.map */
