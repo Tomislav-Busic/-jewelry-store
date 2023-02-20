@@ -3,7 +3,7 @@ import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { goToTopOfPage } from "../../Tools/Tools";
-import logo from "../../images/logo.jpg";
+import logo from "../../images/calvi.png";
 
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);

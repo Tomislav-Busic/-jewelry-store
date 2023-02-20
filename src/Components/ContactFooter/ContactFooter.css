@@ -1,7 +1,7 @@
 .footer-contact {
   min-height: 40vh;
   background-color: #68060d;
-  color: #c29660;
+  color: #dfab6c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +43,7 @@
 .footer-contact .footer-contact-container .f-con-item ul li .link {
   cursor: pointer;
   text-decoration: none;
-  color: #c29660;
+  color: #dfab6c;
   font-weight: 400;
   font-size: 1.3rem;
 }
@@ -51,7 +51,7 @@
   font-weight: 600;
 }
 .footer-contact .footer-contact-container .f-con-item ul li .time {
-  color: #c29660;
+  color: #dfab6c;
   font-weight: 600;
   font-size: 1.3rem;
   margin-right: 2rem;
@@ -59,7 +59,7 @@
 .footer-contact .map {
   height: 25rem;
   width: 35rem;
-  border: 5px solid #c29660;
+  border: 5px solid #dfab6c;
 }
 @media (max-width: 900px) {
   .footer-contact .map {
@@ -74,7 +74,7 @@
   justify-content: center;
 }
 .footer-contact .social a {
-  color: #c29660;
+  color: #dfab6c;
 }
 .footer-contact .social a .social-icon {
   margin: 0.5rem;
