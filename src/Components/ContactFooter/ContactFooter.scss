@@ -1,5 +1,6 @@
 @import "../../Styles/Mixins/mixins.scss";
 @import "../../Styles/Variables/variables.scss";
+
 .footer-contact {
     min-height: 40vh;
     background-color: $main-color;
@@ -20,9 +21,8 @@
             padding: 0.5rem;
 
             img {
-                    width: 80%;
+                width: 80%;
                 }
-            
             ul {
                 width: 100%;
 
@@ -39,42 +39,46 @@
 
                     .icon {
                         height: 1.4rem;
-                            width: 1.4rem;
+                        width: 1.4rem;
                         margin-right: 1rem;
                     }
-                                                                                    
+
                     .link {
                         cursor: pointer;
                         text-decoration: none;
                         color: $font-color;
                         font-weight: 400;
-                            font-size: 1.3rem;
-                            span {
-                                    font-weight: 600;
-                                }
+                        font-size: 1.3rem;
+
+                        span {
+                                font-weight: 600;
+                            }
                     }
-                .time {
-                    color: $font-color;
-                    font-weight: 600;
-                    font-size: 1.3rem;
-                    margin-right: 2rem;
-                }
+
+                        .time {
+                            color: $font-color;
+                            font-weight: 600;
+                            font-size: 1.3rem;
+                            margin-right: 2rem;
+                        }
                 }
             }
         }
     }
-                                .map {
-                                    margin-top: 2rem;
+
+        .map {
+            margin-top: 2rem;
         height: 25rem;
-            width: 35rem;
+        width: 35rem;
             border: 5px solid $font-color;
 
         @media (max-width: "900px") {
-                height: 20rem;
+            height: 20rem;
                 width: 20rem;
             }
+            }
+
+        .social {
+            @include social-icons;
         }
-.social {
-    @include social-icons;
-}
 }

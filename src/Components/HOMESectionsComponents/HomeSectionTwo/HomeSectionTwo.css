@@ -25,6 +25,7 @@
 .home-section-two p {
   color: #dfab6c;
   font-size: 1.5rem;
+  text-align: center;
 }
 @media (max-width: 900px) {
   .home-section-two p {
