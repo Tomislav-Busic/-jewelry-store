@@ -1,6 +1,6 @@
 @import "../Variables/variables.scss";
 @mixin page-layout {
-    padding: 3rem 0rem;
+    padding-top: 3rem;
     display: flex;
         align-items: center;
         flex-direction: column;
