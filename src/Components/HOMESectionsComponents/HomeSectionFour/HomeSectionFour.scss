@@ -2,10 +2,7 @@
 @import "../../../Styles/Variables/variables.scss";
 
 .home-section-four {
-    background:
-        linear-gradient(to bottom right, $background-overlay3 60%,
-            $background-overlay4),
-        url("../../../images/narukvicabis.jpg");
+    background-color: $main-color;
     @include section-background;
     @include flex-column;
 
