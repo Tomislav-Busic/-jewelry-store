@@ -1,7 +1,7 @@
 import React from "react";
 import { HomeSectionOne } from "../../Components/HOMESectionsComponents/HomeSectionOne/HomeSectionOne";
 import { HomeSectionTwo } from "../../Components/HOMESectionsComponents/HomeSectionTwo/HomeSectionTwo";
-import { InfiniteSlider } from "../../Components/InfiniteSlider/InfiniteSlider";
+import { HomeSectionThree } from "../../Components/HOMESectionsComponents/HomeSectionThree/HomeSectionThree";
 import "./Home.scss";
 
 export const Home = () => {
@@ -10,7 +10,7 @@ export const Home = () => {
       <div className="container">
         <HomeSectionOne />
         <HomeSectionTwo />
-        <InfiniteSlider />
+        <HomeSectionThree />
       </div>
     </div>
   );
