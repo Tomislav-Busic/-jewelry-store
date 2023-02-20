@@ -22,6 +22,11 @@
   margin-bottom: 1rem;
   text-align: center;
 }
+@media (max-width: 900px) {
+  .home-section-two h1 {
+    font-size: 3rem;
+  }
+}
 .home-section-two p {
   color: #dfab6c;
   font-size: 1.5rem;

@@ -16,6 +16,9 @@
         color: $font-color !important;
         margin-bottom: 1rem;
         text-align: center;
+@media (max-width: "900px") {
+        font-size: 3rem;
+    }
     }
         p {
             color: $font-color;
