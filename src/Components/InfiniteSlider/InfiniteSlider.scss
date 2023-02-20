@@ -2,17 +2,25 @@
 @import "../../Styles/Variables/variables.scss";
 
 .slider-component {
-    min-height: 50vh;
+    min-height: 60vh;
     display: grid;
     place-items: center;
+    padding: 5% 0;
+    
+        @media (max-width:"1300px") {
+            min-height: 40vh;
+        }
+    
+        @media (max-width:"900px") {
+            min-height: 20vh;
+        }
     .slider {
         display: grid;
-        margin: auto;
         overflow: hidden;
-        height: 320px;
+        height: 100%;
         position: relative;
         width: 100%;
-            place-items: center;
+        place-items: top;
         
             &::after,
             &::before {
@@ -28,40 +36,42 @@
                     left: 0;
                     top: 0;
                 }
-                        
+        
                 &::after {
                     right: -2px;
                     top: 0;
                     transform: rotateZ(180deg);
                 }
-            
+        
                 .slide-track {
                     display: flex;
                     animation: carousel 14s linear infinite;
-    
-                img {
-                    width: 18rem;
+        
+                    img {
+                        width: 18rem;
                         height: 13rem;
                         object-fit: cover;
-                    border: 1px solid $main-color;
+                        border: 1px solid $main-color;
                         margin-left: 1rem;
                         -webkit-box-reflect: below 1px linear-gradient(transparent, #0009);
-                        @media (max-width: "1300px") {
-                            width: 10rem;
-                                height: 7rem;
-                            }
-                        
-                            @media (max-width: "900px") {
-                                width: 5rem;
-                                height: 3rem;
-                            }
+
+                @media (max-width: "1300px") {
+                        width: 10rem;
+                        height: 7rem;
                     }
+                
+                    @media (max-width: "900px") {
+                        width: 5rem;
+                        height: 3rem;
                     }
-@keyframes carousel {
-    100% {
-        transform: translateX(-560px);
-    
-}
-}
-}
+                }
+                }
+
+                @keyframes carousel {
+                    100% {
+                        transform: translateX(-560px);
+        
+                    }
+                }
+                }
 }

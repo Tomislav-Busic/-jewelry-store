@@ -1,16 +1,26 @@
 .slider-component {
-  min-height: 50vh;
+  min-height: 60vh;
   display: grid;
   place-items: center;
+  padding: 5% 0;
+}
+@media (max-width: 1300px) {
+  .slider-component {
+    min-height: 40vh;
+  }
+}
+@media (max-width: 900px) {
+  .slider-component {
+    min-height: 20vh;
+  }
 }
 .slider-component .slider {
   display: grid;
-  margin: auto;
   overflow: hidden;
-  height: 320px;
+  height: 100%;
   position: relative;
   width: 100%;
-  place-items: center;
+  place-items: top;
 }
 .slider-component .slider::after, .slider-component .slider::before {
   background: linear-gradient(to right, rgb(242, 217, 186) 0%, rgba(255, 255, 255, 0) 100%);
