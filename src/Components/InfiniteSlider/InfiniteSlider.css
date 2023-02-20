@@ -1,17 +1,17 @@
 .slider-component {
-  min-height: 60vh;
+  min-height: 45vh;
   display: grid;
   place-items: center;
-  padding: 5% 0;
+  padding: 0;
 }
 @media (max-width: 1300px) {
   .slider-component {
-    min-height: 40vh;
+    min-height: 25vh;
   }
 }
 @media (max-width: 900px) {
   .slider-component {
-    min-height: 20vh;
+    min-height: 10vh;
   }
 }
 .slider-component .slider {
@@ -48,7 +48,7 @@
   height: 13rem;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 1px solid #68060d;
+  border: 0.3px solid #68060d;
   margin-left: 1rem;
   -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.6));
 }

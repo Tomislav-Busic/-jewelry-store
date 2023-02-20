@@ -2,16 +2,17 @@
 @import "../../Styles/Variables/variables.scss";
 
 .slider-component {
-    min-height: 60vh;
+    min-height: 45vh;
     display: grid;
     place-items: center;
-    padding: 5% 0;
-@media (max-width:"1300px") {
-        min-height: 40vh;
+    padding: 0;
+    
+        @media (max-width:"1300px") {
+        min-height: 25vh;
     }
 
     @media (max-width:"900px") {
-        min-height: 20vh;
+        min-height: 10vh;
     }
 
     .slider {
@@ -21,15 +22,16 @@
         position: relative;
         width: 100%;
         place-items: top;
-&::after,
-    &::before {
-        background: linear-gradient(to right, rgba(242, 217, 186, 1) 0%, rgba(255, 255, 255, 0) 100%);
-        content: '';
-        height: 100%;
-        position: absolute;
-        width: 15%;
-        z-index: 2;
-    }
+
+        &::after,
+            &::before {
+                background: linear-gradient(to right, rgba(242, 217, 186, 1) 0%, rgba(255, 255, 255, 0) 100%);
+                content: '';
+                height: 100%;
+                position: absolute;
+                width: 15%;
+                z-index: 2;
+            }
 
                 &::before {
                     left: 0;
@@ -50,13 +52,13 @@
                         width: 18rem;
                         height: 13rem;
                         object-fit: cover;
-                        border: 1px solid $main-color;
-                        margin-left: 1rem;
-                        -webkit-box-reflect: below 1px linear-gradient(transparent, #0009);
+                border: 0.3px solid $main-color;
+                    margin-left: 1rem;
+                    -webkit-box-reflect: below 1px linear-gradient(transparent, #0009);
 
                 @media (max-width: "1300px") {
                     width: 10rem;
-                        height: 7rem;
+                    height: 7rem;
                     }
                     
                     @media (max-width: "900px") {

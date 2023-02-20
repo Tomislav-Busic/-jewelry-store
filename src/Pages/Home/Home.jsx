@@ -1,8 +1,9 @@
 import React from "react";
+import "./Home.scss";
 import { HomeSectionOne } from "../../Components/HOMESectionsComponents/HomeSectionOne/HomeSectionOne";
 import { HomeSectionTwo } from "../../Components/HOMESectionsComponents/HomeSectionTwo/HomeSectionTwo";
 import { HomeSectionThree } from "../../Components/HOMESectionsComponents/HomeSectionThree/HomeSectionThree";
-import "./Home.scss";
+import { HomeSectionFour } from "../../Components/HOMESectionsComponents/HomeSectionFour/HomeSectionFour";
 
 export const Home = () => {
   return (
@@ -11,6 +12,7 @@ export const Home = () => {
         <HomeSectionOne />
         <HomeSectionTwo />
         <HomeSectionThree />
+        <HomeSectionFour />
       </div>
     </div>
   );
