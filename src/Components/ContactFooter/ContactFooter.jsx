@@ -6,11 +6,15 @@ import { GiShop } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { goToTopOfPage } from "../../Tools/Tools";
 import { SocialIcons } from "../SocialIcons/SocialIcons";
+import logo from "../../images/calvi.png";
 
 export const ContactFooter = () => {
   return (
     <div className="footer-contact">
       <div className="footer-contact-container">
+        <div className="f-con-item">
+          <img src={logo} />
+        </div>
         <div className="f-con-item">
           <ul>
             <h2>Stranica</h2>
