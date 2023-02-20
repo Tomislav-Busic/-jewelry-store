@@ -16,17 +16,17 @@ const TextVariants = {
 
 export const TextAnimation = () => {
   const texts = [
-    "IZRADA NAKITA PO NARUĐBI",
+    "IZRADA NAKITA PO NARUDŽBI",
     "POPRAVCI I RESTAURIRANJE NAKITA",
     "KOMISIONA PRODAJA",
     "FRANCUSKI ANTIKVITETI",
   ];
-  const [currentWord, setCurrentWord] = useState(0);
+  const [currentWord, setCurrentWord] = useState(-1);
 
   useEffect(() => {
     let i = 0;
     const interval = setInterval(() => {
-      if (i === texts.length) i = 0;
+      if (i === texts.length) i = -1;
       else setCurrentWord(i);
       i++;
     }, 8100);
@@ -37,10 +37,7 @@ export const TextAnimation = () => {
   return (
     <AnimatePresence>
       {" "}
-      <motion.span
-        className="animated-headline"
-        transition={{ staggerChildren: 2 }}
-      >
+      <motion.span className="animated-headline">
         <div className="anim-heading">
           <h2>
             {texts.map((word, index) =>
