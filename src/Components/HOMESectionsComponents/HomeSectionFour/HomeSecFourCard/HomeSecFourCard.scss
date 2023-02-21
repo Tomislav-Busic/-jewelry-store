@@ -1,5 +1,5 @@
-@import "../../../Styles/Mixins/mixins.scss";
-@import "../../../Styles/Variables/variables.scss";
+@import "../../../../Styles/Mixins/mixins.scss";
+@import "../../../../Styles/Variables/variables.scss";
 
 .hsf-card {
     position: relative;
@@ -11,8 +11,9 @@
     transition: all 1s ease-in-out;
 
     &:hover {
-            transform: scale(1.1);
-        }
+        transform: scale(1.1);
+    }
+
     .card-text {
         position: absolute;
         bottom: 0;

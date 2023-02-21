@@ -4,7 +4,7 @@ import img1 from "../../../images/prstend.jpg";
 import img2 from "../../../images/rucprsten.jpg";
 import img3 from "../../../images/prstensmar.jpg";
 import { AnimationBtn } from "../../AnimationBtn/AnimationBtn";
-import { HomeSecFourCard } from "./HomeSecFourCard";
+import { HomeSecFourCard } from "./HomeSecFourCard/HomeSecFourCard";
 
 export const HomeSectionFour = () => {
   return (
