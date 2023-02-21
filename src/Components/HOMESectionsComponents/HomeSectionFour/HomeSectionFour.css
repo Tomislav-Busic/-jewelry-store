@@ -29,12 +29,5 @@
 }
 .home-section-four .hsf-images {
   display: flex;
-}
-.home-section-four .hsf-images .hsf-card {
-  height: 20rem;
-  width: 15rem;
-}
-.home-section-four .hsf-images .hsf-card img {
-  height: 100%;
-  width: 100%;
+  padding: 4rem 0;
 }/*# sourceMappingURL=HomeSectionFour.css.map */

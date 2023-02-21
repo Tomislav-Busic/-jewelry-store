@@ -85,22 +85,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #68060d;
-    border-radius: 50%;
+  border-radius: 50%;
 }
 .navbar header .logo img {
   height: 8rem;
-    padding: 0 0.8rem;
+  padding: 0 0.5rem;
+}
+@media (max-width: 900px) {
+  .navbar header .logo {
+    top: 90%;
   }
-  
-  @media (max-width: 900px) {
-    .navbar header .logo {
-      top: 90%;
-    }
-  
-    .navbar header .logo img {
-      height: 6rem;
-      padding: 0 0.7rem;
-    }
+  .navbar header .logo img {
+    height: 6rem;
+    padding: 0 0.4rem;
   }
-  
-  /*# sourceMappingURL=Navba.css.map */
+}/*# sourceMappingURL=Navbar.css.map */
