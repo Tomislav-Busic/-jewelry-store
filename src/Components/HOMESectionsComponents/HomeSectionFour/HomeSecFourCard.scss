@@ -7,9 +7,12 @@
     height: 20rem;
     width: 18rem;
     border: 2px solid $main-color;
-    box-shadow: 30px 20px 50px black;
+    box-shadow: 30px 20px 30px black;
     transition: all 1s ease-in-out;
 
+    &:hover {
+            transform: scale(1.1);
+        }
     .card-text {
         position: absolute;
         bottom: 0;

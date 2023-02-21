@@ -4,8 +4,11 @@
   height: 20rem;
   width: 18rem;
   border: 2px solid #68060d;
-  box-shadow: 30px 20px 50px black;
+  box-shadow: 30px 20px 30px black;
   transition: all 1s ease-in-out;
+}
+.hsf-card:hover {
+  transform: scale(1.1);
 }
 .hsf-card .card-text {
   position: absolute;
