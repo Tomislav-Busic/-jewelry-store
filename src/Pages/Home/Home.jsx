@@ -4,6 +4,7 @@ import { HomeSectionOne } from "../../Components/HOMESectionsComponents/HomeSect
 import { HomeSectionTwo } from "../../Components/HOMESectionsComponents/HomeSectionTwo/HomeSectionTwo";
 import { HomeSectionThree } from "../../Components/HOMESectionsComponents/HomeSectionThree/HomeSectionThree";
 import { HomeSectionFour } from "../../Components/HOMESectionsComponents/HomeSectionFour/HomeSectionFour";
+import { HomeSectionFive } from "../../Components/HOMESectionsComponents/HomeSectionFive/HomeSectionFive";
 
 export const Home = () => {
   return (
@@ -13,6 +14,7 @@ export const Home = () => {
         <HomeSectionTwo />
         <HomeSectionThree />
         <HomeSectionFour />
+        <HomeSectionFive />
       </div>
     </div>
   );
