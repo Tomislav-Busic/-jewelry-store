@@ -9,6 +9,7 @@
 }
 .hsf-card:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 .hsf-card .card-text {
   position: absolute;
