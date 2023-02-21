@@ -26,4 +26,15 @@
   .home-section-four h1 {
     font-size: 2.5rem;
   }
+}
+.home-section-four .hsf-images {
+  display: flex;
+}
+.home-section-four .hsf-images .hsf-card {
+  height: 20rem;
+  width: 15rem;
+}
+.home-section-four .hsf-images .hsf-card img {
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=HomeSectionFour.css.map */
