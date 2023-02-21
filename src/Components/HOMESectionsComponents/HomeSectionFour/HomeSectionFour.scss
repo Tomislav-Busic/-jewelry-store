@@ -23,6 +23,8 @@
 
         .hsf-images {
             display: flex;
-        padding: 4rem 0;
+            justify-content: center;
+                flex-wrap: wrap;
+                padding: 1rem 0;
         }
 }
