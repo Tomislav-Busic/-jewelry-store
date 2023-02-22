@@ -98,7 +98,7 @@
 
         .logo {
             position: absolute;
-            top: 110%;
+            top: 100%;
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: $main-color;
@@ -106,15 +106,15 @@
 
             img {
                 height: 8rem;
-                padding: 0 0.5rem;
+                padding: 0 0.2rem 0 0.5rem;
             }
 
             @media (max-width: "900px") {
-                top: 90%;
+                top: 80%;
 
                 img {
                     height: 6rem;
-                    padding: 0 0.4rem;
+                    padding: 0 0.2rem 0 0.5rem;
                 }
             }
         }
