@@ -4,11 +4,24 @@
   height: 15rem;
   width: 20rem;
   background-color: #68060d;
+  border: 1px solid #dfab6c;
+  box-shadow: 20px 15px 20px black;
 }
 .slider-testem .btn-st {
   position: absolute;
   top: 40%;
+  background: none;
+  border: none;
   cursor: pointer;
+  z-index: 1;
+}
+.slider-testem .btn-st .icon {
+  fill: #dfab6c;
+  font-size: 2rem;
+  transition: all 1s ease-in-out;
+}
+.slider-testem .btn-st .icon:hover {
+  transform: scale(1.2);
 }
 .slider-testem .left {
   left: 1rem;
@@ -24,7 +37,7 @@
   text-align: center;
   width: 100%;
   height: 100%;
-  padding: 2rem 1rem;
+  padding: 2rem 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
