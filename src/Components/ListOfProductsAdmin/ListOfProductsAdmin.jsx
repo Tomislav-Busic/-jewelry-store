@@ -1,35 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./ListOfProductsAdmin.scss";
-import { collection, deleteDoc, doc, onSnapshot } from "firebase/firestore";
+import { deleteDoc, doc } from "firebase/firestore";
 import { getStorage, ref, deleteObject } from "firebase/storage";
 import { db } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import { FaTrashAlt, FaPencilAlt } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 export const ListOfProductsAdmin = () => {
-  const [data, setData] = useState([]);
+  const data = useSelector((state) => state.data.dataList);
   const storage = getStorage();
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const unsub = onSnapshot(
-      collection(db, "products"),
-      (snapShot) => {
-        let list = [];
-        snapShot.docs.forEach((doc) => {
-          list.push({ id: doc.id, ...doc.data() });
-        });
-        setData(list);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
-
-    return () => {
-      unsub();
-    };
-  }, []);
 
   const handleDelete = async (name, id) => {
     const desertRef = ref(storage, name);

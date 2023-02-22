@@ -16,7 +16,7 @@ table {
 
 td,
 th {
-    border: 1px solid #dddddd;
+    border: 1px solid $main-color;
     text-align: left;
     padding: 8px;
 
@@ -25,17 +25,20 @@ th {
     &.table-actions {
         display: flex;
         justify-content: space-between;
+        padding: 0.8rem 0.5rem;
 
 
 
         button {
             border: none;
-            background-color: $hover-color;
+            background-color: $main-color;
             padding: 4px 2px;
             border-radius: 3px;
+            color: white;
 
             &:first-child {
                 background-color: $font-gold;
+                color: black;
             }
 
             .icon {
