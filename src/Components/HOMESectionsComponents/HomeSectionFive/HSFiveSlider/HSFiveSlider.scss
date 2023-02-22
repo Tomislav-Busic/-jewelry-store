@@ -1,9 +1,10 @@
 @import "../../../../Styles/Mixins/mixins.scss";
 @import "../../../../Styles/Variables/variables.scss";
 
-.slider {
+.slider-testem {
     position: relative;
+    margin: 2rem 0;
     height: 15rem;
-    width: 18rem;
+    width: 20rem;
     background-color: $main-color;
 }
