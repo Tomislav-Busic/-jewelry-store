@@ -6,8 +6,9 @@ export const dataSlice = createSlice({
     dataList: [],
   },
   reducers: {
-    getData(state, action) {
-      state.dataList = action.payload;
+    setData(state, action) {
+      let newData = action.payload;
+      state.dataList = newData;
     },
   },
 });
