@@ -1,36 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./InfiniteSlider.scss";
-import { collection, onSnapshot } from "firebase/firestore";
-import { db } from "../../firebase";
+import { useSelector } from "react-redux";
 
 export const InfiniteSlider = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const unsub = onSnapshot(
-      collection(db, "products"),
-      (snapShot) => {
-        let list = [];
-        snapShot.docs.forEach((doc) => {
-          list.push({ id: doc.id, ...doc.data() });
-        });
-        setData(list);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
-
-    return () => {
-      unsub();
-    };
-  }, []);
+  const images = useSelector((state) => state.data.dataList);
 
   return (
     <div className="slider-component">
       <div className="slider">
         <div className="slide-track">
-          {data.map((img, index) => (
+          {images.map((img, index) => (
             <div className="slide" key={index}>
               <img src={img.img} />
             </div>
