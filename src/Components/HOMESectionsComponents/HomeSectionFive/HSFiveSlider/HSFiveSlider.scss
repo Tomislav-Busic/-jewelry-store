@@ -1,0 +1,9 @@
+@import "../../../../Styles/Mixins/mixins.scss";
+@import "../../../../Styles/Variables/variables.scss";
+
+.slider {
+    position: relative;
+    height: 15rem;
+    width: 18rem;
+    background-color: $main-color;
+}
