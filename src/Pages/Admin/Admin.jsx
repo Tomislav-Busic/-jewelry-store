@@ -26,7 +26,6 @@ export const Admin = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         dispatch(loginActions.login(user));
-        console.log(user);
         navigate("/admin-dashboard");
       })
       .catch((error) => {
