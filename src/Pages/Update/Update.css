@@ -6,9 +6,11 @@
   min-height: 100vh;
   width: 100%;
   margin: 0 auto;
+  padding: 10rem 0;
 }
 .admin-update h1 {
   font-weight: 300;
+  color: #68060d;
 }
 .admin-update .container {
   display: flex;
@@ -24,6 +26,7 @@
   margin: 4rem 1rem;
   padding: 2rem 1rem;
   border-radius: 1rem;
+  border: 1px solid #68060d;
 }
 .admin-update .container form h3 {
   font-weight: 400;
@@ -51,7 +54,7 @@
   font-size: 16px;
 }
 .admin-update .container form button {
-  border: 1px solid white;
+  border: 1px solid #68060d;
   background: rgba(20, 20, 20, 0.2);
   font-size: 18px;
   color: #343434;
