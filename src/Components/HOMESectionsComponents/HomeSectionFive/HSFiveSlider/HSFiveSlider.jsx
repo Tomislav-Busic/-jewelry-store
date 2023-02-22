@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./HSFiveSlider.scss";
 import { testemonials } from "./testemonials";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+import logo from "../../../../images/calvi.png";
 
 export const HSFiveSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,6 +28,9 @@ export const HSFiveSlider = () => {
         <FaChevronRight className="icon" />
       </button>
       <div className="slider-content">
+        <div className="logo">
+          <img src={logo} />
+        </div>
         <h4>
           <i>{testemonials[currentIndex].content}</i>
         </h4>

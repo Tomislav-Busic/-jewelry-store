@@ -1,7 +1,7 @@
 .slider-testem {
   position: relative;
   margin: 2rem 0;
-  height: 15rem;
+  min-height: 15rem;
   width: 40rem;
   background-color: #68060d;
   border: 1px solid #dfab6c;
@@ -47,4 +47,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: #dfab6c;
+}
+.slider-testem .slider-content .logo img {
+  height: 3rem;
+}
+.slider-testem .slider-content h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+.slider-testem .slider-content p {
+  font-weight: 300;
 }/*# sourceMappingURL=HSFiveSlider.css.map */

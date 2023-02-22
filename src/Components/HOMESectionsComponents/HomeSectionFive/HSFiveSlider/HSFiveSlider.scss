@@ -4,7 +4,7 @@
 .slider-testem {
     position: relative;
     margin: 2rem 0;
-    height: 15rem;
+    min-height: 15rem;
     width: 40rem;
     background-color: $main-color;
     border: 1px solid $font-color;
@@ -49,5 +49,22 @@
         height: 100%;
         padding: 2rem 3rem;
         @include flex-column;
+            color: $font-color;
+            
+                .logo {
+                    img {
+                        height: 3rem;
+                    }
+                }
+            
+                h4 {
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    margin: 1rem 0;
+                }
+            
+                p {
+                    font-weight: 300;
+                }
     }
 }
