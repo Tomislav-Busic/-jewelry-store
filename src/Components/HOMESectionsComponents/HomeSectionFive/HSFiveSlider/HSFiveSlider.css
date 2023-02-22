@@ -5,7 +5,7 @@
   width: 40rem;
   background-color: #68060d;
   border: 1px solid #dfab6c;
-  box-shadow: 20px 15px 20px black;
+  box-shadow: 15px 15px 20px black;
 }
 @media (max-width: 900px) {
   .slider-testem {
