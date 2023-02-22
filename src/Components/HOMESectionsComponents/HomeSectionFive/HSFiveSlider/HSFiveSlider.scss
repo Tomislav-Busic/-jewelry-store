@@ -7,4 +7,29 @@
     height: 15rem;
     width: 20rem;
     background-color: $main-color;
+.btn-st {
+        position: absolute;
+        top: 40%;
+        cursor: pointer;
+    }
+
+    .left {
+        left: 1rem;
+    }
+
+    .right {
+        right: 1rem;
+    }
+
+    .slider-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        @include flex-column;
+    }
 }

@@ -7,9 +7,9 @@ export const HSFiveSlider = () => {
 
   return (
     <div className="slider-testem">
-      <button>left</button>
-      <button>right</button>
-      <div className="slider-card">
+      <button className="btn-st left">left</button>
+      <button className="btn-st right">right</button>
+      <div className="slider-content">
         <h4>Text</h4>
         <p>Name</p>
       </div>
