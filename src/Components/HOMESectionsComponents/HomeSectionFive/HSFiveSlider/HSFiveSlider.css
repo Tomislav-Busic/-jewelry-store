@@ -2,10 +2,15 @@
   position: relative;
   margin: 2rem 0;
   height: 15rem;
-  width: 20rem;
+  width: 40rem;
   background-color: #68060d;
   border: 1px solid #dfab6c;
   box-shadow: 20px 15px 20px black;
+}
+@media (max-width: 900px) {
+  .slider-testem {
+    width: 20rem;
+  }
 }
 .slider-testem .btn-st {
   position: absolute;

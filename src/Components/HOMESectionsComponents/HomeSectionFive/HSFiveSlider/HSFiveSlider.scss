@@ -5,10 +5,13 @@
     position: relative;
     margin: 2rem 0;
     height: 15rem;
-    width: 20rem;
+    width: 40rem;
     background-color: $main-color;
     border: 1px solid $font-color;
         box-shadow: 20px 15px 20px black;
+@media (max-width: "900px") {
+        width: 20rem;
+    }
 .btn-st {
         position: absolute;
         top: 40%;

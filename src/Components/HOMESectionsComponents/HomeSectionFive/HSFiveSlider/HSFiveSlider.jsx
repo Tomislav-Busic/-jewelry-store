@@ -15,8 +15,12 @@ export const HSFiveSlider = () => {
         <FaChevronRight className="icon" />
       </button>
       <div className="slider-content">
-        <h4>Text</h4>
-        <p>Name</p>
+        <h4>
+          <i>Text</i>
+        </h4>
+        <p>
+          <i>Name</i>
+        </p>
       </div>
     </div>
   );
