@@ -3,9 +3,11 @@
 
 .admin {
     @include page-layout;
+padding: 10rem 0;
 
     h1 {
-            font-weight: 400;
+        font-weight: 300;
+            color: $main-color;
         }
         button {
             @include button-form;
@@ -15,6 +17,7 @@
 
         h2 {
                 color: $main-color;
+                text-align: center;
             }
         form {
             @include form;
