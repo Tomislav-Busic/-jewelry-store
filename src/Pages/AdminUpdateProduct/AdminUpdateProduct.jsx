@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Update.scss";
-import { MdFileUpload } from "react-icons/md";
+import "./AdminUpdateProduct.scss";
 import { serverTimestamp, doc, updateDoc } from "firebase/firestore";
 import {
   ref,
@@ -11,8 +10,9 @@ import {
 import { db, storage } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import { goToTopOfPage } from "../../Tools/Tools";
+import { AdminUpdateProductForm } from "../../Components/ADMINComponents/AdminUpdateProductForm/AdminUpdateProductForm";
 
-export const Update = () => {
+export const AdminUpdateProduct = () => {
   const [data, setData] = useState({});
   const [file, setFile] = useState("");
   const [perc, setPerc] = useState(null);
@@ -104,54 +104,15 @@ export const Update = () => {
     <div className="admin-update">
       <h1>Update Product</h1>
       <div className="container">
-        <form onSubmit={handleSubmit}>
-          <h3>Ažuriraj {data?.name}</h3>
-          <input
-            value={data?.name || ""}
-            type="text"
-            id="name"
-            placeholder="Novo ime proizvoda"
-            onChange={handleData}
-          />
-          <input
-            value={data?.price || ""}
-            type="number"
-            id="price"
-            placeholder="Nova cijena proizvoda"
-            onChange={handleData}
-          />
-          <select
-            value={data?.category || ""}
-            id="category"
-            onChange={handleData}
-          >
-            <option value="ostalo">Ostalo (kategorija)</option>
-            <option value="satovi">Satovi</option>
-            <option value="inventar">Inventar</option>
-            <option value="slike">Slike</option>
-          </select>
-          <textarea
-            value={data?.description || ""}
-            id="description"
-            placeholder="Novi opis proizvoda"
-            onChange={handleData}
-          />
-          <img src={file ? URL.createObjectURL(file) : data?.img} alt="" />
-          <label htmlFor="file">
-            Učitaj sliku: <br />
-            <MdFileUpload className="icon" />
-          </label>
-          <input
-            type="file"
-            id="file"
-            onChange={(e) => setFile(e.target.files[0])}
-            style={{ display: "none" }}
-          />
-          <button disabled={perc !== null && perc < 100} type="submit">
-            Ažuriraj
-          </button>
-          <button onClick={handleBack}>Vrati se</button>
-        </form>
+        <AdminUpdateProductForm
+          data={data}
+          handleSubmit={handleSubmit}
+          handleData={handleData}
+          handleBack={handleBack}
+          setFile={setFile}
+          file={file}
+          perc={perc}
+        />
       </div>
     </div>
   );

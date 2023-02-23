@@ -16,7 +16,7 @@ import { Home } from "./Pages/Home/Home";
 import { Work } from "./Pages/Work/Work";
 import { Admin } from "./Pages/Admin/Admin";
 import { AdminDashboard } from "./Pages/AdminDashboard/AdminDashboard";
-import { Update } from "./Pages/Update/Update";
+import { AdminUpdateProduct } from "./Pages/AdminUpdateProduct/AdminUpdateProduct";
 import { WorksOfArt } from "./Pages/WorksOfArt/WorksOfArt";
 import { ContactPage } from "./Pages/ContactPage/ContactPage";
 import { ContactFooter } from "./Components/ContactFooter/ContactFooter";
@@ -59,7 +59,7 @@ function App() {
             path="/update"
             element={
               <RequireAuth>
-                <Update />
+                <AdminUpdateProduct />
               </RequireAuth>
             }
           />
