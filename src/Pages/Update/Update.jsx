@@ -10,6 +10,7 @@ import {
 } from "firebase/storage";
 import { db, storage } from "../../firebase";
 import { useNavigate } from "react-router-dom";
+import { goToTopOfPage } from "../../Tools/Tools";
 
 export const Update = () => {
   const [data, setData] = useState({});
@@ -88,6 +89,7 @@ export const Update = () => {
       e.target.reset();
       setFile("");
       navigation(-1);
+      goToTopOfPage();
     } catch (err) {
       console.log(err);
     }
@@ -95,6 +97,7 @@ export const Update = () => {
 
   const handleBack = () => {
     navigation("/admin-dashboard");
+    goToTopOfPage();
   };
 
   return (

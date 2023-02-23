@@ -6,6 +6,7 @@ import { db } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import { FaTrashAlt, FaPencilAlt } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import { goToTopOfPage } from "../../Tools/Tools";
 
 export const ListOfProductsAdmin = () => {
   const data = useSelector((state) => state.data.dataList);
@@ -31,6 +32,7 @@ export const ListOfProductsAdmin = () => {
   const handleUpdate = (product) => {
     localStorage.setItem("data", JSON.stringify(product));
     navigate("/update");
+    goToTopOfPage();
   };
 
   return (

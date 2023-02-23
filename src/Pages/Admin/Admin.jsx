@@ -4,6 +4,7 @@ import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { loginActions } from "../../store/slice/login-slice";
+import { goToTopOfPage } from "../../Tools/Tools";
 import "./Admin.scss";
 
 export const Admin = () => {
@@ -27,6 +28,7 @@ export const Admin = () => {
         const user = userCredential.user;
         dispatch(loginActions.login(user));
         navigate("/admin-dashboard");
+        goToTopOfPage();
       })
       .catch((error) => {
         setError(true);
@@ -36,11 +38,13 @@ export const Admin = () => {
 
   const goToDashboard = () => {
     navigate("/admin-dashboard");
+    goToTopOfPage();
   };
 
   const handleBack = () => {
     dispatch(loginActions.logout());
     navigate("/");
+    goToTopOfPage();
   };
 
   return (
