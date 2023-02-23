@@ -17,37 +17,16 @@ table {
 td,
 th {
   border: 1px solid #68060d;
-  text-align: left;
-  padding: 8px;
-}
-td.table-actions,
-th.table-actions {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.8rem 0.5rem;
-}
-td.table-actions button,
-th.table-actions button {
-  border: none;
-  background-color: #68060d;
-  padding: 4px 2px;
-  border-radius: 3px;
-  color: white;
-}
-td.table-actions button:first-child,
-th.table-actions button:first-child {
-  background-color: gold;
-  color: black;
-}
-td.table-actions button .icon,
-th.table-actions button .icon {
-  height: 1rem;
-  width: 1rem;
-  cursor: pointer;
+  text-align: center;
+  height: 4rem;
+  font-weight: 700;
 }
 
 td {
   word-break: break-all;
+}
+td:first-child {
+  width: 5rem;
 }
 
 tr:nth-child(even) {

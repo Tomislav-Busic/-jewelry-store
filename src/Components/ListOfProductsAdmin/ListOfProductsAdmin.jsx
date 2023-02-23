@@ -4,9 +4,9 @@ import { deleteDoc, doc } from "firebase/firestore";
 import { getStorage, ref, deleteObject } from "firebase/storage";
 import { db } from "../../firebase";
 import { useNavigate } from "react-router-dom";
-import { FaTrashAlt, FaPencilAlt } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { goToTopOfPage } from "../../Tools/Tools";
+import { ProductAdmin } from "./ProductAdmin/ProductAdmin";
 
 export const ListOfProductsAdmin = () => {
   const data = useSelector((state) => state.data.dataList);
@@ -49,28 +49,12 @@ export const ListOfProductsAdmin = () => {
         </thead>
         <tbody>
           {data.map((product, index) => (
-            <tr key={index}>
-              <td>
-                <img
-                  src={product.img}
-                  alt={product.img_name}
-                  style={{ height: "2rem", width: "2.5rem" }}
-                />
-              </td>
-              <td>{product.name}</td>
-              <td>{product.price}</td>
-              <td>{product.category}</td>
-              <td className="table-actions">
-                <button onClick={() => handleUpdate(product)}>
-                  <FaPencilAlt className="icon" />
-                </button>
-                <button
-                  onClick={() => handleDelete(product.img_name, product.id)}
-                >
-                  <FaTrashAlt className="icon" />
-                </button>
-              </td>
-            </tr>
+            <ProductAdmin
+              product={product}
+              index={index}
+              handleDelete={handleDelete}
+              handleUpdate={handleUpdate}
+            />
           ))}
         </tbody>
       </table>
