@@ -2,10 +2,10 @@ import React from "react";
 import "./ListOfProductsAdmin.scss";
 import { deleteDoc, doc } from "firebase/firestore";
 import { getStorage, ref, deleteObject } from "firebase/storage";
-import { db } from "../../firebase";
+import { db } from "../../../firebase";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { goToTopOfPage } from "../../Tools/Tools";
+import { goToTopOfPage } from "../../../Tools/Tools";
 import { ProductAdmin } from "./ProductAdmin/ProductAdmin";
 
 export const ListOfProductsAdmin = () => {

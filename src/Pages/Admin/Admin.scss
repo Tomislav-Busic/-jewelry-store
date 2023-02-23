@@ -3,43 +3,23 @@
 
 .admin {
     @include page-layout;
-padding: 10rem 0;
+    padding: 10rem 0;
 
     h1 {
         font-weight: 300;
-            color: $main-color;
+        color: $main-color;
         }
+
         button {
             @include button-form;
         }
+
     .container {
         @include flex-column;
 
         h2 {
-                color: $main-color;
+            color: $main-color;
                 text-align: center;
-            }
-        form {
-            @include form;
-
-            input {
-                @include input-form;
-            }
-
-            label {
-                @include label-form;
-            }
-
-            button {
-                @include button-form;
-            }
-
-            span {
-                margin-top: 1rem;
-                color: $hover-color;
-                font-size: 1.4rem;
-                text-align: center;
-            }
         }
     }
 }

@@ -3,7 +3,7 @@ import "./AdminDashboard.scss";
 import { MdFileUpload } from "react-icons/md";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { ListOfProductsAdmin } from "../../Components/ListOfProductsAdmin/ListOfProductsAdmin";
+import { ListOfProductsAdmin } from "../../Components/ADMINComponents/ListOfProductsAdmin/ListOfProductsAdmin";
 
 import { db, storage } from "../../firebase";
 

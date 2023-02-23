@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { loginActions } from "../../store/slice/login-slice";
 import { goToTopOfPage } from "../../Tools/Tools";
 import "./Admin.scss";
+import { AdminLoginForm } from "../../Components/ADMINComponents/AdminLoginForm/AdminLoginForm";
 
 export const Admin = () => {
   const [error, setError] = useState(false);
@@ -57,28 +58,14 @@ export const Admin = () => {
           stranicu! Hvala :)
         </h2>
         <button onClick={handleBack}>Povratak na početnu</button>
-        <form onSubmit={handleLogin}>
-          {isLoggedIn ? (
-            <button onClick={goToDashboard}>Admin dashboard</button>
-          ) : (
-            <>
-              <input
-                type="email"
-                placeholder="email"
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <input
-                type="password"
-                placeholder="password"
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <button type="submit">Submit</button>
-              <br />
-
-              {error && <span>Wrong email or password</span>}
-            </>
-          )}
-        </form>
+        <AdminLoginForm
+          handleLogin={handleLogin}
+          isLoggedIn={isLoggedIn}
+          goToDashboard={goToDashboard}
+          setEmail={setEmail}
+          setPassword={setPassword}
+          error={error}
+        />
       </div>
     </div>
   );
