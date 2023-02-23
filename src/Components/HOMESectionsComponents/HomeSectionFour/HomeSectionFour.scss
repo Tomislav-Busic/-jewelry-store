@@ -11,20 +11,13 @@
     }
 
     h1 {
-        font-size: 3rem;
-        color: $font-color !important;
-        margin-bottom: 1rem;
-        text-align: center;
-
-        @media (max-width: "900px") {
-            font-size: 2.5rem;
-            }
+        @include h1-section($font-color);
     }
 
         .hsf-images {
             display: flex;
             justify-content: center;
-                flex-wrap: wrap;
-                padding: 1rem 0;
+            flex-wrap: wrap;
+            padding: 1rem 0;
         }
 }
