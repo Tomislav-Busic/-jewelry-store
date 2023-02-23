@@ -9,7 +9,7 @@ form {
   border: 1px solid #68060d;
 }
 form h3 {
-  font-weight: 400;
+  font-weight: 700;
 }
 form input {
   margin: 15px 0;
@@ -50,7 +50,7 @@ form button:hover {
 }
 form span {
   margin-top: 1rem;
-  color: white;
+  color: #68060d;
   font-size: 1.4rem;
   text-align: center;
 }/*# sourceMappingURL=AdminLoginForm.css.map */
