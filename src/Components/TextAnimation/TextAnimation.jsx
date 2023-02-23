@@ -21,7 +21,7 @@ export const TextAnimation = () => {
     "KOMISIONA PRODAJA",
     "FRANCUSKI ANTIKVITETI",
   ];
-  const [currentWord, setCurrentWord] = useState(-1);
+  const [currentWord, setCurrentWord] = useState(0);
 
   useEffect(() => {
     let i = 0;
@@ -29,7 +29,7 @@ export const TextAnimation = () => {
       if (i === texts.length) i = -1;
       else setCurrentWord(i);
       i++;
-    }, 8100);
+    }, 6100);
 
     return () => clearInterval(interval);
   }, []);
