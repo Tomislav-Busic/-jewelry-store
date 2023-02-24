@@ -3,9 +3,9 @@
 
 .contact-section {
     background:
-        linear-gradient(to right, $background 10%,
-            $background-overlay2, $background 90%),
-        url("../../../images/bisericetiri.jpg");
+            linear-gradient(to right, $background-overlay5 ,
+                    $background-overlay2),
+                url("../../../images/narukvicabis.jpg");
     @include section-background;
     @include flex-column;
     width: 100%;
