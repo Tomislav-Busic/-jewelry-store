@@ -7,8 +7,7 @@ export const dataSlice = createSlice({
   },
   reducers: {
     setData(state, action) {
-      let newData = action.payload;
-      state.dataList = newData;
+      state.dataList = action.payload;
     },
   },
 });
