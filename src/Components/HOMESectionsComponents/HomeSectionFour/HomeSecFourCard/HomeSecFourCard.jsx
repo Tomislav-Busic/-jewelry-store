@@ -3,7 +3,6 @@ import "./HomeSecFourCard.scss";
 
 export const HomeSecFourCard = ({ title, images }) => {
   const [currentImg, setCurrentImg] = useState(images[1]);
-  const [style, setStyle] = useState(0);
 
   const changeImage = (img) => {
     setCurrentImg(img);
