@@ -7,9 +7,29 @@
   box-shadow: 30px 20px 30px black;
   transition: all 1s ease-in-out;
 }
+.hsf-card img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .hsf-card:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+.hsf-card .images-card {
+  position: absolute;
+  top: 30%;
+  left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hsf-card .images-card img {
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: 2rem;
 }
 .hsf-card .card-text {
   position: absolute;
