@@ -56,7 +56,6 @@
     @include flex-column;
     margin: 4rem 1rem;
     padding: 2rem 1rem;
-    border-radius: 1rem;
     border: 1px solid $main-color;
     h3 {
             font-weight: 700;
@@ -69,7 +68,7 @@
         font-weight: 700;
         padding: 10px;
         width: 500px;
-        border: 1px solid $hover-color;
+        border: 1px solid $font-color;
         border-top: none;
         border-left: none;
         border-right: none;
