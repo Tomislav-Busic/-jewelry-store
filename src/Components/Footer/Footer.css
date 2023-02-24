@@ -8,6 +8,7 @@
   height: 3rem;
   background-color: #68060d;
   z-index: 100;
+  border-top: 0.5px solid #dfab6c;
 }
 .footer h4 {
   color: #dfab6c;
