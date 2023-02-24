@@ -1,0 +1,35 @@
+.contact-section {
+  background: linear-gradient(to right, rgb(242, 217, 186) 10%, rgba(242, 217, 186, 0.2), rgb(242, 217, 186) 90%), url("../../../images/bisericetiri.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10% 10%;
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .contact-section {
+    padding: 10% 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .contact-section {
+    padding: 10% 1rem;
+  }
+}
+.contact-section h1 {
+  font-size: 3rem;
+  color: #68060d !important;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .contact-section h1 {
+    font-size: 2.5rem;
+  }
+}/*# sourceMappingURL=ContactSection.css.map */

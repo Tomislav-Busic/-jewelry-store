@@ -7,7 +7,6 @@
         flex-direction: column;
         min-height: 70vh;
         width: 100%;
-        margin: 0 auto;
     }
     
 @mixin background-img {
@@ -17,16 +16,17 @@
 }
 
 @mixin section-background {
+    @include background-img;
+        padding: 10% 10%;
     min-height: 50vh;
     width: 100%;
-    padding: 10% 10%;
-    @include background-img;
+
 @media (max-width: "900px") {
-        padding: 20% 3rem;
+        padding: 10% 3rem;
     }
 
     @media (max-width: "700px") {
-        padding: 20% 1rem;
+        padding: 10% 1rem;
     }
 }
 
@@ -65,7 +65,7 @@
 
 @mixin input-form {
     margin: 15px 0;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 700;
         padding: 10px;
         width: 500px;
@@ -73,8 +73,8 @@
         border-top: none;
         border-left: none;
         border-right: none;
-        background: rgba(151, 151, 151, 0.2);
-        color: $font-dark;
+        background: $background-overlay3;
+            color: $font-color;
         outline: none;
         @media (max-width: "700px") {
                 width: 300px;
@@ -93,9 +93,9 @@
 
 @mixin button-form {
     border: 1px solid $main-color;
-        background: rgba(20, 20, 20, .2);
-        font-size: 18px;
-        color: $font-dark;
+        background: $background-overlay3;
+            font-size: 20px;
+            color: $font-color;
         margin-top: 20px;
         padding: 10px 50px;
         cursor: pointer;

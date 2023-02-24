@@ -1,0 +1,17 @@
+@import "../../../Styles/Mixins/mixins.scss";
+@import "../../../Styles/Variables/variables.scss";
+
+.contact-section {
+    background:
+        linear-gradient(to right, $background 10%,
+            $background-overlay2, $background 90%),
+        url("../../../images/bisericetiri.jpg");
+    @include section-background;
+    @include flex-column;
+    width: 100%;
+
+    h1 {
+        @include h1-section($main-color);
+    }
+
+}

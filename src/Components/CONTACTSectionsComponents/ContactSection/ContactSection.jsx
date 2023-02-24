@@ -1,11 +1,17 @@
 import React from "react";
-import { InfiniteSlider } from "../../InfiniteSlider/InfiniteSlider";
+import "./ContactSection.scss";
+import { AnimationBtn } from "../../AnimationBtn/AnimationBtn";
 
 export const ContactSection = () => {
   return (
     <div className="contact-section">
       <h1>Kontakt</h1>
-      <InfiniteSlider />
+      <form>
+        <input type="email" placeholder="email" />
+        <input type="password" placeholder="password" />
+        <button type="submit">Slanje</button>
+        <br />
+      </form>
     </div>
   );
 };
