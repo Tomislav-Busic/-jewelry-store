@@ -14,7 +14,6 @@ export const AdminDashboard = () => {
 
   useEffect(() => {
     const uploadFile = () => {
-      const name = new Date().getTime() + file.name;
       const storageRef = ref(storage, file.name);
 
       const uploadTask = uploadBytesResumable(storageRef, file);
@@ -33,6 +32,7 @@ export const AdminDashboard = () => {
             case "running":
               console.log("Upload is running");
               break;
+            default:
           }
         },
         (error) => {
