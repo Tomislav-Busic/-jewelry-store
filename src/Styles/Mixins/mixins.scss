@@ -19,7 +19,7 @@
 @mixin section-background {
     min-height: 50vh;
     width: 100%;
-    padding: 10% 5rem;
+    padding: 10% 10%;
     @include background-img;
 }
 

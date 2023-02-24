@@ -14,7 +14,11 @@
                 $background-overlay2),
             url("../../../images/prstendpoz.jpg");
         @include background-img;
-            padding: 20% 1rem;
+            padding: 20% 3rem;
+            }
+            
+            @media (max-width: "700px") {
+        padding: 20% 1rem;
     }
 
     h1 {
