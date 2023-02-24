@@ -7,9 +7,6 @@
   width: 100%;
   margin: 0 auto;
 }
-.contact-page h1 {
-  font-weight: 400;
-}
 .contact-page .container {
   display: flex;
   align-items: center;
