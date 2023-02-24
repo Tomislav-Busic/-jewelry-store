@@ -2,7 +2,7 @@
   background-color: #68060d;
   min-height: 50vh;
   width: 100%;
-  padding: 10% 5rem;
+  padding: 10% 10%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -10,21 +10,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 50vh;
-  width: 100%;
-  padding: 10% 5rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-@media (max-width: 900px) {
-  .home-section-two {
-    padding: 20% 1rem;
-  }
 }
 .home-section-two h1 {
   font-size: 3rem;

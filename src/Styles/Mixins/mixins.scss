@@ -21,6 +21,13 @@
     width: 100%;
     padding: 10% 10%;
     @include background-img;
+@media (max-width: "900px") {
+        padding: 20% 3rem;
+    }
+
+    @media (max-width: "700px") {
+        padding: 20% 1rem;
+    }
 }
 
 @mixin h1-section($color) {

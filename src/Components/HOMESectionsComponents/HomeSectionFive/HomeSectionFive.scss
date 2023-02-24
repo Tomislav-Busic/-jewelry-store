@@ -9,10 +9,6 @@
     @include section-background;
     @include flex-column;
 
-    @media (max-width: "900px") {
-        padding: 20% 1rem;
-    }
-
     h1 {
         @include h1-section($main-color);
     }

@@ -2,7 +2,7 @@
   background-color: #68060d;
   min-height: 50vh;
   width: 100%;
-  padding: 10% 5rem;
+  padding: 10% 10%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -10,11 +10,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-@media (max-width: 900px) {
-  .home-section-four {
-    padding: 20% 1rem;
-  }
 }
 .home-section-four h1 {
   font-size: 3rem;
