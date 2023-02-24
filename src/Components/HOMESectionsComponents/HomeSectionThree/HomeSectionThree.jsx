@@ -7,6 +7,7 @@ export const HomeSectionThree = () => {
   return (
     <div className="home-section-three">
       <h1>Komisiona prodaja</h1>
+      <br />
       <InfiniteSlider />
       <AnimationBtn
         name={"Vidi više"}
