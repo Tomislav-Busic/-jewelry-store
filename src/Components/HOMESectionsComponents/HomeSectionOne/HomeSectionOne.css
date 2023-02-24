@@ -1,11 +1,21 @@
 .home-section-one {
   background: linear-gradient(to right, rgba(242, 217, 186, 0.9) 20%, rgba(242, 217, 186, 0.2)), url("../../../images/prstend.jpg");
-  min-height: 50vh;
-  width: 100%;
-  padding: 10% 10%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  padding: 10% 10%;
+  min-height: 50vh;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .home-section-one {
+    padding: 10% 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .home-section-one {
+    padding: 10% 1rem;
+  }
 }
 @media (max-width: 900px) {
   .home-section-one {
@@ -58,7 +68,8 @@
   transition: all 0.5s ease-in-out;
 }
 .home-section-one .social a .social-icon:hover {
-  color: #343434;
+  color: #dfab6c;
+  box-shadow: 0px 5px 10px 0px #68060d;
 }
 .home-section-one h3 {
   font-size: 1.8rem;
