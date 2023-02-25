@@ -13,7 +13,7 @@ import { firebaseData } from "./FirebaseDB/firebaseData";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Footer } from "./Components/Footer/Footer";
 import { Home } from "./Pages/Home/Home";
-import { Work } from "./Pages/Work/Work";
+import { Services } from "./Pages/Services/Services";
 import { Admin } from "./Pages/Admin/Admin";
 import { AdminDashboard } from "./Pages/AdminDashboard/AdminDashboard";
 import { AdminUpdateProduct } from "./Pages/AdminUpdateProduct/AdminUpdateProduct";
@@ -44,7 +44,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/prodaja" element={<WorksOfArt />} />
-          <Route path="/usluge" element={<Work />} />
+          <Route path="/usluge" element={<Services />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/kontakt" element={<ContactPage />} />
           <Route

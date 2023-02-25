@@ -1,7 +1,7 @@
 import React from "react";
-import "./Work.scss";
+import "./Services.scss";
 
-export const Work = () => {
+export const Services = () => {
   return (
     <div className="work-page">
       <h1>Usluge</h1>
