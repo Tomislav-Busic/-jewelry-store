@@ -1,11 +1,12 @@
 import React from "react";
-import "./WorksOfArt.scss";
+import "./Sale.scss";
 
 export const Sale = () => {
   return (
     <div className="art-page">
-      <h1>Umjetnine</h1>
-      <div className="container"></div>
+      <div className="container">
+        <h1>Umjetnine</h1>
+      </div>
     </div>
   );
 };

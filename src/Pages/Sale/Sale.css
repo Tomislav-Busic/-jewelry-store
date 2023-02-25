@@ -6,12 +6,12 @@
   min-height: 70vh;
   width: 100%;
 }
-.art-page h1 {
-  font-weight: 400;
-}
 .art-page .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}/*# sourceMappingURL=WorksOfArt.css.map */
+}
+.art-page .container h1 {
+  font-weight: 400;
+}/*# sourceMappingURL=Sale.css.map */

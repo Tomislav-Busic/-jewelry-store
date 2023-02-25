@@ -17,7 +17,7 @@ import { Services } from "./Pages/Services/Services";
 import { Admin } from "./Pages/Admin/Admin";
 import { AdminDashboard } from "./Pages/AdminDashboard/AdminDashboard";
 import { AdminUpdateProduct } from "./Pages/AdminUpdateProduct/AdminUpdateProduct";
-import { WorksOfArt } from "./Pages/WorksOfArt/WorksOfArt";
+import { Sale } from "./Pages/Sale/Sale";
 import { ContactPage } from "./Pages/ContactPage/ContactPage";
 import { ContactFooter } from "./Components/ContactFooter/ContactFooter";
 
