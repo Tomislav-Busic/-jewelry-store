@@ -43,7 +43,7 @@ function App() {
         <Footer />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/prodaja" element={<WorksOfArt />} />
+          <Route path="/prodaja" element={<Sale />} />
           <Route path="/usluge" element={<Services />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/kontakt" element={<ContactPage />} />

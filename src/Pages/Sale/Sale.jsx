@@ -1,7 +1,7 @@
 import React from "react";
 import "./WorksOfArt.scss";
 
-export const WorksOfArt = () => {
+export const Sale = () => {
   return (
     <div className="art-page">
       <h1>Umjetnine</h1>
