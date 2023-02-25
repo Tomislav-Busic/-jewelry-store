@@ -12,8 +12,17 @@
 
     .left-s-side {
         width: 50%;
-        background-color: $background-overlay3;
         padding: 1rem;
+        text-align: center;
+        
+            h2 {
+                color: $font-dark;
+            }
+        
+            p {
+                color: $font-dark;
+                font-size: $font-text;
+            }
     }
 
     .right-s-side {

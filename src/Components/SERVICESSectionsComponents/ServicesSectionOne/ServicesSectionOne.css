@@ -11,9 +11,14 @@
   justify-content: center;
   width: 100%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   .services-s-one {
     padding: 10% 3rem;
+  }
+}
+@media (max-width: 900px) {
+  .services-s-one {
+    padding: 10% 2rem;
   }
 }
 @media (max-width: 700px) {
@@ -23,8 +28,15 @@
 }
 .services-s-one .left-s-side {
   width: 50%;
-  background-color: rgba(104, 6, 13, 0.9);
   padding: 1rem;
+  text-align: center;
+}
+.services-s-one .left-s-side h2 {
+  color: #343434;
+}
+.services-s-one .left-s-side p {
+  color: #343434;
+  font-size: 1.5rem;
 }
 .services-s-one .right-s-side {
   width: 50%;
