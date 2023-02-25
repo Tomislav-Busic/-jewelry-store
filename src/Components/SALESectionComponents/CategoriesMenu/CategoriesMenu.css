@@ -1,0 +1,19 @@
+.categories {
+  padding: 2rem 1rem;
+}
+.categories button {
+  padding: 0.3rem 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #343434;
+  margin-left: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.categories button:hover {
+  color: #dfab6c;
+  background: #68060d;
+}/*# sourceMappingURL=CategoriesMenu.css.map */

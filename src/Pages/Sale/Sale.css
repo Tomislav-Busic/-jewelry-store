@@ -19,14 +19,8 @@
   justify-content: center;
   flex-direction: column;
 }
-.art-page .container .filters-container .categories {
-  padding: 2rem 1rem;
-}
-.art-page .container .filters-container .categories button {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  font-weight: 700;
-  cursor: pointer;
+.art-page .container .filters-container .filters {
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=Sale.css.map */

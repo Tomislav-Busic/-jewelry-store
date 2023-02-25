@@ -1,15 +1,10 @@
 import React from "react";
+import { CategoriesMenu } from "../SALESectionComponents/CategoriesMenu/CategoriesMenu";
 
 export const ProductsFilters = () => {
   return (
     <div className="filters-container">
-      <div className="categories">
-        <button>Svi proizvodi</button>
-        <button>Nakit</button>
-        <button>Inventar</button>
-        <button>Slike</button>
-        <button>Ostalo</button>
-      </div>
+      <CategoriesMenu />
       <div className="filters">
         <input />
         <select name="cars" id="cars">
