@@ -7,8 +7,7 @@
   min-height: 50vh;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
 }
 @media (max-width: 1300px) {
@@ -26,24 +25,71 @@
     padding: 10% 1rem;
   }
 }
+@media (max-width: 900px) {
+  .services-s-one {
+    background: linear-gradient(to bottom, rgba(242, 217, 186, 0.9), rgba(242, 217, 186, 0.5) 90%), url("../../../images/work4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 10%;
+    min-height: 50vh;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) and (max-width: 1300px) {
+  .services-s-one {
+    padding: 10% 3rem;
+  }
+}
+@media (max-width: 900px) and (max-width: 900px) {
+  .services-s-one {
+    padding: 10% 2rem;
+  }
+}
+@media (max-width: 900px) and (max-width: 700px) {
+  .services-s-one {
+    padding: 10% 1rem;
+  }
+}
 .services-s-one .left-s-side {
   width: 50%;
-  padding: 1rem;
+  padding: 4rem 1rem;
   text-align: center;
 }
 .services-s-one .left-s-side h2 {
   color: #343434;
+  font-size: 3rem;
 }
 .services-s-one .left-s-side p {
   color: #343434;
   font-size: 1.5rem;
+}
+@media (max-width: 900px) {
+  .services-s-one .left-s-side {
+    width: 100%;
+  }
+  .services-s-one .left-s-side h2 {
+    font-size: 2.5rem;
+  }
 }
 .services-s-one .right-s-side {
   width: 50%;
 }
 .services-s-one .right-s-side img {
   width: 100%;
-  height: auto;
+  height: 40rem;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 20px 25px 30px black;
+}
+@media (max-width: 1300px) {
+  .services-s-one .right-s-side img {
+    margin-top: 4rem;
+    height: 30rem;
+  }
+}
+@media (max-width: 900px) {
+  .services-s-one .right-s-side {
+    width: 100%;
+  }
 }/*# sourceMappingURL=ServicesSectionOne.css.map */

@@ -11,9 +11,14 @@
   justify-content: center;
   flex-direction: column;
 }
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   .home-section-four {
     padding: 10% 3rem;
+  }
+}
+@media (max-width: 900px) {
+  .home-section-four {
+    padding: 10% 2rem;
   }
 }
 @media (max-width: 700px) {

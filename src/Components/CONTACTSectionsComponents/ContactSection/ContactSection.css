@@ -25,9 +25,14 @@
     background-position: center;
   }
 }
-@media (max-width: 900px) and (max-width: 900px) {
+@media (max-width: 900px) and (max-width: 1300px) {
   .contact-section {
     padding: 10% 3rem;
+  }
+}
+@media (max-width: 900px) and (max-width: 900px) {
+  .contact-section {
+    padding: 10% 2rem;
   }
 }
 @media (max-width: 900px) and (max-width: 700px) {
@@ -35,9 +40,14 @@
     padding: 10% 1rem;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   .contact-section {
     padding: 10% 3rem;
+  }
+}
+@media (max-width: 900px) {
+  .contact-section {
+    padding: 10% 2rem;
   }
 }
 @media (max-width: 700px) {
