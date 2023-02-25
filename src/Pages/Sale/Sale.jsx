@@ -1,12 +1,14 @@
 import React from "react";
-import { ProductsFilters } from "../../Components/ProductsFilters/ProductsFilters";
+import { CategoriesMenu } from "../../Components/SALESectionComponents/CategoriesMenu/CategoriesMenu";
+import { Filters } from "../../Components/SALESectionComponents/Filters/Filters";
 import "./Sale.scss";
 
 export const Sale = () => {
   return (
     <div className="art-page">
       <div className="container">
-        <ProductsFilters />
+        <CategoriesMenu />
+        <Filters />
       </div>
     </div>
   );

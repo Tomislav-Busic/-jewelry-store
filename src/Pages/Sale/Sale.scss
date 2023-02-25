@@ -8,15 +8,8 @@
             @include flex-column;
             padding: 8rem 0;
             
-                .filters-container {
+            .filters-container {
                     @include flex-column;
-            
-                    
-.filters {
-        width: 18rem;
-        display: flex;
-        justify-content: space-between;
-    }
             }
     }
 }

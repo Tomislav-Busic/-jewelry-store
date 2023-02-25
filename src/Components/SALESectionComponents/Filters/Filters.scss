@@ -1,0 +1,8 @@
+@import "../../../Styles/Mixins/mixins.scss";
+@import "../../../Styles/Variables/variables.scss";
+
+.filters {
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+}
