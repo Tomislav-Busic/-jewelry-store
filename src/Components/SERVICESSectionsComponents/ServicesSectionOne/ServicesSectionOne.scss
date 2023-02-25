@@ -15,8 +15,8 @@
                 url("../../../images/work4.jpg");
             @include section-background;
         }
-                                display: flex;
-                                flex-wrap: wrap;
-                                width: 100%;
-                                @include services-section-sides;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                @include services-section-sides($font-dark, $font-dark2);
 }
