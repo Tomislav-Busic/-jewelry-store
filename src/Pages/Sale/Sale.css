@@ -11,7 +11,22 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 8rem 0;
 }
-.art-page .container h1 {
-  font-weight: 400;
+.art-page .container .filters-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.art-page .container .filters-container .categories {
+  padding: 2rem 1rem;
+}
+.art-page .container .filters-container .categories button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  font-weight: 700;
+  cursor: pointer;
 }/*# sourceMappingURL=Sale.css.map */
