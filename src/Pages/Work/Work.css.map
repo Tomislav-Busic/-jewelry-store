@@ -1,1 +1,1 @@
-{"version":3,"sources":["Work.scss","../../Styles/Mixins/mixins.scss","Work.css"],"names":[],"mappings":"AAGA;ECAI,iBAAA;EACA,aAAA;EACI,mBAAA;EACA,sBAAA;EACA,iBAAA;EACA,WAAA;EACA,cAAA;ACDR;AFFI;EACI,gBAAA;AEIR;AFDI;EC0BA,aAAA;EACA,mBAAA;EACA,uBAAA;EAKA,sBAAA;AC1BJ","file":"Work.css"}
+{"version":3,"sources":["Work.scss","../../Styles/Mixins/mixins.scss","Work.css"],"names":[],"mappings":"AAGA;ECAI,iBAAA;EACA,aAAA;EACI,mBAAA;EACA,sBAAA;EACA,gBAAA;EACA,WAAA;ACDR;AFDI;EACI,gBAAA;AEGR;AFAI;ECiCA,aAAA;EACA,mBAAA;EACA,uBAAA;EAKA,sBAAA;AClCJ","file":"Work.css"}

@@ -1,15 +1,25 @@
 .home-section-four {
   background-color: #68060d;
-  min-height: 50vh;
-  width: 100%;
-  padding: 10% 10%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  padding: 10% 10%;
+  min-height: 50vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+@media (max-width: 900px) {
+  .home-section-four {
+    padding: 10% 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .home-section-four {
+    padding: 10% 1rem;
+  }
 }
 .home-section-four h1 {
   font-size: 3rem;

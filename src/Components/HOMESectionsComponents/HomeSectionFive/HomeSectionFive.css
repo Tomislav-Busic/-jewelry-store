@@ -1,15 +1,25 @@
 .home-section-five {
   background: linear-gradient(to right, rgb(242, 217, 186) 10%, rgba(242, 217, 186, 0.5), rgb(242, 217, 186) 90%), url("../../../images/zlanac.jpg");
-  min-height: 50vh;
-  width: 100%;
-  padding: 10% 10%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  padding: 10% 10%;
+  min-height: 50vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+@media (max-width: 900px) {
+  .home-section-five {
+    padding: 10% 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .home-section-five {
+    padding: 10% 1rem;
+  }
 }
 .home-section-five h1 {
   font-size: 3rem;

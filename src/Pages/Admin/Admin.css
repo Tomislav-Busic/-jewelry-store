@@ -3,9 +3,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 70vh;
   width: 100%;
-  margin: 0 auto;
   padding: 10rem 0;
 }
 .admin h1 {
@@ -14,9 +13,9 @@
 }
 .admin button {
   border: 1px solid #68060d;
-  background: rgba(20, 20, 20, 0.2);
-  font-size: 18px;
-  color: #343434;
+  background: rgba(104, 6, 13, 0.9);
+  font-size: 20px;
+  color: #dfab6c;
   margin-top: 20px;
   padding: 10px 50px;
   cursor: pointer;

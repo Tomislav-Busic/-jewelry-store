@@ -5,7 +5,6 @@ form {
   flex-direction: column;
   margin: 4rem 1rem;
   padding: 2rem 1rem;
-  border-radius: 1rem;
   border: 1px solid #68060d;
 }
 form h3 {
@@ -13,16 +12,16 @@ form h3 {
 }
 form input {
   margin: 15px 0;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   padding: 10px;
   width: 500px;
-  border: 1px solid white;
+  border: 1px solid #dfab6c;
   border-top: none;
   border-left: none;
   border-right: none;
-  background: rgba(151, 151, 151, 0.2);
-  color: #343434;
+  background: rgba(104, 6, 13, 0.9);
+  color: #dfab6c;
   outline: none;
 }
 @media (max-width: 700px) {
@@ -36,9 +35,9 @@ form label {
 }
 form button {
   border: 1px solid #68060d;
-  background: rgba(20, 20, 20, 0.2);
-  font-size: 18px;
-  color: #343434;
+  background: rgba(104, 6, 13, 0.9);
+  font-size: 20px;
+  color: #dfab6c;
   margin-top: 20px;
   padding: 10px 50px;
   cursor: pointer;
@@ -51,16 +50,16 @@ form button:hover {
 }
 form textarea {
   margin: 15px 0;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   padding: 10px;
   width: 500px;
-  border: 1px solid white;
+  border: 1px solid #dfab6c;
   border-top: none;
   border-left: none;
   border-right: none;
-  background: rgba(151, 151, 151, 0.2);
-  color: #343434;
+  background: rgba(104, 6, 13, 0.9);
+  color: #dfab6c;
   outline: none;
   height: 8rem;
 }
@@ -71,16 +70,16 @@ form textarea {
 }
 form select {
   margin: 15px 0;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   padding: 10px;
   width: 500px;
-  border: 1px solid white;
+  border: 1px solid #dfab6c;
   border-top: none;
   border-left: none;
   border-right: none;
-  background: rgba(151, 151, 151, 0.2);
-  color: #343434;
+  background: rgba(104, 6, 13, 0.9);
+  color: #dfab6c;
   outline: none;
 }
 @media (max-width: 700px) {
