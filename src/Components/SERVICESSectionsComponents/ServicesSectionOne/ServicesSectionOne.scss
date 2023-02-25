@@ -1,0 +1,29 @@
+@import "../../../Styles/Mixins/mixins.scss";
+@import "../../../Styles/Variables/variables.scss";
+
+.services-s-one {
+    background:
+        linear-gradient(to right,
+            $background, $background-overlay0 90%),
+        url("../../../images/work4.jpg");
+    @include section-background;
+    @include center;
+    width: 100%;
+
+    .left-s-side {
+        width: 50%;
+        background-color: $background-overlay3;
+        padding: 1rem;
+    }
+
+    .right-s-side {
+        width: 50%;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+}

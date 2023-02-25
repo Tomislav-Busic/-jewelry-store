@@ -4,12 +4,9 @@
 .work-page {
     @include page-layout;
 
-    h1 {
-        font-weight: 400;
-    }
-
     .container {
         @include flex-column;
+        width: 100%;
     }
     
 }

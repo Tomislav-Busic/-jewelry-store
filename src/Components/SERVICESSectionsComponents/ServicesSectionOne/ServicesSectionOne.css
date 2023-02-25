@@ -1,0 +1,37 @@
+.services-s-one {
+  background: linear-gradient(to right, rgb(242, 217, 186), rgba(242, 217, 186, 0) 90%), url("../../../images/work4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10% 10%;
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .services-s-one {
+    padding: 10% 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .services-s-one {
+    padding: 10% 1rem;
+  }
+}
+.services-s-one .left-s-side {
+  width: 50%;
+  background-color: rgba(104, 6, 13, 0.9);
+  padding: 1rem;
+}
+.services-s-one .right-s-side {
+  width: 50%;
+}
+.services-s-one .right-s-side img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=ServicesSectionOne.css.map */

@@ -6,12 +6,10 @@
   min-height: 70vh;
   width: 100%;
 }
-.work-page h1 {
-  font-weight: 400;
-}
 .work-page .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}/*# sourceMappingURL=Work.css.map */
+  width: 100%;
+}/*# sourceMappingURL=Services.css.map */
