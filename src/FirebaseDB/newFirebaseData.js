@@ -2,7 +2,7 @@ import { db } from "../firebase";
 import { collection, onSnapshot } from "firebase/firestore";
 import { dataActions } from "../store/slice/data-slice";
 
-export const firebaseData = (dispatch) => {
+export const firebaseCategoryData = (dispatch, category) => {
   const unsub = onSnapshot(
     collection(db, "products"),
     (snapShot) => {
@@ -10,8 +10,9 @@ export const firebaseData = (dispatch) => {
       snapShot.docs.forEach((doc) => {
         list.push({ id: doc.id, ...doc.data() });
       });
-      console.log(list);
-      dispatch(dataActions.setData(list));
+      dispatch(
+        dataActions.setData(list.filter((item) => item.category === category))
+      );
     },
     (error) => {
       console.log(error);

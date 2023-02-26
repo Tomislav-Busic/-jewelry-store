@@ -5,6 +5,7 @@ export const dataSlice = createSlice({
   initialState: {
     dataList: [],
     productName: "",
+    categoryName: "",
   },
   reducers: {
     setData(state, action) {
@@ -23,6 +24,12 @@ export const dataSlice = createSlice({
           break;
         default:
       }
+    },
+    addCategory(state, action) {
+      state.categoryName = action.payload;
+    },
+    showAllProducts(state) {
+      state.categoryName = "";
     },
   },
 });
