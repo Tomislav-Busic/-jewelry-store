@@ -2,7 +2,20 @@
 @import "../../../Styles/Variables/variables.scss";
 
 .filters {
-    width: 18rem;
-    display: flex;
-    justify-content: space-between;
+    max-width: 100%;
+        @include center;
+        flex-wrap: wrap;
+    
+        input,
+        select {
+        width: 18rem;
+        padding: 0.5rem 1rem;
+            outline: none;
+            background-color: $background-overlay3;
+            border: none;
+            font-size: $font-text;
+            color: $font-color;
+            cursor: pointer;
+            margin: 1rem;
+        }
 }

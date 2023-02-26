@@ -1,5 +1,19 @@
 .filters {
-  width: 18rem;
+  max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.filters input,
+.filters select {
+  width: 18rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  background-color: rgba(104, 6, 13, 0.9);
+  border: none;
+  font-size: 1.5rem;
+  color: #dfab6c;
+  cursor: pointer;
+  margin: 1rem;
 }/*# sourceMappingURL=Filters.css.map */
