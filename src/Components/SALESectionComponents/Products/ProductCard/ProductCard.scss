@@ -24,18 +24,18 @@
 
         h3 {
             color: $main-color;
-                font-weight: 700;
+            font-weight: 700;
                 font-size: $font-text;
             }
 
-                                h2 {
-                                    color: $font-dark;
+                h2 {
+                    color: $font-dark;
                     font-family: $font-titillium;
                     font-weight: 400;
         }
-                        button {
-                            
-                            @include button-anim2;
-                        }
+
+                button {
+            @include button-anim2;
+            }
     }
 }

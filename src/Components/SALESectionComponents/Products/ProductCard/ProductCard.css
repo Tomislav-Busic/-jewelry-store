@@ -35,9 +35,9 @@
   font-weight: 400;
 }
 .product-card .info-card button {
-  width: 130px;
-  height: 40px;
-  margin: 0.5rem 0;
+  width: 100px;
+  height: 30px;
+  margin-top: 1rem;
   border: none;
   background: none;
   color: #68060d;
@@ -83,11 +83,11 @@
   }
   50% {
     height: 0px;
-    width: 130px;
+    width: 100px;
   }
   100% {
-    height: 39px;
-    width: 130px;
+    height: 29px;
+    width: 100px;
   }
 }
 @keyframes border-top-left {
@@ -97,10 +97,10 @@
   }
   50% {
     height: 0px;
-    width: 130px;
+    width: 100px;
   }
   100% {
-    height: 39px;
-    width: 130px;
+    height: 29px;
+    width: 100px;
   }
 }/*# sourceMappingURL=ProductCard.css.map */
