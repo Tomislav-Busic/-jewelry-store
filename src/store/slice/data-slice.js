@@ -4,10 +4,14 @@ export const dataSlice = createSlice({
   name: "data",
   initialState: {
     dataList: [],
+    productName: "",
   },
   reducers: {
     setData(state, action) {
       state.dataList = action.payload;
+    },
+    filterByName(state, action) {
+      state.productName = action.payload;
     },
   },
 });
