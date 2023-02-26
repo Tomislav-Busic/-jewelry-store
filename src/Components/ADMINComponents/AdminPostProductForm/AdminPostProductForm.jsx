@@ -27,7 +27,7 @@ export const AdminPostProductForm = ({
       <select id="category" onChange={handleData}>
         <option value="ostalo">Odaberite kategoriju </option>
         <option value="ostalo">Ostalo </option>
-        <option value="satovi">Satovi</option>
+        <option value="nakit">Satovi</option>
         <option value="inventar">Inventar</option>
         <option value="slike">Slike</option>
       </select>
