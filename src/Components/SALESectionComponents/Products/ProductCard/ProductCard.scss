@@ -1,5 +1,6 @@
 @import "../../../../Styles/Mixins/mixins.scss";
 @import "../../../../Styles/Variables/variables.scss";
+@import "../../../../Styles/AnimationsMixins/AnimationsMixins.scss";
 
 .product-card {
     margin: 1rem;
@@ -22,14 +23,19 @@
         border-top: 1px solid $font-color;
 
         h3 {
-                color: $main-color;
+            color: $main-color;
                 font-weight: 700;
                 font-size: $font-text;
             }
-                                                                                                h2 {
-                color: $font-dark;
+
+                                h2 {
+                                    color: $font-dark;
                     font-family: $font-titillium;
                     font-weight: 400;
         }
+                        button {
+                            border: none;
+                            @include button-anim2;
+                        }
     }
 }
