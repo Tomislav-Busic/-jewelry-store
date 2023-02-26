@@ -1,0 +1,29 @@
+@import "../../../../Styles/Mixins/mixins.scss";
+@import "../../../../Styles/Variables/variables.scss";
+
+.product-card {
+    margin: 1rem;
+    width: 20rem;
+    height: 25rem;
+    box-shadow: 10px 15px 20px $font-dark;
+    @include flex-column;
+
+    img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+    }
+
+    .info-card {
+        width: 100%;
+        height: 40%;
+        background-color: $main-color;
+        @include flex-column;
+        border-top: 1px solid $font-color;
+
+        h2 {
+            color: $font-color;
+            padding: 0.2rem 1rem;
+        }
+    }
+}
