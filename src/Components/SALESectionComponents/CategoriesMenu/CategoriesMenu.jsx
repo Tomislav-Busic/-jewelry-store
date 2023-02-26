@@ -18,7 +18,7 @@ export const CategoriesMenu = () => {
   return (
     <div className="categories">
       <button onClick={() => handleShowAll()}>Svi proizvodi</button>
-      <button onClick={() => handleChangeCategory("satovi")}>Nakit</button>
+      <button onClick={() => handleChangeCategory("nakit")}>Nakit</button>
       <button onClick={() => handleChangeCategory("inventar")}>Inventar</button>
       <button onClick={() => handleChangeCategory("slike")}>Slike</button>
       <button onClick={() => handleChangeCategory("ostalo")}>Ostalo</button>
