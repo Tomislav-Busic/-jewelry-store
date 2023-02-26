@@ -1,6 +1,7 @@
 import React from "react";
 import { CategoriesMenu } from "../../Components/SALESectionComponents/CategoriesMenu/CategoriesMenu";
 import { Filters } from "../../Components/SALESectionComponents/Filters/Filters";
+import { Products } from "../../Components/SALESectionComponents/Products/Products";
 import "./Sale.scss";
 
 export const Sale = () => {
@@ -9,6 +10,7 @@ export const Sale = () => {
       <div className="container">
         <CategoriesMenu />
         <Filters />
+        <Products />
       </div>
     </div>
   );
