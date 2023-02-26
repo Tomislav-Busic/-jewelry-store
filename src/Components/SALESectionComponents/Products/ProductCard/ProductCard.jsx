@@ -7,9 +7,11 @@ export const ProductCard = ({ product }) => {
   return (
     <div className="product-card" id={id}>
       <img src={img} alt={img_name} />
+      <div className="category">
+        <h3>{category}</h3>
+      </div>
       <div className="info-card">
         <h3>{name}</h3>
-        <h3>{category}</h3>
         <h2>{FormatCurrency(price)}</h2>
         <button>Kontakt</button>
         <br />
