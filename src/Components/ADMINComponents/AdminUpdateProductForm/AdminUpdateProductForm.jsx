@@ -35,12 +35,6 @@ export const AdminUpdateProductForm = ({
         <option value="inventar">Inventar</option>
         <option value="slike">Slike</option>
       </select>
-      <textarea
-        value={data?.description || ""}
-        id="description"
-        placeholder="Novi opis proizvoda"
-        onChange={handleData}
-      />
       <img src={file ? URL.createObjectURL(file) : data?.img} alt="" />
       <label htmlFor="file">
         Učitaj sliku: <br />

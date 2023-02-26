@@ -31,11 +31,6 @@ export const AdminPostProductForm = ({
         <option value="inventar">Inventar</option>
         <option value="slike">Slike</option>
       </select>
-      <textarea
-        id="description"
-        placeholder="Opis proizvoda"
-        onChange={handleData}
-      />
       <img
         src={
           file
