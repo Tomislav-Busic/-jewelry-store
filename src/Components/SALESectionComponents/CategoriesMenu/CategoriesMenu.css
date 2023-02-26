@@ -17,4 +17,8 @@
 .categories button:hover {
   color: #dfab6c;
   background: #68060d;
+}
+.categories button.active {
+  color: #dfab6c;
+  background: #68060d;
 }/*# sourceMappingURL=CategoriesMenu.css.map */

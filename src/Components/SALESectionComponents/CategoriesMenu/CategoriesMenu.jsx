@@ -9,6 +9,7 @@ export const CategoriesMenu = () => {
 
   const handleChangeCategory = (value) => {
     dispatch(dataActions.addCategory(value));
+
   };
 
   const handleShowAll = () => {
@@ -17,11 +18,36 @@ export const CategoriesMenu = () => {
 
   return (
     <div className="categories">
-      <button onClick={() => handleShowAll()}>Svi proizvodi</button>
-      <button onClick={() => handleChangeCategory("nakit")}>Nakit</button>
-      <button onClick={() => handleChangeCategory("inventar")}>Inventar</button>
-      <button onClick={() => handleChangeCategory("slike")}>Slike</button>
-      <button onClick={() => handleChangeCategory("ostalo")}>Ostalo</button>
+      <button
+        className={category === "" ? "active" : ""}
+        onClick={() => handleShowAll()}
+      >
+        Svi proizvodi
+      </button>
+      <button
+        className={category === "nakit" ? "active" : ""}
+        onClick={() => handleChangeCategory("nakit")}
+      >
+        Nakit
+      </button>
+      <button
+        className={category === "inventar" ? "active" : ""}
+        onClick={() => handleChangeCategory("inventar")}
+      >
+        Inventar
+      </button>
+      <button
+        className={category === "slike" ? "active" : ""}
+        onClick={() => handleChangeCategory("slike")}
+      >
+        Slike
+      </button>
+      <button
+        className={category === "ostalo" ? "active" : ""}
+        onClick={() => handleChangeCategory("ostalo")}
+      >
+        Ostalo
+      </button>
     </div>
   );
 };
