@@ -13,6 +13,17 @@ export const dataSlice = createSlice({
     filterByName(state, action) {
       state.productName = action.payload;
     },
+    sortByPrice(state, action) {
+      switch (action.payload) {
+        case "lower":
+          state.dataList.sort((a, b) => a.price - b.price);
+          break;
+        case "higher":
+          state.dataList.sort((a, b) => b.price - a.price);
+          break;
+        default:
+      }
+    },
   },
 });
 
