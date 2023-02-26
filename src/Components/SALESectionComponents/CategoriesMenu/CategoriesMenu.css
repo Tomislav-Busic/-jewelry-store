@@ -21,4 +21,10 @@
 .categories button.active {
   color: #dfab6c;
   background: #68060d;
+}
+@media (max-width: 900px) {
+  .categories button {
+    font-size: 1.1rem;
+    margin: 0;
+  }
 }/*# sourceMappingURL=CategoriesMenu.css.map */

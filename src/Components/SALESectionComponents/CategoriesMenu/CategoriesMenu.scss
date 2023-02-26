@@ -21,9 +21,14 @@
             color: $font-color;
             background: $main-color;
         }
-&.active {
-    color: $font-color;
-    background: $main-color;
+
+                &.active {
+                    color: $font-color;
+                    background: $main-color;
+                }
+@media (max-width: "900px") {
+    font-size: 1.1rem;
+    margin: 0;
 }
     }
 }
