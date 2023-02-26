@@ -12,10 +12,16 @@
   justify-content: center;
   flex-direction: column;
   padding: 8rem 0;
+  width: 100%;
 }
 .art-page .container .filters-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+@media (max-width: 900px) {
+  .art-page .container {
+    padding: 4rem 0 0 0;
+  }
 }/*# sourceMappingURL=Sale.css.map */
