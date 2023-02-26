@@ -30,8 +30,7 @@ export const AdminUpdateProductForm = ({
       />
       <select value={data?.category || ""} id="category" onChange={handleData}>
         <option value="ostalo">Ostalo (kategorija)</option>
-        <option value="ostalo">Ostalo </option>
-        <option value="nakit">Satovi</option>
+        <option value="nakit">Nakit</option>
         <option value="inventar">Inventar</option>
         <option value="slike">Slike</option>
       </select>
