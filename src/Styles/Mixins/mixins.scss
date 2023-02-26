@@ -147,7 +147,7 @@
 @mixin button-form {
     border: 1px solid $main-color;
         background: $background-overlay3;
-            font-size: 20px;
+        font-size: 20px;
             color: $font-color;
         margin-top: 20px;
         padding: 10px 50px;
@@ -174,5 +174,22 @@
             width: 2.5rem;
             cursor: pointer;
         }
+    }
+}
+//FILTERS
+
+@mixin filters-inputs {
+
+    input,
+    select {
+        width: 18rem;
+        padding: 0.5rem 1rem;
+        outline: none;
+        background-color: $background-overlay3;
+        border: none;
+        font-size: $font-text;
+        color: $font-color;
+        cursor: pointer;
+        margin: 1rem;
     }
 }

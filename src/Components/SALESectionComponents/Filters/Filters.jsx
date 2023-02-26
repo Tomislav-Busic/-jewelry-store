@@ -4,7 +4,7 @@ import "./Filters.scss";
 export const Filters = () => {
   return (
     <div className="filters">
-      <input />
+      <input placeholder="Upiši ime proizvoda" />
       <select name="Filtriraj po cijeni">
         <option>Sortiraj po cijeni</option>
         <option value="lower">Niža cijena</option>
