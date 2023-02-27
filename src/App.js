@@ -71,6 +71,7 @@ function App() {
               </RequireAuth>
             }
           />
+          <Route path="*" element={<Home />} />
         </Routes>
         <ContactFooter />
       </Router>
