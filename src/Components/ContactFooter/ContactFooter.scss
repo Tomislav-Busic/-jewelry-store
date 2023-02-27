@@ -68,17 +68,22 @@
 
         .map {
             margin-top: 2rem;
-        height: 25rem;
-        width: 35rem;
+            height: 25rem;
+                width: 35rem;
             border: 5px solid $font-color;
 
-        @media (max-width: "900px") {
-            height: 20rem;
+            @media (max-width: "900px") {
+                    height: 20rem;
                 width: 20rem;
+                
+@media (max-width: "320px") {
+    height: 20rem;
+    width: 18rem;
             }
-            }
-
+            
+                }
         .social {
             @include social-icons;
         }
+}
 }

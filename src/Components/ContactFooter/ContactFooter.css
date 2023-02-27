@@ -71,16 +71,22 @@
     width: 20rem;
   }
 }
-.footer-contact .social {
+@media (max-width: 900px) and (max-width: 320px) {
+  .footer-contact .map {
+    height: 20rem;
+    width: 18rem;
+  }
+}
+.footer-contact .map .social {
   padding: 2rem 0 5rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer-contact .social a {
+.footer-contact .map .social a {
   color: #dfab6c;
 }
-.footer-contact .social a .social-icon {
+.footer-contact .map .social a .social-icon {
   margin: 0.5rem;
   height: 2.5rem;
   width: 2.5rem;
