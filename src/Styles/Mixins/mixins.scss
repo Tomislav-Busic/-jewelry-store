@@ -129,9 +129,14 @@
         background: $background-overlay3;
             color: $font-color;
         outline: none;
+        
         @media (max-width: "700px") {
-                width: 300px;
-            }
+                width: 18rem;
+                }
+                
+                @media (max-width: "320px") {
+                    width: 14rem;
+                }
 }
 
 @mixin textarea-form {
