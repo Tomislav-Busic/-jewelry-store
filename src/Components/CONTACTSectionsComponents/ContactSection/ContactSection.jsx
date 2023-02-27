@@ -28,15 +28,6 @@ export const ContactSection = () => {
     <div className="contact-section">
       <h1>Kontakt</h1>
       <div className="contact-container">
-        <form onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="ime" />
-          <input type="email" name="user_email" placeholder="email" />
-          <textarea placeholder="Poruka..." name="message" />
-          <button type="submit" value="Send">
-            Slanje
-          </button>
-          <br />
-        </form>
         <div className="contact-links">
           <SocialIcons />
           <div className="f-con-item">
@@ -66,6 +57,15 @@ export const ContactSection = () => {
             </ul>
           </div>
         </div>
+        <form onSubmit={sendEmail}>
+          <input type="text" name="name" placeholder="ime" />
+          <input type="email" name="user_email" placeholder="email" />
+          <textarea placeholder="Poruka..." name="message" />
+          <button type="submit" value="Send">
+            Slanje
+          </button>
+          <br />
+        </form>
       </div>
     </div>
   );
