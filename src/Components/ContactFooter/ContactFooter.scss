@@ -86,4 +86,24 @@
             @include social-icons;
         }
 }
+.social {
+    padding: 2rem 0 6rem 0;
+    @include center;
+
+    a {
+        color: $font-color;
+
+        .social-icon {
+            margin: 0.5rem;
+            height: 3rem;
+            width: 3rem;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
 }

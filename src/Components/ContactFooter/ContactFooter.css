@@ -91,4 +91,23 @@
   height: 2.5rem;
   width: 2.5rem;
   cursor: pointer;
+}
+.footer-contact .social {
+  padding: 2rem 0 6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-contact .social a {
+  color: #dfab6c;
+}
+.footer-contact .social a .social-icon {
+  margin: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.footer-contact .social a .social-icon:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=ContactFooter.css.map */
