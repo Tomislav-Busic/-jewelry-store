@@ -10,7 +10,7 @@ export const Products = () => {
   const products = useSelector((state) => state.data.dataList2);
   const productName = useSelector((state) => state.data.productName);
   const page = useSelector((state) => state.pagination.page);
-  const [productsPerPage, setProductsPerPage] = useState(10);
+  const productsPerPage = 10;
   const total = products.length;
   const dispatch = useDispatch();
 
