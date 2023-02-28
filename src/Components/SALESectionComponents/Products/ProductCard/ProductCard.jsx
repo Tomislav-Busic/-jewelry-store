@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { goToTopOfPage } from "../../../../Tools/Tools";
 
 export const ProductCard = ({ product }) => {
-  const { id, name, description, category, price, img, img_name } = product;
+  const { id, name, category, price, img, img_name } = product;
   return (
     <div className="product-card" id={id}>
       <img src={img} alt={img_name} />
