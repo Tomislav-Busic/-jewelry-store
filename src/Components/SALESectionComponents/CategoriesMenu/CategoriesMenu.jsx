@@ -2,6 +2,7 @@ import React from "react";
 import "./CategoriesMenu.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { dataActions } from "../../../store/slice/data-slice";
+import { paginationActions } from "../../../store/slice/pagination-slice";
 
 export const CategoriesMenu = () => {
   const category = useSelector((state) => state.data.categoryName);
@@ -9,11 +10,12 @@ export const CategoriesMenu = () => {
 
   const handleChangeCategory = (value) => {
     dispatch(dataActions.addCategory(value));
-
+    dispatch(paginationActions.setPage());
   };
 
   const handleShowAll = () => {
     dispatch(dataActions.showAllProducts());
+    dispatch(paginationActions.setPage());
   };
 
   return (
