@@ -5,6 +5,7 @@ import {
 } from "@reduxjs/toolkit";
 import { loginSlice } from "./slice/login-slice";
 import { dataSlice } from "./slice/data-slice";
+import { paginationSlice } from "./slice/pagination-slice";
 
 // I found a solution but I don't know how exactly it works??? :))) (from line 10 t 34)
 //https://redux-toolkit.js.org/api/serializabilityMiddleware
@@ -35,6 +36,7 @@ export const store = configureStore({
   reducer: {
     login: loginSlice.reducer,
     data: dataSlice.reducer,
+    pagination: paginationSlice.reducer,
   },
   middleware: [serializableMiddleware],
 });
