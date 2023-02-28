@@ -35,12 +35,14 @@ export const Products = () => {
             <ProductCard key={index} product={product} />
           ))}
       </div>
+      <br />
       <Pagination
         onChange={(page) => setPage(page)}
         pageSize={productsPerPage}
         total={total}
         current={page}
       />
+      <br />
     </>
   );
 };
