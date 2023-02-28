@@ -9,7 +9,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { loginActions } from "./store/slice/login-slice";
 import { firebaseData } from "./FirebaseDB/firebaseData";
-import { firebaseCategoryData } from "./FirebaseDB/newFirebaseData";
 
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Footer } from "./Components/Footer/Footer";
@@ -24,7 +23,6 @@ import { ContactFooter } from "./Components/ContactFooter/ContactFooter";
 
 function App() {
   const isLoggedIn = useSelector((state) => state.login.isLoggedIn);
-  const category = useSelector((state) => state.data.categoryName);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -33,12 +31,6 @@ function App() {
 
     firebaseData(dispatch);
   }, []);
-
-  useEffect(() => {
-    category !== ""
-      ? firebaseCategoryData(dispatch, category)
-      : firebaseData(dispatch);
-  }, [category]);
 
   const RequireAuth = ({ children }) => {
     return isLoggedIn ? children : <Navigate to="/admin" />;

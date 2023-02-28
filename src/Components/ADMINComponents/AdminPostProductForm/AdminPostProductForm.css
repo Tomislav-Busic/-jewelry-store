@@ -26,7 +26,12 @@ form input {
 }
 @media (max-width: 700px) {
   form input {
-    width: 300px;
+    width: 18rem;
+  }
+}
+@media (max-width: 320px) {
+  form input {
+    width: 14rem;
   }
 }
 form label {
@@ -65,7 +70,12 @@ form textarea {
 }
 @media (max-width: 700px) {
   form textarea {
-    width: 300px;
+    width: 18rem;
+  }
+}
+@media (max-width: 320px) {
+  form textarea {
+    width: 14rem;
   }
 }
 form select {
@@ -84,7 +94,12 @@ form select {
 }
 @media (max-width: 700px) {
   form select {
-    width: 300px;
+    width: 18rem;
+  }
+}
+@media (max-width: 320px) {
+  form select {
+    width: 14rem;
   }
 }
 form .icon {

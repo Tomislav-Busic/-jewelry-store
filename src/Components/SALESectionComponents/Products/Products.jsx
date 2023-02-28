@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { ProductCard } from "./ProductCard/ProductCard";
 
 export const Products = () => {
-  const products = useSelector((state) => state.data.dataList);
+  const products = useSelector((state) => state.data.dataList2);
   const productName = useSelector((state) => state.data.productName);
 
   return (
