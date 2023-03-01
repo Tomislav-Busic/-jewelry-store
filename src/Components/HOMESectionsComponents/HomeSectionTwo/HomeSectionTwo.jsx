@@ -17,11 +17,7 @@ export const HomeSectionTwo = () => {
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </p>
-      <AnimationBtn
-        name={"Kontakt"}
-        path={"./kontakt"}
-        color={"btn-anim-gold"}
-      />
+      <AnimationBtn name={"Usluge"} path={"./usluge"} color={"btn-anim-gold"} />
     </div>
   );
 };
