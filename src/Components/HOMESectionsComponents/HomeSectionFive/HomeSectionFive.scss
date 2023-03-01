@@ -8,6 +8,7 @@
         url("../../../images/zlanac.jpg");
     @include section-background;
     @include flex-column;
+    width: 100%;
 
     h1 {
         @include h1-section($main-color);
