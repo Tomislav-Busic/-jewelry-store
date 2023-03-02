@@ -5,6 +5,7 @@ import { ProductCard } from "./ProductCard/ProductCard";
 import { Pagination } from "antd";
 import { paginationActions } from "../../../store/slice/pagination-slice";
 import { goToTopOfPage } from "../../../Tools/Tools";
+import { Link } from "react-router-dom";
 
 export const Products = () => {
   const products = useSelector((state) => state.data.dataList2);
@@ -42,6 +43,16 @@ export const Products = () => {
         total={total}
         current={page}
       />
+      <br />
+      <br />
+      <Link
+        onClick={goToTopOfPage}
+        style={{ textDecoration: "none" }}
+        to={"/kontakt"}
+      >
+        <button className="btn">Kontakt</button>
+      </Link>
+      <br />
       <br />
     </>
   );

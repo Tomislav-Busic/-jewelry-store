@@ -1,9 +1,13 @@
 @import "../../../Styles/Mixins/mixins.scss";
 @import "../../../Styles/Variables/variables.scss";
+@import "../../../Styles/AnimationsMixins/AnimationsMixins.scss";
 
 .products {
     max-width: 100%;
     @include center;
     flex-wrap: wrap;
     margin-top: 2rem;
+}
+.btn {
+    @include button-anim2;
 }

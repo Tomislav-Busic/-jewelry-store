@@ -5,4 +5,76 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 2rem;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  margin-top: 1rem;
+  border: none;
+  background: none;
+  color: #68060d;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  background-color: #68060d;
+  color: #dfab6c;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-right: 1px solid #68060d;
+  border-top: 1px solid #68060d;
+  animation: border-top-right 4s infinite alternate;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 1px solid #68060d;
+  border-left: 1px solid #68060d;
+  animation: border-top-left 4s infinite alternate;
+}
+@keyframes border-top-right {
+  0% {
+    height: 0px;
+    width: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 150px;
+  }
+  100% {
+    height: 48px;
+    width: 150px;
+  }
+}
+@keyframes border-top-left {
+  0% {
+    height: 0px;
+    width: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 150px;
+  }
+  100% {
+    height: 48px;
+    width: 150px;
+  }
 }/*# sourceMappingURL=Products.css.map */

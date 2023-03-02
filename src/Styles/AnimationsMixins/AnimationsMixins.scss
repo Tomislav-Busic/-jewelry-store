@@ -115,19 +115,20 @@
     }
 }
 @mixin button-anim2 {
-    width: 100px;
-    height: 30px;
+    width: 150px;
+        height: 50px;
     margin-top: 1rem;
-        border: none;
+    border: none;
         background: none;
         color: $main-color;
         text-transform: uppercase;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     cursor: pointer;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0009);
     transition: all 0.5s ease-in-out;
     
         &:hover {
@@ -167,12 +168,12 @@
 
         50% {
             height: 0px;
-            width: 100px;
+            width: 150px;
         }
 
         100% {
-            height: 28px;
-                width: 100px;
+            height: 48px;
+                width: 150px;
         }
     }
 
@@ -184,12 +185,12 @@
 
         50% {
             height: 0px;
-            width: 100px;
+            width: 150px;
         }
 
         100% {
-            height: 28px;
-                width: 100px;
+            height: 48px;
+                width: 150px;
         }
     }
 }
