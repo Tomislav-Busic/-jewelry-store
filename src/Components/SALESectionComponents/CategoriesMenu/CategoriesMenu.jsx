@@ -33,10 +33,10 @@ export const CategoriesMenu = () => {
         Nakit
       </button>
       <button
-        className={category === "inventar" ? "active" : ""}
-        onClick={() => handleChangeCategory("inventar")}
+        className={category === "antikviteti" ? "active" : ""}
+        onClick={() => handleChangeCategory("antikviteti")}
       >
-        Inventar
+        Antikviteti
       </button>
       <button
         className={category === "slike" ? "active" : ""}
