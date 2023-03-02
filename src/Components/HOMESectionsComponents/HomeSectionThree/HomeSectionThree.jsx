@@ -6,7 +6,7 @@ import { AnimationBtn } from "../../AnimationBtn/AnimationBtn";
 export const HomeSectionThree = () => {
   return (
     <div className="home-section-three">
-      <h1>Komisiona prodaja</h1>
+      <h1>Trenutno u ponudi</h1>
       <br />
       <InfiniteSlider />
       <AnimationBtn
