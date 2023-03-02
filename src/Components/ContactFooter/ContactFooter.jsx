@@ -99,11 +99,11 @@ export const ContactFooter = () => {
             <h2>Radno vrijeme</h2>
             <li>
               <p className="time">Pon-Pet:</p>
-              <p className="link">8-20h</p>
+              <p className="link">9-14h;17-19h</p>
             </li>
             <li>
               <p className="time">Sub:</p>
-              <p className="link">8-15h</p>
+              <p className="link">9-14h</p>
             </li>
             <li>
               <p className="time">Ned:</p>
