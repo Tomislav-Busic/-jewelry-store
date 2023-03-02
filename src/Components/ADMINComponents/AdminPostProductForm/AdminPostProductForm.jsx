@@ -18,12 +18,6 @@ export const AdminPostProductForm = ({
         placeholder="Ime proizvoda"
         onChange={handleData}
       />
-      <input
-        type="number"
-        id="price"
-        placeholder="Cijena proizvoda u €"
-        onChange={handleData}
-      />
       <select id="category" onChange={handleData}>
         <option value="ostalo">Odaberite kategoriju </option>
         <option value="ostalo">Ostalo </option>
