@@ -10,9 +10,9 @@ export const Filters = () => {
     dispatch(dataActions.filterByName(name));
   };
 
-  const handleSortByPrice = (value) => {
+  /* const handleSortByPrice = (value) => {
     dispatch(dataActions.sortByPrice(value));
-  };
+  }; */
 
   return (
     <div className="filters">
@@ -20,14 +20,14 @@ export const Filters = () => {
         placeholder="Upiši ime proizvoda"
         onChange={(e) => handleSearchByName(e.target.value)}
       />
-      <select
+      {/* <select
         name="Filtriraj po cijeni"
         onChange={(e) => handleSortByPrice(e.target.value)}
       >
         <option>Sortiraj po cijeni</option>
         <option value="lower">Niža cijena</option>
         <option value="higher">Viša cijena</option>
-      </select>
+      </select> */}
     </div>
   );
 };

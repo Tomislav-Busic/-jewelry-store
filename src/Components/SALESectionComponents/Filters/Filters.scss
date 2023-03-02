@@ -4,6 +4,5 @@
 .filters {
     max-width: 100%;
     @include center;
-        flex-wrap: wrap;
     @include filters-inputs;
 }

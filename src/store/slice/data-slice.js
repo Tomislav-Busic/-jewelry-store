@@ -15,7 +15,7 @@ export const dataSlice = createSlice({
     },
     filterByName(state, action) {
       state.productName = action.payload;
-    },
+    } /* 
     sortByPrice(state, action) {
       switch (action.payload) {
         case "lower":
@@ -26,7 +26,7 @@ export const dataSlice = createSlice({
           break;
         default:
       }
-    },
+    }, */,
     addCategory(state, action) {
       state.categoryName = action.payload;
       state.dataList2 = state.dataList;
