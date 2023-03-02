@@ -28,7 +28,7 @@ export const AdminPostProductForm = ({
         <option value="ostalo">Odaberite kategoriju </option>
         <option value="ostalo">Ostalo </option>
         <option value="nakit">Nakit</option>
-        <option value="inventar">Inventar</option>
+        <option value="antikviteti">Antikviteti</option>
         <option value="slike">Slike</option>
       </select>
       <img

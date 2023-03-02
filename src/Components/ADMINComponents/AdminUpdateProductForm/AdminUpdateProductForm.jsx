@@ -31,7 +31,7 @@ export const AdminUpdateProductForm = ({
       <select value={data?.category || ""} id="category" onChange={handleData}>
         <option value="ostalo">Ostalo (kategorija)</option>
         <option value="nakit">Nakit</option>
-        <option value="inventar">Inventar</option>
+        <option value="antikviteti">Antikviteti</option>
         <option value="slike">Slike</option>
       </select>
       <img src={file ? URL.createObjectURL(file) : data?.img} alt="" />
