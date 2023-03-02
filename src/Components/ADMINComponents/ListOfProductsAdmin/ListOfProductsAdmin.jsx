@@ -42,7 +42,6 @@ export const ListOfProductsAdmin = () => {
           <tr>
             <th>Img</th>
             <th>Name</th>
-            <th>Price</th>
             <th>Category</th>
             <th>Actions</th>
           </tr>
