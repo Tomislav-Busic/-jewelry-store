@@ -21,13 +21,6 @@ export const AdminUpdateProductForm = ({
         placeholder="Novo ime proizvoda"
         onChange={handleData}
       />
-      <input
-        value={data?.price || ""}
-        type="number"
-        id="price"
-        placeholder="Nova cijena proizvoda"
-        onChange={handleData}
-      />
       <select value={data?.category || ""} id="category" onChange={handleData}>
         <option value="ostalo">Ostalo (kategorija)</option>
         <option value="nakit">Nakit</option>
