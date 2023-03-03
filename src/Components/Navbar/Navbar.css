@@ -15,9 +15,14 @@
   background-color: #68060d;
   color: #dfab6c;
 }
-.navbar header h3 {
+.navbar header .logo-name {
+  text-decoration: none;
+}
+.navbar header .logo-name h3 {
+  color: #dfab6c;
   font-weight: 400;
   letter-spacing: 0.2rem;
+  cursor: pointer;
 }
 .navbar header nav .nav-link {
   margin: 0 2rem;

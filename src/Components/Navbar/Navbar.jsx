@@ -11,7 +11,9 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <header>
-        <h3>CALVI</h3>
+        <Link className="logo-name" to="/" onClick={() => goToTopOfPage()}>
+          <h3>CALVI</h3>
+        </Link>
         <nav className={toggle ? "resposive_nav" : ""}>
           <Link
             className="nav-link"
