@@ -9,7 +9,7 @@ export const ContactSection = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    /* emailjs
+    emailjs
       .sendForm(
         "service_ybqmmcr",
         "template_01whte8",
@@ -21,7 +21,7 @@ export const ContactSection = () => {
       })
       .catch((err) => {
         console.log(err);
-      }); */
+      });
   };
 
   return (
