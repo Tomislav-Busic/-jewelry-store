@@ -10,7 +10,6 @@ export const firebaseData = (dispatch) => {
       snapShot.docs.forEach((doc) => {
         list.push({ id: doc.id, ...doc.data() });
       });
-      console.log(list);
       dispatch(dataActions.setData(list));
     },
     (error) => {
