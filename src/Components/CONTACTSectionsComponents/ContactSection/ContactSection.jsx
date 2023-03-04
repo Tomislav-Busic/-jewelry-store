@@ -38,9 +38,7 @@ export const ContactSection = () => {
           emailRes={emailRes}
           setEmailRes={setEmailRes}
         />
-        <div className="contact-links">
-          <ContactLinks />
-        </div>
+        <ContactLinks />
       </div>
     </div>
   );

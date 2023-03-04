@@ -6,7 +6,7 @@ import { SocialIcons } from "../../../SocialIcons/SocialIcons";
 
 export const ContactLinks = () => {
   return (
-    <>
+    <div className="contact-links">
       {" "}
       <SocialIcons />
       <div className="f-con-item">
@@ -35,6 +35,6 @@ export const ContactLinks = () => {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };

@@ -77,12 +77,4 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-}
-.contact-section .contact-container .contact-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 50%;
-  padding: 2rem 1rem;
 }/*# sourceMappingURL=ContactSection.css.map */
