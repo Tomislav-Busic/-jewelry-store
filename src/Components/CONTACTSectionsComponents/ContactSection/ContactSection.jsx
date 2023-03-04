@@ -6,18 +6,23 @@ import { IoMail, IoCall } from "react-icons/io5";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 export const ContactSection = () => {
+  
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_ybqmmcr",
-        "template_01whte8",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         e.target,
-        "DSAGwXnCHCTrTMfi3"
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then((res) => {
-        console.log(res);
+        setTimeout(() => {
+          console.log(res);
+          e.target.reset();
+        }, 500);
       })
       .catch((err) => {
         console.log(err);
