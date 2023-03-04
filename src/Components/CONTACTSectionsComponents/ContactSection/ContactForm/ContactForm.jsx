@@ -1,15 +1,38 @@
 import React from "react";
+import "./ContactForm.scss";
 
-export const ContactForm = ({ sendEmail }) => {
+export const ContactForm = ({ sendEmail, emailRes, setEmailRes }) => {
   return (
     <form onSubmit={sendEmail}>
-      <input type="text" name="name" placeholder="Vaše ime" />
-      <input type="email" name="user_email" placeholder="Vaša email adresa" />
-      <textarea placeholder="Poruka..." name="message" />
-      <button type="submit" value="Send">
-        Slanje
-      </button>
-      <br />
+      {!emailRes ? (
+        <>
+          <input type="text" name="name" placeholder="Vaše ime" />
+          <input
+            type="email"
+            name="user_email"
+            placeholder="Vaša email adresa"
+          />
+          <textarea placeholder="Poruka..." name="message" />
+          <button type="submit" value="Send">
+            Slanje
+          </button>
+          <br />
+        </>
+      ) : (
+        <div className="response">
+          <h2>
+            Poštovani, <br />
+            Hvala vam na poruci.
+            <br />
+            Odgovorit ćemo vam u što kraćem roku.
+            <br />
+            Srdačan pozdrav
+            <br />
+            Calvi
+          </h2>
+          <button onClick={() => setEmailRes(false)}>U redu</button>
+        </div>
+      )}
     </form>
   );
 };

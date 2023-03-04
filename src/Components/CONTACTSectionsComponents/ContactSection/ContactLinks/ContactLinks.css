@@ -1,0 +1,62 @@
+.f-con-item {
+  display: flex;
+  justify-content: center;
+  width: 18rem;
+  padding: 0.5rem;
+}
+.f-con-item img {
+  width: 80%;
+}
+.f-con-item ul {
+  width: 100%;
+}
+.f-con-item ul h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.f-con-item ul li {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  padding-bottom: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.f-con-item ul li:hover {
+  transform: scale(1.2);
+}
+.f-con-item ul li .icon {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+  fill: #68060d;
+}
+.f-con-item ul li .link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #68060d;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.f-con-item ul li .link span {
+  font-weight: 700;
+}
+
+.social {
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social a {
+  color: #68060d;
+}
+.social a .social-icon {
+  margin: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.social a .social-icon:hover {
+  transform: scale(1.2);
+}/*# sourceMappingURL=ContactLinks.css.map */

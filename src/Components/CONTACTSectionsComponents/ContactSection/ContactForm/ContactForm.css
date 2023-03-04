@@ -1,0 +1,9 @@
+.response {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.response h2 {
+  color: #68060d;
+}/*# sourceMappingURL=ContactForm.css.map */

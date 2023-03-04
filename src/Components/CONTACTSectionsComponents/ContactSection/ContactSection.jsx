@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactSection.scss";
 import emailjs from "emailjs-com";
-import { SocialIcons } from "../../SocialIcons/SocialIcons";
 import { ContactForm } from "./ContactForm/ContactForm";
 import { ContactLinks } from "./ContactLinks/ContactLinks";
 
 export const ContactSection = () => {
+  const [emailRes, setEmailRes] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -18,6 +19,7 @@ export const ContactSection = () => {
       )
       .then((res) => {
         setTimeout(() => {
+          setEmailRes(true);
           console.log(res);
           e.target.reset();
         }, 500);
@@ -31,9 +33,12 @@ export const ContactSection = () => {
     <div className="contact-section">
       <h1>Kontakt</h1>
       <div className="contact-container">
-        <ContactForm sendEmail={sendEmail} />
+        <ContactForm
+          sendEmail={sendEmail}
+          emailRes={emailRes}
+          setEmailRes={setEmailRes}
+        />
         <div className="contact-links">
-          <SocialIcons />
           <ContactLinks />
         </div>
       </div>
