@@ -6,13 +6,14 @@ export const ContactForm = ({ sendEmail, emailRes, setEmailRes }) => {
     <form onSubmit={sendEmail}>
       {!emailRes ? (
         <>
-          <input type="text" name="name" placeholder="Vaše ime" />
+          <input type="text" name="name" placeholder="Vaše ime" required />
           <input
             type="email"
             name="user_email"
             placeholder="Vaša email adresa"
+            required
           />
-          <textarea placeholder="Poruka..." name="message" />
+          <textarea placeholder="Poruka..." name="message" required />
           <button type="submit" value="Send">
             Slanje
           </button>
