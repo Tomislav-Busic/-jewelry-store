@@ -11,7 +11,7 @@ The user can view the offer on the sales page and search by product name or filt
 Most of the logic takes place via the Redux-toolkit. 
 On the contact page there is a form for sending emails that works using the EmailJS service. 
 I used motion-framer for the animations, and I made some animations from scratch, such as the button and image slider. 
-Some of the dependencies I used are (reduxjs/toolkit, antd, firebase, framer-motion, react-icons, react-router-dom, sass, emailjs-com) . 
+Some of the dependencies I used are (reduxjs/toolkit, antd, firebase, framer-motion, react-icons, react-router-dom, sass, emailjs-com). 
 For image processing, for example, the logo, I used Pixlr, something like PhotoShop.
 Everything is responsive and adapted for all devices. 
 The page is located on the Hostinger server and the domain is from carnet calviantique.hr.
