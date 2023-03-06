@@ -2,8 +2,9 @@
   position: fixed;
   top: 5rem;
   right: 2rem;
-  border: none;
+  border: 0.5px solid #dfab6c;
   background: #68060d;
   padding: 0.3rem 1rem;
   color: #dfab6c;
+  z-index: 200;
 }/*# sourceMappingURL=LogoutBtn.css.map */
