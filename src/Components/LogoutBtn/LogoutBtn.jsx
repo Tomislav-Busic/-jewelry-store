@@ -13,5 +13,9 @@ export const LogoutBtn = () => {
     navigate("/");
   };
 
-  return <button onClick={handleLogout}>Odjavi se</button>;
+  return (
+    <button className="logout-btn" onClick={handleLogout}>
+      Odjavi se
+    </button>
+  );
 };
