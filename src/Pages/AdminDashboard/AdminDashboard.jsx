@@ -76,21 +76,19 @@ export const AdminDashboard = () => {
   };
 
   return (
-    <>
+    <div className="admin-dashboard">
       <LogoutBtn />
-      <div className="admin-dashboard">
-        <h1>Administrator</h1>
-        <div className="container">
-          <AdminPostProductForm
-            handleSubmit={handleSubmit}
-            handleData={handleData}
-            setFile={setFile}
-            file={file}
-            perc={perc}
-          />
-        </div>
-        <ListOfProductsAdmin />
+      <h1>Administrator</h1>
+      <div className="container">
+        <AdminPostProductForm
+          handleSubmit={handleSubmit}
+          handleData={handleData}
+          setFile={setFile}
+          file={file}
+          perc={perc}
+        />
       </div>
-    </>
+      <ListOfProductsAdmin />
+    </div>
   );
 };
