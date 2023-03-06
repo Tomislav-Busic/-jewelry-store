@@ -20,8 +20,8 @@ export const HomeSecFourCard = ({ title, images }) => {
         x: 0,
         transition: {
           type: "spring",
-          durration: 1,
-          bounce: 0.3,
+          durration: 0.5,
+          bounce: 0,
         },
       });
     }
