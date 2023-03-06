@@ -10,14 +10,9 @@ export const ProductAdmin = ({
 }) => {
   return (
     <tr key={index}>
-      <td
-        style={{
-          background: `url(${product.img})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "50%",
-        }}
-      ></td>
+      <td>
+        <img className="table-img" src={product.img} />
+      </td>
       <td>{product.name}</td>
       <td>{product.category}</td>
       <td className="table-actions">

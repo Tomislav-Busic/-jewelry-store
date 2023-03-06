@@ -17,18 +17,20 @@ table {
 
 td,
 th {
-    border: 1px solid $main-color;
     text-align: center;
-    height: 4rem;
     font-weight: 700;
 }
 
 td {
     word-break: break-all;
+    border: 1px solid $main-color;
+    height: 5rem;
 
-    &:first-child {
-        width: 5rem;
+    &:first-child{
+    width: 5rem;
+    height: 4rem;    
     }
+        
 }
 
 tr:nth-child(even) {
