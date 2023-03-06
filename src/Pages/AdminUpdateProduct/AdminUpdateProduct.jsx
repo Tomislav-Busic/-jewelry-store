@@ -5,7 +5,7 @@ import {
   ref,
   uploadBytesResumable,
   getDownloadURL,
-  deleteObject,
+  /* deleteObject, */
 } from "firebase/storage";
 import { db, storage } from "../../firebase";
 import { useNavigate } from "react-router-dom";
@@ -26,7 +26,7 @@ export const AdminUpdateProduct = () => {
   useEffect(() => {
     const uploadFile = () => {
       const storageRef = ref(storage, file.name);
-      const desertRef = ref(storage, data.img_name);
+      /* const desertRef = ref(storage, data.img_name); */
 
       const uploadTask = uploadBytesResumable(storageRef, file);
 
@@ -51,13 +51,13 @@ export const AdminUpdateProduct = () => {
         },
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-            deleteObject(desertRef)
+            /* deleteObject(desertRef)
               .then(() => {
                 console.log("File deleted successfully!");
               })
               .catch((error) => {
                 console.log(error);
-              });
+              }); */
             setData((prev) => ({
               ...prev,
               img: downloadURL,
