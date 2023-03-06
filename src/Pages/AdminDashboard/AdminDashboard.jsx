@@ -6,6 +6,7 @@ import { ListOfProductsAdmin } from "../../Components/ADMINComponents/ListOfProd
 
 import { db, storage } from "../../firebase";
 import { AdminPostProductForm } from "../../Components/ADMINComponents/AdminPostProductForm/AdminPostProductForm";
+import { LogoutBtn } from "../../Components/LogoutBtn/LogoutBtn";
 
 export const AdminDashboard = () => {
   const [data, setData] = useState({});
@@ -75,18 +76,21 @@ export const AdminDashboard = () => {
   };
 
   return (
-    <div className="admin-dashboard">
-      <h1>Administrator</h1>
-      <div className="container">
-        <AdminPostProductForm
-          handleSubmit={handleSubmit}
-          handleData={handleData}
-          setFile={setFile}
-          file={file}
-          perc={perc}
-        />
+    <>
+      <LogoutBtn />
+      <div className="admin-dashboard">
+        <h1>Administrator</h1>
+        <div className="container">
+          <AdminPostProductForm
+            handleSubmit={handleSubmit}
+            handleData={handleData}
+            setFile={setFile}
+            file={file}
+            perc={perc}
+          />
+        </div>
+        <ListOfProductsAdmin />
       </div>
-      <ListOfProductsAdmin />
-    </div>
+    </>
   );
 };
