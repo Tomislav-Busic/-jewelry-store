@@ -1,1 +1,11 @@
 @import "../../Styles/Variables/variables.scss";
+
+.logout-btn {
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    border: none;
+    background: $main-color;
+    padding: 0.3rem 1rem;
+    color: $font-color;
+}

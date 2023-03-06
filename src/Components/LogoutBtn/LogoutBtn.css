@@ -1,1 +1,9 @@
-/*# sourceMappingURL=LogoutBtn.css.map */
+.logout-btn {
+  position: fixed;
+  top: 5rem;
+  right: 2rem;
+  border: none;
+  background: #68060d;
+  padding: 0.3rem 1rem;
+  color: #dfab6c;
+}/*# sourceMappingURL=LogoutBtn.css.map */
