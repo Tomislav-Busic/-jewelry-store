@@ -29,7 +29,7 @@ export const HSFiveSlider = () => {
       </button>
       <div className="slider-content">
         <div className="logo">
-          <img src={logo} />
+          <img src={logo} alt="img" />
         </div>
         <h4>
           <i>{testemonials[currentIndex].content}</i>
