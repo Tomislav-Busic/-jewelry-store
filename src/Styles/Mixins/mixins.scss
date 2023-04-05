@@ -60,6 +60,14 @@
         padding: 4rem 1rem;
         text-align: center;
 
+        ul {
+            li {
+                list-style: none;  
+                color: $font; 
+                font-size: $font-text; 
+            }    
+        }
+
         h2 {
             color: $head;
             font-size: 3rem;
