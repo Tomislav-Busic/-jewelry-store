@@ -11,27 +11,29 @@
     transition: all 1s ease-in-out;
 
     img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
     &:hover {
         transform: scale(1.1);
         cursor: pointer;
     }
 
-        .images-card {
-            position: absolute;
-            top: 30%;
-            left: 0.5rem;
-            @include flex-column;
-    
-            img {
-                margin-top: 0.5rem;
-                height: 2rem;
-                width: 2rem;
-            }
+    .images-card {
+        position: absolute;
+        top: 30%;
+        left: 0.5rem;
+        @include flex-column;
+
+        img {
+            margin-top: 0.5rem;
+            height: 2rem;
+            width: 2rem;
         }
+    }
+        
     .card-text {
         position: absolute;
         bottom: 0;
