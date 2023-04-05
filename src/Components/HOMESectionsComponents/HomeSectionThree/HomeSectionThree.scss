@@ -4,10 +4,10 @@
 .home-section-three {
     background:
         linear-gradient(to right, $background 10%,
-            $background-overlay5, $background 90%),
+        $background-overlay5, $background 90%),
         url("../../../images/bisericetiri.jpg");
-    @include section-background;
-    @include flex-column;
+        @include section-background;
+        @include flex-column;
 
     h1 {
         @include h1-section($main-color);
