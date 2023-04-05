@@ -24,55 +24,58 @@
         place-items: top;
 
         &::after,
-            &::before {
-                background: linear-gradient(to right, rgba(242, 217, 186, 1) 0%, rgba(255, 255, 255, 0) 100%);
-                content: '';
-                height: 100%;
-                position: absolute;
-                width: 15%;
-                z-index: 2;
-            }
+        &::before {
+            background: linear-gradient(to right, rgba(242, 217, 186, 1) 0%, rgba(255, 255, 255, 0) 100%);
+            content: '';
+            height: 100%;
+            position: absolute;
+            width: 15%;
+            z-index: 2;
+        }
 
-                &::before {
-                    left: 0;
-                    top: 0;
-                }
+        &::before {
+            left: 0;
+            top: 0;
+        }
         
-                &::after {
-                    right: -2px;
-                    top: 0;
-                    transform: rotateZ(180deg);
-                }
+        &::after {
+            right: -2px;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
         
-                .slide-track {
-                    display: flex;
-                    animation: carousel 14s linear infinite;
+        .slide-track {
+            display: flex;
+            animation: carousel 14s linear infinite;
         
-                    img {
-                        width: 18rem;
-                        height: 13rem;
-                        object-fit: cover;
+            img {
+                width: 18rem;
+                height: 13rem;
+                object-fit: cover;
                 border: 0.3px solid $main-color;
-                    margin-left: 1rem;
-                    -webkit-box-reflect: below 1px linear-gradient(transparent, #0009);
+                margin-left: 1rem;
+                -webkit-box-reflect: below 1px linear-gradient(transparent, #0009);
 
                 @media (max-width: "1300px") {
                     width: 10rem;
                     height: 7rem;
-                    }
+                }
                     
-                    @media (max-width: "900px") {
-                        width: 5rem;
-                        height: 3rem;
-                    }
-                    }
-                    }
+                @media (max-width: "900px") {
+                    width: 5rem;
+                    height: 3rem;
+                }
+            }
+        }
 
-                @keyframes carousel {
-                    100% {
-                        transform: translateX(-560px);
-        
-                    }
-                }
-                }
+        @keyframes carousel {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    }
 }
