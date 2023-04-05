@@ -4,15 +4,16 @@
 .slider-testem {
     position: relative;
     margin: 2rem 0;
-    min-height: 15rem;
+    min-height: 30rem;
     width: 70%;
     background-color: $main-color;
     border: 1px solid $font-color;
-        box-shadow: 15px 15px 20px black;
-@media (max-width: "900px") {
+    box-shadow: 15px 15px 20px black;
+    @media (max-width: "900px") {
         width: 90%;
     }
-.btn-st {
+
+    .btn-st {
         position: absolute;
         top: 40%;
         background: none;
