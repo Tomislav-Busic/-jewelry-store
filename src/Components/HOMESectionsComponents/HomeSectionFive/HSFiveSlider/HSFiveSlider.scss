@@ -17,19 +17,19 @@
         position: absolute;
         top: 40%;
         background: none;
-            border: none;
+        border: none;
         cursor: pointer;
         z-index: 1;
         
-            .icon {
-                fill: $font-color;
-                font-size: 2rem;
-                transition: all 1s ease-in-out;
-        
-                &:hover {
-                    transform: scale(1.2);
-                }
+        .icon {
+            fill: $font-color;
+            font-size: 2rem;
+            transition: all 1s ease-in-out;
+    
+            &:hover {
+                transform: scale(1.2);
             }
+        }
     }
 
     .left {
@@ -50,22 +50,22 @@
         height: 100%;
         padding: 2rem 3rem;
         @include flex-column;
-            color: $font-color;
+        color: $font-color;
             
-                .logo {
-                    img {
-                        height: 5rem;
-                    }
-                }
+        .logo {
+            img {
+                height: 5rem;
+            }
+        }
             
-                h4 {
-                    font-size: 1.3rem;
-                    font-weight: 400;
-                    margin: 1rem 0;
-                }
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin: 1rem 0;
+        }
             
-                p {
-                    font-weight: 300;
-                }
+        p {
+            font-weight: 300;
+        }
     }
 }
