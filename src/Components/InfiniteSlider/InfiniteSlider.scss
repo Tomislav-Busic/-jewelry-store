@@ -16,7 +16,7 @@
     }
 
     .slider {
-        display: grid;
+        display: flex;
         overflow: hidden;
         height: 100%;
         position: relative;
@@ -46,7 +46,8 @@
         
         .slide-track {
             display: flex;
-            animation: carousel 14s linear infinite;
+            animation: carousel 40s linear infinite;
+            animation-delay: -40s;
         
             img {
                 width: 18rem;
@@ -68,6 +69,11 @@
             }
         }
 
+        .two {
+            animation: carousel2 40s linear infinite;
+            animation-delay: -20s;
+        }
+
         @keyframes carousel {
             0% {
                 transform: translateX(-100%);
@@ -75,6 +81,16 @@
 
             100% {
                 transform: translateX(100%);
+            }
+        }
+            
+        @keyframes carousel2 {
+            0% {
+                transform: translateX(-200%);
+            }
+
+            100% {
+                transform: translateX(0);
             }
         }
     }
