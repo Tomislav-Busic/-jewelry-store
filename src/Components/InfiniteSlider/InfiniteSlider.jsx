@@ -11,7 +11,14 @@ export const InfiniteSlider = () => {
         <div className="slide-track">
           {images.map((img, index) => (
             <div className="slide" key={index}>
-              <img src={img.img} />
+              <img src={img.img} alt="img" />
+            </div>
+          ))}
+        </div>
+        <div className="slide-track two">
+          {images.map((img, index) => (
+            <div className="slide" key={index}>
+              <img src={img.img} alt="img" />
             </div>
           ))}
         </div>
