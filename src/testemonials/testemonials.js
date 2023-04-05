@@ -1,10 +1,17 @@
 export const testemonials = [
-  { content: " Neka pohvala1 Neka pohvala1 Neka pohvala1", name: "Joža M.1" },
-  { content: " Neka pohvala2 Neka pohvala2 Neka pohvala2", name: "Joža M.2" },
-  { content: " Neka pohvala3 Neka pohvala3 Neka pohvala3", name: "Joža M.3" },
-  { content: " Neka pohvala4 Neka pohvala4 Neka pohvala4", name: "Joža M.4" },
-  { content: " Neka pohvala5 Neka pohvala5 Neka pohvala5", name: "Joža M.5" },
-  { content: " Neka pohvala6 Neka pohvala6 Neka pohvala6", name: "Joža M.6" },
-  { content: " Neka pohvala7 Neka pohvala7 Neka pohvala7", name: "Joža M.7" },
-  { content: " Neka pohvala8 Neka pohvala8 Neka pohvala8", name: "Joža M.8" },
+  {
+    content:
+      " Vaš posao popravka nakita je apsolutno zadivljujući! Imate nevjerojatno oko za detalje i izvrstan osjećaj za izradu.",
+    name: "Ivona P.",
+  },
+  {
+    content:
+      " Nedavno sam dala na popravak prsten u Calvi antique i usluga je bila izvanredna. Prsten je brzo i temeljito popravljen i izgleda kao nov. Impresionirana sam kvalitetom rada i toplo bih preporučila Calvi antique svakome tko traži popravak prstena za nakit.",
+    name: "Vedrana S.",
+  },
+  {
+    content:
+      " Nedavno sam dala popraviti ogrlicu u Calvi antique i bila sam jako zadovoljna rezultatima. Uspjeli su ga vratiti u prvobitno stanje i izgleda bolje nego ikada! Osoblje je bilo ljubazno, uslužno i vrlo obrazovano. Svakako bih preporučila Calvi antique za sve vaše potrebe popravka nakita.",
+    name: "Sanja T.",
+  },
 ];
