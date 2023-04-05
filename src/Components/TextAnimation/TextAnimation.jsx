@@ -26,13 +26,15 @@ export const TextAnimation = () => {
   useEffect(() => {
     let i = 0;
     const interval = setInterval(() => {
-      if (i === texts.length) i = -1;
-      else setCurrentWord(i);
       i++;
+      if (i === texts.length) i = 0;
+      setCurrentWord(i);
     }, 6100);
 
     return () => clearInterval(interval);
   }, []);
+
+   
 
   return (
     <AnimatePresence>
