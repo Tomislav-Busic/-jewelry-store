@@ -22,7 +22,8 @@
 
             img {
                 width: 80%;
-                }
+            }
+
             ul {
                 width: 100%;
 
@@ -52,58 +53,59 @@
 
                         span {
                                 font-weight: 600;
-                            }
+                        }
                     }
 
-                        .time {
-                            color: $font-color;
-                            font-weight: 600;
-                            font-size: 1.3rem;
-                            margin-right: 2rem;
-                        }
+                    .time {
+                        color: $font-color;
+                        font-weight: 600;
+                        font-size: 1.3rem;
+                        margin-right: 2rem;
+                    }
                 }
             }
         }
     }
 
-        .map {
-            margin-top: 2rem;
-            height: 25rem;
-                width: 35rem;
-            border: 5px solid $font-color;
+    .map {
+        margin-top: 2rem;
+        height: 25rem;
+        width: 35rem;
+        border: 5px solid $font-color;
 
-            @media (max-width: "900px") {
-                    height: 20rem;
-                width: 20rem;
-                
-@media (max-width: "320px") {
-    height: 20rem;
-    width: 18rem;
-            }
-            
-                }
+        @media (max-width: "900px") {
+            height: 20rem;
+            width: 20rem;
+        }
+
+        @media (max-width: "320px") {
+            height: 20rem;
+            width: 18rem;
+        }
+                  
         .social {
             @include social-icons;
         }
-}
-.social {
-    padding: 2rem 0 6rem 0;
-    @include center;
+    }
 
-    a {
-        color: $font-color;
+    .social {
+        padding: 2rem 0 6rem 0;
+        @include center;
 
-        .social-icon {
-            margin: 0.5rem;
-            height: 3rem;
-            width: 3rem;
-            cursor: pointer;
-            transition: all 0.5s ease-in-out;
+        a {
+            color: $font-color;
 
-            &:hover {
-                transform: scale(1.2);
+            .social-icon {
+                margin: 0.5rem;
+                height: 3rem;
+                width: 3rem;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
         }
     }
-}
 }
