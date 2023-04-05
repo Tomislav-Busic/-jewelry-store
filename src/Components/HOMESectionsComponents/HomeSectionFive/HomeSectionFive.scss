@@ -4,7 +4,7 @@
 .home-section-five {
     background:
         linear-gradient(to right, $background 10%,
-            $background-overlay5, $background 90%),
+        $background-overlay5, $background 90%),
         url("../../../images/zlanac.jpg");
     @include section-background;
     @include flex-column;
