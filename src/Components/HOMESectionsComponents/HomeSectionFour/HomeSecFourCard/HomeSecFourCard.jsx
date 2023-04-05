@@ -27,7 +27,7 @@ export const HomeSecFourCard = ({ title, images }) => {
     }
 
     if (!inView) {
-      animation.start({ x: "-100vw" });
+      animation.start({ x: "-50vw" });
     }
   }, [inView]);
 
