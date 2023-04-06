@@ -12,7 +12,7 @@
     }
 
     @media (max-width:"900px") {
-        min-height: 15vh;
+        min-height: 22vh;
     }
 
     .slider {
@@ -46,8 +46,8 @@
         
         .slide-track {
             display: flex;
-            animation: carousel 40s linear infinite;
-            animation-delay: -40s;
+            animation: carousel 200s linear infinite;
+            animation-delay: -200s;
         
             img {
                 width: 18rem;
@@ -63,15 +63,15 @@
                 }
                     
                 @media (max-width: "900px") {
-                    width: 5rem;
-                    height: 3rem;
+                    width: 8rem;
+                    height: 5rem;
                 }
             }
         }
 
         .two {
-            animation: carousel2 40s linear infinite;
-            animation-delay: -20s;
+            animation: carousel2 200s linear infinite;
+            animation-delay: -100s;
         }
 
         @keyframes carousel {
