@@ -2,6 +2,15 @@
 @import "../../../Styles/Variables/variables.scss";
 @import "../../../Styles/AnimationsMixins/AnimationsMixins.scss";
 
+
+.price {
+    font-size: 1.4rem;
+    color: $font-dark;
+    margin-left: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .products {
     max-width: 100%;
     @include center;
