@@ -16,7 +16,9 @@ export const HomeSectionTwo = () => {
         imamo veliki izbor francuskih antikviteta te vršimo usluge restauracije
         namještaja. Zidove našeg prostora krase umjetničke slike renomiranih
         hrvatskih slikara poput{" "}
-        <i>M.C. Crnčića, S. Raškog, T. Krizmana, M.C. Medanića, R. Auera ...</i>{" "}
+        <i>
+          M. C. Crnčića, S. Raškaj, T. Krizmana, M. C. Medovića, R. Auera ...
+        </i>{" "}
         Sve se slike prodaju s ekspertizama eminentnih povjesničara umjetnosti.
         Kod nas možete procijeniti Vaš nakit i druge vrijednosti. Vrijedne ruke
         naših majstora zlatara, gravera, fasera, restauratora, tapetara i
