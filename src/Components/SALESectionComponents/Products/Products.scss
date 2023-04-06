@@ -2,10 +2,6 @@
 @import "../../../Styles/Variables/variables.scss";
 @import "../../../Styles/AnimationsMixins/AnimationsMixins.scss";
 
-h2 {
-    color: $font-dark;
-}
-
 .products {
     max-width: 100%;
     @include center;
