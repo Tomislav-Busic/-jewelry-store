@@ -8,7 +8,7 @@ export const ServicesSectionTwo = () => {
       <div className="left-s-side">
         <h2>Izrada nakita po narudžbi</h2>
         <p>
-          Izradi iz majstorske draguljarske radionice <i>"Salzberger"</i>{" "}
+          Izrasli iz majstorske draguljarske radionice <i>"Salzberger"</i>{" "}
           spremni smo vaše želje i potrebe pretvoriti u vrhunske komade nakita.
           Za Vas možemo dizajnirati ili po Vašem dizajnu ručno izraditi unikatne
           primjerke nakita.
