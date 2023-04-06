@@ -25,7 +25,7 @@ export const Products = () => {
   return (
     <>
       <br />
-      <h2>Cijene su na upit</h2>
+      <h2 style={{ color: "#343434" }}>Cijene su na upit</h2>
       <div className="products">
         {products
           .filter(
