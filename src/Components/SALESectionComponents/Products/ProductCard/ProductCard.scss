@@ -11,7 +11,7 @@
 
     img {
         width: 100%;
-        height: 50%;
+        height: 60%;
         object-fit: cover;
     }
 
@@ -30,7 +30,7 @@
 
     .info-card {
         width: 100%;
-        height: 50%;
+        height: 40%;
         background: $background;
         @include flex-column;
         border-top: 1px solid $font-color;
