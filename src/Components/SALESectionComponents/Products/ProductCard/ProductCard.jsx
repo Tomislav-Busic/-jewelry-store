@@ -1,13 +1,14 @@
 import React from "react";
 import "./ProductCard.scss";
 import { useDispatch } from "react-redux";
+import { modalActions } from "../../../../store/slice/modal-slice";
 
 export const ProductCard = ({ product }) => {
   const { id, name, category, img, img_name } = product;
   const dispatch = useDispatch();
 
   const openImg = () => {
-    console.log(id);
+    dispatch(modalActions.closeModal());
   };
   return (
     <div className="product-card" id={id}>
