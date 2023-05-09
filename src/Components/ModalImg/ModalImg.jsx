@@ -13,6 +13,7 @@ export const ModalImg = () => {
 
   return (
     <div className="modal" onClick={() => toggleModal()}>
+      <h2>Title</h2>
       <img src={src} alt="img" />
     </div>
   );
