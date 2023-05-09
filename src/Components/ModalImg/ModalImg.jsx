@@ -1,6 +1,18 @@
 import React from "react";
 import "./ModalImg.scss";
+import { useDispatch } from "react-redux";
+import { modalActions } from "../../store/slice/modal-slice";
 
 export const ModalImg = () => {
-  return <div className="modal">ModalImg</div>;
+  const dispatch = useDispatch();
+
+  const toggleModal = () => {
+    dispatch(modalActions.closeModal());
+  };
+
+  return (
+    <div className="modal" onClick={() => toggleModal()}>
+      ModalImg
+    </div>
+  );
 };
