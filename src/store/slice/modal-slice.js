@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const stripeSlice = createSlice({
+export const modalSlice = createSlice({
   name: "modal",
   initialState: {
     toggleModal: false,
