@@ -2,5 +2,5 @@ import React from "react";
 import "./ModalImg.scss";
 
 export const ModalImg = () => {
-  return <div>ModalImg</div>;
+  return <div className="modal">ModalImg</div>;
 };
