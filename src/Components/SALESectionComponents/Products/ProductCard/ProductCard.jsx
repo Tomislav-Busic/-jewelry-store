@@ -7,12 +7,13 @@ export const ProductCard = ({ product }) => {
   const { id, name, category, img, img_name } = product;
   const dispatch = useDispatch();
 
-  const openImg = () => {
+  const openImg = (img) => {
+    dispatch(modalActions.setImg(img));
     dispatch(modalActions.closeModal());
   };
   return (
     <div className="product-card" id={id}>
-      <img onClick={() => openImg()} src={img} alt={img_name} />
+      <img onClick={() => openImg(img)} src={img} alt={img_name} />
       <div className="category">
         <h3>{category}</h3>
       </div>
