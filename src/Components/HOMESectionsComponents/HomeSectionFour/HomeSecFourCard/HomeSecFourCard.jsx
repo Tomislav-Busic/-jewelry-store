@@ -47,7 +47,7 @@ export const HomeSecFourCard = ({ title, images, path }) => {
         </div>
         <div className="card-text">
           <Link className="title" to={path}>
-            {title}
+            <h2>{title}</h2>
           </Link>
         </div>
       </motion.div>
