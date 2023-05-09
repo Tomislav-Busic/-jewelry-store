@@ -1,0 +1,14 @@
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 25%;
+    z-index: 200;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+}
