@@ -1,8 +1,10 @@
 import React from "react";
 import "./ProductCard.scss";
+import { useDispatch } from "react-redux";
 
 export const ProductCard = ({ product }) => {
   const { id, name, category, img, img_name } = product;
+  const dispatch = useDispatch();
 
   const openImg = () => {
     console.log(id);
