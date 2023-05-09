@@ -9,6 +9,7 @@ export const ProductCard = ({ product }) => {
 
   const openImg = (img, name) => {
     dispatch(modalActions.setImg(img));
+    dispatch(modalActions.setName(name));
     dispatch(modalActions.closeModal());
   };
   return (
