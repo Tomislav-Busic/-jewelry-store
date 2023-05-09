@@ -12,4 +12,4 @@ export const modalSlice = createSlice({
   },
 });
 
-export const stripeActions = stripeSlice.actions;
+export const stripeActions = modalSlice.actions;
