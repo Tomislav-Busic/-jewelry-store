@@ -5,6 +5,7 @@ export const modalSlice = createSlice({
   initialState: {
     toggleModal: false,
     img: null,
+    name: null,
   },
   reducers: {
     closeModal(state) {
@@ -13,6 +14,10 @@ export const modalSlice = createSlice({
     setImg(state, action) {
       state.img = null;
       state.img = action.payload;
+    },
+    setName(state, action) {
+      state.name = null;
+      state.name = action.payload;
     },
   },
 });
