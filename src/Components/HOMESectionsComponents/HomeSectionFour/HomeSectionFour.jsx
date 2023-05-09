@@ -23,14 +23,17 @@ export const HomeSectionFour = () => {
         <HomeSecFourCard
           images={imagesMakingOf}
           title={"Izrada nakita po narudžbi"}
+          path={"/usluge"}
         />
         <HomeSecFourCard
           images={imagesRepairs}
           title={"Popravci i restauriranje nakita"}
+          path={"/usluge"}
         />
         <HomeSecFourCard
           images={imagesAntique}
           title={"Francuski Antikviteti"}
+          path={"/prodaja"}
         />
       </div>
       <AnimationBtn
