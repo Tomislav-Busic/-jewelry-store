@@ -36,11 +36,7 @@ export const HomeSectionFour = () => {
           path={"/prodaja"}
         />
       </div>
-      <AnimationBtn
-        name={"Vidi više"}
-        path={"./usluge"}
-        color={"btn-anim-gold"}
-      />
+      <AnimationBtn name={"Usluge"} path={"./usluge"} color={"btn-anim-gold"} />
     </div>
   );
 };
