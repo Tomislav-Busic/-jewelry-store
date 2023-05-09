@@ -10,9 +10,5 @@ export const ModalImg = () => {
     dispatch(modalActions.closeModal());
   };
 
-  return (
-    <div className="modal" onClick={() => toggleModal()}>
-      ModalImg
-    </div>
-  );
+  return <div className="modal" onClick={() => toggleModal()}></div>;
 };
