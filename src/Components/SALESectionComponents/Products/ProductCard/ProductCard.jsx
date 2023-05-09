@@ -2,7 +2,7 @@ import React from "react";
 import "./ProductCard.scss";
 
 export const ProductCard = ({ product }) => {
-  const { id, name, category, price, img, img_name } = product;
+  const { id, name, category, img, img_name } = product;
   return (
     <div className="product-card" id={id}>
       <img src={img} alt={img_name} />
