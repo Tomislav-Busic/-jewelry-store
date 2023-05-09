@@ -3,16 +3,16 @@ import "./HomeSecFourCard.scss";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
+import { Link } from "react-router-dom";
 
-export const HomeSecFourCard = ({ title, images }) => {
+export const HomeSecFourCard = ({ title, images, path }) => {
   const [currentImg, setCurrentImg] = useState(images[1]);
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
 
   const changeImage = (img) => {
     setCurrentImg(img);
   };
-
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
 
   useEffect(() => {
     if (inView) {
@@ -46,7 +46,9 @@ export const HomeSecFourCard = ({ title, images }) => {
           ))}
         </div>
         <div className="card-text">
-          <h2>{title}</h2>
+          <Link className="title" to={path}>
+            {title}
+          </Link>
         </div>
       </motion.div>
     </div>
