@@ -3,9 +3,13 @@ import "./ProductCard.scss";
 
 export const ProductCard = ({ product }) => {
   const { id, name, category, img, img_name } = product;
+
+  const openImg = () => {
+    console.log(id);
+  };
   return (
     <div className="product-card" id={id}>
-      <img src={img} alt={img_name} />
+      <img onClick={() => openImg()} src={img} alt={img_name} />
       <div className="category">
         <h3>{category}</h3>
       </div>
