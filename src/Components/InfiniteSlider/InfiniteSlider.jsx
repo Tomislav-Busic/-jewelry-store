@@ -8,6 +8,8 @@ export const InfiniteSlider = () => {
   const images = useSelector((state) => state.data.dataList);
   /* const dispatch = useDispatch(); */
 
+  // ili navigacija sa async ili otvoriti u početnoj
+
   const showProduct = (item) => {
     console.log(item);
     /* const { name, img } = item;
