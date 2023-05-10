@@ -9,10 +9,10 @@ export const InfiniteSlider = () => {
   const dispatch = useDispatch();
 
   const showProduct = (item) => {
-    const { name, img } = item;
+    /* const { name, img } = item;
     dispatch(modalActions.setName(name));
     dispatch(modalActions.setImg(img));
-    dispatch(modalActions.closeModal());
+    dispatch(modalActions.closeModal()); */
   };
 
   return (
