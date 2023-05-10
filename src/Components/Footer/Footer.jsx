@@ -9,7 +9,7 @@ export const Footer = () => {
     <div className="footer">
       <h4>
         &copy; 2023 - {currnetYear} CALVI | Designed By{" "}
-        <a href="http://xn--tomislavbui-vlb28i.com/">Tomislav Bušić</a>
+        <a href="https://tomislav-busic.web.app/">Tomislav Bušić</a>
       </h4>
     </div>
   );
