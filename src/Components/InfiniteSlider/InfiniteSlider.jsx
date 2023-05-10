@@ -6,7 +6,7 @@ import { modalActions } from "../../store/slice/modal-slice";
 
 export const InfiniteSlider = () => {
   const images = useSelector((state) => state.data.dataList);
-  const dispatch = useDispatch();
+  /* const dispatch = useDispatch(); */
 
   const showProduct = (item) => {
     console.log(item);
