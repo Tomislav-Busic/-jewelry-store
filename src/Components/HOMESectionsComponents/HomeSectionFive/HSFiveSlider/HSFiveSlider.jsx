@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./HSFiveSlider.scss";
+import "./hSFiveSlider.scss";
 import { testemonials } from "../../../../testemonials/testemonials";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import logo from "../../../../images/calvi.png";

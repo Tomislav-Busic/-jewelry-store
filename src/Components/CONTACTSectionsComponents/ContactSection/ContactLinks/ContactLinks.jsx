@@ -1,8 +1,8 @@
 import React from "react";
-import "./ContactLinks.scss";
+import "./contactLinks.scss";
 import { IoMail, IoCall } from "react-icons/io5";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { SocialIcons } from "../../../SocialIcons/SocialIcons";
+import { SocialIcons } from "../../../socialIcons/SocialIcons";
 
 export const ContactLinks = () => {
   return (

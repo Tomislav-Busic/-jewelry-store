@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./AdminUpdateProduct.scss";
+import "./adminUpdateProduct.scss";
 import { serverTimestamp, doc, updateDoc } from "firebase/firestore";
 import {
   ref,
@@ -9,8 +9,8 @@ import {
 } from "firebase/storage";
 import { db, storage } from "../../firebase";
 import { useNavigate } from "react-router-dom";
-import { goToTopOfPage } from "../../Tools/Tools";
-import { AdminUpdateProductForm } from "../../Components/ADMINComponents/AdminUpdateProductForm/AdminUpdateProductForm";
+import { goToTopOfPage } from "../../tools/Tools";
+import { AdminUpdateProductForm } from "../../components/adminComponents/adminUpdateProductForm/AdminUpdateProductForm";
 
 export const AdminUpdateProduct = () => {
   const [data, setData] = useState({});

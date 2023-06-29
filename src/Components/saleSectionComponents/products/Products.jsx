@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import "./Products.scss";
+import React from "react";
+import "./products.scss";
 import { useSelector, useDispatch } from "react-redux";
-import { ProductCard } from "./ProductCard/ProductCard";
+import { ProductCard } from "./productCard/ProductCard";
 import { Pagination } from "antd";
 import { paginationActions } from "../../../store/slice/pagination-slice";
-import { goToTopOfPage } from "../../../Tools/Tools";
+import { goToTopOfPage } from "../../../tools/Tools";
 import { Link } from "react-router-dom";
 
 export const Products = () => {

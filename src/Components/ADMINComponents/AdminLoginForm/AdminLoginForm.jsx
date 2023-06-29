@@ -1,5 +1,5 @@
 import React from "react";
-import "./AdminLoginForm.scss";
+import "./adminLoginForm.scss";
 
 export const AdminLoginForm = ({
   handleLogin,

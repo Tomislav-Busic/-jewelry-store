@@ -1,11 +1,11 @@
 import React from "react";
-import "./ContactFooter.scss";
+import "./contactFooter.scss";
 import { IoMail, IoCall } from "react-icons/io5";
 import { FaUser, FaKey, FaLink, FaMapMarkerAlt } from "react-icons/fa";
 import { GiShop } from "react-icons/gi";
 import { Link } from "react-router-dom";
-import { goToTopOfPage } from "../../Tools/Tools";
-import { SocialIcons } from "../SocialIcons/SocialIcons";
+import { goToTopOfPage } from "../../tools/Tools";
+import { SocialIcons } from "../socialIcons/SocialIcons.jsx";
 import logo from "../../images/calvi.png";
 
 export const ContactFooter = () => {

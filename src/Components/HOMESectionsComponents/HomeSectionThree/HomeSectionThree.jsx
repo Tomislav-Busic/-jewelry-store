@@ -1,7 +1,7 @@
 import React from "react";
-import "./HomeSectionThree.scss";
-import { InfiniteSlider } from "../../InfiniteSlider/InfiniteSlider";
-import { AnimationBtn } from "../../AnimationBtn/AnimationBtn";
+import "./homeSectionThree.scss";
+import { InfiniteSlider } from "../../infiniteSlider/InfiniteSlider";
+import { AnimationBtn } from "../../animationBtn/AnimationBtn";
 
 export const HomeSectionThree = () => {
   return (

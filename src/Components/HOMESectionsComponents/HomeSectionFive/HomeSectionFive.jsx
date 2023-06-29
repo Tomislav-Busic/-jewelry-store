@@ -1,7 +1,7 @@
 import React from "react";
-import "./HomeSectionFive.scss";
-import { AnimationBtn } from "../../AnimationBtn/AnimationBtn";
-import { HSFiveSlider } from "./HSFiveSlider/HSFiveSlider";
+import "./homeSectionFive.scss";
+import { AnimationBtn } from "../../animationBtn/AnimationBtn";
+import { HSFiveSlider } from "./hSFiveSlider/HSFiveSlider";
 
 export const HomeSectionFive = () => {
   return (

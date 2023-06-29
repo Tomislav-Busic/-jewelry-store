@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomeSectionFour.scss";
+import "./homeSectionFour.scss";
 import img1 from "../../../images/prstend.jpg";
 import img2 from "../../../images/goldring.jpg";
 import img3 from "../../../images/threerings.jpg";
@@ -9,8 +9,8 @@ import img6 from "../../../images/work4.jpg";
 import img7 from "../../../images/vaza.jpg";
 import img8 from "../../../images/ormaric.jpg";
 import img9 from "../../../images/sofa.jpg";
-import { AnimationBtn } from "../../AnimationBtn/AnimationBtn";
-import { HomeSecFourCard } from "./HomeSecFourCard/HomeSecFourCard";
+import { AnimationBtn } from "../../animationBtn/AnimationBtn";
+import { HomeSecFourCard } from "./homeSecFourCard/HomeSecFourCard";
 
 export const HomeSectionFour = () => {
   const imagesMakingOf = [img1, img2, img3];

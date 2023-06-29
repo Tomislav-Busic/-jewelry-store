@@ -1,8 +1,8 @@
 import React from "react";
-import { ServicesSectionOne } from "../../Components/SERVICESSectionsComponents/ServicesSectionOne/ServicesSectionOne";
-import { ServicesSectionThree } from "../../Components/SERVICESSectionsComponents/ServicesSectionThree/ServicesSectionThree";
-import { ServicesSectionTwo } from "../../Components/SERVICESSectionsComponents/ServicesSectionTwo/ServicesSectionTwo";
-import "./Services.scss";
+import { ServicesSectionOne } from "../../components/servicesSectionsComponents/servicesSectionOne/ServicesSectionOne";
+import { ServicesSectionThree } from "../../components/servicesSectionsComponents/servicesSectionThree/ServicesSectionThree";
+import { ServicesSectionTwo } from "../../components/servicesSectionsComponents/servicesSectionTwo/ServicesSectionTwo";
+import "./services.scss";
 
 export const Services = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import "./ContactPage.scss";
-import { ContactSection } from "../../Components/CONTACTSectionsComponents/ContactSection/ContactSection";
+import "./contactPage.scss";
+import { ContactSection } from "../../components/contactSectionsComponents/contactSection/ContactSection";
 
 export const ContactPage = () => {
   return (

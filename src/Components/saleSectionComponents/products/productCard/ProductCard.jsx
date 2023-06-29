@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductCard.scss";
+import "./productCard.scss";
 import { useDispatch } from "react-redux";
 import { modalActions } from "../../../../store/slice/modal-slice";
 

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import "./AdminDashboard.scss";
+import "./adminDashboard.scss";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { ListOfProductsAdmin } from "../../Components/ADMINComponents/ListOfProductsAdmin/ListOfProductsAdmin";
+import { ListOfProductsAdmin } from "../../components/adminComponents/listOfProductsAdmin/ListOfProductsAdmin";
 
 import { db, storage } from "../../firebase";
-import { AdminPostProductForm } from "../../Components/ADMINComponents/AdminPostProductForm/AdminPostProductForm";
-import { LogoutBtn } from "../../Components/LogoutBtn/LogoutBtn";
+import { AdminPostProductForm } from "../../components/adminComponents/adminPostProductForm/AdminPostProductForm";
+import { LogoutBtn } from "../../components/logoutBtn/LogoutBtn";
 
 export const AdminDashboard = () => {
   const [data, setData] = useState({});

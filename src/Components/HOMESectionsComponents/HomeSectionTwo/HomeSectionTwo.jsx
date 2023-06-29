@@ -1,6 +1,6 @@
 import React from "react";
-import { AnimationBtn } from "../../AnimationBtn/AnimationBtn";
-import "./HomeSectionTwo.scss";
+import { AnimationBtn } from "../../animationBtn/AnimationBtn";
+import "./homeSectionTwo.scss";
 
 export const HomeSectionTwo = () => {
   return (

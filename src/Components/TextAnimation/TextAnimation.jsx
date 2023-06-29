@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "./TextAnimation.scss";
+import "./textAnimation.scss";
 
 const TextVariants = {
   offscreen: {
@@ -33,8 +33,6 @@ export const TextAnimation = () => {
 
     return () => clearInterval(interval);
   }, []);
-
-   
 
   return (
     <AnimatePresence>

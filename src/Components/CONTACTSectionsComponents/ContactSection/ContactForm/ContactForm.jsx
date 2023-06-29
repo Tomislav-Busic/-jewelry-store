@@ -1,5 +1,5 @@
 import React from "react";
-import "./ContactForm.scss";
+import "./contactForm.scss";
 
 export const ContactForm = ({ sendEmail, emailRes, setEmailRes }) => {
   return (

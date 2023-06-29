@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductAdmin.scss";
+import "./productAdmin.scss";
 import { FaTrashAlt, FaPencilAlt } from "react-icons/fa";
 
 export const ProductAdmin = ({
@@ -11,7 +11,7 @@ export const ProductAdmin = ({
   return (
     <tr key={index}>
       <td>
-        <img className="table-img" src={product.img} />
+        <img className="table-img" src={product.img} alt="table" />
       </td>
       <td>{product.name}</td>
       <td>{product.category}</td>

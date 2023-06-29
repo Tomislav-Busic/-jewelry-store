@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Navbar.scss";
+import "./navbar.scss";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { goToTopOfPage } from "../../Tools/Tools";
+import { goToTopOfPage } from "../../tools/Tools";
 import logo from "../../images/calvi.png";
 
 export const Navbar = () => {

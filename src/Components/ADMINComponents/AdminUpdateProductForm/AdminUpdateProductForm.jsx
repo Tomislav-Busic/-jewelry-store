@@ -1,6 +1,6 @@
 import React from "react";
 import { MdFileUpload } from "react-icons/md";
-import "./AdminUpdateProductForm.scss";
+import "./adminUpdateProductForm.scss";
 
 export const AdminUpdateProductForm = ({
   data,

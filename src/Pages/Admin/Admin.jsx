@@ -4,9 +4,9 @@ import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { loginActions } from "../../store/slice/login-slice";
-import { goToTopOfPage } from "../../Tools/Tools";
-import "./Admin.scss";
-import { AdminLoginForm } from "../../Components/ADMINComponents/AdminLoginForm/AdminLoginForm";
+import { goToTopOfPage } from "../../tools/Tools";
+import "./admin.scss";
+import { AdminLoginForm } from "../../components/adminComponents/adminLoginForm/AdminLoginForm";
 
 export const Admin = () => {
   const [error, setError] = useState(false);

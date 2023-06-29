@@ -1,5 +1,5 @@
 import React from "react";
-import "./ModalImg.scss";
+import "./modalImg.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { modalActions } from "../../store/slice/modal-slice";
 

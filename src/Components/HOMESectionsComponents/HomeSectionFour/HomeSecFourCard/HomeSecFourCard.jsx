@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./HomeSecFourCard.scss";
+import "./homeSecFourCard.scss";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
-import { goToTopOfPage } from "../../../../Tools/Tools";
+import { goToTopOfPage } from "../../../../tools/Tools";
 
 export const HomeSecFourCard = ({ title, images, path }) => {
   const [currentImg, setCurrentImg] = useState(images[1]);

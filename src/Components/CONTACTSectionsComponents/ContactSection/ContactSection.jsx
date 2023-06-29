@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./ContactSection.scss";
+import "./contactSection.scss";
 import emailjs from "emailjs-com";
-import { ContactForm } from "./ContactForm/ContactForm";
-import { ContactLinks } from "./ContactLinks/ContactLinks";
+import { ContactForm } from "./contactForm/ContactForm";
+import { ContactLinks } from "./contactLinks/ContactLinks";
 
 export const ContactSection = () => {
   const [emailRes, setEmailRes] = useState(false);

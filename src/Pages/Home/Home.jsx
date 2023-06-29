@@ -1,10 +1,10 @@
 import React from "react";
-import "./Home.scss";
-import { HomeSectionOne } from "../../Components/HOMESectionsComponents/HomeSectionOne/HomeSectionOne";
-import { HomeSectionTwo } from "../../Components/HOMESectionsComponents/HomeSectionTwo/HomeSectionTwo";
-import { HomeSectionThree } from "../../Components/HOMESectionsComponents/HomeSectionThree/HomeSectionThree";
-import { HomeSectionFour } from "../../Components/HOMESectionsComponents/HomeSectionFour/HomeSectionFour";
-import { HomeSectionFive } from "../../Components/HOMESectionsComponents/HomeSectionFive/HomeSectionFive";
+import "./home.scss";
+import { HomeSectionOne } from "../../components/homeSectionsComponents/homeSectionOne/HomeSectionOne";
+import { HomeSectionTwo } from "../../components/homeSectionsComponents/homeSectionTwo/HomeSectionTwo";
+import { HomeSectionThree } from "../../components/homeSectionsComponents/homeSectionThree/HomeSectionThree";
+import { HomeSectionFour } from "../../components/homeSectionsComponents/homeSectionFour/HomeSectionFour";
+import { HomeSectionFive } from "../../components/homeSectionsComponents/homeSectionFive/HomeSectionFive";
 
 export const Home = () => {
   return (

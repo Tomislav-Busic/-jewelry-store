@@ -1,4 +1,4 @@
-import "./Styles/App.scss";
+import "./styles/app.scss";
 import {
   BrowserRouter as Router,
   Routes,
@@ -8,18 +8,18 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { loginActions } from "./store/slice/login-slice";
-import { firebaseData } from "./firebaseDatairebaseDB/firebaseData";
+import { firebaseData } from "./firebaseDB/firebaseData";
 
-import { Navbar } from "./Components/Navbar/Navbar";
-import { Footer } from "./Components/Footer/Footer";
-import { Home } from "./Pages/Home/Home";
-import { Services } from "./Pages/Services/Services";
-import { Admin } from "./Pages/Admin/Admin";
-import { AdminDashboard } from "./Pages/AdminDashboard/AdminDashboard";
-import { AdminUpdateProduct } from "./Pages/AdminUpdateProduct/AdminUpdateProduct";
-import { Sale } from "./Pages/Sale/Sale";
-import { ContactPage } from "./Pages/ContactPage/ContactPage";
-import { ContactFooter } from "./Components/ContactFooter/ContactFooter";
+import { Navbar } from "./components/navbar/Navbar";
+import { Footer } from "./components/footer/Footer";
+import { Home } from "./pages/home/Home";
+import { Services } from "./pages/services/Services";
+import { Admin } from "./pages/admin/Admin";
+import { AdminDashboard } from "./pages/adminDashboard/AdminDashboard";
+import { AdminUpdateProduct } from "./pages/adminUpdateProduct/AdminUpdateProduct";
+import { Sale } from "./pages/sale/Sale";
+import { ContactPage } from "./pages/contactPage/ContactPage";
+import { ContactFooter } from "./components/contactFooter/ContactFooter";
 
 function App() {
   const isLoggedIn = useSelector((state) => state.login.isLoggedIn);

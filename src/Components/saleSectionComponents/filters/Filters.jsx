@@ -1,5 +1,5 @@
 import React from "react";
-import "./Filters.scss";
+import "./filters.scss";
 import { useDispatch } from "react-redux";
 import { dataActions } from "../../../store/slice/data-slice";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./ServicesSectionThree.scss";
+import "./servicesSectionThree.scss";
 import img from "../../../images/work5.jpg";
 
 export const ServicesSectionThree = () => {

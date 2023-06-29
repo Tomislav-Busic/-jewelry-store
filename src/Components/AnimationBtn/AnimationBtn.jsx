@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./AnimationBtn.scss";
-import { goToTopOfPage } from "../../Tools/Tools";
+import "./animationBtn.scss";
+import { goToTopOfPage } from "../../tools/Tools";
 
 export const AnimationBtn = ({ name, path, color }) => {
   return (

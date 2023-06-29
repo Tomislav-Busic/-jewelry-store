@@ -1,10 +1,10 @@
 import React from "react";
-import { CategoriesMenu } from "../../Components/SALESectionComponents/CategoriesMenu/CategoriesMenu";
-import { Filters } from "../../Components/SALESectionComponents/Filters/Filters";
-import { Products } from "../../Components/SALESectionComponents/Products/Products";
-import { ModalImg } from "../../Components/ModalImg/ModalImg";
+import { CategoriesMenu } from "../../components/saleSectionComponents/categoriesMenu/CategoriesMenu";
+import { Filters } from "../../components/saleSectionComponents/filters/Filters";
+import { Products } from "../../components/saleSectionComponents/products/Products";
+import { ModalImg } from "../../components/modalImg/ModalImg";
 import { useSelector } from "react-redux";
-import "./Sale.scss";
+import "./sale.scss";
 
 export const Sale = () => {
   const imgModal = useSelector((state) => state.modal.toggleModal);

@@ -1,8 +1,8 @@
 import React from "react";
-import { TextAnimation } from "../../TextAnimation/TextAnimation";
-import { AnimationBtn } from "../../AnimationBtn/AnimationBtn";
-import { SocialIcons } from "../../SocialIcons/SocialIcons";
-import "./HomeSectionOne.scss";
+import { TextAnimation } from "../../textAnimation/TextAnimation";
+import { AnimationBtn } from "../../animationBtn/AnimationBtn";
+import { SocialIcons } from "../../socialIcons/SocialIcons";
+import "./homeSectionOne.scss";
 
 export const HomeSectionOne = () => {
   return (
