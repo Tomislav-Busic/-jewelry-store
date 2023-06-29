@@ -13,11 +13,11 @@ import { firebaseData } from "./firebaseDB/firebaseData";
 import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/footer/Footer";
 import { Home } from "./pages/homePage/HomePage";
-import { Services } from "./pages/services/Services";
-import { Admin } from "./pages/logginPage/LogginPage";
+import { Services } from "./pages/servicesPage/ServicesPage";
+import { Admin } from "./pages/loginPage/LoginPage";
 import { AdminDashboard } from "./pages/dashboardPage/DashboardPage";
 import { AdminUpdateProduct } from "./pages/updateProducts/updateProducts";
-import { Sale } from "./pages/sale/Sale";
+import { Sale } from "./pages/productsPage/ProductsPage";
 import { ContactPage } from "./pages/contactPage/ContactPage";
 import { ContactFooter } from "./components/contactFooter/ContactFooter";
 
