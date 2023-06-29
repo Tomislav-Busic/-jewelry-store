@@ -1,4 +1,4 @@
-import "./styles/app.scss";
+import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -6,7 +6,6 @@ import {
   Navigate,
 } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { useEffect } from "react";
 import { loginActions } from "./store/slice/login-slice";
 import { firebaseData } from "./firebaseDB/firebaseData";
 
@@ -20,6 +19,8 @@ import { AdminUpdateProduct } from "./pages/updateProducts/updateProducts";
 import { Sale } from "./pages/productsPage/ProductsPage";
 import { ContactPage } from "./pages/contactPage/ContactPage";
 import { ContactFooter } from "./components/contactFooter/ContactFooter";
+
+import styles from "./styles/app.module.scss";
 
 function App() {
   const isLoggedIn = useSelector((state) => state.login.isLoggedIn);
@@ -37,7 +38,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className={styles.app}>
       <Router>
         <Navbar />
         <Footer />
