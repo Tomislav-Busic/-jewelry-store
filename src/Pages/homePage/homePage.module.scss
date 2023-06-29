@@ -1,0 +1,11 @@
+@import "../../styles/mixins/mixins.scss";
+@import "../../styles/variables/variables.scss";
+@import "../../styles/animationsMixins/AnimationsMixins.scss";
+
+.home {
+  @include page-layout;
+
+  .container {
+    @include flex-column;
+  }
+}

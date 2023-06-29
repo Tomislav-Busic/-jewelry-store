@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { goToTopOfPage } from "../../tools/Tools";
+import { goToTopOfPage } from "../../utilities/tools";
 import logo from "../../images/calvi.png";
 
 export const Navbar = () => {

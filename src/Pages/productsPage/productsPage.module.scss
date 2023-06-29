@@ -1,0 +1,19 @@
+@import "../../Styles/Variables/variables.scss";
+@import "../../styles/mixins/mixins.scss";
+
+.products_page {
+  @include page-layout;
+
+  .container {
+    @include flex-column;
+    padding: 8rem 0;
+    width: 100%;
+
+    .filters_container {
+      @include flex-column;
+    }
+    @media (max-width: "900px") {
+      padding: 4rem 0 0 0;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../styles/mixins/mixins.scss";
+
+.admin_update {
+  @include page-layout;
+  padding: 10rem 0;
+
+  h1 {
+    font-weight: 300;
+    color: $main-color;
+  }
+
+  .container {
+    @include flex-column;
+  }
+}

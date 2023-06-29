@@ -1,0 +1,11 @@
+@import "../../styles/variables/variables.scss";
+@import "../../styles/mixins/mixins.scss";
+
+.contact_page {
+  @include page-layout;
+
+  .container {
+    @include flex-column;
+    width: 100%;
+  }
+}

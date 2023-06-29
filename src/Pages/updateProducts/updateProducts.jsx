@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from "react";
-import "./adminUpdateProduct.scss";
-import { serverTimestamp, doc, updateDoc } from "firebase/firestore";
-import {
-  ref,
-  uploadBytesResumable,
-  getDownloadURL,
-  /* deleteObject, */
-} from "firebase/storage";
-import { db, storage } from "../../firebase";
 import { useNavigate } from "react-router-dom";
-import { goToTopOfPage } from "../../tools/Tools";
+import { serverTimestamp, doc, updateDoc } from "firebase/firestore";
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import { db, storage } from "../../firebase";
+import { goToTopOfPage } from "../../utilities/tools";
 import { AdminUpdateProductForm } from "../../components/adminComponents/adminUpdateProductForm/AdminUpdateProductForm";
 
-export const AdminUpdateProduct = () => {
+import styles from "./updateProduct.module.scss";
+
+export const UpdateProducts = () => {
   const [data, setData] = useState({});
   const [file, setFile] = useState("");
   const [perc, setPerc] = useState(null);
@@ -44,6 +40,7 @@ export const AdminUpdateProduct = () => {
             case "running":
               console.log("Upload is running");
               break;
+            default:
           }
         },
         (error) => {
@@ -51,13 +48,6 @@ export const AdminUpdateProduct = () => {
         },
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-            /* deleteObject(desertRef)
-              .then(() => {
-                console.log("File deleted successfully!");
-              })
-              .catch((error) => {
-                console.log(error);
-              }); */
             setData((prev) => ({
               ...prev,
               img: downloadURL,
@@ -101,9 +91,9 @@ export const AdminUpdateProduct = () => {
   };
 
   return (
-    <div className="admin-update">
+    <div className={styles.admin_update}>
       <h1>Update Product</h1>
-      <div className="container">
+      <div className={styles.container}>
         <AdminUpdateProductForm
           data={data}
           handleSubmit={handleSubmit}

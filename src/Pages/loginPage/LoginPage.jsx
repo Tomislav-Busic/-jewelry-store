@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../firebase";
 import { loginActions } from "../../store/slice/login-slice";
-import { goToTopOfPage } from "../../tools/Tools";
-import "./admin.scss";
+import { goToTopOfPage } from "../../utilities/tools";
 import { AdminLoginForm } from "../../components/adminComponents/adminLoginForm/AdminLoginForm";
 
-export const Admin = () => {
+import styles from "./login.module.scss";
+
+export const LoginPage = () => {
   const [error, setError] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -49,10 +50,10 @@ export const Admin = () => {
   };
 
   return (
-    <div className="admin">
+    <div className={styles.loggin}>
       <h1>Administrator</h1>
 
-      <div className="container">
+      <div className={styles.container}>
         <h2>
           Ukoliko niste vlasnik stranice molimo Vas da se vratite na početnu
           stranicu! Hvala :)

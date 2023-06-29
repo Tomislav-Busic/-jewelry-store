@@ -1,0 +1,25 @@
+@import "../../styles/mixins/mixins.scss";
+@import "../../styles/variables/variables.scss";
+
+.loggin {
+  @include page-layout;
+  padding: 10rem 0;
+
+  h1 {
+    font-weight: 300;
+    color: $main-color;
+  }
+
+  button {
+    @include button-form;
+  }
+
+  .container {
+    @include flex-column;
+
+    h2 {
+      color: $main-color;
+      text-align: center;
+    }
+  }
+}
