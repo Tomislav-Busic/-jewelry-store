@@ -62,7 +62,8 @@ export const Navbar = () => {
             KONTAKT
           </Link>
           <button
-            className={styles.nav_btn && styles.nav_close_btn}
+            className={styles.nav_btn}
+            style={{ position: "fixed", top: "2rem", right: "2rem" }}
             onClick={() => setToggle(!toggle)}
           >
             <FaTimes />
