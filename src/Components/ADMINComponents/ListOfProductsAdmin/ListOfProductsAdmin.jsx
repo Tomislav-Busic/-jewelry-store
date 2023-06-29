@@ -5,7 +5,7 @@ import { getStorage, ref, deleteObject } from "firebase/storage";
 import { db } from "../../../firebase";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { goToTopOfPage } from "../../../tools/Tools";
+import { goToTopOfPage } from "../../../utilities/tools";
 import { ProductAdmin } from "./productAdmin/ProductAdmin";
 
 export const ListOfProductsAdmin = () => {

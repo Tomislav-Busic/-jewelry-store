@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { ProductCard } from "./productCard/ProductCard";
 import { Pagination } from "antd";
 import { paginationActions } from "../../../store/slice/pagination-slice";
-import { goToTopOfPage } from "../../../tools/Tools";
+import { goToTopOfPage } from "../../../utilities/tools";
 import { Link } from "react-router-dom";
 
 export const Products = () => {

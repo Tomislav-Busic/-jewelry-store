@@ -4,7 +4,7 @@ import { IoMail, IoCall } from "react-icons/io5";
 import { FaUser, FaKey, FaLink, FaMapMarkerAlt } from "react-icons/fa";
 import { GiShop } from "react-icons/gi";
 import { Link } from "react-router-dom";
-import { goToTopOfPage } from "../../tools/Tools";
+import { goToTopOfPage } from "../../utilities/tools";
 import { SocialIcons } from "../socialIcons/SocialIcons.jsx";
 import logo from "../../images/calvi.png";
 
@@ -13,7 +13,7 @@ export const ContactFooter = () => {
     <div className="footer-contact">
       <div className="footer-contact-container">
         <div className="f-con-item">
-          <img src={logo} />
+          <img src={logo} alt="logo" />
         </div>
         <div className="f-con-item">
           <ul>

@@ -11,12 +11,12 @@ import { firebaseData } from "./firebaseDB/firebaseData";
 
 import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/footer/Footer";
-import { Home } from "./pages/homePage/HomePage";
-import { Services } from "./pages/servicesPage/ServicesPage";
-import { Admin } from "./pages/loginPage/LoginPage";
-import { AdminDashboard } from "./pages/dashboardPage/DashboardPage";
-import { AdminUpdateProduct } from "./pages/updateProducts/updateProducts";
-import { Sale } from "./pages/productsPage/ProductsPage";
+import { HomePage } from "./pages/homePage/HomePage";
+import { ServicesPage } from "./pages/servicesPage/ServicesPage";
+import { LoginPage } from "./pages/loginPage/LoginPage";
+import { DashboardPage } from "./pages/dashboardPage/DashboardPage";
+import { UpdateProducts } from "./pages/updateProducts/UpdateProducts";
+import { ProductsPage } from "./pages/productsPage/ProductsPage";
 import { ContactPage } from "./pages/contactPage/ContactPage";
 import { ContactFooter } from "./components/contactFooter/ContactFooter";
 
@@ -43,16 +43,16 @@ function App() {
         <Navbar />
         <Footer />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/prodaja" element={<Sale />} />
-          <Route path="/usluge" element={<Services />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/prodaja" element={<ProductsPage />} />
+          <Route path="/usluge" element={<ServicesPage />} />
+          <Route path="/admin" element={<LoginPage />} />
           <Route path="/kontakt" element={<ContactPage />} />
           <Route
             path="/admin-dashboard"
             element={
               <RequireAuth>
-                <AdminDashboard />
+                <DashboardPage />
               </RequireAuth>
             }
           />
@@ -60,11 +60,11 @@ function App() {
             path="/update"
             element={
               <RequireAuth>
-                <AdminUpdateProduct />
+                <UpdateProducts />
               </RequireAuth>
             }
           />
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<HomePage />} />
         </Routes>
         <ContactFooter />
       </Router>
