@@ -24,28 +24,40 @@ export const Navbar = () => {
           <Link
             className={styles.nav_link}
             to="/"
-            onClick={() => (setToggle(!toggle), goToTopOfPage())}
+            onClick={() => {
+              setToggle(!toggle);
+              goToTopOfPage();
+            }}
           >
             POČETNA
           </Link>
           <Link
             className={styles.nav_link}
             to="/prodaja"
-            onClick={() => (setToggle(!toggle), goToTopOfPage())}
+            onClick={() => {
+              setToggle(!toggle);
+              goToTopOfPage();
+            }}
           >
             PRODAJA
           </Link>
           <Link
             className={styles.nav_link}
             to="/usluge "
-            onClick={() => (setToggle(!toggle), goToTopOfPage())}
+            onClick={() => {
+              setToggle(!toggle);
+              goToTopOfPage();
+            }}
           >
             USLUGE
           </Link>
           <Link
             className={styles.nav_link}
             to="/kontakt"
-            onClick={() => (setToggle(!toggle), goToTopOfPage())}
+            onClick={() => {
+              setToggle(!toggle);
+              goToTopOfPage();
+            }}
           >
             KONTAKT
           </Link>
