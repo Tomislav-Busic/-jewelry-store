@@ -30,7 +30,7 @@ function App() {
     dispatch(loginActions.login(currentUser));
 
     firebaseData(dispatch);
-  }, []);
+  }, [dispatch]);
 
   const RequireAuth = ({ children }) => {
     return isLoggedIn ? children : <Navigate to="/admin" />;
