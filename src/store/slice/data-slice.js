@@ -15,18 +15,7 @@ export const dataSlice = createSlice({
     },
     filterByName(state, action) {
       state.productName = action.payload;
-    } /* 
-    sortByPrice(state, action) {
-      switch (action.payload) {
-        case "lower":
-          state.dataList2.sort((a, b) => a.price - b.price);
-          break;
-        case "higher":
-          state.dataList2.sort((a, b) => b.price - a.price);
-          break;
-        default:
-      }
-    }, */,
+    },
     addCategory(state, action) {
       state.categoryName = action.payload;
       state.dataList2 = state.dataList;
