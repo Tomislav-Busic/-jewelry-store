@@ -8,7 +8,7 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { loginActions } from "./store/slice/login-slice";
-import { firebaseData } from "./FirebaseDB/firebaseData";
+import { firebaseData } from "./firebaseDatairebaseDB/firebaseData";
 
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Footer } from "./Components/Footer/Footer";
