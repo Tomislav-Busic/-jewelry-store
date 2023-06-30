@@ -20,7 +20,7 @@ import { ProductsPage } from "./pages/productsPage/ProductsPage";
 import { ContactPage } from "./pages/contactPage/ContactPage";
 import { ContactFooter } from "./components/contactFooter/ContactFooter";
 
-import styles from "./styles/app.module.scss";
+import styles from "./assets/styles/app.module.scss";
 
 function App() {
   const isLoggedIn = useSelector((state) => state.login.isLoggedIn);

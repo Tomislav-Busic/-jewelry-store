@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { deleteDoc, doc } from "firebase/firestore";
 import { getStorage, ref, deleteObject } from "firebase/storage";
-import { db } from "firebase";
+import { db } from "../../../firebase";
 import { goToTopOfPage } from "utilities/tools";
 
 import { ProductAdmin } from "./productAdmin/ProductAdmin";
