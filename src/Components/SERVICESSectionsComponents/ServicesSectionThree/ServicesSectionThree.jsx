@@ -2,11 +2,11 @@ import React from "react";
 
 import img from "../../../assets/images/work5.jpg";
 
-import styles from "./servicesSectionThree.module.scss";
+import "./servicesSectionThree.scss";
 
 export const ServicesSectionThree = () => {
   return (
-    <div className={styles.services_s_three}>
+    <div className="services_s_three">
       <div className="left-s-side">
         <h2>Popravci i restauriranje nakita</h2>
         <p>

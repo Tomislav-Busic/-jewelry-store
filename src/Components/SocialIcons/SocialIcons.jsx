@@ -12,21 +12,21 @@ export const SocialIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <FaFacebookSquare className="social-icon" />
+        <FaFacebookSquare className="social_icon" />
       </a>
       <a
         href="https://www.instagram.com/calviantique_finejewellery/"
         target="_blank"
         rel="noreferrer"
       >
-        <FaInstagramSquare className="social-icon" />
+        <FaInstagramSquare className="social_icon" />
       </a>
       <a
         href="https://www.instagram.com/calviantique_finejewellery/"
         target="_blank"
         rel="noreferrer"
       >
-        <FaLinkedin className="social-icon" />
+        <FaLinkedin className="social_icon" />
       </a>
     </div>
   );

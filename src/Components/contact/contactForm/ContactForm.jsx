@@ -4,7 +4,7 @@ import styles from "./contactForm.module.scss";
 
 export const ContactForm = ({ sendEmail, emailRes, setEmailRes }) => {
   return (
-    <form onSubmit={sendEmail}>
+    <form onSubmit={sendEmail} className={styles.form}>
       {!emailRes ? (
         <>
           <input type="text" name="name" placeholder="Vaše ime" required />

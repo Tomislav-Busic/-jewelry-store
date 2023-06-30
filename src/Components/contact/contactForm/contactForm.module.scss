@@ -1,6 +1,26 @@
 @import "~assets/styles/mixins/mixins.scss";
 @import "~assets/styles/variables/variables.scss";
 
+.form {
+  @include form;
+
+  input {
+    @include input-form;
+  }
+
+  label {
+    @include label-form;
+  }
+
+  textarea {
+    @include textarea-form;
+  }
+
+  button {
+    @include button-form;
+  }
+}
+
 .response {
   @include flex-column;
 

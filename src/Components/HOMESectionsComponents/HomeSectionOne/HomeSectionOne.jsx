@@ -4,11 +4,11 @@ import { TextAnimation } from "components/textAnimation/TextAnimation";
 import { AnimationBtn } from "components/animationBtn/AnimationBtn";
 import { SocialIcons } from "components/socialIcons/SocialIcons";
 
-import styles from "./homeSectionOne.module.scss";
+import "./homeSectionOne.scss";
 
 export const HomeSectionOne = () => {
   return (
-    <div className={styles.home_section_one}>
+    <div className="home_section_one">
       <h1>
         <span>CALVI </span>antique fine jewellery
       </h1>
