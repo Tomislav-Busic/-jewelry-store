@@ -1,8 +1,0 @@
-@import "../../../Styles/Mixins/mixins.scss";
-@import "../../../Styles/Variables/variables.scss";
-
-.filters {
-    max-width: 100%;
-    @include center;
-    @include filters-inputs;
-}
