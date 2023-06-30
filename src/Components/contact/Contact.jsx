@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 import { ContactForm } from "./contactForm/ContactForm";
 import { ContactLinks } from "./contactLinks/ContactLinks";
 
-export const ContactSection = () => {
+export const Contact = () => {
   const [emailRes, setEmailRes] = useState(false);
 
   const sendEmail = (e) => {
