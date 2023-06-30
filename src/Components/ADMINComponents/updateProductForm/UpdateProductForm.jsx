@@ -4,7 +4,7 @@ import { MdFileUpload } from "react-icons/md";
 
 import styles from "./updateProductForm.module.scss";
 
-export const AdminUpdateProductForm = ({
+export const UpdateProductForm = ({
   data,
   handleSubmit,
   handleData,
