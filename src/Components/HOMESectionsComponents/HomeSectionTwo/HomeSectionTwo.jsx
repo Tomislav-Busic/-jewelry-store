@@ -1,10 +1,12 @@
 import React from "react";
-import { AnimationBtn } from "../../animationBtn/AnimationBtn";
-import "./homeSectionTwo.scss";
+
+import { AnimationBtn } from "components/animationBtn/AnimationBtn";
+
+import styles from "./homeSectionTwo.module.scss";
 
 export const HomeSectionTwo = () => {
   return (
-    <div className="home-section-two">
+    <div className={styles.home_section_two}>
       <h1>O nama</h1>
       <p>
         Jedinstveno mjesto u centru Zagreba gdje možete vidjeti kako nastaje

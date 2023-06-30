@@ -1,0 +1,21 @@
+@import "~assets/styles/mixins/mixins.scss";
+@import "~assets/styles/variables/variables.scss";
+
+.home_section_two {
+  background-color: $main-color;
+  @include section-background;
+  @include flex-column;
+
+  h1 {
+    @include h1-section($font-color);
+  }
+  p {
+    color: $font-color;
+    font-size: $font-text;
+    text-align: center;
+
+    @media (max-width: "900px") {
+      font-size: 1.3rem;
+    }
+  }
+}
