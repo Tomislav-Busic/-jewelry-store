@@ -1,0 +1,28 @@
+@import "~assets/styles/mixins/mixins.scss";
+@import "~assets/styles/variables/variables.scss";
+
+.home_section_three {
+  background: linear-gradient(
+      to right,
+      $background 10%,
+      $background-overlay5,
+      $background 90%
+    ),
+    url("../../../images/bisericetiri.jpg");
+  @include section-background;
+  @include flex-column;
+
+  h1 {
+    @include h1-section($main-color);
+  }
+
+  p {
+    color: $font-color;
+    font-size: 1.5rem;
+    text-align: center;
+
+    @media (max-width: "900px") {
+      font-size: 1.3rem;
+    }
+  }
+}

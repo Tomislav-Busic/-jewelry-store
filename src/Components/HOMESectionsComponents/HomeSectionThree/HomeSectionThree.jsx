@@ -1,17 +1,19 @@
 import React from "react";
-import "./homeSectionThree.scss";
+
 import { InfiniteSlider } from "../../infiniteSlider/InfiniteSlider";
 import { AnimationBtn } from "../../animationBtn/AnimationBtn";
 
+import styles from "./homeSectionThree.module.scss";
+
 export const HomeSectionThree = () => {
   return (
-    <div className="home-section-three">
+    <div className={styles.home_section_three}>
       <h1>Trenutno u ponudi</h1>
       <br />
       <InfiniteSlider />
       <AnimationBtn
         name={"Vidi više"}
-        path={"./prodaja"}
+        path={"/prodaja"}
         color={"btn-anim-red"}
       />
     </div>
