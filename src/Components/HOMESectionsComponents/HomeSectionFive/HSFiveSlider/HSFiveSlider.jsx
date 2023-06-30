@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./hSFiveSlider.scss";
 import { testemonials } from "../../../../testemonials/testemonials";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
-import logo from "../../../../images/calvi.png";
+import logo from "../../../../assets/images/calvi.png";
 
 export const HSFiveSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
