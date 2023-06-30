@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "./textAnimation.scss";
+
+import styles from "./textAnimation.module.scss";
 
 const TextVariants = {
   offscreen: {
@@ -32,13 +33,13 @@ export const TextAnimation = () => {
     }, 6100);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [texts.length]);
 
   return (
     <AnimatePresence>
       {" "}
-      <motion.span className="animated-headline">
-        <div className="anim-heading">
+      <motion.span>
+        <div className={styles.anim_heading}>
           <h2>
             {texts.map((word, index) =>
               index === currentWord ? (

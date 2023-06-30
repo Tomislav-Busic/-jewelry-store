@@ -1,0 +1,14 @@
+@import "~assets/styles/variables/variables.scss";
+
+.anim_heading {
+  height: 4rem;
+
+  h2 {
+    font-size: 2.5rem;
+    color: $font-dark;
+
+    @media (max-width: "900px") {
+      font-size: 1.7rem;
+    }
+  }
+}
