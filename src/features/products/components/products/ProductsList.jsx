@@ -9,7 +9,7 @@ import { ProductCard } from "./productCard/ProductCard";
 
 import styles from "./products.module.scss";
 
-export const Products = () => {
+export const ProductsList = () => {
   const products = useSelector((state) => state.data.dataList2);
   const productName = useSelector((state) => state.data.productName);
   const page = useSelector((state) => state.pagination.page);
