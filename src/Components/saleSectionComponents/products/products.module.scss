@@ -1,0 +1,22 @@
+@import "~assets/styles/mixins/mixins.scss";
+@import "~assets/styles/variables/variables.scss";
+@import "~assets/styles/animationsMixins/animationsMixins.scss";
+
+.price {
+  font-size: 1.4rem;
+  color: $font-dark;
+  margin-left: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.products {
+  max-width: 100%;
+  @include center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.btn {
+  @include button-anim2;
+}

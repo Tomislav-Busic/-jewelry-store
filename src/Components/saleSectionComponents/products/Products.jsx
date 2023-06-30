@@ -1,11 +1,13 @@
 import React from "react";
-import "./products.scss";
-import { useSelector, useDispatch } from "react-redux";
-import { ProductCard } from "./productCard/ProductCard";
-import { Pagination } from "antd";
-import { paginationActions } from "../../../store/slice/pagination-slice";
-import { goToTopOfPage } from "../../../utilities/tools";
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { paginationActions } from "store/slice/pagination-slice";
+import { goToTopOfPage } from "utilities/tools";
+import { Pagination } from "antd";
+
+import { ProductCard } from "./productCard/ProductCard";
+
+import styles from "./products.module.scss";
 
 export const Products = () => {
   const products = useSelector((state) => state.data.dataList2);
@@ -17,6 +19,7 @@ export const Products = () => {
 
   const indexOfLastPage = page * productsPerPage;
   const indexOfFirstPage = indexOfLastPage - productsPerPage;
+
   const setPage = (value) => {
     dispatch(paginationActions.changePage(value));
     goToTopOfPage();
@@ -25,8 +28,8 @@ export const Products = () => {
   return (
     <>
       <br />
-      <h2 className="price">Cijene su na upit</h2>
-      <div className="products">
+      <h2 className={styles.price}>Cijene su na upit</h2>
+      <div className={styles.products}>
         {products
           .filter(
             (product) =>
@@ -52,7 +55,7 @@ export const Products = () => {
         style={{ textDecoration: "none" }}
         to={"/kontakt"}
       >
-        <button className="btn">Kontakt</button>
+        <button className={styles.btn}>Kontakt</button>
       </Link>
       <br />
       <br />
