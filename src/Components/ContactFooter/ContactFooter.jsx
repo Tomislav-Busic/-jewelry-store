@@ -10,127 +10,115 @@ import { GiShop } from "react-icons/gi";
 
 import logo from "../../assets/images/calvi.png";
 
-import styles from "./contactFooter.module.scss";
+import "./contactFooter.scss";
 
 export const ContactFooter = () => {
   return (
-    <div className={styles.footer_contact}>
-      <div className={styles.footer_contact_container}>
-        <div className={styles.f_con_item}>
+    <div className="footer_contact">
+      <div className="footer_contact_container">
+        <div className="f_con_item">
           <img src={logo} alt="logo" />
         </div>
-        <div className={styles.f_con_item}>
+        <div className="f_con_item">
           <ul>
             <h2>Stranica</h2>
             <li>
-              <FaLink className={styles.icon} />
-              <Link to="/" className={styles.link} onClick={goToTopOfPage}>
+              <FaLink className="icon" />
+              <Link to="/" className="link" onClick={goToTopOfPage}>
                 Početna
               </Link>
             </li>
             <li>
-              <FaLink className={styles.icon} />
-              <Link
-                to="/prodaja"
-                className={styles.link}
-                onClick={goToTopOfPage}
-              >
+              <FaLink className="icon" />
+              <Link to="/prodaja" className="link" onClick={goToTopOfPage}>
                 Prodaja
               </Link>
             </li>
             <li>
-              <FaLink className={styles.icon} />
-              <Link
-                to="/usluge"
-                className={styles.link}
-                onClick={goToTopOfPage}
-              >
+              <FaLink className="icon" />
+              <Link to="/usluge" className="link" onClick={goToTopOfPage}>
                 Usluge
               </Link>
             </li>
             <li>
-              <FaLink className={styles.icon} />
-              <Link
-                to="/kontakt"
-                className={styles.link}
-                onClick={goToTopOfPage}
-              >
+              <FaLink className="icon" />
+              <Link to="/kontakt" className="link" onClick={goToTopOfPage}>
                 Kontakt
               </Link>
             </li>
           </ul>
         </div>
-        <div className={styles.f_con_item}>
+        <div className="f_con_item">
           <ul>
             <h2>Kontakt</h2>
             <li>
-              <IoMail className={styles.icon} />
-              <a href="mailto:anita@calviantique.hr" className={styles.link}>
+              <IoMail className="icon" />
+              <a href="mailto:anita@calviantique.hr" className="link">
                 anita@calviantique.hr
               </a>
             </li>
             <li>
-              <IoCall className={styles.icon} />
-              <a href="tel:+385992882894" className={styles.link}>
+              <IoCall className="icon" />
+              <a href="tel:+385992882894" className="link">
                 <span>Anita</span> +385992882894
               </a>
             </li>
             <li>
-              <IoCall className={styles.icon} />
-              <a href="tel:+38598229078" className={styles.link}>
+              <IoCall className="icon" />
+              <a href="tel:+38598229078" className="link">
                 <span>Ivica</span> +38598229078
               </a>
             </li>
             <li>
-              <FaMapMarkerAlt className={styles.icon} />
-              <p className={styles.link}>Praška 10, Zagreb</p>
+              <FaMapMarkerAlt className="icon" />
+              <p className="link">Praška 10, Zagreb</p>
             </li>
           </ul>
         </div>
-        <div className={styles.f_con_item}>
+        <div className="f_con_item">
           <ul>
             <h2>Calvi antique</h2>
             <li>
-              <GiShop className={styles.icon} />
-              <p className={styles.link}>CALVI ANTIQUE j.d.o.o.</p>
+              <GiShop className="icon" />
+              <p className="link">CALVI ANTIQUE j.d.o.o.</p>
             </li>
             <li>
-              <FaUser className={styles.icon} />
-              <p className={styles.link}>Anita Calvi</p>
+              <FaUser className="icon" />
+              <p className="link">Anita Calvi</p>
             </li>
             <li>
-              <FaMapMarkerAlt className={styles.icon} />
-              <p className={styles.link}>Praška 10, Zagreb</p>
+              <FaMapMarkerAlt className="icon" />
+              <p className="link">Praška 10, Zagreb</p>
             </li>
             <li>
-              <FaKey className={styles.icon} />
-              <Link to="/admin" className={styles.link} onClick={goToTopOfPage}>
+              <FaKey className="icon" />
+              <Link to="/admin" className="link" onClick={goToTopOfPage}>
                 Administrator
               </Link>
             </li>
           </ul>
         </div>
-        <div className={styles.f_con_item}>
+        <div className="f_con_item">
           <ul>
             <h2>Radno vrijeme</h2>
             <li>
-              <p className={styles.time}>Pon-Pet:</p>
-              <p className={styles.link}>9-14h ; 17-19h</p>
+              <p className="time">Pon-Pet:</p>
+              <p className="link">9-14h ; 17-19h</p>
             </li>
             <li>
-              <p className={styles.time}>Sub:</p>
-              <p className={styles.link}>9-14h</p>
+              <p className="time">Sub:</p>
+              <p className="link">9-14h</p>
             </li>
             <li>
-              <p className={styles.time}>Ned:</p>
-              <p className={styles.link}>Ne radimo</p>
+              <p className="time">Ned:</p>
+              <p className="link">Ne radimo</p>
             </li>
           </ul>
         </div>
       </div>
       <iframe
         title="map"
-        className={styles.map}
+        className="map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5561.997434253886!2d15.974978527278504!3d45.81128408400844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6fc299fd2e1%3A0xe38d6d13b1fff011!2sPra%C5%A1ka%20ul.%2010%2C%2010000%2C%20Zagreb!5e0!3m2!1sbs!2shr!4v1676570422584!5m2!1sbs!2shr"
         loading="lazy"
       ></iframe>
