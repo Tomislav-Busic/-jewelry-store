@@ -1,21 +1,22 @@
 import React from "react";
-import "./infiniteSlider.scss";
 import { useSelector } from "react-redux";
+
+import styles from "./infiniteSlider.module.scss";
 
 export const InfiniteSlider = () => {
   const images = useSelector((state) => state.data.dataList);
 
   return (
-    <div className="slider-component">
-      <div className="slider">
-        <div className="slide-track">
+    <div className={styles.slider_component}>
+      <div className={styles.slider}>
+        <div className={styles.slide_track}>
           {images.map((img, index) => (
-            <div className="slide" key={index}>
+            <div className={styles.slide} key={index}>
               <img src={img.img} alt="img" />
             </div>
           ))}
         </div>
-        <div className="slide-track two">
+        <div className={styles.slide_track_two} style={{}}>
           {images.map((img, index) => (
             <div className="slide" key={index}>
               <img src={img.img} alt="img" />
