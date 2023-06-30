@@ -7,7 +7,7 @@
       $background-overlay1,
       $background-overlay2
     ),
-    url("../../../images/narukvicabis.jpg");
+    url("../../assets/images/narukvicabis.jpg");
   @include section-background;
   @include flex-column;
   width: 100%;
@@ -19,7 +19,7 @@
         $background-overlay1,
         $background-overlay0
       ),
-      url("../../../images/threerings.jpg");
+      url("../../assets/images/threerings.jpg");
     @include section-background;
     background-position: center;
   }

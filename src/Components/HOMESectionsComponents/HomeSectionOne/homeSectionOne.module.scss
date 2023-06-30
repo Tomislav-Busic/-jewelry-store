@@ -7,7 +7,7 @@
       $background-overlay1 20%,
       $background-overlay2
     ),
-    url("../../../images/prstend.jpg");
+    url("../../../assets/images/prstend.jpg");
   @include section-background;
 
   @media (max-width: "900px") {
@@ -16,7 +16,7 @@
         $background-overlay1 20%,
         $background-overlay2
       ),
-      url("../../../images/prstendpoz.jpg");
+      url("../../../assets/images/prstendpoz.jpg");
     @include background-img;
     padding: 20% 3rem;
   }

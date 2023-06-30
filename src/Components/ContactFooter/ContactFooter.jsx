@@ -8,7 +8,7 @@ import { IoMail, IoCall } from "react-icons/io5";
 import { FaUser, FaKey, FaLink, FaMapMarkerAlt } from "react-icons/fa";
 import { GiShop } from "react-icons/gi";
 
-import logo from "../../images/calvi.png";
+import logo from "../../assets/images/calvi.png";
 
 import styles from "./contactFooter.module.scss";
 

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { goToTopOfPage } from "../../utilities/tools";
+import { goToTopOfPage } from "utilities/tools";
 
-import logo from "../../images/calvi.png";
+import logo from "../../assets/images/calvi.png";
 
 import styles from "./navbar.module.scss";
 
