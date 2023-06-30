@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { loginActions } from "./store/slice/login/login-slice";
-import { firebaseData } from "./firebaseDB/firebaseData";
 
 import { Layouts } from "layouts/Layouts";
 import { HomePage } from "./pages/homePage/HomePage";
@@ -28,8 +27,6 @@ function App() {
   useEffect(() => {
     const currentUser = JSON.parse(localStorage.getItem("user")) || null;
     dispatch(loginActions.login(currentUser));
-
-    firebaseData(dispatch);
   }, [dispatch]);
 
   const RequireAuth = ({ children }) => {
