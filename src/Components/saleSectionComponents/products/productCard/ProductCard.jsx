@@ -1,7 +1,8 @@
 import React from "react";
-import "./productCard.scss";
 import { useDispatch } from "react-redux";
-import { modalActions } from "../../../../store/slice/modal-slice";
+import { modalActions } from "store/slice/modal-slice";
+
+import styles from "./productCard.module.scss";
 
 export const ProductCard = ({ product }) => {
   const { id, name, category, img, img_name } = product;
@@ -13,12 +14,12 @@ export const ProductCard = ({ product }) => {
     dispatch(modalActions.closeModal());
   };
   return (
-    <div className="product-card" id={id}>
+    <div className={styles.product_card} id={id}>
       <img onClick={() => openImg(img, name)} src={img} alt={img_name} />
-      <div className="category">
+      <div className={styles.category}>
         <h3>{category}</h3>
       </div>
-      <div className="info-card">
+      <div className={styles.info_card}>
         <h3>{name}</h3>
       </div>
     </div>
