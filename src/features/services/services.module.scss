@@ -1,6 +1,7 @@
 @import "~assets/styles/variables/variables.scss";
 @import "~assets/styles/mixins/mixins.scss";
 
-.services_page {
-  @include page-layout(3rem, 0, 0, 0);
+.container {
+  @include flex-column;
+  width: 100%;
 }
