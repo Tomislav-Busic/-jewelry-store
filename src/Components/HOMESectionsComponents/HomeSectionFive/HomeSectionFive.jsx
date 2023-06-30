@@ -1,13 +1,15 @@
 import React from "react";
-import "./homeSectionFive.scss";
-import { AnimationBtn } from "../../animationBtn/AnimationBtn";
-import { HSFiveSlider } from "./hSFiveSlider/HSFiveSlider";
+
+import { AnimationBtn } from "components/animationBtn/AnimationBtn";
+import { ImgSlider } from "./imgSlider/ImgSlider";
+
+import styles from "./homeSectionFive.module.scss";
 
 export const HomeSectionFive = () => {
   return (
-    <div className="home-section-five">
+    <div className={styles.home_section_five}>
       <h1>Preporuke</h1>
-      <HSFiveSlider />
+      <ImgSlider />
       <AnimationBtn
         name={"Kontakt"}
         path={"./kontakt"}

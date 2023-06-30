@@ -1,0 +1,29 @@
+@import "~assets/styles/mixins/mixins.scss";
+@import "~assets/styles/variables/variables.scss";
+
+.home_section_five {
+  background: linear-gradient(
+      to right,
+      $background 10%,
+      $background-overlay5,
+      $background 90%
+    ),
+    url("../../../images/zlanac.jpg");
+  @include section-background;
+  @include flex-column;
+  width: 100%;
+
+  h1 {
+    @include h1-section($main-color);
+  }
+
+  p {
+    color: $font-color;
+    font-size: 1.5rem;
+    text-align: center;
+
+    @media (max-width: "900px") {
+      font-size: 1.3rem;
+    }
+  }
+}

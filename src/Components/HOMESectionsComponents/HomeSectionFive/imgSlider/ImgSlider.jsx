@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import "./hSFiveSlider.scss";
-import { testemonials } from "../../../../testemonials/testemonials";
-import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
-import logo from "../../../../assets/images/calvi.png";
 
-export const HSFiveSlider = () => {
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+
+import { testemonials } from "../../../../assets/testemonials/testemonials";
+import logo from "../../../../assets/images/logo.jpg";
+
+import styles from "./imgSlider.module.scss";
+
+export const ImgSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
@@ -20,15 +23,23 @@ export const HSFiveSlider = () => {
   };
 
   return (
-    <div className="slider-testem">
-      <button className="btn-st left" onClick={goToPrevious}>
-        <FaChevronLeft className="icon" />
+    <div className={styles.slider_testem}>
+      <button
+        className={styles.btn_st}
+        style={{ left: "1rem" }}
+        onClick={goToPrevious}
+      >
+        <FaChevronLeft className={styles.icon} />
       </button>
-      <button className="btn-st right" onClick={goToNext}>
-        <FaChevronRight className="icon" />
+      <button
+        className={styles.btn_st}
+        style={{ right: "1rem" }}
+        onClick={goToNext}
+      >
+        <FaChevronRight className={styles.icon} />
       </button>
-      <div className="slider-content">
-        <div className="logo">
+      <div className={styles.slider_content}>
+        <div className={styles.logo}>
           <img src={logo} alt="img" />
         </div>
         <h4>
