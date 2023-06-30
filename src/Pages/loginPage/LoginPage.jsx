@@ -5,7 +5,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import { loginActions } from "../../store/slice/login-slice";
 import { goToTopOfPage } from "../../utilities/tools";
-import { LoginForm } from "../../components/adminComponents/loginForm/LoginForm";
+import { LoginForm } from "components/adminComponents/loginForm/LoginForm";
 
 import styles from "./login.module.scss";
 
