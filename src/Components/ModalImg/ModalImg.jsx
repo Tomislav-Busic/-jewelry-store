@@ -1,7 +1,8 @@
 import React from "react";
-import "./modalImg.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { modalActions } from "../../store/slice/modal-slice";
+import { modalActions } from "store/slice/modal-slice";
+
+import styles from "./modalImg.module.scss";
 
 export const ModalImg = () => {
   const dispatch = useDispatch();
@@ -13,7 +14,7 @@ export const ModalImg = () => {
   };
 
   return (
-    <div className="modal" onClick={() => toggleModal()}>
+    <div className={styles.modal} onClick={() => toggleModal()}>
       <h2>{name}</h2>
       <img src={src} alt="img" />
     </div>
