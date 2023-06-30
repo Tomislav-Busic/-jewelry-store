@@ -1,25 +1,29 @@
 import React from "react";
-import "./homeSectionFour.scss";
-import img1 from "../../../images/prstend.jpg";
-import img2 from "../../../images/goldring.jpg";
-import img3 from "../../../images/threerings.jpg";
-import img4 from "../../../images/rucprsten.jpg";
-import img5 from "../../../images/work6.jpg";
-import img6 from "../../../images/work4.jpg";
-import img7 from "../../../images/vaza.jpg";
-import img8 from "../../../images/ormaric.jpg";
-import img9 from "../../../images/sofa.jpg";
-import { AnimationBtn } from "../../animationBtn/AnimationBtn";
+
+import { AnimationBtn } from "components/animationBtn/AnimationBtn";
 import { HomeSecFourCard } from "./homeSecFourCard/HomeSecFourCard";
+
+import img1 from "../../../assets/images/prstend.jpg";
+import img2 from "../../../assets/images/goldring.jpg";
+import img3 from "../../../assets/images/threerings.jpg";
+import img4 from "../../../assets/images/rucprsten.jpg";
+import img5 from "../../../assets/images/work6.jpg";
+import img6 from "../../../assets/images/work4.jpg";
+import img7 from "../../../assets/images/vaza.jpg";
+import img8 from "../../../assets/images/ormaric.jpg";
+import img9 from "../../../assets/images/sofa.jpg";
+
+import styles from "./homeSectionFour.module.scss";
 
 export const HomeSectionFour = () => {
   const imagesMakingOf = [img1, img2, img3];
   const imagesRepairs = [img4, img5, img6];
   const imagesAntique = [img7, img8, img9];
+
   return (
-    <div className="home-section-four">
+    <div className={styles.home_section_four}>
       <h1>Usluge</h1>
-      <div className="hsf-images">
+      <div className={styles.hsf_images}>
         <HomeSecFourCard
           images={imagesMakingOf}
           title={"Izrada nakita po narudžbi"}

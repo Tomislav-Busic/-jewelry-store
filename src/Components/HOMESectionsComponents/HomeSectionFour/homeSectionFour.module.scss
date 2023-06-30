@@ -1,0 +1,19 @@
+@import "~assets/styles/mixins/mixins.scss";
+@import "~assets/styles/variables/variables.scss";
+
+.home_section_four {
+  background-color: $main-color;
+  @include section-background;
+  @include flex-column;
+
+  h1 {
+    @include h1-section($font-color);
+  }
+
+  .hsf_images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+}
