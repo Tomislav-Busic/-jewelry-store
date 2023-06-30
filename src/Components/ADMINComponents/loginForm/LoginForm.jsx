@@ -1,7 +1,8 @@
 import React from "react";
-import "./adminLoginForm.scss";
 
-export const AdminLoginForm = ({
+import styles from "./login.module.scss";
+
+export const LoginForm = ({
   handleLogin,
   isLoggedIn,
   goToDashboard,
@@ -10,7 +11,7 @@ export const AdminLoginForm = ({
   error,
 }) => {
   return (
-    <form onSubmit={handleLogin}>
+    <form onSubmit={handleLogin} className={styles.form}>
       {isLoggedIn ? (
         <button onClick={goToDashboard}>Admin dashboard</button>
       ) : (

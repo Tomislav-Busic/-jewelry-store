@@ -5,7 +5,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import { loginActions } from "../../store/slice/login-slice";
 import { goToTopOfPage } from "../../utilities/tools";
-import { AdminLoginForm } from "../../components/adminComponents/adminLoginForm/AdminLoginForm";
+import { LoginForm } from "../../components/adminComponents/loginForm/LoginForm";
 
 import styles from "./login.module.scss";
 
@@ -59,7 +59,7 @@ export const LoginPage = () => {
           stranicu! Hvala :)
         </h2>
         <button onClick={handleBack}>Povratak na početnu</button>
-        <AdminLoginForm
+        <LoginForm
           handleLogin={handleLogin}
           isLoggedIn={isLoggedIn}
           goToDashboard={goToDashboard}
