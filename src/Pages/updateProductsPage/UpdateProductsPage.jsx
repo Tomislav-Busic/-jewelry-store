@@ -8,7 +8,7 @@ import { UpdateProductForm } from "components/adminComponents/updateProductForm/
 
 import styles from "./updateProduct.module.scss";
 
-export const UpdateProducts = () => {
+export const UpdateProductsPage = () => {
   const [data, setData] = useState({});
   const [file, setFile] = useState("");
   const [perc, setPerc] = useState(null);

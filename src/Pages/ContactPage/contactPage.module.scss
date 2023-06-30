@@ -2,7 +2,7 @@
 @import "~assets/styles/mixins/mixins.scss";
 
 .contact_page {
-  @include page-layout;
+  @include page-layout(3rem, 0, 0, 0);
 
   .container {
     @include flex-column;

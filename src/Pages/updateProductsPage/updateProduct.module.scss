@@ -1,8 +1,7 @@
 @import "~assets/styles/mixins/mixins.scss";
 
 .admin_update {
-  @include page-layout;
-  padding: 10rem 0;
+  @include page-layout(10rem, 0, 10rem, 0);
 
   h1 {
     font-weight: 300;

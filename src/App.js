@@ -15,7 +15,7 @@ import { HomePage } from "./pages/homePage/HomePage";
 import { ServicesPage } from "./pages/servicesPage/ServicesPage";
 import { LoginPage } from "./pages/loginPage/LoginPage";
 import { DashboardPage } from "./pages/dashboardPage/DashboardPage";
-import { UpdateProducts } from "./pages/updateProducts/UpdateProducts";
+import { UpdateProductsPage } from "./pages/updateProductsPage/UpdateProductsPage";
 import { ProductsPage } from "./pages/productsPage/ProductsPage";
 import { ContactPage } from "./pages/contactPage/ContactPage";
 import { ContactFooter } from "./components/contactFooter/ContactFooter";
@@ -60,7 +60,7 @@ function App() {
             path="/update"
             element={
               <RequireAuth>
-                <UpdateProducts />
+                <UpdateProductsPage />
               </RequireAuth>
             }
           />
