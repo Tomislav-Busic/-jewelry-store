@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
-import { ContactForm } from "./contactForm/ContactForm";
+import { ContactForm } from "./components/contactForm/ContactForm";
 import { ContactLinks } from "./contactLinks/ContactLinks";
 
 import styles from "./contact.module.scss";
@@ -32,15 +32,17 @@ export const Contact = () => {
   };
 
   return (
-    <div className={styles.contact_section}>
-      <h1>Kontakt</h1>
-      <div className={styles.contact_container}>
-        <ContactForm
-          sendEmail={sendEmail}
-          emailRes={emailRes}
-          setEmailRes={setEmailRes}
-        />
-        <ContactLinks />
+    <div className={styles.container}>
+      <div className={styles.contact_section}>
+        <h1>Kontakt</h1>
+        <div className={styles.contact_container}>
+          <ContactForm
+            sendEmail={sendEmail}
+            emailRes={emailRes}
+            setEmailRes={setEmailRes}
+          />
+          <ContactLinks />
+        </div>
       </div>
     </div>
   );

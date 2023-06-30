@@ -1,0 +1,10 @@
+@import "~assets/styles/mixins/mixins.scss";
+
+.container {
+  @include flex-column;
+
+  h1 {
+    font-weight: 300;
+    color: $main-color;
+  }
+}

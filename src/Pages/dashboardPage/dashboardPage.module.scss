@@ -2,12 +2,4 @@
 
 .admin_dashboard {
   @include page-layout(10rem, 0, 10rem, 0);
-
-  h1 {
-    font-weight: 300;
-    color: $main-color;
-  }
-  .container {
-    @include flex-column;
-  }
 }
