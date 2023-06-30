@@ -1,0 +1,80 @@
+@import "~assets/styles/mixins/mixins.scss";
+@import "~assets/styles/variables/variables.scss";
+
+.contact_links {
+  @include flex-column;
+  width: 50%;
+  padding: 2rem 1rem;
+
+  .f_con_item {
+    display: flex;
+    justify-content: center;
+    width: 18rem;
+    padding: 0.5rem;
+
+    img {
+      width: 80%;
+    }
+
+    ul {
+      width: 100%;
+
+      h2 {
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        padding-bottom: 0.5rem;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        .icon {
+          height: 2rem;
+          width: 2rem;
+          margin-right: 1rem;
+          fill: $main-color;
+        }
+
+        .link {
+          cursor: pointer;
+          text-decoration: none;
+          color: $main-color;
+          font-weight: 600;
+          font-size: $font-text;
+
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  .social {
+    padding: 1rem 0 1rem 0;
+    @include center;
+
+    a {
+      color: $main-color;
+
+      .social_icon {
+        margin: 0.5rem;
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
