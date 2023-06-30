@@ -1,8 +1,9 @@
 import React from "react";
-import "./categoriesMenu.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { dataActions } from "../../../store/slice/data-slice";
-import { paginationActions } from "../../../store/slice/pagination-slice";
+import { dataActions } from "store/slice/data-slice";
+import { paginationActions } from "store/slice/pagination-slice";
+
+import styles from "./categoriesMenu.module.scss";
 
 export const CategoriesMenu = () => {
   const category = useSelector((state) => state.data.categoryName);
@@ -19,33 +20,33 @@ export const CategoriesMenu = () => {
   };
 
   return (
-    <div className="categories">
+    <div className={styles.categories}>
       <button
-        className={category === "" ? "active" : ""}
+        className={category === "" ? `${styles.active}` : ""}
         onClick={() => handleShowAll()}
       >
         Svi proizvodi
       </button>
       <button
-        className={category === "nakit" ? "active" : ""}
+        className={category === "nakit" ? `${styles.active}` : ""}
         onClick={() => handleChangeCategory("nakit")}
       >
         Nakit
       </button>
       <button
-        className={category === "antikviteti" ? "active" : ""}
+        className={category === "antikviteti" ? `${styles.active}` : ""}
         onClick={() => handleChangeCategory("antikviteti")}
       >
         Antikviteti
       </button>
       <button
-        className={category === "slike" ? "active" : ""}
+        className={category === "slike" ? `${styles.active}` : ""}
         onClick={() => handleChangeCategory("slike")}
       >
         Slike
       </button>
       <button
-        className={category === "ostalo" ? "active" : ""}
+        className={category === "ostalo" ? `${styles.active}` : ""}
         onClick={() => handleChangeCategory("ostalo")}
       >
         Ostalo
