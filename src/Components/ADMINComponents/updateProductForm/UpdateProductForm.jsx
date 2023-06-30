@@ -1,6 +1,8 @@
 import React from "react";
+
 import { MdFileUpload } from "react-icons/md";
-import "./adminUpdateProductForm.scss";
+
+import styles from "./updateProductForm.module.scss";
 
 export const AdminUpdateProductForm = ({
   data,
@@ -12,7 +14,7 @@ export const AdminUpdateProductForm = ({
   perc,
 }) => {
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.form}>
       <h3>Ažuriraj {data?.name}</h3>
       <input
         value={data?.name || ""}
@@ -30,7 +32,7 @@ export const AdminUpdateProductForm = ({
       <img src={file ? URL.createObjectURL(file) : data?.img} alt="" />
       <label htmlFor="file">
         Učitaj sliku: <br />
-        <MdFileUpload className="icon" />
+        <MdFileUpload className={styles.icon} />
       </label>
       <input
         type="file"

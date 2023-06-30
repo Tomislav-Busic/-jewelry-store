@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { serverTimestamp, doc, updateDoc } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { db, storage } from "../../firebase";
-import { goToTopOfPage } from "../../utilities/tools";
-import { AdminUpdateProductForm } from "../../components/adminComponents/adminUpdateProductForm/AdminUpdateProductForm";
+import { db, storage } from "firebase";
+import { goToTopOfPage } from "utilities/tools";
+import { UpdateProductForm } from "components/adminComponents/updateProductForm/UpdateProductForm";
 
 import styles from "./updateProduct.module.scss";
 
@@ -94,7 +94,7 @@ export const UpdateProducts = () => {
     <div className={styles.admin_update}>
       <h1>Update Product</h1>
       <div className={styles.container}>
-        <AdminUpdateProductForm
+        <UpdateProductForm
           data={data}
           handleSubmit={handleSubmit}
           handleData={handleData}
