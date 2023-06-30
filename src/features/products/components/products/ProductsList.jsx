@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { paginationActions } from "store/slice/pagination-slice";
+import { paginationActions } from "store/slice/pagination/pagination-slice";
 import { goToTopOfPage } from "utilities/tools";
 import { Pagination } from "antd";
 

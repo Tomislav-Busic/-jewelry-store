@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { modalActions } from "store/slice/modal-slice";
+import { modalActions } from "store/slice/modal/modal-slice";
 
 import styles from "./modalImg.module.scss";
 

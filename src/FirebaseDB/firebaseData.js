@@ -1,6 +1,6 @@
 import { db } from "../firebase";
 import { collection, onSnapshot } from "firebase/firestore";
-import { dataActions } from "../store/slice/data-slice";
+import { dataActions } from "../store/slice/data/data-slice";
 
 export const firebaseData = (dispatch) => {
   const unsub = onSnapshot(

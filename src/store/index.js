@@ -3,12 +3,12 @@ import {
   configureStore,
   createSerializableStateInvariantMiddleware,
 } from "@reduxjs/toolkit";
-import { loginSlice } from "./slice/login-slice";
-import { dataSlice } from "./slice/data-slice";
-import { paginationSlice } from "./slice/pagination-slice";
-import { modalSlice } from "./slice/modal-slice";
+import { loginSlice } from "./slice/login/login-slice";
+import { dataSlice } from "./slice/data/data-slice";
+import { paginationSlice } from "./slice/pagination/pagination-slice";
+import { modalSlice } from "./slice/modal/modal-slice";
 
-// I found a solution but I don't know how exactly it works??? :))) (from line 10 t 34)
+// I found a solution (from line 10 t 34)
 //https://redux-toolkit.js.org/api/serializabilityMiddleware
 function isPlain(val) {
   return (

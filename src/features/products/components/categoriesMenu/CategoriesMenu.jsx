@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { dataActions } from "store/slice/data-slice";
-import { paginationActions } from "store/slice/pagination-slice";
+import { dataActions } from "store/slice/data/data-slice";
+import { paginationActions } from "store/slice/pagination/pagination-slice";
 
 import styles from "./categoriesMenu.module.scss";
 

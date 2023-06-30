@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { dataActions } from "store/slice/data-slice";
+import { dataActions } from "store/slice/data/data-slice";
 
 import styles from "./filters.module.scss";
 

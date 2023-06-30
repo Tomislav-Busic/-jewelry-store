@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
-import { loginActions } from "store/slice/login-slice";
+import { loginActions } from "store/slice/login/login-slice";
 import { goToTopOfPage } from "utilities/tools";
 import { LoginForm } from "./components/loginForm/LoginForm";
 
