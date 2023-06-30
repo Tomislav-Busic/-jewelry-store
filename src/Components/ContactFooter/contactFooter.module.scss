@@ -1,0 +1,111 @@
+@import "~assets/styles/mixins/mixins.scss";
+@import "~assets/styles/variables/variables.scss";
+
+.footer_contact {
+  min-height: 40vh;
+  background-color: $main-color;
+  color: $font-color;
+  @include flex-column;
+
+  .footer_contact_container {
+    padding: 4rem 0 0 0;
+    @include center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .f_con_item {
+      display: flex;
+      justify-content: center;
+      width: 17rem;
+      margin: 1rem;
+      padding: 0.5rem;
+
+      img {
+        width: 80%;
+      }
+
+      ul {
+        width: 100%;
+
+        h2 {
+          margin-bottom: 0.5rem;
+          text-align: center;
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: baseline;
+          padding-bottom: 0.5rem;
+
+          .icon {
+            height: 1.4rem;
+            width: 1.4rem;
+            margin-right: 1rem;
+          }
+
+          .link {
+            cursor: pointer;
+            text-decoration: none;
+            color: $font-color;
+            font-weight: 400;
+            font-size: 1.3rem;
+
+            span {
+              font-weight: 600;
+            }
+          }
+
+          .time {
+            color: $font-color;
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .map {
+    margin-top: 2rem;
+    height: 25rem;
+    width: 35rem;
+    border: 5px solid $font-color;
+
+    @media (max-width: "900px") {
+      height: 20rem;
+      width: 20rem;
+    }
+
+    @media (max-width: "320px") {
+      height: 20rem;
+      width: 18rem;
+    }
+
+    .social {
+      @include social-icons;
+    }
+  }
+
+  .social {
+    padding: 2rem 0 6rem 0;
+    @include center;
+
+    a {
+      color: $font-color;
+
+      .social_icon {
+        margin: 0.5rem;
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
