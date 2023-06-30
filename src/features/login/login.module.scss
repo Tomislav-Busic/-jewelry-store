@@ -1,8 +1,8 @@
 @import "~assets/styles/mixins/mixins.scss";
 @import "~assets/styles/variables/variables.scss";
 
-.loggin {
-  @include page-layout(10rem, 0, 10rem, 0);
+.container {
+  @include flex-column;
 
   h1 {
     font-weight: 300;
@@ -13,12 +13,8 @@
     @include button-form;
   }
 
-  .container {
-    @include flex-column;
-
-    h2 {
-      color: $main-color;
-      text-align: center;
-    }
+  h2 {
+    color: $main-color;
+    text-align: center;
   }
 }

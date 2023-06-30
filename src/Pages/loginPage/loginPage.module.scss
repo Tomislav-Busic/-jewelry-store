@@ -1,0 +1,6 @@
+@import "~assets/styles/mixins/mixins.scss";
+@import "~assets/styles/variables/variables.scss";
+
+.loggin {
+  @include page-layout(10rem, 0, 10rem, 0);
+}
