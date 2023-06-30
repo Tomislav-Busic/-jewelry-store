@@ -1,0 +1,14 @@
+@import "~assets/styles/animationsMixins/animationsMixins.scss";
+@import "~assets/styles/variables/variables.scss";
+
+.btn_anim_red {
+  display: flex;
+  margin: 1rem 0;
+  @include button-anim($main-color);
+}
+
+.btn_anim_gold {
+  display: flex;
+  margin: 1rem 0;
+  @include button-anim($font-color);
+}
