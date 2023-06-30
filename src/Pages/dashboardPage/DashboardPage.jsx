@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { db, storage } from "../../firebase";
-import { ListOfProductsAdmin } from "../../components/adminComponents/listOfProductsAdmin/ListOfProductsAdmin";
-import { AdminPostProductForm } from "../../components/adminComponents/adminPostProductForm/AdminPostProductForm";
-import { LogoutBtn } from "../../components/logoutBtn/LogoutBtn";
+import { db, storage } from "firebase";
+import { ListOfProductsAdmin } from "components/adminComponents/listOfProductsAdmin/ListOfProductsAdmin";
+import { PostProductForm } from "components/adminComponents/postProductForm/PostProductForm";
+import { LogoutBtn } from "components/logoutBtn/LogoutBtn";
 
 import styles from "./dashboardPage.module.scss";
 
@@ -80,7 +80,7 @@ export const DashboardPage = () => {
       <LogoutBtn />
       <h1>Administrator</h1>
       <div className={styles.container}>
-        <AdminPostProductForm
+        <PostProductForm
           handleSubmit={handleSubmit}
           handleData={handleData}
           setFile={setFile}

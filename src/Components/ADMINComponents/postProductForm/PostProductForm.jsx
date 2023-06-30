@@ -1,8 +1,10 @@
 import React from "react";
-import "./adminPostProductForm.scss";
+
 import { MdFileUpload } from "react-icons/md";
 
-export const AdminPostProductForm = ({
+import styles from "./postProductForm.module.scss";
+
+export const PostProductForm = ({
   handleSubmit,
   handleData,
   setFile,
@@ -10,7 +12,7 @@ export const AdminPostProductForm = ({
   perc,
 }) => {
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.form}>
       <h3>Unesite novi proizvod</h3>
       <input
         type="text"
@@ -35,7 +37,7 @@ export const AdminPostProductForm = ({
       />
       <label htmlFor="file">
         Učitaj sliku: <br />
-        <MdFileUpload className="icon" />
+        <MdFileUpload className={styles.icon} />
       </label>
       <input
         type="file"
