@@ -1,0 +1,11 @@
+@import "~assets/styles/mixins/mixins.scss";
+@import "~assets/styles/variables/variables.scss";
+
+.services_s_two {
+  background-color: $main-color;
+  @include section-background;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  @include services-section-sides($font-color, $font-color);
+}

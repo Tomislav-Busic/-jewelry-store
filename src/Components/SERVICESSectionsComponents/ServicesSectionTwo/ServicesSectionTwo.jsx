@@ -1,10 +1,12 @@
 import React from "react";
-import "./servicesSectionTwo.scss";
-import img from "../../../images/work1.jpg";
+
+import img from "../../../assets/images/work1.jpg";
+
+import styles from "./servicesSectionTwo.module.scss";
 
 export const ServicesSectionTwo = () => {
   return (
-    <div className="services-s-two">
+    <div className={styles.services_s_two}>
       <div className="left-s-side">
         <h2>Izrada nakita po narudžbi</h2>
         <p>
