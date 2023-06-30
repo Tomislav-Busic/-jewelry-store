@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import "./contactSection.scss";
 import emailjs from "emailjs-com";
+
 import { ContactForm } from "./contactForm/ContactForm";
 import { ContactLinks } from "./contactLinks/ContactLinks";
+
+import styles from "./contact.module.scss";
 
 export const Contact = () => {
   const [emailRes, setEmailRes] = useState(false);
@@ -30,9 +32,9 @@ export const Contact = () => {
   };
 
   return (
-    <div className="contact-section">
+    <div className={styles.contact_section}>
       <h1>Kontakt</h1>
-      <div className="contact-container">
+      <div className={styles.contact_container}>
         <ContactForm
           sendEmail={sendEmail}
           emailRes={emailRes}

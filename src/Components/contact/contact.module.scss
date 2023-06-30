@@ -1,38 +1,42 @@
-@import "../../../Styles/Mixins/mixins.scss";
-@import "../../../Styles/Variables/variables.scss";
+@import "~assets/styles/mixins/mixins.scss";
+@import "~assets/styles/variables/variables.scss";
 
-.contact-section {
-    background:
-        linear-gradient(to right, $background-overlay1 ,
-        $background-overlay2),
-        url("../../../images/narukvicabis.jpg");
+.contact_section {
+  background: linear-gradient(
+      to right,
+      $background-overlay1,
+      $background-overlay2
+    ),
+    url("../../../images/narukvicabis.jpg");
+  @include section-background;
+  @include flex-column;
+  width: 100%;
+  padding-top: 5rem;
+
+  @media (max-width: "900px") {
+    background: linear-gradient(
+        to right,
+        $background-overlay1,
+        $background-overlay0
+      ),
+      url("../../../images/threerings.jpg");
     @include section-background;
-    @include flex-column;
+    background-position: center;
+  }
+
+  h1 {
+    @include h1-section($main-color);
+
+    @media (max-width: "700px") {
+      padding-top: 2rem;
+    }
+  }
+
+  .contact_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    padding-top: 5rem;
-
-    @media (max-width: "900px") {
-        background:
-            linear-gradient(to right, $background-overlay1 ,
-            $background-overlay0),
-            url("../../../images/threerings.jpg");
-            @include section-background;
-            background-position: center;
-    }
-
-    h1 {
-        @include h1-section($main-color);
-
-        @media (max-width:"700px") {
-                padding-top: 2rem;
-        }
-    }
-
-    .contact-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-    }
+  }
 }
