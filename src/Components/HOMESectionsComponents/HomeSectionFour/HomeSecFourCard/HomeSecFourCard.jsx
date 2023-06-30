@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "./homeSecFourCard.scss";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
-import { goToTopOfPage } from "../../../../utilities/tools";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+import { useAnimation } from "framer-motion";
+import { goToTopOfPage } from "utilities/tools";
+
+import styles from "./homeSecFourCard.module.scss";
 
 export const HomeSecFourCard = ({ title, images, path }) => {
   const [currentImg, setCurrentImg] = useState(images[1]);
@@ -30,13 +31,13 @@ export const HomeSecFourCard = ({ title, images, path }) => {
     if (!inView) {
       animation.start({ x: "-50vw" });
     }
-  }, [inView]);
+  }, [inView, animation]);
 
   return (
     <div ref={ref}>
-      <motion.div className="hsf-card" animate={animation}>
+      <motion.div className={styles.hsf_card} animate={animation}>
         <img src={currentImg} alt={currentImg} />
-        <div className="images-card">
+        <div className={styles.images_card}>
           {images.map((img, index) => (
             <img
               src={img}
@@ -46,8 +47,8 @@ export const HomeSecFourCard = ({ title, images, path }) => {
             />
           ))}
         </div>
-        <div className="card-text">
-          <Link className="title" to={path} onClick={goToTopOfPage}>
+        <div className={styles.card_text}>
+          <Link className={styles.title} to={path} onClick={goToTopOfPage}>
             <h2>{title}</h2>
           </Link>
         </div>
