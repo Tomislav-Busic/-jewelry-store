@@ -1,5 +1,6 @@
 import React from "react";
-import "./contactForm.scss";
+
+import styles from "./contactForm.module.scss";
 
 export const ContactForm = ({ sendEmail, emailRes, setEmailRes }) => {
   return (
@@ -20,7 +21,7 @@ export const ContactForm = ({ sendEmail, emailRes, setEmailRes }) => {
           <br />
         </>
       ) : (
-        <div className="response">
+        <div className={styles.response}>
           <h2>
             Poštovani, <br />
             Hvala vam na poruci.

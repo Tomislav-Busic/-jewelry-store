@@ -1,0 +1,10 @@
+@import "~assets/styles/mixins/mixins.scss";
+@import "~assets/styles/variables/variables.scss";
+
+.response {
+  @include flex-column;
+
+  h2 {
+    color: $main-color;
+  }
+}
