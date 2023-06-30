@@ -52,7 +52,7 @@ export const ListOfProductsAdmin = () => {
           {data.map((product, index) => (
             <ProductAdmin
               product={product}
-              index={index}
+              key={index}
               handleDelete={handleDelete}
               handleUpdate={handleUpdate}
             />
