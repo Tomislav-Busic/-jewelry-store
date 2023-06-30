@@ -1,10 +1,12 @@
 import React from "react";
-import "./servicesSectionThree.scss";
+
 import img from "../../../images/work5.jpg";
+
+import styles from "./servicesSectionThree.module.scss";
 
 export const ServicesSectionThree = () => {
   return (
-    <div className="services-s-three">
+    <div className={styles.services_s_three}>
       <div className="left-s-side">
         <h2>Popravci i restauriranje nakita</h2>
         <p>

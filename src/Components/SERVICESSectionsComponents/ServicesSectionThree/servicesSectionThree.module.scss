@@ -1,0 +1,27 @@
+@import "~assets/styles/mixins/mixins.scss";
+@import "~assets/styles/variables/variables.scss";
+
+.services_s_three {
+  background: linear-gradient(
+      to right,
+      $background 30%,
+      $background-overlay0 90%
+    ),
+    url("../../../images/work3.jpg");
+  @include section-background;
+
+  @media (max-width: "900px") {
+    background: linear-gradient(
+        to bottom,
+        $background-overlay1,
+        $background-overlay5 90%
+      ),
+      url("../../../images/work3.jpg");
+    @include section-background;
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  @include services-section-sides($font-dark, $font-dark2);
+}
