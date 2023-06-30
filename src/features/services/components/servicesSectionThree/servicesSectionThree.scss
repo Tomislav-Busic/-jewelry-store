@@ -7,7 +7,7 @@
       $background 30%,
       $background-overlay0 90%
     ),
-    url("../../../assets/images/work3.jpg");
+    url("../../../../assets/images/work3.jpg");
   @include section-background;
 
   @media (max-width: "900px") {
@@ -16,7 +16,7 @@
         $background-overlay1,
         $background-overlay5 90%
       ),
-      url("../../../assets/images/work3.jpg");
+      url("../../../../assets/images/work3.jpg");
     @include section-background;
   }
 

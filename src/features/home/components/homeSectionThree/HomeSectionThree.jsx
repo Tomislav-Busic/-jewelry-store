@@ -1,6 +1,6 @@
 import React from "react";
 
-import { InfiniteSlider } from "components/infiniteSlider/InfiniteSlider";
+import { InfiniteSlider } from "./infiniteSlider/InfiniteSlider";
 import { AnimationBtn } from "components/animationBtn/AnimationBtn";
 
 import styles from "./homeSectionThree.module.scss";

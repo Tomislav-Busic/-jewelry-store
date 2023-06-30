@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
 import { ContactForm } from "./components/contactForm/ContactForm";
-import { ContactLinks } from "./contactLinks/ContactLinks";
+import { ContactLinks } from "./components/contactLinks/ContactLinks";
 
 import styles from "./contact.module.scss";
 

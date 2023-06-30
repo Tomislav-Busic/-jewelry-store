@@ -7,7 +7,7 @@ import { Pagination } from "antd";
 
 import { ProductCard } from "./productCard/ProductCard";
 
-import styles from "./products.module.scss";
+import styles from "./productsList.module.scss";
 
 export const ProductsList = () => {
   const products = useSelector((state) => state.data.dataList2);

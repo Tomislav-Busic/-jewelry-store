@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { db, storage } from "../../firebase";
-import { ListOfProductsAdmin } from "components/adminComponents/listOfProductsAdmin/ListOfProductsAdmin";
-import { PostProductForm } from "components/adminComponents/postProductForm/PostProductForm";
-import { LogoutBtn } from "components/logoutBtn/LogoutBtn";
+import { ListOfProductsAdmin } from "features/components/listOfProductsAdmin/ListOfProductsAdmin";
+import { PostProductForm } from "./postProductForm/PostProductForm";
+import { LogoutBtn } from "features/components/logoutBtn/LogoutBtn";
 
 import styles from "./dashboard.module.scss";
 

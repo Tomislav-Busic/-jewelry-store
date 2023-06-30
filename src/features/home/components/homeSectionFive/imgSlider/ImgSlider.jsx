@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
-import { testemonials } from "../../../../assets/testemonials/testemonials";
-import logo from "../../../../assets/images/logo.jpg";
+import { testemonials } from "../../../../../assets/testemonials/testemonials";
+import logo from "../../../../../assets/images/logo.jpg";
 
 import styles from "./imgSlider.module.scss";
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import img from "../../../assets/images/work6.jpg";
+import img from "../../../../assets/images/work6.jpg";
 
 import "./servicesSectionOne.scss";
 

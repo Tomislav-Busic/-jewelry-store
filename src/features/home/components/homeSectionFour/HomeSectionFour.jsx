@@ -3,15 +3,15 @@ import React from "react";
 import { AnimationBtn } from "components/animationBtn/AnimationBtn";
 import { HomeSecFourCard } from "./homeSecFourCard/HomeSecFourCard";
 
-import img1 from "../../../assets/images/prstend.jpg";
-import img2 from "../../../assets/images/goldring.jpg";
-import img3 from "../../../assets/images/threerings.jpg";
-import img4 from "../../../assets/images/rucprsten.jpg";
-import img5 from "../../../assets/images/work6.jpg";
-import img6 from "../../../assets/images/work4.jpg";
-import img7 from "../../../assets/images/vaza.jpg";
-import img8 from "../../../assets/images/ormaric.jpg";
-import img9 from "../../../assets/images/sofa.jpg";
+import img1 from "../../../../assets/images/prstend.jpg";
+import img2 from "../../../../assets/images/goldring.jpg";
+import img3 from "../../../../assets/images/threerings.jpg";
+import img4 from "../../../../assets/images/rucprsten.jpg";
+import img5 from "../../../../assets/images/work6.jpg";
+import img6 from "../../../../assets/images/work4.jpg";
+import img7 from "../../../../assets/images/vaza.jpg";
+import img8 from "../../../../assets/images/ormaric.jpg";
+import img9 from "../../../../assets/images/sofa.jpg";
 
 import styles from "./homeSectionFour.module.scss";
 
