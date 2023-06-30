@@ -10,14 +10,17 @@ import styles from "./products.module.scss";
 
 export const Products = () => {
   const imgModal = useSelector((state) => state.modal.toggleModal);
-  <div className={styles.container}>
-    <CategoriesMenu />
-    <Filters />
-    <ProductsList />
-    {imgModal && (
-      <>
-        <ModalImg />
-      </>
-    )}
-  </div>;
+
+  return (
+    <div className={styles.container}>
+      <CategoriesMenu />
+      <Filters />
+      <ProductsList />
+      {imgModal && (
+        <>
+          <ModalImg />
+        </>
+      )}
+    </div>
+  );
 };
