@@ -9,8 +9,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { loginActions } from "./store/slice/login-slice";
 import { firebaseData } from "./firebaseDB/firebaseData";
 
-import { Navbar } from "./components/navbar/Navbar";
-import { Footer } from "./components/footer/Footer";
+import { Layouts } from "layouts/Layouts";
 import { HomePage } from "./pages/homePage/HomePage";
 import { ServicesPage } from "./pages/servicesPage/ServicesPage";
 import { LoginPage } from "./pages/loginPage/LoginPage";
@@ -18,7 +17,7 @@ import { DashboardPage } from "./pages/dashboardPage/DashboardPage";
 import { UpdateProductsPage } from "./pages/updateProductsPage/UpdateProductsPage";
 import { ProductsPage } from "./pages/productsPage/ProductsPage";
 import { ContactPage } from "./pages/contactPage/ContactPage";
-import { ContactFooter } from "./components/contactFooter/ContactFooter";
+import { ContactEndOfPage } from "./components/contactEndOfPage/ContactEndOfPage";
 
 import styles from "./assets/styles/app.module.scss";
 
@@ -40,8 +39,7 @@ function App() {
   return (
     <div className={styles.app}>
       <Router>
-        <Navbar />
-        <Footer />
+        <Layouts />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/prodaja" element={<ProductsPage />} />
@@ -66,7 +64,7 @@ function App() {
           />
           <Route path="*" element={<HomePage />} />
         </Routes>
-        <ContactFooter />
+        <ContactEndOfPage />
       </Router>
     </div>
   );

@@ -10,9 +10,9 @@ import { GiShop } from "react-icons/gi";
 
 import logo from "../../assets/images/calvi.png";
 
-import "./contactFooter.scss";
+import "./contactEndOfPage.scss";
 
-export const ContactFooter = () => {
+export const ContactEndOfPage = () => {
   return (
     <div className="footer_contact">
       <div className="footer_contact_container">
