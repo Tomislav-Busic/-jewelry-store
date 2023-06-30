@@ -1,0 +1,12 @@
+@import "~assets/styles/variables/variables.scss";
+
+.logout_btn {
+  position: fixed;
+  top: 5rem;
+  right: 2rem;
+  border: 0.5px solid $font-color;
+  background: $main-color;
+  padding: 0.3rem 1rem;
+  color: $font-color;
+  z-index: 200;
+}

@@ -1,8 +1,9 @@
 import React from "react";
-import { loginActions } from "../../store/slice/login-slice";
-import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import "./logoutBtn.scss";
+import { useDispatch } from "react-redux";
+import { loginActions } from "store/slice/login-slice";
+
+import styles from "./logoutBtn.module.scss";
 
 export const LogoutBtn = () => {
   const dispatch = useDispatch();
@@ -14,7 +15,7 @@ export const LogoutBtn = () => {
   };
 
   return (
-    <button className="logout-btn" onClick={handleLogout}>
+    <button className={styles.logout_btn} onClick={handleLogout}>
       Odjavi se
     </button>
   );
