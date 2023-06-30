@@ -1,12 +1,14 @@
 import React from "react";
-import "./listOfProductsAdmin.scss";
-import { deleteDoc, doc } from "firebase/firestore";
-import { getStorage, ref, deleteObject } from "firebase/storage";
-import { db } from "../../../firebase";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { goToTopOfPage } from "../../../utilities/tools";
+import { deleteDoc, doc } from "firebase/firestore";
+import { getStorage, ref, deleteObject } from "firebase/storage";
+import { db } from "firebase";
+import { goToTopOfPage } from "utilities/tools";
+
 import { ProductAdmin } from "./productAdmin/ProductAdmin";
+
+import styles from "./listOfProductsAdmin.module.scss";
 
 export const ListOfProductsAdmin = () => {
   const data = useSelector((state) => state.data.dataList);
@@ -37,7 +39,7 @@ export const ListOfProductsAdmin = () => {
 
   return (
     <div>
-      <table>
+      <table className={styles.table}>
         <thead>
           <tr>
             <th>Img</th>
