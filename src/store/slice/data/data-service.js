@@ -9,3 +9,5 @@ export const firebaseData = async () => {
   });
   return list;
 };
+
+console.log(firebaseData());

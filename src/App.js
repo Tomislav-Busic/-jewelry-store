@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { loginActions } from "./store/slice/login/login-slice";
-import { dataActions, getProducts } from "store/slice/data/data-slice";
 
 import { Layouts } from "layouts/Layouts";
 import { HomePage } from "./pages/homePage/HomePage";
@@ -20,6 +19,7 @@ import { ContactPage } from "./pages/contactPage/ContactPage";
 import { ContactEndOfPage } from "./components/contactEndOfPage/ContactEndOfPage";
 
 import styles from "./assets/styles/app.module.scss";
+import { getProducts } from "store/slice/data/data-slice";
 
 function App() {
   const isLoggedIn = useSelector((state) => state.login.isLoggedIn);
@@ -27,8 +27,7 @@ function App() {
 
   useEffect(() => {
     const currentUser = JSON.parse(localStorage.getItem("user")) || null;
-    dispatch(loginActions.login(currentUser));
-    getProducts();
+    dispatch(loginActions.login(currentUser) && getProducts());
   }, [dispatch]);
 
   const RequireAuth = ({ children }) => {

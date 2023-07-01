@@ -47,11 +47,13 @@ export const dataSlice = createSlice({
       })
       .addCase(getProducts.fulfilled, (state, action) => {
         state.isLoading = false;
+        state.isError = false;
         state.dataList = action.payload;
         state.dataList2 = action.payload;
       })
       .addCase(getProducts.rejected, (state) => {
         state.isLoading = false;
+        state.isError = true;
       });
   },
 });
