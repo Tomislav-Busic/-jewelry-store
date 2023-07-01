@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { db, storage } from "../../firebase";
+import { db, storage } from "../../firebaseDB/firebase";
 import { ListOfProductsAdmin } from "features/components/listOfProductsAdmin/ListOfProductsAdmin";
 import { PostProductForm } from "./postProductForm/PostProductForm";
 import { LogoutBtn } from "features/components/logoutBtn/LogoutBtn";

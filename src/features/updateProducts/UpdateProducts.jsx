@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { serverTimestamp, doc, updateDoc } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { db, storage } from "../../firebase";
+import { db, storage } from "../../firebaseDB/firebase";
 import { goToTopOfPage } from "utilities/tools";
 
 import { UpdateProductForm } from "./updateProductForm/UpdateProductForm";
