@@ -10,20 +10,13 @@ const initialState = {
   categoryName: "",
 };
 
-console.log(firebaseData());
 export const getProducts = createAsyncThunk(
-  "products/getAll",
+  "products/getProducts",
   async (thunkAPI) => {
     try {
       return await firebaseData();
     } catch (error) {
-      const message =
-        (error.response &&
-          error.response.data &&
-          error.response.data.message) ||
-        error.message ||
-        error.toString();
-      return thunkAPI.rejectWithValue(message);
+      return thunkAPI.rejectWithValue(error);
     }
   }
 );
@@ -32,7 +25,20 @@ export const dataSlice = createSlice({
   name: "data",
   initialState,
   reducers: {
-    reset: (state) => state.initialState,
+    filterByName(state, action) {
+      state.productName = action.payload;
+    },
+    addCategory(state, action) {
+      state.categoryName = action.payload;
+      state.dataList2 = state.dataList;
+      state.dataList2 = state.dataList2.filter(
+        (items) => items.category === action.payload
+      );
+    },
+    showAllProducts(state) {
+      state.categoryName = "";
+      state.dataList2 = state.dataList;
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -41,16 +47,16 @@ export const dataSlice = createSlice({
       })
       .addCase(getProducts.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.isSuccess = true;
-        state.dataList = action;
-        state.dataList2 = action;
+        state.dataList = action.payload;
+        state.dataList2 = action.payload;
       })
-      .addCase(getProducts.rejected, (state, action) => {
+      .addCase(getProducts.rejected, (state) => {
         state.isLoading = false;
       });
   },
 });
 
+export default dataSlice;
 export const dataActions = dataSlice.actions;
 
 /*

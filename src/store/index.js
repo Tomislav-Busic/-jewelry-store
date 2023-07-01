@@ -4,7 +4,7 @@ import {
   createSerializableStateInvariantMiddleware,
 } from "@reduxjs/toolkit";
 import { loginSlice } from "./slice/login/login-slice";
-import { dataSlice } from "./slice/data/data-slice";
+import dataSlice from "./slice/data/data-slice";
 import { paginationSlice } from "./slice/pagination/pagination-slice";
 import { modalSlice } from "./slice/modal/modal-slice";
 
