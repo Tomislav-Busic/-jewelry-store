@@ -27,7 +27,8 @@ function App() {
 
   useEffect(() => {
     const currentUser = JSON.parse(localStorage.getItem("user")) || null;
-    dispatch(loginActions.login(currentUser) && getProducts());
+    dispatch(loginActions.login(currentUser));
+    dispatch(getProducts());
   }, [dispatch]);
 
   const RequireAuth = ({ children }) => {
