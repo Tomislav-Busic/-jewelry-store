@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import dataService from "./data-service";
+import { firebaseData } from "./data-service";
 
 const initialState = {
   dataList: [],
@@ -10,11 +10,12 @@ const initialState = {
   categoryName: "",
 };
 
+console.log(firebaseData());
 export const getProducts = createAsyncThunk(
   "products/getAll",
-  async (_, thunkAPI) => {
+  async (thunkAPI) => {
     try {
-      return await dataService.firebaseData();
+      return await firebaseData();
     } catch (error) {
       const message =
         (error.response &&
@@ -31,7 +32,7 @@ export const dataSlice = createSlice({
   name: "data",
   initialState,
   reducers: {
-    reset: initialState,
+    reset: (state) => state.initialState,
   },
   extraReducers: (builder) => {
     builder
@@ -41,8 +42,8 @@ export const dataSlice = createSlice({
       .addCase(getProducts.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
-        state.dataList = action.payload;
-        state.dataList2 = action.payload;
+        state.dataList = action;
+        state.dataList2 = action;
       })
       .addCase(getProducts.rejected, (state, action) => {
         state.isLoading = false;
