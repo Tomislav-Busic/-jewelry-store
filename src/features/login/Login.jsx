@@ -53,8 +53,8 @@ export const Login = () => {
     <div className={styles.container}>
       <h1>Administrator</h1>
       <h2>
-        Ukoliko niste vlasnik stranice molimo Vas da se vratite na početnu
-        stranicu! Hvala :)
+        Ukoliko niste administrator molimo Vas napustite stranicu stranicu!
+        Hvala :)
       </h2>
       <button onClick={handleBack}>Povratak na početnu</button>
       <LoginForm
