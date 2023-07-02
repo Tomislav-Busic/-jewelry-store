@@ -63,7 +63,7 @@ $ npm start
 
 ## Deployment
 
-To run deployment, run it locally using npm:
+To run the deployment, run it locally using npm:
 
 ```
 $ npm run build
