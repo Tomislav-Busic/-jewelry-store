@@ -1,5 +1,5 @@
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../../../firebaseDB/firebase";
+import { db } from "firebaseDB/firebase";
 
 export const firebaseData = async () => {
   let list = [];
