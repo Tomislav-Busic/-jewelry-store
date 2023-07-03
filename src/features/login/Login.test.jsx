@@ -28,6 +28,6 @@ describe("Login", () => {
       </Provider>
     );
     const h1Element = screen.getByText(/Administrator/i);
-    expect(getByText).not.toBeNull();
+    expect(h1Element).toBeInDocument();
   });
 });
