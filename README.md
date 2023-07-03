@@ -1,6 +1,6 @@
 # CALVI antique fine jewellery
 
-Calvi antique is a website created with ReactJS, Redux-toolkit and Sass. It offers antiques for sale and jewelry manufacturing and repair services. The website consists of four pages accessible to users and three pages accessible only to the client/administrator.
+Calvi antique is a website created with ReactJS, Firebase and Sass. It offers antiques for sale and jewelry manufacturing and repair services. The website consists of four pages accessible to users and three pages accessible only to the client/administrator.
 
 ## Project Description
 
