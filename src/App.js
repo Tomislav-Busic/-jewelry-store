@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { RequireAuth } from "hooks/RequireAuth";
 import { loginActions } from "./store/slice/login/login-slice";
 import { getProducts } from "store/slice/data/data-slice";
 
