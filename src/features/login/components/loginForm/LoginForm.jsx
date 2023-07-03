@@ -26,7 +26,9 @@ export const LoginForm = ({
             placeholder="password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button type="submit">Submit</button>
+          <button data-testid="button-submit" type="submit">
+            Submit
+          </button>
           <br />
 
           {error && <span>Wrong email or password</span>}
