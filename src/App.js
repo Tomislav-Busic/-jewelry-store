@@ -1,11 +1,6 @@
 import { useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { loginActions } from "./store/slice/login/login-slice";
 import { getProducts } from "store/slice/data/data-slice";
 
@@ -22,7 +17,6 @@ import { ContactEndOfPage } from "./components/contactEndOfPage/ContactEndOfPage
 import styles from "./assets/styles/app.module.scss";
 
 function App() {
-  const isLoggedIn = useSelector((state) => state.login.isLoggedIn);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -30,10 +24,6 @@ function App() {
     dispatch(loginActions.login(currentUser));
     dispatch(getProducts());
   }, [dispatch]);
-
-  const RequireAuth = ({ children }) => {
-    return isLoggedIn ? children : <Navigate to="/admin" />;
-  };
 
   return (
     <div className={styles.app}>
