@@ -17,4 +17,17 @@ describe("Login", () => {
 
     expect(getByText).not.toBeNull();
   });
+
+  it("should render Login elements", () => {
+    render(
+      <Provider store={store}>
+        <MemoryRouter>
+          {" "}
+          <Login />
+        </MemoryRouter>
+      </Provider>
+    );
+    const h1Element = screen.getByText(/Administrator/i);
+    expect(getByText).not.toBeNull();
+  });
 });
