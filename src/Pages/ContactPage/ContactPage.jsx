@@ -7,7 +7,7 @@ import styles from "./contactPage.module.scss";
 export const ContactPage = () => {
   return (
     <div className={styles.contact_page}>
-      <Contact data-testid="contact" />
+      <Contact />
     </div>
   );
 };
