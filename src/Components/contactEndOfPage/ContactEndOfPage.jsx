@@ -92,7 +92,7 @@ export const ContactEndOfPage = () => {
             </li>
             <li>
               <FaKey className="icon" />
-              <Link to="/admin" className="link" onClick={goToTopOfPage}>
+              <Link to="/login" className="link" onClick={goToTopOfPage}>
                 Administrator
               </Link>
             </li>
