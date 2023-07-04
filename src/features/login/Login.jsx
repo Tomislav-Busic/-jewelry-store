@@ -53,7 +53,7 @@ export const Login = () => {
     <div className={styles.container}>
       <h1>Administrator</h1>
       <h2>
-        Ukoliko niste administrator molimo Vas napustite stranicu stranicu!
+        Ukoliko niste administrator molimo Vas vratite sa na početnu stranicu!
         Hvala :)
       </h2>
       <button data-testid="button" onClick={handleBack}>
