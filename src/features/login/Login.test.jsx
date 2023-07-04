@@ -29,7 +29,11 @@ describe("Login", () => {
       </Provider>
     );
     const h1Element = screen.getByText("Administrator");
+    const h2Element = screen.getByText(
+      "Ukoliko niste administrator molimo Vas napustite stranicu stranicu! Hvala :)"
+    );
 
     expect(h1Element).toBeInTheDocument();
+    expect(h2Element).toBeInTheDocument();
   });
 });
