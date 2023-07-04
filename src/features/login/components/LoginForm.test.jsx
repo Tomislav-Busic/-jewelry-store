@@ -1,4 +1,4 @@
-import { screen, render } from "@testing-library/react";
+import { screen, render, fireEvent } from "@testing-library/react";
 import user from "@testing-library/user-event";
 import "@testing-library/jest-dom";
 import { MemoryRouter } from "react-router-dom";
@@ -19,23 +19,102 @@ describe("LoginForm", () => {
 
     expect(getByText).not.toBeNull();
   });
-});
 
-/* it("should render Login elements", () => {
+  it("should render the button if logged in", () => {
     render(
       <Provider store={store}>
         <MemoryRouter initialEntries={["/login"]}>
           {" "}
-          <LoginForm />
+          <LoginForm isLoggedIn={true} />
         </MemoryRouter>
       </Provider>
     );
 
-    const h1Element = screen.getByText("Administrator");
-    const h2Element = screen.getByText(
-      "Ukoliko niste administrator molimo Vas napustite stranicu stranicu! Hvala :)"
+    expect(screen.getByTestId("buttonIfItsLoggedIn")).not.toBeNull();
+  });
+
+  it("should call goToDashboard when button is clicked", () => {
+    const goToDashboardMock = jest.fn();
+
+    render(
+      <Provider store={store}>
+        <MemoryRouter initialEntries={["/login"]}>
+          {" "}
+          <LoginForm isLoggedIn={true} goToDashboard={goToDashboardMock} />
+        </MemoryRouter>
+      </Provider>
     );
 
-    expect(h1Element).toBeInTheDocument();
-    expect(h2Element).toBeInTheDocument();
-  }); */
+    fireEvent.click(screen.getByTestId("buttonIfItsLoggedIn"));
+
+    expect(goToDashboardMock).toHaveBeenCalled();
+  });
+
+  it("should call setEmail when email input is changed", () => {
+    const setEmailMock = jest.fn();
+
+    render(
+      <Provider store={store}>
+        <MemoryRouter initialEntries={["/login"]}>
+          {" "}
+          <LoginForm setEmail={setEmailMock} />
+        </MemoryRouter>
+      </Provider>
+    );
+
+    fireEvent.change(screen.getByPlaceholderText("email"), {
+      target: { value: "test@test.com" },
+    });
+
+    expect(setEmailMock).toHaveBeenCalledWith("test@test.com");
+  });
+
+  it("should call setPassword when password input is changed", () => {
+    const setPasswordMock = jest.fn();
+
+    render(
+      <Provider store={store}>
+        <MemoryRouter initialEntries={["/login"]}>
+          {" "}
+          <LoginForm setPassword={setPasswordMock} />
+        </MemoryRouter>
+      </Provider>
+    );
+
+    fireEvent.change(screen.getByPlaceholderText("password"), {
+      target: { value: "password" },
+    });
+
+    expect(setPasswordMock).toHaveBeenCalledWith("password");
+  });
+
+  it("should call handleLogin when form is submitted", () => {
+    const handleLoginMock = jest.fn();
+
+    render(
+      <Provider store={store}>
+        <MemoryRouter initialEntries={["/login"]}>
+          {" "}
+          <LoginForm handleLogin={handleLoginMock} />
+        </MemoryRouter>
+      </Provider>
+    );
+
+    fireEvent.submit(screen.getByTestId("form"));
+
+    expect(handleLoginMock).toHaveBeenCalled();
+  });
+
+  it("should render error message if error is true", () => {
+    render(
+      <Provider store={store}>
+        <MemoryRouter initialEntries={["/login"]}>
+          {" "}
+          <LoginForm error={true} />
+        </MemoryRouter>
+      </Provider>
+    );
+
+    expect(screen.getByText("Wrong email or password")).not.toBeNull();
+  });
+});

@@ -9,7 +9,7 @@ export const LoginForm = ({
   error,
 }) => {
   return (
-    <form onSubmit={handleLogin} className={styles.form}>
+    <form data-testid="form" onSubmit={handleLogin} className={styles.form}>
       {isLoggedIn ? (
         <button data-testid="buttonIfItsLoggedIn" onClick={goToDashboard}>
           Admin dashboard
