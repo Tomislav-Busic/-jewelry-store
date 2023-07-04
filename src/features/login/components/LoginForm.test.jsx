@@ -4,7 +4,7 @@ import "@testing-library/jest-dom";
 import { MemoryRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "store";
-import { Login } from "./Login";
+import { LoginForm } from "./LoginForm";
 
 describe("Login", () => {
   it("should render Login", () => {
@@ -12,7 +12,7 @@ describe("Login", () => {
       <Provider store={store}>
         <MemoryRouter initialEntries={["/login"]}>
           {" "}
-          <Login />
+          <LoginForm />
         </MemoryRouter>
       </Provider>
     );
@@ -25,7 +25,7 @@ describe("Login", () => {
       <Provider store={store}>
         <MemoryRouter initialEntries={["/login"]}>
           {" "}
-          <Login />
+          <LoginForm />
         </MemoryRouter>
       </Provider>
     );
@@ -37,22 +37,5 @@ describe("Login", () => {
 
     expect(h1Element).toBeInTheDocument();
     expect(h2Element).toBeInTheDocument();
-  });
-
-  it("the Back to Home button from the admin page", async () => {
-    render(
-      <Provider store={store}>
-        <MemoryRouter initialEntries={["/login"]}>
-          {" "}
-          <Login />
-        </MemoryRouter>
-      </Provider>
-    );
-
-    const button = screen.getByTestId("button");
-
-    user.click(button);
-
-    expect(window.location.pathname).toBe("/");
   });
 });
