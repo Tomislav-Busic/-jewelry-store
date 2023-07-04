@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./loginForm.module.scss";
 
 export const LoginForm = ({
@@ -13,7 +11,9 @@ export const LoginForm = ({
   return (
     <form onSubmit={handleLogin} className={styles.form}>
       {isLoggedIn ? (
-        <button onClick={goToDashboard}>Admin dashboard</button>
+        <button data-testid="buttonIfItsLoggedIn" onClick={goToDashboard}>
+          Admin dashboard
+        </button>
       ) : (
         <>
           <input

@@ -32,7 +32,7 @@ describe("Login", () => {
 
     const h1Element = screen.getByText("Administrator");
     const h2Element = screen.getByText(
-      "Ukoliko niste administrator molimo Vas napustite stranicu stranicu! Hvala :)"
+      "Ukoliko niste administrator molimo Vas vratite sa na početnu stranicu! Hvala :)"
     );
 
     expect(h1Element).toBeInTheDocument();
