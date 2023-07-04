@@ -56,7 +56,9 @@ export const Login = () => {
         Ukoliko niste administrator molimo Vas napustite stranicu stranicu!
         Hvala :)
       </h2>
-      <button onClick={handleBack}>Povratak na početnu</button>
+      <button data-testid="button" onClick={handleBack}>
+        Povratak na početnu
+      </button>
       <LoginForm
         handleLogin={handleLogin}
         isLoggedIn={isLoggedIn}
