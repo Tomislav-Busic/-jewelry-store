@@ -1,4 +1,5 @@
-/* import { screen, render } from "@testing-library/react";
+import { screen, render } from "@testing-library/react";
+import "@testing-library/jest-dom";
 import { MemoryRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "store";
@@ -28,6 +29,7 @@ describe("Login", () => {
       </Provider>
     );
     const h1Element = screen.getByText("Administrator");
-    expect(h1Element).toBeInDocument();
+
+    expect(h1Element).toBeInTheDocument();
   });
-}); */
+});
