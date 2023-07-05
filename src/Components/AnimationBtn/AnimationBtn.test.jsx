@@ -1,6 +1,5 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import { act } from "react-dom/test-utils";
 import "@testing-library/jest-dom";
 import { MemoryRouter } from "react-router-dom";
 import { AnimationBtn } from "./AnimationBtn";
@@ -44,6 +43,6 @@ describe("AnimationBtn", () => {
       link.dispatchEvent(new MouseEvent("click", { bubbles: true }));
     });
 
-    expect(goToTopOfPage).toHaveBeenCalledTimes();
+    expect(goToTopOfPage).toHaveBeenCalledTimes(1);
   });
 });
