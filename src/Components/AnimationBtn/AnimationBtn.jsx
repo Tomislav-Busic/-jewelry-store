@@ -9,7 +9,12 @@ export const AnimationBtn = ({ name, path, color }) => {
   return (
     <div className={color}>
       <div className="button-anim">
-        <Link onClick={goToTopOfPage} className="link-anim" to={path}>
+        <Link
+          onClick={goToTopOfPage}
+          className="link-anim"
+          to={path}
+          data-testid="link"
+        >
           <span></span>
           <span></span>
           <span></span>
