@@ -2,7 +2,6 @@ import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { MemoryRouter } from "react-router-dom";
-import { goToTopOfPage } from "utilities/tools";
 import { AnimationBtn } from "./AnimationBtn";
 
 describe("AnimationBtn", () => {
@@ -25,6 +24,8 @@ describe("AnimationBtn", () => {
   });
 
   it("should call the goToTopOfPage function when clicked", () => {
+    const goToTopOfPage = jest.fn();
+
     render(
       <MemoryRouter>
         <AnimationBtn
@@ -35,8 +36,11 @@ describe("AnimationBtn", () => {
         />
       </MemoryRouter>
     );
+
     const link = screen.getByTestId("link");
+
     fireEvent.click(link);
+
     expect(goToTopOfPage).toHaveBeenCalled();
   });
 });
