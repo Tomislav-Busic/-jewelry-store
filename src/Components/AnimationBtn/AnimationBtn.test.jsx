@@ -27,10 +27,15 @@ describe("AnimationBtn", () => {
   it("should call the goToTopOfPage function when clicked", () => {
     render(
       <MemoryRouter>
-        <AnimationBtn name="Test" path="/test" color="red" />
+        <AnimationBtn
+          name="Test"
+          path="/test"
+          color="red"
+          goToTopOfPage={goToTopOfPage}
+        />
       </MemoryRouter>
     );
-    const link = screen.getByText("Test");
+    const link = screen.getByTestId("link");
     fireEvent.click(link);
     expect(goToTopOfPage).toHaveBeenCalled();
   });
