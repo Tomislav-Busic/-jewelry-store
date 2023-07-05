@@ -24,7 +24,7 @@ describe("AnimationBtn", () => {
   });
 
   it("should call the goToTopOfPage function when clicked", () => {
-    const goToTopOfPage = jest.fn();
+    const goToTopOfPage = jest.spyOn();
 
     render(
       <MemoryRouter>
