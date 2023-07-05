@@ -1,5 +1,6 @@
 import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
+import user from "@testing-library/user-event";
 import "@testing-library/jest-dom";
 import { MemoryRouter } from "react-router-dom";
 import { AnimationBtn } from "./AnimationBtn";
@@ -39,7 +40,7 @@ describe("AnimationBtn", () => {
 
     const link = screen.getByTestId("link");
 
-    fireEvent.click(link);
+    user.click(link);
 
     expect(goToTopOfPage).toHaveBeenCalledTimes(1);
   });
