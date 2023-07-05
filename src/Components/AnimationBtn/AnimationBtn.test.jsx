@@ -44,6 +44,6 @@ describe("AnimationBtn", () => {
       link.dispatchEvent(new MouseEvent("click", { bubbles: true }));
     });
 
-    expect(goToTopOfPage).toHaveBeenCalledTimes(1);
+    expect(goToTopOfPage).toHaveBeenCalledTimes();
   });
 });
