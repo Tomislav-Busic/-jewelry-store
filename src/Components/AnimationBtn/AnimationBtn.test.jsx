@@ -22,4 +22,25 @@ describe("AnimationBtn", () => {
     );
     expect(screen.getByText("Test")).toBeInTheDocument();
   });
+
+  it("should call the goToTopOfPage function when clicked", () => {
+    const goToTopOfPage = jest.fn();
+
+    render(
+      <MemoryRouter>
+        <AnimationBtn
+          name="Test"
+          path="/test"
+          color="red"
+          goToTopOfPage={goToTopOfPage}
+        />
+      </MemoryRouter>
+    );
+
+    const link = screen.getByTestId("link");
+
+    fireEvent.click(link);
+
+    expect(goToTopOfPage).toHaveBeenCalledTimes(1);
+  });
 });
