@@ -41,6 +41,6 @@ describe("AnimationBtn", () => {
 
     fireEvent.click(link);
 
-    expect(goToTopOfPage).toHaveBeenCalledTimes();
+    expect(goToTopOfPage).toHaveBeenCalledTimes(1);
   });
 });
