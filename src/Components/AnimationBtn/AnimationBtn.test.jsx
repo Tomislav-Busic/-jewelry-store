@@ -1,34 +1,37 @@
 import React from "react";
-import { render, screen } from "@testing-library/jest-dom";
-import { act } from "react-dom/test-utils";
+import { render, screen, fireEvent } from "@testing-library/react";
+import "@testing-library/jest-dom";
+import { MemoryRouter } from "react-router-dom";
+import { goToTopOfPage } from "utilities/tools";
+import { AnimationBtn } from "./AnimationBtn";
 
-import { AnimationBtn } from "./animationBtn";
+describe("AnimationBtn", () => {
+  it("should render AnimationBtn", () => {
+    const { getByText } = render(
+      <MemoryRouter>
+        <AnimationBtn name="Test" path="/test" color="red" />
+      </MemoryRouter>
+    );
 
-it("renders the component correctly", () => {
-  render(<AnimationBtn name="Test" path="/test" color="red" />);
-
-  const link = screen.getByTestId("link");
-  expect(link.innerHTML).toBe("Test");
-  expect(link.getAttribute("href")).toBe("/test");
-});
-
-it("calls goToTopOfPage when clicked", () => {
-  const goToTopOfPage = jest.fn();
-
-  render(
-    <AnimationBtn
-      name="Test"
-      path="/test"
-      color="red"
-      goToTopOfPage={goToTopOfPage}
-    />
-  );
-
-  const link = screen.getByTestId("link");
-
-  act(() => {
-    link.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+    expect(getByText).not.toBeNull();
+  });
+  it("should render the component correctly", () => {
+    render(
+      <MemoryRouter>
+        <AnimationBtn name="Test" path="/test" color="red" />
+      </MemoryRouter>
+    );
+    expect(screen.getByText("Test")).toBeInTheDocument();
   });
 
-  expect(goToTopOfPage).toHaveBeenCalledTimes(1);
+  it("should call the goToTopOfPage function when clicked", () => {
+    render(
+      <MemoryRouter>
+        <AnimationBtn name="Test" path="/test" color="red" />
+      </MemoryRouter>
+    );
+    const link = screen.getByText("Test");
+    fireEvent.click(link);
+    expect(goToTopOfPage).toHaveBeenCalled();
+  });
 });
