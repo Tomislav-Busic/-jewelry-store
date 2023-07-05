@@ -39,9 +39,7 @@ describe("AnimationBtn", () => {
 
     const link = screen.getByTestId("link");
 
-    act(() => {
-      link.dispatchEvent(new MouseEvent("click", { bubbles: true }));
-    });
+    fireEvent.click(link);
 
     expect(goToTopOfPage).toHaveBeenCalledTimes(1);
   });
