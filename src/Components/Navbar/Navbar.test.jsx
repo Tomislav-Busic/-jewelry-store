@@ -37,7 +37,9 @@ describe("Navbar component", () => {
 
     user.click(screen.getByText("PRODAJA"));
 
-    expect(screen.getByText(/"CIJENE SU NA UPIT"/i)).toBeInTheDocument();
+    expect(
+      await waitFor(() => screen.findByText("CIJENE SU NA UPIT"))
+    ).toBeInTheDocument();
   });
 
   it("should navigate to the usluge page when clicking on the usluge link", () => {
