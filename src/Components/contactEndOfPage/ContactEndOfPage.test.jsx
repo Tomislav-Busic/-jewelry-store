@@ -6,7 +6,11 @@ import { ContactEndOfPage } from "./ContactEndOfPage";
 
 describe("ContactEndOfPage", () => {
   it("should render the component correctly", () => {
-    render(<ContactEndOfPage />);
+    render(
+      <MemoryRouter>
+        <ContactEndOfPage />
+      </MemoryRouter>
+    );
 
     expect(screen.getByTestId("footer_contact")).toBeInTheDocument();
     expect(screen.getByTestId("footer_contact_container")).toBeInTheDocument();

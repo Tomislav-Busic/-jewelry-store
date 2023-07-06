@@ -14,9 +14,12 @@ import "./contactEndOfPage.scss";
 
 export const ContactEndOfPage = () => {
   return (
-    <div className="footer_contact">
-      <div className="footer_contact_container">
-        <div className="f_con_item">
+    <div data-testid="footer_contact" className="footer_contact">
+      <div
+        data-testid="footer_contact_container"
+        className="footer_contact_container"
+      >
+        <div data-testid="f_con_item" className="f_con_item">
           <img src={logo} alt="logo" />
         </div>
         <div className="f_con_item">
@@ -117,6 +120,7 @@ export const ContactEndOfPage = () => {
         </div>
       </div>
       <iframe
+        data-testid="map"
         title="map"
         className="map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5561.997434253886!2d15.974978527278504!3d45.81128408400844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6fc299fd2e1%3A0xe38d6d13b1fff011!2sPra%C5%A1ka%20ul.%2010%2C%2010000%2C%20Zagreb!5e0!3m2!1sbs!2shr!4v1676570422584!5m2!1sbs!2shr"
