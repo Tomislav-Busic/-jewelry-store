@@ -35,9 +35,11 @@ describe("Navbar component", () => {
       </MemoryRouter>
     );
 
-    user.click(screen.getByText("PRODAJA"));
+    user.click(screen.findByText("PRODAJA"));
 
-    await waitFor(() => expect(window.location.pathname).toBe("/prodaja"));
+    expect(
+      await waitFor(() => screen.findByText(/CIJENE SU NA UPIT/i))
+    ).toBeInTheDocument();
   });
 
   it("should navigate to the usluge page when clicking on the usluge link", () => {
@@ -49,7 +51,7 @@ describe("Navbar component", () => {
 
     user.click(screen.getByText("USLUGE"));
 
-    expect(window.location.pathname).toBe("/usluge");
+    expect(window.location.pathname).toBe("usluge");
   });
 
   it("should navigate to the kontakt page when clicking on the kontakt link", () => {
