@@ -1,5 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
+import user from "@testing-library/user-event";
 import "@testing-library/jest-dom";
 import { MemoryRouter } from "react-router-dom";
 import { Navbar } from "./Navbar";
@@ -22,7 +23,7 @@ describe("Navbar component", () => {
       </MemoryRouter>
     );
 
-    userEvent.click(screen.getByTestId("nav_header"));
+    user.click(screen.getByTestId("nav_header"));
 
     expect(window.location.pathname).toBe("/");
   });
