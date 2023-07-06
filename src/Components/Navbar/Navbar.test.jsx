@@ -35,11 +35,9 @@ describe("Navbar component", () => {
       </MemoryRouter>
     );
 
-    user.click(screen.findByText("PRODAJA"));
+    user.click(screen.getByText("PRODAJA"));
 
-    expect(
-      await waitFor(() => screen.findByText(/CIJENE SU NA UPIT/i))
-    ).toBeInTheDocument();
+    expect(screen.getByText(/"CIJENE SU NA UPIT"/i)).toBeInTheDocument();
   });
 
   it("should navigate to the usluge page when clicking on the usluge link", () => {
