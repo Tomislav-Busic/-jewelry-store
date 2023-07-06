@@ -5,6 +5,16 @@ import { MemoryRouter } from "react-router-dom";
 import { ContactEndOfPage } from "./ContactEndOfPage";
 
 describe("ContactEndOfPage", () => {
+  it("should render ContactEndOfPage", () => {
+    const { isRender } = render(
+      <MemoryRouter>
+        <ContactEndOfPage />
+      </MemoryRouter>
+    );
+
+    expect(isRender).not.toBeNull();
+  });
+
   it("should render the component correctly", () => {
     render(
       <MemoryRouter>
