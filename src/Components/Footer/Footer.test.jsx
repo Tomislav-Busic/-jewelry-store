@@ -6,17 +6,25 @@ import { Footer } from "./Footer";
 
 describe("Footer", () => {
   it("should render the correct year", () => {
-    render(<Footer />);
+    render(
+      <MemoryRouter>
+        <Footer />
+      </MemoryRouter>
+    );
 
     const currentYear = new Date().getFullYear();
 
     expect(
-      screen.getByText(`© 2023 - ${currentYear} CALVI`)
+      screen.getByText(`© 2023 - ${currentYear} CALVI | Designed By`)
     ).toBeInTheDocument();
   });
 
   it("should render the correct link", () => {
-    render(<Footer />);
+    render(
+      <MemoryRouter>
+        <Footer />
+      </MemoryRouter>
+    );
 
     expect(screen.getByText("Tomislav Bušić")).toHaveAttribute(
       "href",
