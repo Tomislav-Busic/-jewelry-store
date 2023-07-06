@@ -47,7 +47,7 @@ describe("Navbar component", () => {
       </MemoryRouter>
     );
 
-    user.click(screen.getByTestId("USLUGE"));
+    user.click(screen.getByText("USLUGE"));
 
     expect(window.location.pathname).toBe("/usluge");
   });
@@ -59,7 +59,7 @@ describe("Navbar component", () => {
       </MemoryRouter>
     );
 
-    user.click(screen.getByTestId("KONTAKT"));
+    user.click(screen.getByText("KONTAKT"));
 
     expect(window.location.pathname).toBe("/kontakt");
   });
