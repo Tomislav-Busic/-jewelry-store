@@ -20,7 +20,7 @@ export const ContactEndOfPage = () => {
         className="footer_contact_container"
       >
         <div data-testid="f_con_item" className="f_con_item">
-          <img src={logo} alt="logo" />
+          <img data-testid="logo" src={logo} alt="logo" />
         </div>
         <div className="f_con_item">
           <ul>
