@@ -59,7 +59,7 @@ describe("Navbar component", () => {
       </MemoryRouter>
     );
 
-    user.click(screen.getByTestId("KONTA"));
+    user.click(screen.getByTestId("KONTAKT"));
 
     expect(window.location.pathname).toBe("/kontakt");
   });
