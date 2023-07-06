@@ -9,7 +9,7 @@ export const LoginForm = ({
   error,
 }) => {
   return (
-    <form data-testid="form" onSubmit={handleLogin} className={styles.form}>
+    <form onSubmit={handleLogin} className={styles.form}>
       {isLoggedIn ? (
         <button data-testid="buttonIfItsLoggedIn" onClick={goToDashboard}>
           Admin dashboard
@@ -26,7 +26,9 @@ export const LoginForm = ({
             placeholder="password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button type="submit">Submit</button>
+          <button data-testid="submit" type="submit">
+            Submit
+          </button>
           <br />
 
           {error && <span>Wrong email or password</span>}

@@ -100,7 +100,7 @@ describe("LoginForm", () => {
       </Provider>
     );
 
-    fireEvent.submit(screen.getByTestId("form"));
+    fireEvent.submit(screen.getByTestId("submit"));
 
     expect(handleLoginMock).toHaveBeenCalled();
   });
