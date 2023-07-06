@@ -20,7 +20,10 @@ export const Navbar = () => {
         >
           <h3>CALVI</h3>
         </Link>
-        <nav className={toggle ? `${styles.resposive_nav}` : ""}>
+        <nav
+          data-testid="navbar"
+          className={toggle ? `${styles.resposive_nav}` : ""}
+        >
           <Link
             className={styles.nav_link}
             to="/"
@@ -62,6 +65,7 @@ export const Navbar = () => {
             KONTAKT
           </Link>
           <button
+            data-testid="close_icon"
             className={styles.nav_btn}
             style={{ position: "fixed", top: "2rem", right: "2rem" }}
             onClick={() => setToggle(!toggle)}
@@ -69,7 +73,11 @@ export const Navbar = () => {
             <FaTimes />
           </button>
         </nav>
-        <button className={styles.nav_btn} onClick={() => setToggle(!toggle)}>
+        <button
+          data-testid="hamburger_icon"
+          className={styles.nav_btn}
+          onClick={() => setToggle(!toggle)}
+        >
           <FaBars />
         </button>
         <div className={styles.logo}>

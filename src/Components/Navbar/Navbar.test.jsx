@@ -16,7 +16,7 @@ describe("Navbar component", () => {
 
     expect(screen.getByTestId("navbar")).not.toHaveClass("resposive_nav");
 
-    fireEvent.click(screen.getByTestId("hamburger-icon"));
+    fireEvent.click(screen.getByTestId("hamburger_icon"));
 
     expect(screen.getByTestId("navbar")).toHaveClass("resposive_nav");
   });
@@ -24,11 +24,11 @@ describe("Navbar component", () => {
   it("should close the navbar when clicking on the close icon", () => {
     render(<Navbar />);
 
-    fireEvent.click(screen.getByTestId("hamburger-icon"));
+    fireEvent.click(screen.getByTestId("hamburger_icon"));
 
     expect(screen.getByTestId("navbar")).toHaveClass("resposive_nav");
 
-    fireEvent.click(screen.getByTestId("close-icon"));
+    fireEvent.click(screen.getByTestId("close_icon"));
 
     expect(screen.getByTestId("navbar")).not.toHaveClass("resposive_nav");
   });
