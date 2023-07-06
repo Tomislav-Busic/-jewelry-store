@@ -1,5 +1,6 @@
 import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import user from "@testing-library/user-event";
 import "@testing-library/jest-dom";
 import { MemoryRouter } from "react-router-dom";
 import { Navbar } from "./Navbar";
@@ -13,6 +14,54 @@ describe("Navbar component", () => {
     );
 
     expect(container).toMatchSnapshot();
+  });
+
+  it("should navigate to the home page when clicking on the logo", () => {
+    render(
+      <MemoryRouter initialEntries={["/"]}>
+        <Navbar />
+      </MemoryRouter>
+    );
+
+    user.click(screen.getByTestId("nav_header"));
+
+    expect(window.location.pathname).toBe("/");
+  });
+
+  it("should navigate to the prodaja page when clicking on the prodaja link", () => {
+    render(
+      <MemoryRouter>
+        <Navbar />
+      </MemoryRouter>
+    );
+
+    user.click(screen.getByTestId("prodaja"));
+
+    expect(window.location.pathname).toBe("/prodaja");
+  });
+
+  it("should navigate to the usluge page when clicking on the usluge link", () => {
+    render(
+      <MemoryRouter>
+        <Navbar />
+      </MemoryRouter>
+    );
+
+    user.click(screen.getByTestId("usluge"));
+
+    expect(window.location.pathname).toBe("/usluge");
+  });
+
+  it("should navigate to the kontakt page when clicking on the kontakt link", () => {
+    render(
+      <MemoryRouter>
+        <Navbar />
+      </MemoryRouter>
+    );
+
+    user.click(screen.getByTestId("kontakt"));
+
+    expect(window.location.pathname).toBe("/kontakt");
   });
 
   it("should toggle the navbar when clicking on the hamburger icon", () => {

@@ -14,6 +14,7 @@ export const Navbar = () => {
     <div className={styles.navbar}>
       <header>
         <Link
+          data-testid="nav_header"
           className={styles.logo_name}
           to="/"
           onClick={() => goToTopOfPage()}
@@ -35,6 +36,7 @@ export const Navbar = () => {
             POČETNA
           </Link>
           <Link
+            data-testid="prodaja"
             className={styles.nav_link}
             to="/prodaja"
             onClick={() => {
@@ -45,6 +47,7 @@ export const Navbar = () => {
             PRODAJA
           </Link>
           <Link
+            data-testid="usluge"
             className={styles.nav_link}
             to="/usluge "
             onClick={() => {
@@ -55,6 +58,7 @@ export const Navbar = () => {
             USLUGE
           </Link>
           <Link
+            data-testid="kontakt"
             className={styles.nav_link}
             to="/kontakt"
             onClick={() => {
