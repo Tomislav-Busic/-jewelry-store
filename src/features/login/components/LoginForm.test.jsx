@@ -30,6 +30,7 @@ describe("LoginForm", () => {
     );
 
     expect(screen.getByTestId("buttonIfItsLoggedIn")).not.toBeNull();
+    expect(screen.queryByTestId("form")).not.toBeInTheDocument();
   });
 
   it("should call goToDashboard when button is clicked", async () => {
