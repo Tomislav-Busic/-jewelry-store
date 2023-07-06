@@ -9,13 +9,13 @@ export const LoginForm = ({
   error,
 }) => {
   return (
-    <form onSubmit={handleLogin} className={styles.form}>
+    <>
       {isLoggedIn ? (
         <button data-testid="buttonIfItsLoggedIn" onClick={goToDashboard}>
           Admin dashboard
         </button>
       ) : (
-        <>
+        <form onSubmit={handleLogin} className={styles.form} data-testid="form">
           <input
             type="email"
             placeholder="email"
@@ -26,14 +26,12 @@ export const LoginForm = ({
             placeholder="password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button data-testid="submit" type="submit">
-            Submit
-          </button>
+          <button type="submit">Submit</button>
           <br />
 
           {error && <span>Wrong email or password</span>}
-        </>
+        </form>
       )}
-    </form>
+    </>
   );
 };
