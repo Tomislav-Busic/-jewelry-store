@@ -37,6 +37,8 @@ describe("AnimationBtn", () => {
       </MemoryRouter>
     );
 
+    window.scroll = goToTopOfPage;
+
     const link = screen.getByTestId("link");
 
     fireEvent.click(link);
