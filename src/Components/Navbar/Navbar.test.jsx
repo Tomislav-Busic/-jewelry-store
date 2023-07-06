@@ -2,6 +2,7 @@ import React from "react";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import user from "@testing-library/user-event";
 import "@testing-library/jest-dom";
+import { createMemoryHistory } from "history";
 import { MemoryRouter } from "react-router-dom";
 import { Navbar } from "./Navbar";
 
@@ -29,13 +30,14 @@ describe("Navbar component", () => {
   });
 
   it("should navigate to the prodaja page when clicking on the prodaja link", async () => {
+    const history = createMemoryHistory();
     render(
-      <MemoryRouter initialEntries={["/"]}>
+      <MemoryRouter history={history}>
         <Navbar />
       </MemoryRouter>
     );
 
-    user.click(screen.getByText("PRODAJA"));
+    await user.click(screen.getByText("PRODAJA"));
 
     expect(
       await waitFor(() => screen.findByText("CIJENE SU NA UPIT"))
