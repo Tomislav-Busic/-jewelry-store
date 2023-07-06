@@ -29,7 +29,6 @@ describe("Navbar component", () => {
   });
 
   it("should navigate to the prodaja page when clicking on the prodaja link", async () => {
-    let assignSpy = jest.spyOn(window.location, "pathname");
     render(
       <MemoryRouter initialEntries={["/"]}>
         <Navbar />
@@ -38,11 +37,10 @@ describe("Navbar component", () => {
 
     user.click(screen.getByText("PRODAJA"));
 
-    await waitFor(() => expect(assignSpy).toHaveBeenCalledWith("/prodaja"));
+    await waitFor(() => expect(window.location.pathname).toBe("/prodaja"));
   });
 
-  it("should navigate to the usluge page when clicking on the usluge link", async () => {
-    let assignSpy = jest.spyOn(window.location, "pathname");
+  it("should navigate to the usluge page when clicking on the usluge link", () => {
     render(
       <MemoryRouter>
         <Navbar />
@@ -51,11 +49,10 @@ describe("Navbar component", () => {
 
     user.click(screen.getByText("USLUGE"));
 
-    await waitFor(() => expect(assignSpy).toHaveBeenCalledWith("/kontakt"));
+    expect(window.location.pathname).toBe("/usluge");
   });
 
-  it("should navigate to the kontakt page when clicking on the kontakt link", async () => {
-    let assignSpy = jest.spyOn(window.location, "pathname");
+  it("should navigate to the kontakt page when clicking on the kontakt link", () => {
     render(
       <MemoryRouter>
         <Navbar />
@@ -64,7 +61,7 @@ describe("Navbar component", () => {
 
     user.click(screen.getByText("KONTAKT"));
 
-    await waitFor(() => expect(assignSpy).toHaveBeenCalledWith("/kontakt"));
+    expect(window.location.pathname).toBeCalledWith("/kontakt");
   });
 
   it("should toggle the navbar when clicking on the hamburger icon", () => {
