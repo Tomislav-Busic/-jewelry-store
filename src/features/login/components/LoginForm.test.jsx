@@ -1,5 +1,4 @@
 import { screen, render, fireEvent, waitFor } from "@testing-library/react";
-import user from "@testing-library/user-event";
 import "@testing-library/jest-dom";
 import { MemoryRouter } from "react-router-dom";
 import { Provider } from "react-redux";
@@ -88,12 +87,8 @@ describe("LoginForm", () => {
     expect(setPasswordMock).toHaveBeenCalledWith("password");
   });
 
-  /*  it("should call handleLogin when form is submitted", async () => {
+  it("should call handleLogin when form is submitted", async () => {
     const handleLoginMock = jest.fn();
-
-    handleLoginMock.mockImplementation((event) => {
-      event.preventDefault();
-    });
 
     render(
       <Provider store={store}>
@@ -106,8 +101,8 @@ describe("LoginForm", () => {
 
     fireEvent.submit(screen.getByTestId("form"));
 
-    expect(handleLoginMock).toHaveBeenCalled();
-  }); */
+    await waitFor(() => expect(handleLoginMock).toHaveBeenCalled());
+  });
 
   it("should render error message if error is true", () => {
     render(
