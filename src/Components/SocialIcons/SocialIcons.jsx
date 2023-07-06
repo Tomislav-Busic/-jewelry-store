@@ -6,7 +6,7 @@ import {
 
 export const SocialIcons = () => {
   return (
-    <div className="social">
+    <div className="social" data-testid="social_icons">
       <a
         href="https://www.instagram.com/calviantique_finejewellery/"
         target="_blank"
