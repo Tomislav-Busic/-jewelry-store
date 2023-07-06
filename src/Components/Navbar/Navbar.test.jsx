@@ -61,7 +61,7 @@ describe("Navbar component", () => {
 
     user.click(screen.getByText("KONTAKT"));
 
-    expect(window.location.pathname).toBe("/kontakt");
+    expect(window.location.pathname).toBeCalledWith("/kontakt");
   });
 
   it("should toggle the navbar when clicking on the hamburger icon", () => {
