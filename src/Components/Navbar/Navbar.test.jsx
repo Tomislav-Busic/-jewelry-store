@@ -29,9 +29,9 @@ describe("Navbar component", () => {
   });
 
   it("should navigate to the prodaja page when clicking on the prodaja link", async () => {
-    let assignSpy = jest.spyOn(window.location, "assign");
+    let assignSpy = jest.spyOn(window.location, "pathname");
     render(
-      <MemoryRouter>
+      <MemoryRouter initialEntries={["/"]}>
         <Navbar />
       </MemoryRouter>
     );
@@ -42,7 +42,7 @@ describe("Navbar component", () => {
   });
 
   it("should navigate to the usluge page when clicking on the usluge link", async () => {
-    let assignSpy = jest.spyOn(window.location, "assign");
+    let assignSpy = jest.spyOn(window.location, "pathname");
     render(
       <MemoryRouter>
         <Navbar />
@@ -55,7 +55,7 @@ describe("Navbar component", () => {
   });
 
   it("should navigate to the kontakt page when clicking on the kontakt link", async () => {
-    let assignSpy = jest.spyOn(window.location, "assign");
+    let assignSpy = jest.spyOn(window.location, "pathname");
     render(
       <MemoryRouter>
         <Navbar />
