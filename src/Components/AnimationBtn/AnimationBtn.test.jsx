@@ -1,6 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
-import user from "@testing-library/user-event";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { MemoryRouter } from "react-router-dom";
 import { AnimationBtn } from "./AnimationBtn";
@@ -24,7 +23,7 @@ describe("AnimationBtn", () => {
     expect(screen.getByText("Test")).toBeInTheDocument();
   });
 
-  /*  it("should call the goToTopOfPage function when clicked", () => {
+  it("should call the goToTopOfPage function when clicked", async () => {
     const goToTopOfPage = jest.fn();
 
     render(
@@ -40,8 +39,8 @@ describe("AnimationBtn", () => {
 
     const link = screen.getByTestId("link");
 
-    user.click(link);
+    fireEvent.click(link);
 
-    expect(goToTopOfPage).toHaveBeenCalledTimes(1);
-  }); */
+    await waitFor(() => expect(goToTopOfPage).toHaveBeenCalled());
+  });
 });
