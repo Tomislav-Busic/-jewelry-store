@@ -19,13 +19,21 @@ describe("ContactEndOfPage", () => {
   });
 
   it("should render the logo correctly", () => {
-    render(<ContactEndOfPage />);
+    render(
+      <MemoryRouter>
+        <ContactEndOfPage />
+      </MemoryRouter>
+    );
 
     expect(screen.getByAltText("logo")).toBeInTheDocument();
   });
 
   it("should render the social icons correctly", () => {
-    render(<ContactEndOfPage />);
+    render(
+      <MemoryRouter>
+        <ContactEndOfPage />
+      </MemoryRouter>
+    );
 
     expect(screen.getByTestId("social_icons")).toBeInTheDocument();
   });
