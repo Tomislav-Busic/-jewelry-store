@@ -17,7 +17,7 @@ describe("ProductAdmin", () => {
     const handleDelete = jest.fn();
     const handleUpdate = jest.fn();
 
-    const tr = document.createElement("tr");
+    const tbody = document.createElement("tbody");
 
     const { container } = render(
       <ProductAdmin
@@ -26,13 +26,11 @@ describe("ProductAdmin", () => {
         handleUpdate={handleUpdate}
       />,
       {
-        container: document.body.appendChild(tr),
+        container: document.body.appendChild(tbody),
       }
     );
 
     expect(container).toBeTruthy();
-
-    expect(container).not.toBeNull();
   });
 
   it("should call handleDelete when delete button is clicked", async () => {
