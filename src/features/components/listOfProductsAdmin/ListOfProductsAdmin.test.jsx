@@ -5,7 +5,6 @@ import { MemoryRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "store";
 import { ListOfProductsAdmin } from "./ListOfProductsAdmin";
-import { ProductAdmin } from "./productAdmin/ProductAdmin";
 
 describe("ListOfProductsAdmin", () => {
   it("should render correctly", () => {
