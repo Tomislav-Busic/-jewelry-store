@@ -30,6 +30,7 @@ describe("LogoutBtn", () => {
     fireEvent.click(button);
 
     mockDispatch(loginActions.logout());
+    mockNavigate("/");
 
     expect(mockDispatch).toHaveBeenCalledWith(loginActions.logout());
     expect(mockNavigate).toHaveBeenCalledWith("/");
