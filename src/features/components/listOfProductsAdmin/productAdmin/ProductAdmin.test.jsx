@@ -17,7 +17,7 @@ describe("ProductAdmin", () => {
     const handleDelete = jest.fn();
     const handleUpdate = jest.fn();
 
-    const tbody = document.createElement("tbody");
+    const tr = document.createElement("tr");
 
     const { container } = render(
       <ProductAdmin
@@ -26,7 +26,7 @@ describe("ProductAdmin", () => {
         handleUpdate={handleUpdate}
       />,
       {
-        container: document.body.appendChild(tbody),
+        container: document.body.appendChild(tr),
       }
     );
 
