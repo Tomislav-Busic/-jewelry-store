@@ -11,6 +11,7 @@ export const SocialIcons = () => {
         href="https://www.instagram.com/calviantique_finejewellery/"
         target="_blank"
         rel="noreferrer"
+        data-testid="social_icon_fb"
       >
         <FaFacebookSquare className="social_icon" />
       </a>
@@ -18,6 +19,7 @@ export const SocialIcons = () => {
         href="https://www.instagram.com/calviantique_finejewellery/"
         target="_blank"
         rel="noreferrer"
+        data-testid="social_icon_in"
       >
         <FaInstagramSquare className="social_icon" />
       </a>
@@ -25,6 +27,7 @@ export const SocialIcons = () => {
         href="https://www.instagram.com/calviantique_finejewellery/"
         target="_blank"
         rel="noreferrer"
+        data-testid="social_icon_li"
       >
         <FaLinkedin className="social_icon" />
       </a>
