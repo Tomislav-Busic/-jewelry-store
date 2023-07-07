@@ -17,13 +17,20 @@ describe("ProductAdmin", () => {
     const handleDelete = jest.fn();
     const handleUpdate = jest.fn();
 
+    const tbody = document.createElement("tbody");
+
     const { container } = render(
       <ProductAdmin
         product={product}
         handleDelete={handleDelete}
         handleUpdate={handleUpdate}
-      />
+      />,
+      {
+        container: document.body.appendChild(tbody),
+      }
     );
+
+    expect(container).toBeTruthy();
 
     expect(container).not.toBeNull();
   });
