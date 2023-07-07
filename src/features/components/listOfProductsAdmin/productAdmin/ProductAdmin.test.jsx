@@ -45,17 +45,20 @@ describe("ProductAdmin", () => {
     const handleDelete = jest.fn();
     const handleUpdate = jest.fn();
 
-    render(
-      <MemoryRouter initialEntries={["/admin-dashboard"]}>
-        <Provider store={store}>
-          <ProductAdmin
-            product={product}
-            handleDelete={handleDelete}
-            handleUpdate={handleUpdate}
-          />
-        </Provider>
-      </MemoryRouter>
+    const tbody = document.createElement("tbody");
+
+    const { container } = render(
+      <ProductAdmin
+        product={product}
+        handleDelete={handleDelete}
+        handleUpdate={handleUpdate}
+      />,
+      {
+        container: document.body.appendChild(tbody),
+      }
     );
+
+    expect(container).toBeTruthy();
 
     const button = await waitFor(() =>
       screen.findByTestId("update_product_btn")
@@ -78,17 +81,20 @@ describe("ProductAdmin", () => {
     const handleDelete = jest.fn();
     const handleUpdate = jest.fn();
 
-    render(
-      <MemoryRouter initialEntries={["/admin-dashboard"]}>
-        <Provider store={store}>
-          <ProductAdmin
-            product={product}
-            handleDelete={handleDelete}
-            handleUpdate={handleUpdate}
-          />
-        </Provider>
-      </MemoryRouter>
+    const tbody = document.createElement("tbody");
+
+    const { container } = render(
+      <ProductAdmin
+        product={product}
+        handleDelete={handleDelete}
+        handleUpdate={handleUpdate}
+      />,
+      {
+        container: document.body.appendChild(tbody),
+      }
     );
+
+    expect(container).toBeTruthy();
 
     const button = await waitFor(() =>
       screen.findByTestId("delete_product_btn")
