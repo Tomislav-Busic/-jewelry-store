@@ -15,7 +15,9 @@ describe("TextAnimation", () => {
     expect(container).not.toBeNull();
   });
 
-  it("component items renders correctly", () => {
+  it("component items renders correctly", async () => {
+    jest.setTimeout(5000);
+
     render(
       <MemoryRouter>
         <TextAnimation />
@@ -23,10 +25,22 @@ describe("TextAnimation", () => {
     );
 
     expect(screen.getByText("IZRADA NAKITA PO NARUDŽBI")).toBeInTheDocument();
+
+    await waitFor(() => screen.findByText("POPRAVCI I RESTAURIRANJE NAKITA"), {
+      timeout: 7000,
+    });
     expect(
       screen.getByText("POPRAVCI I RESTAURIRANJE NAKITA")
     ).toBeInTheDocument();
+
+    await waitFor(() => screen.findByText("KOMISIONA PRODAJA"), {
+      timeout: 7000,
+    });
     expect(screen.getByText("KOMISIONA PRODAJA")).toBeInTheDocument();
+
+    await waitFor(() => screen.findByText("FRANCUSKI ANTIKVITETI"), {
+      timeout: 7000,
+    });
     expect(screen.getByText("FRANCUSKI ANTIKVITETI")).toBeInTheDocument();
   });
 });
