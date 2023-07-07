@@ -1,9 +1,6 @@
 import React from "react";
 import { render, screen, waitFor, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { MemoryRouter } from "react-router-dom";
-import { Provider } from "react-redux";
-import { store } from "store";
 import { ProductAdmin } from "./ProductAdmin";
 
 describe("ProductAdmin", () => {
