@@ -60,4 +60,37 @@ describe("ProductAdmin", () => {
 
     expect(handleUpdate).toHaveBeenCalledWith(product);
   });
+
+  it("should call handleUpdate when delete button is clicked", async () => {
+    const product = {
+      img_name: "image.jpg",
+      id: "1",
+      img: "image.jpg",
+      name: "Product Name",
+      category: "Category",
+    };
+
+    const handleDelete = jest.fn();
+    const handleUpdate = jest.fn();
+
+    render(
+      <MemoryRouter initialEntries={["/admin-dashboard"]}>
+        <Provider store={store}>
+          <ProductAdmin
+            product={product}
+            handleDelete={handleDelete}
+            handleUpdate={handleUpdate}
+          />
+        </Provider>
+      </MemoryRouter>
+    );
+
+    const button = await waitFor(() =>
+      screen.findByTestId("delete_product_btn")
+    );
+
+    fireEvent.click(button);
+
+    expect(handleDelete).toHaveBeenCalledWith(product);
+  });
 });
