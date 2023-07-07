@@ -16,7 +16,7 @@ describe("TextAnimation", () => {
   });
 
   it("component items renders correctly", async () => {
-    jest.setTimeout(5000);
+    jest.setTimeout(2800);
 
     render(
       <MemoryRouter>
