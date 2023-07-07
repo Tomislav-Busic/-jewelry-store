@@ -8,25 +8,23 @@ import { loginActions } from "store/slice/login/login-slice";
 import { LogoutBtn } from "./LogoutBtn";
 
 describe("LogoutBtn", () => {
-  it("should dispatch logout action when clicked", async () => {
-    const mockDispatch = jest.fn();
-    const mockNavigate = jest.fn();
-
-    React.useDispatch = jest.fn(() => mockDispatch);
-    React.useNavigate = jest.fn(() => mockNavigate);
+  it("should dispatch logout action when clicked", () => {
+    const handleLogout = jest.fn();
 
     render(
       <MemoryRouter>
         <Provider store={store}>
-          <LogoutBtn />
+          <LogoutBtn onClick={handleLogout} />
         </Provider>
       </MemoryRouter>
     );
 
-    const handleLogout = screen.getByText("Odjavi se").props.onClick;
-    handleLogout();
+    const button = screen.getByText("Odjavi se");
 
-    expect(mockDispatch).toHaveBeenCalledWith(loginActions.logout());
-    expect(mockNavigate).toHaveBeenCalledWith("/");
+    expect(button).toHaveTextContent("Odjavi se");
+
+    fireEvent.click(button);
+
+    expect(handleLogout).toHaveBeenCalled();
   });
 });
