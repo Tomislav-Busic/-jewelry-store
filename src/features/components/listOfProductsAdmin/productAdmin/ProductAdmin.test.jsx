@@ -1,8 +1,9 @@
 import React from "react";
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen, waitFor, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import user from "@testing-library/user-event";
 import { MemoryRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "store";
 import { ProductAdmin } from "./ProductAdmin";
 
 describe("ProductAdmin", () => {
@@ -27,7 +28,7 @@ describe("ProductAdmin", () => {
     expect(container).not.toBeNull();
   });
 
-  it("should call handleDelete when delete button is clicked", () => {
+  it("should call handleDelete when delete button is clicked", async () => {
     const product = {
       img_name: "image.jpg",
       id: "1",
@@ -40,15 +41,23 @@ describe("ProductAdmin", () => {
     const handleUpdate = jest.fn();
 
     render(
-      <ProductAdmin
-        product={product}
-        handleDelete={handleDelete}
-        handleUpdate={handleUpdate}
-      />
+      <MemoryRouter initialEntries={["/admin-dashboard"]}>
+        <Provider store={store}>
+          <ProductAdmin
+            product={product}
+            handleDelete={handleDelete}
+            handleUpdate={handleUpdate}
+          />
+        </Provider>
+      </MemoryRouter>
     );
 
-    const button = user.click(button);
+    const button = await waitFor(() =>
+      screen.findByTestId("update_product_btn")
+    );
 
-    expect(handleDelete).toHaveBeenCalled();
+    fireEvent.click(button);
+
+    expect(handleUpdate).toHaveBeenCalledWith(product);
   });
 });
