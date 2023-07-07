@@ -48,16 +48,14 @@ export const ListOfProductsAdmin = () => {
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>
-          {data.map((product, index) => (
-            <ProductAdmin
-              product={product}
-              key={index}
-              handleDelete={handleDelete}
-              handleUpdate={handleUpdate}
-            />
-          ))}
-        </tbody>
+        {data.map((product, index) => (
+          <ProductAdmin
+            product={product}
+            key={index}
+            handleDelete={handleDelete}
+            handleUpdate={handleUpdate}
+          />
+        ))}
       </table>
     </div>
   );

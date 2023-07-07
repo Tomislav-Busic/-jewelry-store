@@ -4,9 +4,9 @@ import { FaTrashAlt, FaPencilAlt } from "react-icons/fa";
 
 import styles from "./productAdmin.module.scss";
 
-export const ProductAdmin = ({ product, handleDelete, handleUpdate }) => {
+export const ProductAdmin = ({ product, key, handleDelete, handleUpdate }) => {
   return (
-    <tr>
+    <tr key={key}>
       <td>
         <img className={styles.table_img} src={product.img} alt="table" />
       </td>
