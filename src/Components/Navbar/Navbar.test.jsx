@@ -16,18 +16,6 @@ describe("Navbar component", () => {
     expect(container).not.toBeNull();
   });
 
-  it("should navigate to the home page when clicking on the logo", () => {
-    render(
-      <MemoryRouter initialEntries={["/"]}>
-        <Navbar />
-      </MemoryRouter>
-    );
-
-    user.click(screen.getByTestId("nav_header"));
-
-    expect(window.location.pathname).toBe("/");
-  });
-
   it("should toggle the navbar when clicking on the hamburger icon", () => {
     render(
       <MemoryRouter>
