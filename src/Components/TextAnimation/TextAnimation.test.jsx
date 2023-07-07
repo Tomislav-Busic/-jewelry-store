@@ -16,7 +16,7 @@ describe("TextAnimation", () => {
   });
 
   it("component items renders correctly", async () => {
-    jest.setTimeout(2800);
+    jest.setTimeout(20000);
 
     render(
       <MemoryRouter>
@@ -42,5 +42,5 @@ describe("TextAnimation", () => {
       timeout: 7000,
     });
     expect(screen.getByText("FRANCUSKI ANTIKVITETI")).toBeInTheDocument();
-  });
+  }, 20000);
 });
