@@ -91,6 +91,6 @@ describe("ProductAdmin", () => {
 
     fireEvent.click(button);
 
-    expect(handleDelete).toHaveBeenCalledWith(product);
+    expect(handleDelete).toHaveBeenCalledWith(product.img_name, product.id);
   });
 });
