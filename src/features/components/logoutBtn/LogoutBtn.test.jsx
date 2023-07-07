@@ -23,7 +23,8 @@ describe("LogoutBtn", () => {
       </MemoryRouter>
     );
 
-    fireEvent.click(screen.getByText("Odjavi se"));
+    const handleLogout = screen.getByText("Odjavi se").props.onClick;
+    handleLogout();
 
     expect(mockDispatch).toHaveBeenCalledWith(loginActions.logout());
     expect(mockNavigate).toHaveBeenCalledWith("/");
