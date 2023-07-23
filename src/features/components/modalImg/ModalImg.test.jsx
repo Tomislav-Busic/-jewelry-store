@@ -37,8 +37,6 @@ describe("ModalImg", () => {
 
     fireEvent.click(screen.getByTestId("modal_img"));
 
-    await waitFor(() =>
-      expect(dispatch).toHaveBeenCalledWith(modalActions.closeModal())
-    );
+    expect(dispatch).toHaveBeenCalledWith(modalActions.closeModal());
   });
 });
