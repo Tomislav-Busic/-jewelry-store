@@ -19,15 +19,13 @@ describe("ModalImg", () => {
   const dispatch = jest.fn();
   useDispatch.mockReturnValue(dispatch);
 
-  test("renders modal with name and image", async () => {
+  test("renders modal with name and image", () => {
     useSelector.mockReturnValueOnce("image-url");
     useSelector.mockReturnValueOnce("Image Name");
 
     render(<ModalImg />);
 
-    expect(
-      await waitFor(() => screen.findByText("Image Name"))
-    ).toBeInTheDocument();
+    expect(screen.getByText("Image Name")).toBeInTheDocument();
     expect(screen.getByAltText("img")).toHaveAttribute("src", "image-url");
   });
 
