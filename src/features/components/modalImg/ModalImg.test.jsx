@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import { useSelector, useDispatch } from "react-redux";
 import { ModalImg } from "./ModalImg";
 import { modalActions } from "store/slice/modal/modal-slice";
@@ -16,10 +16,10 @@ jest.mock("store/slice/modal/modal-slice", () => ({
 }));
 
 describe("ModalImg", () => {
-  const dispatch = jest.fn();
-  useDispatch.mockReturnValue(dispatch);
+  const dispatchMock = jest.fn();
+  useDispatch.mockReturnValue(dispatchMock);
 
-  /* test("renders modal with name and image", () => {
+  test("renders modal with name and image", () => {
     useSelector.mockReturnValueOnce("image-url");
     useSelector.mockReturnValueOnce("Image Name");
 
@@ -27,7 +27,7 @@ describe("ModalImg", () => {
 
     expect(screen.getByText("Image Name")).toBeInTheDocument();
     expect(screen.getByAltText("img")).toHaveAttribute("src", "image-url");
-  }); */
+  });
 
   test("calls toggleModal when modal is clicked", () => {
     useSelector.mockReturnValueOnce("image-url");
@@ -35,8 +35,8 @@ describe("ModalImg", () => {
 
     render(<ModalImg />);
 
-    fireEvent.click(screen.getByTestId("modal_img"));
+    fireEvent.click(screen.getByTestId("modal"));
 
-    expect(dispatch).toHaveBeenCalledWith(modalActions.closeModal());
+    expect(dispatchMock).toHaveBeenCalledWith(modalActions.closeModal());
   });
 });
