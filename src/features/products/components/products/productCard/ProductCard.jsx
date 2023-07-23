@@ -15,7 +15,12 @@ export const ProductCard = ({ product }) => {
   };
   return (
     <div className={styles.product_card} id={id}>
-      <img onClick={() => openImg(img, name)} src={img} alt={img_name} />
+      <img
+        onClick={() => openImg(img, name)}
+        src={img}
+        alt={img_name}
+        data-testid="modal_img"
+      />
       <div className={styles.category}>
         <h3>{category}</h3>
       </div>
