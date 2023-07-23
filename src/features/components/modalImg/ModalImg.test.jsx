@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { useSelector, useDispatch } from "react-redux";
 import { ModalImg } from "./ModalImg";
 import { modalActions } from "store/slice/modal/modal-slice";
@@ -29,7 +29,7 @@ describe("ModalImg", () => {
     expect(screen.getByAltText("img")).toHaveAttribute("src", "image-url");
   }); */
 
-  test("calls toggleModal when modal is clicked", () => {
+  test("calls toggleModal when modal is clicked", async () => {
     useSelector.mockReturnValueOnce("image-url");
     useSelector.mockReturnValueOnce("Image Name");
 
@@ -39,6 +39,6 @@ describe("ModalImg", () => {
 
     fireEvent.click(modal);
 
-    expect(dispatchMock).toHaveBeenCalled(modalActions.closeModal());
+    expect(dispatchMock).toHaveBeenCalledWith(modalActions.closeModal());
   });
 });
