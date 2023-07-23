@@ -19,7 +19,7 @@ describe("ModalImg", () => {
   const dispatchMock = jest.fn();
   useDispatch.mockReturnValue(dispatchMock);
 
-  /* test("renders modal with name and image", () => {
+  test("renders modal with name and image", () => {
     useSelector.mockReturnValueOnce("image-url");
     useSelector.mockReturnValueOnce("Image Name");
 
@@ -27,7 +27,7 @@ describe("ModalImg", () => {
 
     expect(screen.getByText("Image Name")).toBeInTheDocument();
     expect(screen.getByAltText("img")).toHaveAttribute("src", "image-url");
-  }); */
+  });
 
   test("calls toggleModal when modal is clicked", () => {
     useSelector.mockReturnValueOnce("image-url");
@@ -35,7 +35,9 @@ describe("ModalImg", () => {
 
     render(<ModalImg />);
 
-    fireEvent.click(screen.getByTestId("modal"));
+    const modal = screen.getByTestId("modal");
+
+    fireEvent.click(modal);
 
     expect(dispatchMock).toHaveBeenCalledWith(modalActions.closeModal());
   });
