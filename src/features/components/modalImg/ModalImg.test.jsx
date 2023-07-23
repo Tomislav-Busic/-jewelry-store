@@ -29,13 +29,13 @@ describe("ModalImg", () => {
     expect(screen.getByAltText("img")).toHaveAttribute("src", "image-url");
   });
 
-  test("calls toggleModal when modal is clicked", () => {
+  test("calls toggleModal when modal is clicked", async () => {
     useSelector.mockReturnValueOnce("image-url");
     useSelector.mockReturnValueOnce("Image Name");
 
     render(<ModalImg />);
 
-    fireEvent.click(screen.getByTestId("modal_img"));
+    fireEvent.click(await waitFor(() => screen.findByTestId("modal_img")));
 
     expect(dispatch).toHaveBeenCalledWith(modalActions.closeModal());
   });
