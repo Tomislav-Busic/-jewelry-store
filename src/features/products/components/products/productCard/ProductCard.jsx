@@ -19,7 +19,7 @@ export const ProductCard = ({ product }) => {
         onClick={() => openImg(img, name)}
         src={img}
         alt={img_name}
-        data-testid="modal_img"
+        data-testid="open_img"
       />
       <div className={styles.category}>
         <h3>{category}</h3>
