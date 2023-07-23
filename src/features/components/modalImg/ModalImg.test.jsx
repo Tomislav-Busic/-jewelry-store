@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { useSelector, useDispatch } from "react-redux";
 import { ModalImg } from "./ModalImg";
 import { modalActions } from "store/slice/modal/modal-slice";
@@ -19,13 +19,15 @@ describe("ModalImg", () => {
   const dispatch = jest.fn();
   useDispatch.mockReturnValue(dispatch);
 
-  test("renders modal with name and image", () => {
+  test("renders modal with name and image", async () => {
     useSelector.mockReturnValueOnce("image-url");
     useSelector.mockReturnValueOnce("Image Name");
 
     render(<ModalImg />);
 
-    expect(screen.getByText("Image Name")).toBeInTheDocument();
+    expect(
+      await waitFor(() => screen.findByText("Image Name"))
+    ).toBeInTheDocument();
     expect(screen.getByAltText("img")).toHaveAttribute("src", "image-url");
   });
 
