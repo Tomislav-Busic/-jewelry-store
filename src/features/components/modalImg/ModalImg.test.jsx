@@ -29,7 +29,7 @@ describe("ModalImg", () => {
     expect(screen.getByAltText("img")).toHaveAttribute("src", "image-url");
   }); */
 
-  test("calls toggleModal when modal is clicked", async () => {
+  test("calls toggleModal when modal is clicked", () => {
     useSelector.mockReturnValueOnce("image-url");
     useSelector.mockReturnValueOnce("Image Name");
 
