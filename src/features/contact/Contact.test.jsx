@@ -1,6 +1,10 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import { Contact } from "./Contact";
+
+jest.mock("emailjs-com", () => ({
+  sendForm: jest.fn().mockResolvedValueOnce("success"),
+}));
 
 describe("Contact", () => {
   it("should render Contact component", () => {
@@ -15,14 +19,18 @@ describe("Contact", () => {
     expect(links).toBeInTheDocument();
   });
 
-  it("should trigger sendEmail function on form submit", () => {
+  it("should trigger sendEmail function on form submit", async () => {
     render(<Contact />);
     const form = screen.getByTestId("form");
-    const preventDefault = jest.fn();
-    const mockSendEmail = jest.fn();
 
-    fireEvent.submit(form, { preventDefault });
-    expect(preventDefault).toHaveBeenCalledTimes(1);
-    expect(mockSendEmail).toHaveBeenCalledTimes(1);
+    fireEvent.submit(form);
+
+    await waitFor(
+      () => {
+        const emailResponse = screen.queryByTestId("email-response");
+        expect(emailResponse).toBeInTheDocument();
+      },
+      { timeout: 1500 }
+    );
   });
 });
