@@ -1,3 +1,5 @@
+import styles from "./emailResponse.module.scss";
+
 export const EmailResponse = ({ setEmailRes }) => {
   return (
     <div className={styles.response} data-testid="email-response">
