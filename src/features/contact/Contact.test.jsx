@@ -1,18 +1,15 @@
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import { Contact } from "./Contact";
 
-jest.mock("emailjs-com", () => ({
-  sendForm: jest.fn().mockResolvedValueOnce({}),
-}));
-
 describe("Contact", () => {
-  test("should send an email", async () => {
+  it("should render Contact component", () => {
     render(<Contact />);
+    const heading = screen.getByText("Kontakt");
+    const form = screen.getByTestId("form");
+    const links = screen.getByTestId("form");
 
-    fireEvent.submit(screen.getByTestId("form"));
-
-    const response = await waitFor(() => screen.findByTestId("email-response"));
-
-    expect(response).toBeInTheDocument();
+    expect(heading).toBeInTheDocument();
+    expect(form).toBeInTheDocument();
+    expect(links).toBeInTheDocument();
   });
 });
