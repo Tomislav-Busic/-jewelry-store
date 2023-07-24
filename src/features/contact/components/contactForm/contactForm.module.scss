@@ -20,11 +20,3 @@
     @include button-form;
   }
 }
-
-.response {
-  @include flex-column;
-
-  h2 {
-    color: $main-color;
-  }
-}
