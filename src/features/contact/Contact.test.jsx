@@ -6,7 +6,7 @@ describe("Contact", () => {
     render(<Contact />);
     const heading = screen.getByText("Kontakt");
     const form = screen.getByTestId("form");
-    const links = screen.getByTestId("form");
+    const links = screen.getByTestId("links");
 
     expect(heading).toBeInTheDocument();
     expect(form).toBeInTheDocument();

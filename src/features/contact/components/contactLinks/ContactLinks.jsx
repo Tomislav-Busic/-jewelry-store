@@ -9,7 +9,7 @@ import "./contactLinks.scss";
 
 export const ContactLinks = () => {
   return (
-    <div className="contact_links">
+    <div className="contact_links" data-testid="links">
       {" "}
       <SocialIcons />
       <div className="f_con_item">
