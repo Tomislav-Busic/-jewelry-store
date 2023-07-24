@@ -11,7 +11,7 @@ describe("Contact", () => {
 
     render(<Contact />);
 
-    fireEvent.submit(screen.getByTestId("button"));
+    fireEvent.submit(screen.getByTestId("form"));
 
     const response = await waitFor(
       () => screen.findByTestId("email-response"),
