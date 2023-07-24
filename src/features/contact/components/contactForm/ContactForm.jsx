@@ -15,13 +15,13 @@ export const ContactForm = ({ sendEmail, emailRes, setEmailRes }) => {
             required
           />
           <textarea placeholder="Poruka..." name="message" required />
-          <button type="submit" value="Send">
+          <button type="submit" value="Send" data-testid="button">
             Slanje
           </button>
           <br />
         </>
       ) : (
-        <div className={styles.response}>
+        <div className={styles.response} data-testid="email-response">
           <h2>
             Poštovani, <br />
             Hvala vam na poruci.
