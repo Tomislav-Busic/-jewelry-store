@@ -15,10 +15,9 @@ describe("Contact", () => {
     expect(links).toBeInTheDocument();
   });
 
-  /*
-    it("should trigger sendEmail function on form submit", () => {
-    const { getByLabelText } = render(<Contact />);
-    const form = getByLabelText("contact-form");
+  it("should trigger sendEmail function on form submit", () => {
+    render(<Contact />);
+    const form = screen.getByTestId("form");
     const preventDefault = jest.fn();
     const mockSendEmail = jest.fn();
 
@@ -26,5 +25,4 @@ describe("Contact", () => {
     expect(preventDefault).toHaveBeenCalledTimes(1);
     expect(mockSendEmail).toHaveBeenCalledTimes(1);
   });
-  */
 });
