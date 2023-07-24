@@ -4,7 +4,7 @@ import styles from "./contactForm.module.scss";
 
 export const ContactForm = ({ sendEmail, emailRes, setEmailRes }) => {
   return (
-    <form onSubmit={sendEmail} className={styles.form}>
+    <form onSubmit={sendEmail} className={styles.form} data-testid="form">
       {!emailRes ? (
         <>
           <input type="text" name="name" placeholder="Vaše ime" required />
@@ -15,7 +15,7 @@ export const ContactForm = ({ sendEmail, emailRes, setEmailRes }) => {
             required
           />
           <textarea placeholder="Poruka..." name="message" required />
-          <button type="submit" value="Send" data-testid="button">
+          <button type="submit" value="Send">
             Slanje
           </button>
           <br />

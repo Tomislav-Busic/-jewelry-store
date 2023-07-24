@@ -7,12 +7,19 @@ jest.mock("emailjs-com", () => ({
 
 describe("Contact", () => {
   test("should send an email", async () => {
+    jest.setTimeout(1000);
+
     render(<Contact />);
 
-    fireEvent.click(screen.getByTestId("button"));
+    fireEvent.submit(screen.getByTestId("button"));
 
-    await waitFor(() =>
-      expect(screen.findByTestId("email-response")).toBeInTheDocument()
+    const response = await waitFor(
+      () => screen.findByTestId("email-response"),
+      {
+        timeout: 600,
+      }
     );
-  });
+
+    expect(response).toBeInTheDocument();
+  }, 1000);
 });
