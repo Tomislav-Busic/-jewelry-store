@@ -37,7 +37,7 @@ export const Contact = () => {
       <div className={styles.contact_section}>
         <h1>Kontakt</h1>
         <div className={styles.contact_container}>
-          {!emailRes ? (
+          {emailRes ? (
             <ContactForm sendEmail={sendEmail} />
           ) : (
             <EmailResponse setEmailRes={setEmailRes} />

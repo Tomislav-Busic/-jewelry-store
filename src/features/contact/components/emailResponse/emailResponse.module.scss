@@ -2,10 +2,15 @@
 @import "~assets/styles/variables/variables.scss";
 
 .response {
-  @include form;
+  border: 3px solid $main-color;
+  padding: 2rem;
   @include flex-column;
 
   h2 {
     color: $main-color;
+  }
+
+  button {
+    @include button-form;
   }
 }
