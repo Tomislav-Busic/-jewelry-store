@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 import { Contact } from "./Contact";
 
 jest.mock("emailjs-com", () => ({
-  sendForm: jest.fn().mockResolvedValueOnce(Promise.resolve("success")),
+  sendForm: jest.fn().mockResolvedValueOnce("success"),
 }));
 
 describe("Contact", () => {
@@ -20,7 +20,7 @@ describe("Contact", () => {
     expect(links).toBeInTheDocument();
   });
 
-  it("should trigger sendEmail function on form submit", async () => {
+  it("should trigger sendEmail function on form submit and render response component", async () => {
     render(<Contact />);
 
     const form = screen.getByTestId("form");
@@ -30,8 +30,8 @@ describe("Contact", () => {
       expect(emailjs.sendForm).toHaveBeenCalled();
     });
 
-    const response = await waitFor(() => screen.findByTestId("email-response"));
-
-    expect(response).toBeInTheDocument();
+    await waitFor(() => {
+      expect(screen.getByTestId("email-response")).toBeInTheDocument();
+    });
   });
 });
