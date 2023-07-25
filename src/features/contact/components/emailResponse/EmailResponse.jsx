@@ -13,7 +13,12 @@ export const EmailResponse = ({ setEmailRes }) => {
         <br />
         Calvi
       </h2>
-      <button onClick={() => setEmailRes(false)}>U redu</button>
+      <button
+        onClick={() => setEmailRes(false)}
+        data-testid="close_email_response"
+      >
+        U redu
+      </button>
     </div>
   );
 };
