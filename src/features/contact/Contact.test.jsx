@@ -22,10 +22,13 @@ describe("Contact", () => {
 
   it("should trigger sendEmail function on form submit", async () => {
     render(<Contact />);
+
     const form = screen.getByTestId("form");
     fireEvent.submit(form);
 
-    expect(emailjs.sendForm).toHaveBeenCalled();
+    await waitFor(() => {
+      expect(emailjs.sendForm).toHaveBeenCalled();
+    });
 
     const response = await waitFor(() => screen.findByTestId("email-response"));
 

@@ -21,15 +21,14 @@ export const Contact = () => {
         process.env.REACT_APP_PUBLIC_KEY
       )
       .then((res) => {
-        setTimeout(() => {
-          setEmailRes(true);
-          console.log(res);
-          e.target.reset();
-        }, 500);
+        console.log(res);
+        e.target.reset();
       })
       .catch((err) => {
         console.log(err);
       });
+
+    setEmailRes(true);
   };
 
   return (
