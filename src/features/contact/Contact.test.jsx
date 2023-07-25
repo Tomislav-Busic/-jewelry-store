@@ -20,6 +20,7 @@ describe("Contact", () => {
   });
 
   it("should trigger sendEmail function on form submit", async () => {
+    jest.setTimeout(2000);
     render(<Contact />);
     const form = screen.getByTestId("form");
 
@@ -30,7 +31,9 @@ describe("Contact", () => {
         const emailResponse = screen.queryByTestId("email-response");
         expect(emailResponse).toBeInTheDocument();
       },
-      { timeout: 1500 }
+      {
+        timeout: 1500,
+      }
     );
-  });
+  }, 2000);
 });
