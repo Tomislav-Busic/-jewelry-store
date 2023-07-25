@@ -23,12 +23,14 @@ export const Contact = () => {
       .then((res) => {
         console.log(res);
         e.target.reset();
+
+        setTimeout(() => {
+          setEmailRes(true);
+        }, 500);
       })
       .catch((err) => {
         console.log(err);
       });
-
-    setEmailRes(true);
   };
 
   return (

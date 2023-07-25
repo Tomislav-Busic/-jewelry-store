@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 import { Contact } from "./Contact";
 
 jest.mock("emailjs-com", () => ({
-  sendForm: jest.fn().mockResolvedValueOnce("success"),
+  sendForm: jest.fn().mockResolvedValueOnce(Promise.resolve("success")),
 }));
 
 describe("Contact", () => {
