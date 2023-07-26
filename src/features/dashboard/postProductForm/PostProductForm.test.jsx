@@ -27,7 +27,17 @@ describe("PostProductForm", () => {
   });
 
   test("handles input change", () => {
-    const nameInput = screen.getByPlaceholderText("Ime proizvoda");
+    render(
+      <PostProductForm
+        handleSubmit={handleSubmit}
+        handleData={handleData}
+        setFile={setFile}
+        file={file}
+        perc={perc}
+      />
+    );
+
+    const nameInput = screen.getByPlaceholderText("product_name");
     fireEvent.change(nameInput, { target: { value: "Test product" } });
     expect(handleData).toHaveBeenCalledTimes(1);
     expect(handleData).toHaveBeenCalledWith({
