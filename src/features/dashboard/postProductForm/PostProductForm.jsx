@@ -17,7 +17,11 @@ export const PostProductForm = ({
   };
 
   return (
-    <form onSubmit={handleSubmit} className={styles.form}>
+    <form
+      onSubmit={handleSubmit}
+      className={styles.form}
+      data-testid="post_product_form"
+    >
       <h3>Unesite novi proizvod</h3>
       <input
         type="text"

@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import "@testing-library/jest-dom";
+import "@testing-library/jest-dom/extend-expect";
 import { PostProductForm } from "./PostProductForm";
 
 describe("PostProductForm", () => {
@@ -54,5 +54,26 @@ describe("PostProductForm", () => {
     fireEvent.change(fileInput, { target: { files: [fileData] } });
     expect(setFile).toHaveBeenCalledTimes(1);
     expect(setFile).toHaveBeenCalledWith(fileData); */
+  });
+
+  test("handles form submit", () => {
+    render(
+      <PostProductForm
+        handleSubmit={handleSubmit}
+        handleData={handleData}
+        setFile={setFile}
+        file={file}
+        perc={perc}
+      />
+    );
+
+    const submitButton = screen.getByText(/Potvrdi/i);
+    fireEvent.click(submitButton);
+    expect(handleSubmit).toHaveBeenCalledTimes(1);
+  });
+
+  test("disables submit button if perc is less than 100", () => {
+    const submitButton = screen.getByText(/Potvrdi/i);
+    expect(submitButton).toBeDisabled();
   });
 });
