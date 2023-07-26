@@ -49,7 +49,7 @@ describe("PostProductForm", () => {
   });
 
   test("handles file upload", () => {
-    const fileInput = screen.getByLabelText("Učitaj sliku:");
+    const fileInput = screen.getByLabelText(/Učitaj sliku: /i);
     const fileData = new File(["test"], "test.jpg", { type: "image/jpg" });
     fireEvent.change(fileInput, { target: { files: [fileData] } });
     expect(setFile).toHaveBeenCalledTimes(1);

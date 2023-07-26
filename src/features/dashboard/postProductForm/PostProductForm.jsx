@@ -41,7 +41,8 @@ export const PostProductForm = ({
         alt=""
       />
       <label htmlFor="file">
-        Učitaj sliku: <br />
+        Učitaj sliku:
+        <br />
         <MdFileUpload className={styles.icon} />
       </label>
       <input
