@@ -25,4 +25,13 @@ describe("PostProductForm", () => {
     expect(screen.getByLabelText("Učitaj sliku:")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Potvrdi" })).toBeInTheDocument();
   });
+
+  test("handles input change", () => {
+    const nameInput = screen.getByPlaceholderText("Ime proizvoda");
+    fireEvent.change(nameInput, { target: { value: "Test product" } });
+    expect(handleData).toHaveBeenCalledTimes(1);
+    expect(handleData).toHaveBeenCalledWith({
+      target: { id: "name", value: "Test product" },
+    });
+  });
 });
