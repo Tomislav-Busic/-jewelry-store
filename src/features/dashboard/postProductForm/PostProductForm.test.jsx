@@ -47,4 +47,12 @@ describe("PostProductForm", () => {
       target: { id: "name", value: "Test product" },
     });
   });
+
+  test("handles file upload", () => {
+    const fileInput = screen.getByLabelText("Učitaj sliku:");
+    const fileData = new File(["test"], "test.jpg", { type: "image/jpg" });
+    fireEvent.change(fileInput, { target: { files: [fileData] } });
+    expect(setFile).toHaveBeenCalledTimes(1);
+    expect(setFile).toHaveBeenCalledWith(fileData);
+  });
 });
