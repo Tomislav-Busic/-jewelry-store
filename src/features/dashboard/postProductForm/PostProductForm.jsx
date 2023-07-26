@@ -17,11 +17,7 @@ export const PostProductForm = ({
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className={styles.form}
-      data-testid="post_product_form"
-    >
+    <form onSubmit={handleSubmit} className={styles.form}>
       <h3>Unesite novi proizvod</h3>
       <input
         type="text"
@@ -54,6 +50,7 @@ export const PostProductForm = ({
         id="file"
         onChange={(e) => setFile(e.target.files[0])}
         style={{ display: "none" }}
+        data-testid="file_upload"
       />
       <button disabled={perc !== null && perc < 100} type="submit">
         Potvrdi
