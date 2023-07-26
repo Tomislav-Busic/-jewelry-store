@@ -49,11 +49,21 @@ describe("PostProductForm", () => {
   });
 
   test("handles file upload", () => {
-    /*  const fileInput = screen.getByLabelText(/Učitaj sliku: /i);
+    render(
+      <PostProductForm
+        handleSubmit={handleSubmit}
+        handleData={handleData}
+        setFile={setFile}
+        file={file}
+        perc={perc}
+      />
+    );
+
+    const fileInput = screen.getByLabelText(/Učitaj sliku: /i);
     const fileData = new File(["test"], "test.jpg", { type: "image/jpg" });
     fireEvent.change(fileInput, { target: { files: [fileData] } });
     expect(setFile).toHaveBeenCalledTimes(1);
-    expect(setFile).toHaveBeenCalledWith(fileData); */
+    expect(setFile).toHaveBeenCalledWith(fileData);
   });
 
   test("handles form submit", () => {
