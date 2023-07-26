@@ -11,6 +11,11 @@ export const PostProductForm = ({
   file,
   perc,
 }) => {
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    handleData({ target: { id, value } });
+  };
+
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
       <h3>Unesite novi proizvod</h3>
@@ -18,9 +23,9 @@ export const PostProductForm = ({
         type="text"
         id="name"
         placeholder="Ime proizvoda"
-        onChange={handleData}
+        onChange={handleChange}
       />
-      <select id="category" onChange={handleData}>
+      <select id="category" onChange={handleChange}>
         <option value="ostalo">Odaberite kategoriju </option>
         <option value="ostalo">Ostalo </option>
         <option value="nakit">Nakit</option>

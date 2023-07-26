@@ -38,7 +38,10 @@ describe("PostProductForm", () => {
     );
 
     const nameInput = screen.getByPlaceholderText("Ime proizvoda");
-    fireEvent.change(nameInput, { target: { value: "Test product" } });
+    fireEvent.change(nameInput, {
+      target: { id: "name", value: "Test product" },
+    });
+
     expect(handleData).toHaveBeenCalledTimes(1);
     expect(handleData).toHaveBeenCalledWith({
       target: { id: "name", value: "Test product" },
