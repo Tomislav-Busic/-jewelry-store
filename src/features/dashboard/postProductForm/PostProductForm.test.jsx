@@ -73,6 +73,16 @@ describe("PostProductForm", () => {
   });
 
   test("disables submit button if perc is less than 100", () => {
+    render(
+      <PostProductForm
+        handleSubmit={handleSubmit}
+        handleData={handleData}
+        setFile={setFile}
+        file={file}
+        perc={perc}
+      />
+    );
+
     const submitButton = screen.getByText(/Potvrdi/i);
     expect(submitButton).toBeDisabled();
   });
