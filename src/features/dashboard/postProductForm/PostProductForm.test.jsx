@@ -82,7 +82,7 @@ describe("PostProductForm", () => {
     expect(handleSubmit).toHaveBeenCalledTimes(1);
   });
 
-  /*  test("disables submit button if perc is less than 100", () => {
+  test("disables submit button if perc is less than 100", () => {
     render(
       <PostProductForm
         handleSubmit={handleSubmit}
@@ -94,6 +94,10 @@ describe("PostProductForm", () => {
     );
 
     const submitButton = screen.getByText(/Potvrdi/i);
-    expect(submitButton).toBeDisabled();
-  }); */
+
+    if (perc !== null) {
+      // eslint-disable-next-line jest/no-conditional-expect
+      expect(submitButton).toBeDisabled();
+    }
+  });
 });
