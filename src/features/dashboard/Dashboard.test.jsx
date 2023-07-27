@@ -18,5 +18,6 @@ describe("Dashboard", () => {
     expect(screen.getByText(/Odjavi se/i)).toBeInTheDocument();
     expect(screen.getByText(/Administrator/i)).toBeInTheDocument();
     expect(screen.getByText(/Unesite novi proizvod/i)).toBeInTheDocument();
+    expect(screen.getByTestId("products_table")).toBeInTheDocument();
   });
 });
