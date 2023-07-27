@@ -5,8 +5,8 @@ import { store } from "store";
 import { MemoryRouter } from "react-router-dom";
 import { Home } from "./Home";
 
-describe("Dashboard", () => {
-  test("should render Dashboard component", () => {
+describe("Home", () => {
+  test("should render Home component", () => {
     render(
       <MemoryRouter>
         <Provider store={store}>
