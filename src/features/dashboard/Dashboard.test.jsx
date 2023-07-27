@@ -16,5 +16,6 @@ describe("Dashboard", () => {
     );
 
     expect(screen.getByText(/Administrator/i)).toBeInTheDocument();
+    expect(screen.getByText(/Odjavi se/i)).toBeInTheDocument();
   });
 });
