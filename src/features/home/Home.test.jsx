@@ -7,12 +7,14 @@ import { Home } from "./Home";
 
 describe("Home", () => {
   test("should render Home component", () => {
-    render(
+    const { container } = render(
       <MemoryRouter>
         <Provider store={store}>
           <Home />
         </Provider>
       </MemoryRouter>
     );
+
+    expect(container).toBeInTheDocument();
   });
 });
