@@ -38,7 +38,7 @@ export const ListOfProductsAdmin = () => {
   };
 
   return (
-    <div>
+    <div data-testid="products_table">
       <table className={styles.table}>
         <thead>
           <tr>
