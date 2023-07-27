@@ -15,7 +15,8 @@ describe("Dashboard", () => {
       </MemoryRouter>
     );
 
-    expect(screen.getByText(/Administrator/i)).toBeInTheDocument();
     expect(screen.getByText(/Odjavi se/i)).toBeInTheDocument();
+    expect(screen.getByText(/Administrator/i)).toBeInTheDocument();
+    expect(screen.getByText(/Unesite novi proizvod/i)).toBeInTheDocument();
   });
 });
