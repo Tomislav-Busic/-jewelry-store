@@ -7,6 +7,12 @@ import { Home } from "./Home";
 
 describe("Dashboard", () => {
   test("should render Dashboard component", () => {
-    render(<Home />);
+    render(
+      <MemoryRouter>
+        <Provider store={store}>
+          <Home />
+        </Provider>
+      </MemoryRouter>
+    );
   });
 });
