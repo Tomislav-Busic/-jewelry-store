@@ -79,15 +79,13 @@ export const Dashboard = () => {
     <div className={styles.container}>
       <LogoutBtn />
       <h1>Administrator</h1>
-      <div>
-        <PostProductForm
-          handleSubmit={handleSubmit}
-          handleData={handleData}
-          setFile={setFile}
-          file={file}
-          perc={perc}
-        />
-      </div>
+      <PostProductForm
+        handleSubmit={handleSubmit}
+        handleData={handleData}
+        setFile={setFile}
+        file={file}
+        perc={perc}
+      />
       <ListOfProductsAdmin />
     </div>
   );
