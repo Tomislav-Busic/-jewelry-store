@@ -18,6 +18,6 @@ describe("Home", () => {
 
     const home = screen.getByTestId("home");
 
-    expect(home).not.toBeNull();
+    expect(home).toBeInTheDocument();
   });
 });
