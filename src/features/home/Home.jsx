@@ -8,7 +8,7 @@ import styles from "./home.module.scss";
 
 export const Home = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-testid="home">
       <HomeSectionOne />
       <HomeSectionTwo />
       <HomeSectionThree />
